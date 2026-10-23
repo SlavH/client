@@ -149,3 +149,11 @@
 {"event_id": "evt_20261023173549410388", "payload": {"lead_key": "domain:hzortech.com", "proposal_id": "id_c13df1b62b0777bb"}, "timestamp": "2026-10-23T17:35:49.410452+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023173549420693", "payload": {"business_name": "ArmSoft", "lead_key": "domain:arm-soft.am"}, "timestamp": "2026-10-23T17:35:49.420727+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023173549427524", "payload": {"lead_key": "domain:arm-soft.am", "proposal_id": "id_b211b5acb0d14102"}, "timestamp": "2026-10-23T17:35:49.427552+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173609067625", "payload": {"business_name": "Kentron Real Estate", "lead_key": "domain:real-estate.am"}, "timestamp": "2026-10-23T17:36:09.067666+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173609078288", "payload": {"business_name": "Yerkir Real Estate", "lead_key": "domain:new.yerkir-real.com"}, "timestamp": "2026-10-23T17:36:09.078323+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173609088920", "payload": {"business_name": "Aparto", "lead_key": "domain:aparto.am"}, "timestamp": "2026-10-23T17:36:09.088955+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173609099502", "payload": {"business_name": "Vant Real Estate", "lead_key": "domain:vant.am"}, "timestamp": "2026-10-23T17:36:09.099535+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173609110002", "payload": {"business_name": "ETAGI Armenia", "lead_key": "domain:am.etagi.com"}, "timestamp": "2026-10-23T17:36:09.110032+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173609121036", "payload": {"business_name": "Sievn Real Estate", "lead_key": "domain:sievn.am"}, "timestamp": "2026-10-23T17:36:09.121074+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173609129184", "payload": {"lead_key": "domain:sievn.am", "proposal_id": "id_6bd6d193c072bb22"}, "timestamp": "2026-10-23T17:36:09.129220+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173609146547", "payload": {"business_name": "Cascade Realty", "lead_key": "domain:cascaderealty.am"}, "timestamp": "2026-10-23T17:36:09.146591+00:00", "type": "lead_added"}
