@@ -628,3 +628,5 @@
 {"event_id": "evt_20261023182025329563", "payload": {"lead_key": "domain:ucom.am", "proposal_id": "id_ab8549695e0e0af0"}, "timestamp": "2026-10-23T18:20:25.329607+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023182025375067", "payload": {"business_name": "Viva", "lead_key": "domain:viva.am"}, "timestamp": "2026-10-23T18:20:25.375115+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023182025400243", "payload": {"lead_key": "domain:viva.am", "proposal_id": "id_b4889be80c8096fa"}, "timestamp": "2026-10-23T18:20:25.400298+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182244165333", "payload": {"business_name": "ASMO Logistics", "lead_key": "domain:log.asmo.am"}, "timestamp": "2026-10-23T18:22:44.165385+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182244191625", "payload": {"lead_key": "domain:log.asmo.am", "proposal_id": "id_6cc0188faee67bcf"}, "timestamp": "2026-10-23T18:22:44.191677+00:00", "type": "proposal_added"}
