@@ -843,3 +843,14 @@
 {"event_id": "evt_20261023192342134575", "payload": {"lead_key": "domain:wastewater.am", "proposal_id": "id_28fd81c8790460d8"}, "timestamp": "2026-10-23T19:23:42.134626+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023192342193616", "payload": {"business_name": "EDMET LLC", "lead_key": "domain:edmet.am"}, "timestamp": "2026-10-23T19:23:42.193668+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023192342226721", "payload": {"lead_key": "domain:edmet.am", "proposal_id": "id_e5f2b42a63fe26d3"}, "timestamp": "2026-10-23T19:23:42.226769+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023194859476524", "payload": {"business_name": "AC AirPower (Atlas Copco Armenia)", "lead_key": "domain:aircompressors.am"}, "timestamp": "2026-10-23T19:48:59.476602+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023194859514949", "payload": {"lead_key": "domain:aircompressors.am", "proposal_id": "id_cb4fac68798049df"}, "timestamp": "2026-10-23T19:48:59.515026+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023194859571817", "payload": {"business_name": "Specmash LLC", "lead_key": "domain:specmash.am"}, "timestamp": "2026-10-23T19:48:59.571904+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023194859606848", "payload": {"lead_key": "domain:specmash.am", "proposal_id": "id_1a21a041589ade44"}, "timestamp": "2026-10-23T19:48:59.606898+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023194859662816", "payload": {"business_name": "Concern-Energomash CJSC", "lead_key": "domain:c-e.am"}, "timestamp": "2026-10-23T19:48:59.662896+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023194859726208", "payload": {"lead_key": "domain:c-e.am", "proposal_id": "id_5be796906483919b"}, "timestamp": "2026-10-23T19:48:59.726267+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023194859781661", "payload": {"business_name": "Karmend Chemicals LLC", "lead_key": "domain:karmend.am"}, "timestamp": "2026-10-23T19:48:59.781715+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023194859822259", "payload": {"lead_key": "domain:karmend.am", "proposal_id": "id_79fbce2813bf4644"}, "timestamp": "2026-10-23T19:48:59.822311+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023194859885000", "payload": {"business_name": "HILCO Welding Consumables", "lead_key": "domain:hilco.am"}, "timestamp": "2026-10-23T19:48:59.885056+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023194859946392", "payload": {"business_name": "Horizon LLC", "lead_key": "domain:pump.am"}, "timestamp": "2026-10-23T19:48:59.946475+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023194859985200", "payload": {"lead_key": "domain:pump.am", "proposal_id": "id_c3b90d29cea273c7"}, "timestamp": "2026-10-23T19:48:59.985333+00:00", "type": "proposal_added"}
