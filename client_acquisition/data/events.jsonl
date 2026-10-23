@@ -4,3 +4,126 @@
 {"event_id": "evt_20261023110345855896", "payload": {"lead_key": "name:anka beauty salon|yerevan|armenia", "proposal_id": "id_fae0a992d5e33d5d"}, "timestamp": "2026-10-23T11:03:45.855919+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023110345861455", "payload": {"business_name": "Varda Nail Studio", "lead_key": "name:varda nail studio|yerevan|armenia"}, "timestamp": "2026-10-23T11:03:45.861481+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023110345862678", "payload": {"lead_key": "name:varda nail studio|yerevan|armenia", "proposal_id": "id_c57da1f083a4ddc0"}, "timestamp": "2026-10-23T11:03:45.862700+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244491486", "payload": {"business_name": "Reebok Sports Club", "lead_key": "domain:reeboksportsclub.com"}, "timestamp": "2026-10-23T17:32:44.491540+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244493370", "payload": {"lead_key": "domain:reeboksportsclub.com", "proposal_id": "id_ee1de4435e83c5cb"}, "timestamp": "2026-10-23T17:32:44.494522+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244500715", "payload": {"business_name": "Gold's Gym Armenia", "lead_key": "domain:goldsgym.am"}, "timestamp": "2026-10-23T17:32:44.500748+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244502317", "payload": {"lead_key": "domain:goldsgym.am", "proposal_id": "id_134caf475b6efc31"}, "timestamp": "2026-10-23T17:32:44.502341+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244506683", "payload": {"business_name": "Multi Wellness Center", "lead_key": "domain:mwc.am"}, "timestamp": "2026-10-23T17:32:44.506710+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244510304", "payload": {"lead_key": "domain:mwc.am", "proposal_id": "id_8fe6feb2cf6d79cf"}, "timestamp": "2026-10-23T17:32:44.510329+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244515813", "payload": {"business_name": "Grand Sport", "lead_key": "domain:grandsport.am"}, "timestamp": "2026-10-23T17:32:44.515838+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244520459", "payload": {"lead_key": "domain:grandsport.am", "proposal_id": "id_4b6d4cee6b4797ac"}, "timestamp": "2026-10-23T17:32:44.520484+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244524870", "payload": {"business_name": "Allegro Sport Complex", "lead_key": "domain:allegro-sport.am"}, "timestamp": "2026-10-23T17:32:44.524896+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244526679", "payload": {"lead_key": "domain:allegro-sport.am", "proposal_id": "id_8168993b0dcf05a4"}, "timestamp": "2026-10-23T17:32:44.526703+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244532846", "payload": {"business_name": "Orion Sports Club", "lead_key": "domain:osc.am"}, "timestamp": "2026-10-23T17:32:44.532873+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244536738", "payload": {"lead_key": "domain:osc.am", "proposal_id": "id_5119bb96416f53ab"}, "timestamp": "2026-10-23T17:32:44.536763+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244541514", "payload": {"business_name": "Aquatek Fitness", "lead_key": "domain:aquatek.am"}, "timestamp": "2026-10-23T17:32:44.541541+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244547459", "payload": {"lead_key": "domain:aquatek.am", "proposal_id": "id_8441e32054a7a6a2"}, "timestamp": "2026-10-23T17:32:44.547484+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244552225", "payload": {"business_name": "Energym", "lead_key": "domain:energym.am"}, "timestamp": "2026-10-23T17:32:44.552250+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244556393", "payload": {"lead_key": "domain:energym.am", "proposal_id": "id_d17f7408131118e7"}, "timestamp": "2026-10-23T17:32:44.556433+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244563374", "payload": {"business_name": "AITC", "lead_key": "domain:aitc.am"}, "timestamp": "2026-10-23T17:32:44.563434+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244566581", "payload": {"lead_key": "domain:aitc.am", "proposal_id": "id_3adcefc7188f8e60"}, "timestamp": "2026-10-23T17:32:44.566605+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244573790", "payload": {"business_name": "Education Center", "lead_key": "domain:educationcenter.am"}, "timestamp": "2026-10-23T17:32:44.573818+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244578106", "payload": {"lead_key": "domain:educationcenter.am", "proposal_id": "id_054b8dc5357e0065"}, "timestamp": "2026-10-23T17:32:44.578130+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244585448", "payload": {"business_name": "ICLT", "lead_key": "domain:new.iclt.am"}, "timestamp": "2026-10-23T17:32:44.585477+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244589824", "payload": {"lead_key": "domain:new.iclt.am", "proposal_id": "id_2ac6f9d93584eba3"}, "timestamp": "2026-10-23T17:32:44.589849+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244596258", "payload": {"business_name": "TCO Team", "lead_key": "domain:tco.am"}, "timestamp": "2026-10-23T17:32:44.596285+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244601732", "payload": {"lead_key": "domain:tco.am", "proposal_id": "id_5d1ff68b9ba8122f"}, "timestamp": "2026-10-23T17:32:44.601757+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244608286", "payload": {"business_name": "Business Development Group", "lead_key": "domain:bdg.am"}, "timestamp": "2026-10-23T17:32:44.608314+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244613864", "payload": {"lead_key": "domain:bdg.am", "proposal_id": "id_20e178d6d620b6ab"}, "timestamp": "2026-10-23T17:32:44.613890+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244621044", "payload": {"business_name": "GITC", "lead_key": "domain:gitc.am"}, "timestamp": "2026-10-23T17:32:44.621072+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244625749", "payload": {"lead_key": "domain:gitc.am", "proposal_id": "id_23f5d0d16840cde7"}, "timestamp": "2026-10-23T17:32:44.625774+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244634470", "payload": {"business_name": "Ardy Academy", "lead_key": "domain:ardy.am"}, "timestamp": "2026-10-23T17:32:44.634503+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244640291", "payload": {"lead_key": "domain:ardy.am", "proposal_id": "id_1b415887946ef3de"}, "timestamp": "2026-10-23T17:32:44.640318+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244650040", "payload": {"business_name": "Alfa Pharm", "lead_key": "domain:alfapharm.am"}, "timestamp": "2026-10-23T17:32:44.650076+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244656097", "payload": {"lead_key": "domain:alfapharm.am", "proposal_id": "id_c4980177f41764bd"}, "timestamp": "2026-10-23T17:32:44.656124+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244664210", "payload": {"business_name": "Med911", "lead_key": "domain:med911.am"}, "timestamp": "2026-10-23T17:32:44.664243+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244670267", "payload": {"lead_key": "domain:med911.am", "proposal_id": "id_fb7a74229fc1db2d"}, "timestamp": "2026-10-23T17:32:44.670294+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244681475", "payload": {"business_name": "Natali Pharm", "lead_key": "domain:natalipharm.am"}, "timestamp": "2026-10-23T17:32:44.681512+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244685760", "payload": {"lead_key": "domain:natalipharm.am", "proposal_id": "id_1868bb330d9f6fed"}, "timestamp": "2026-10-23T17:32:44.685787+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244695161", "payload": {"business_name": "NG Pharm", "lead_key": "domain:ngpharm.am"}, "timestamp": "2026-10-23T17:32:44.695194+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244699391", "payload": {"lead_key": "domain:ngpharm.am", "proposal_id": "id_86c34cb2748b4dc0"}, "timestamp": "2026-10-23T17:32:44.701474+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244711486", "payload": {"business_name": "Gedeon Richter Pharmacy", "lead_key": "domain:richter.am"}, "timestamp": "2026-10-23T17:32:44.711522+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244719341", "payload": {"lead_key": "domain:richter.am", "proposal_id": "id_da0d57a6581ca8d2"}, "timestamp": "2026-10-23T17:32:44.719372+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244730957", "payload": {"business_name": "Asteria Pharmacy", "lead_key": "domain:asteria.am"}, "timestamp": "2026-10-23T17:32:44.730997+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244738366", "payload": {"lead_key": "domain:asteria.am", "proposal_id": "id_1c029bb5a0d04a93"}, "timestamp": "2026-10-23T17:32:44.738432+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244749839", "payload": {"business_name": "Natalionline", "lead_key": "domain:natalionline.am"}, "timestamp": "2026-10-23T17:32:44.749878+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244756841", "payload": {"lead_key": "domain:natalionline.am", "proposal_id": "id_a5e92af752ca5e53"}, "timestamp": "2026-10-23T17:32:44.756877+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244769501", "payload": {"business_name": "Avtomir", "lead_key": "domain:avtomir.am"}, "timestamp": "2026-10-23T17:32:44.769546+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244777676", "payload": {"lead_key": "domain:avtomir.am", "proposal_id": "id_ac44b246b2c6a466"}, "timestamp": "2026-10-23T17:32:44.777709+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244787346", "payload": {"business_name": "OVNE Auto Services", "lead_key": "domain:ovne.am"}, "timestamp": "2026-10-23T17:32:44.787382+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244797020", "payload": {"lead_key": "domain:ovne.am", "proposal_id": "id_99cf50de7f827ddf"}, "timestamp": "2026-10-23T17:32:44.797052+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244808907", "payload": {"business_name": "Archicon", "lead_key": "domain:archicon.am"}, "timestamp": "2026-10-23T17:32:44.808947+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244820879", "payload": {"business_name": "VAG Build", "lead_key": "domain:vag.am"}, "timestamp": "2026-10-23T17:32:44.820916+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244833175", "payload": {"business_name": "SHINEX", "lead_key": "domain:shinex.am"}, "timestamp": "2026-10-23T17:32:44.833215+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244843589", "payload": {"lead_key": "domain:shinex.am", "proposal_id": "id_92f38844d13fc7dd"}, "timestamp": "2026-10-23T17:32:44.843624+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244853835", "payload": {"business_name": "Black Stone Construction", "lead_key": "domain:bscarmenia.com"}, "timestamp": "2026-10-23T17:32:44.853875+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244864008", "payload": {"lead_key": "domain:bscarmenia.com", "proposal_id": "id_59155cf17c341498"}, "timestamp": "2026-10-23T17:32:44.864041+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244876335", "payload": {"business_name": "Bartenev Renovation", "lead_key": "domain:bartenev.am"}, "timestamp": "2026-10-23T17:32:44.876373+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244884950", "payload": {"lead_key": "domain:bartenev.am", "proposal_id": "id_ce465fbe7d68243a"}, "timestamp": "2026-10-23T17:32:44.884983+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244899065", "payload": {"business_name": "Dana Translation", "lead_key": "domain:danatranslations.am"}, "timestamp": "2026-10-23T17:32:44.899123+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244909822", "payload": {"lead_key": "domain:danatranslations.am", "proposal_id": "id_6abd789c031edb32"}, "timestamp": "2026-10-23T17:32:44.909860+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244922493", "payload": {"business_name": "Gaudeamus Translation", "lead_key": "domain:gaudeamus.am"}, "timestamp": "2026-10-23T17:32:44.922538+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244933795", "payload": {"lead_key": "domain:gaudeamus.am", "proposal_id": "id_5a12210172140110"}, "timestamp": "2026-10-23T17:32:44.933835+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244946784", "payload": {"business_name": "LEVEL Translation", "lead_key": "domain:leveltranslation.ru"}, "timestamp": "2026-10-23T17:32:44.946826+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244955797", "payload": {"lead_key": "domain:leveltranslation.ru", "proposal_id": "id_2613937616dd3876"}, "timestamp": "2026-10-23T17:32:44.955831+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244970799", "payload": {"business_name": "AS Translation", "lead_key": "domain:astranslation.org"}, "timestamp": "2026-10-23T17:32:44.970841+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173244980369", "payload": {"lead_key": "domain:astranslation.org", "proposal_id": "id_508c07387f96ef9b"}, "timestamp": "2026-10-23T17:32:44.981426+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173244995479", "payload": {"business_name": "Ginkgo Language Center", "lead_key": "domain:ginkgo.am"}, "timestamp": "2026-10-23T17:32:44.995521+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245004021", "payload": {"lead_key": "domain:ginkgo.am", "proposal_id": "id_d3cb2e1f54817c95"}, "timestamp": "2026-10-23T17:32:45.004058+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245017342", "payload": {"business_name": "CCC International", "lead_key": "domain:ccci.am"}, "timestamp": "2026-10-23T17:32:45.017380+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245030232", "payload": {"lead_key": "domain:ccci.am", "proposal_id": "id_0b304dec98cf7c3c"}, "timestamp": "2026-10-23T17:32:45.030270+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245045778", "payload": {"business_name": "Anush Baghdasaryan Translator", "lead_key": "domain:facebook.com"}, "timestamp": "2026-10-23T17:32:45.045820+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245057222", "payload": {"lead_key": "domain:facebook.com", "proposal_id": "id_d6aa9366241485ae"}, "timestamp": "2026-10-23T17:32:45.057260+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245072912", "payload": {"business_name": "AG Translation", "lead_key": "domain:am.agtranslate.ru"}, "timestamp": "2026-10-23T17:32:45.072956+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245084578", "payload": {"lead_key": "domain:am.agtranslate.ru", "proposal_id": "id_5ed476dd34c831e3"}, "timestamp": "2026-10-23T17:32:45.084616+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245100249", "payload": {"business_name": "Monotone Beauty Lounge", "lead_key": "domain:monotone.am"}, "timestamp": "2026-10-23T17:32:45.100289+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245109704", "payload": {"lead_key": "domain:monotone.am", "proposal_id": "id_fb59eb277afcde44"}, "timestamp": "2026-10-23T17:32:45.109738+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245125412", "payload": {"business_name": "Freya Beauty Salon", "lead_key": "domain:freyabeauty.am"}, "timestamp": "2026-10-23T17:32:45.125451+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245141393", "payload": {"lead_key": "domain:freyabeauty.am", "proposal_id": "id_440ea256c59d3873"}, "timestamp": "2026-10-23T17:32:45.143491+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245164315", "payload": {"business_name": "Dessange Armenia", "lead_key": "domain:dessange.am"}, "timestamp": "2026-10-23T17:32:45.164374+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245178465", "payload": {"lead_key": "domain:dessange.am", "proposal_id": "id_360e933684c9e143"}, "timestamp": "2026-10-23T17:32:45.178509+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245195423", "payload": {"business_name": "Beauty Bar Yerevan", "lead_key": "domain:beautybaryerevan.com"}, "timestamp": "2026-10-23T17:32:45.195469+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245209482", "payload": {"lead_key": "domain:beautybaryerevan.com", "proposal_id": "id_63d9082cbcd92aab"}, "timestamp": "2026-10-23T17:32:45.209520+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245225419", "payload": {"business_name": "Kantar Hotel", "lead_key": "domain:staykantar.com"}, "timestamp": "2026-10-23T17:32:45.225462+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245237744", "payload": {"lead_key": "domain:staykantar.com", "proposal_id": "id_dfa08e00c11a540b"}, "timestamp": "2026-10-23T17:32:45.237782+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245260785", "payload": {"business_name": "Opera Suite Hotel", "lead_key": "domain:operasuitehotel.com"}, "timestamp": "2026-10-23T17:32:45.260832+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245273204", "payload": {"lead_key": "domain:operasuitehotel.com", "proposal_id": "id_3a0083dd65c5a74b"}, "timestamp": "2026-10-23T17:32:45.273252+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245292977", "payload": {"business_name": "North Avenue Hotel", "lead_key": "domain:northavenuehotel.com"}, "timestamp": "2026-10-23T17:32:45.293022+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245305001", "payload": {"lead_key": "domain:northavenuehotel.com", "proposal_id": "id_26731cd60343e5bd"}, "timestamp": "2026-10-23T17:32:45.305041+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245324245", "payload": {"business_name": "Sunset Apart-Hotel", "lead_key": "domain:sunsethotel.am"}, "timestamp": "2026-10-23T17:32:45.324285+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245337861", "payload": {"lead_key": "domain:sunsethotel.am", "proposal_id": "id_d2acda003a52a877"}, "timestamp": "2026-10-23T17:32:45.337907+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245356830", "payload": {"business_name": "Bass Boutique Hotel", "lead_key": "domain:basshotel.am"}, "timestamp": "2026-10-23T17:32:45.356869+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245368307", "payload": {"lead_key": "domain:basshotel.am", "proposal_id": "id_0ee0c0a14dafd57b"}, "timestamp": "2026-10-23T17:32:45.368344+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245388714", "payload": {"business_name": "Nova Hotel", "lead_key": "domain:novahotel.am"}, "timestamp": "2026-10-23T17:32:45.388761+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245401853", "payload": {"lead_key": "domain:novahotel.am", "proposal_id": "id_8b6b80e5accce872"}, "timestamp": "2026-10-23T17:32:45.401893+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245420617", "payload": {"business_name": "Welcome Yerevan Apartments", "lead_key": "domain:welcomeyerevan.com"}, "timestamp": "2026-10-23T17:32:45.420661+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245436312", "payload": {"lead_key": "domain:welcomeyerevan.com", "proposal_id": "id_330115e0a53d280a"}, "timestamp": "2026-10-23T17:32:45.436352+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245454015", "payload": {"business_name": "Norekats Aparthotel", "lead_key": "domain:norekats.com"}, "timestamp": "2026-10-23T17:32:45.454056+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245464112", "payload": {"lead_key": "domain:norekats.com", "proposal_id": "id_c35e0f9b14b44df9"}, "timestamp": "2026-10-23T17:32:45.464147+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245482716", "payload": {"business_name": "RIS Central Apartments", "lead_key": "domain:risapartments.com"}, "timestamp": "2026-10-23T17:32:45.482755+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245494805", "payload": {"lead_key": "domain:risapartments.com", "proposal_id": "id_7cc06461579fb151"}, "timestamp": "2026-10-23T17:32:45.494839+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245511672", "payload": {"business_name": "Retrieve Legal", "lead_key": "domain:retrieve.am"}, "timestamp": "2026-10-23T17:32:45.511713+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245530453", "payload": {"business_name": "AM Law Firm", "lead_key": "domain:am.am"}, "timestamp": "2026-10-23T17:32:45.530494+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245547323", "payload": {"business_name": "LEGAL C", "lead_key": "domain:legalc.am"}, "timestamp": "2026-10-23T17:32:45.547364+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245566490", "payload": {"business_name": "Vardan Khechyan LLC", "lead_key": "domain:armenianlaw.com"}, "timestamp": "2026-10-23T17:32:45.566537+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245584246", "payload": {"business_name": "Sigma Law Group", "lead_key": "domain:sigmalaw.am"}, "timestamp": "2026-10-23T17:32:45.584290+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245603682", "payload": {"business_name": "YP Partners", "lead_key": "domain:ypartners.am"}, "timestamp": "2026-10-23T17:32:45.603724+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245617172", "payload": {"lead_key": "domain:ypartners.am", "proposal_id": "id_108976dad80f5fc3"}, "timestamp": "2026-10-23T17:32:45.617209+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245636890", "payload": {"business_name": "Concern Dialog", "lead_key": "domain:dialog.am"}, "timestamp": "2026-10-23T17:32:45.636932+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245655800", "payload": {"business_name": "Ter-Tachatyan Advocates", "lead_key": "domain:ter-tachatyan.am"}, "timestamp": "2026-10-23T17:32:45.655846+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245677005", "payload": {"business_name": "Yerevan Dental Clinic", "lead_key": "domain:yerevandental.am"}, "timestamp": "2026-10-23T17:32:45.677052+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245690550", "payload": {"lead_key": "domain:yerevandental.am", "proposal_id": "id_f33994c2ef161073"}, "timestamp": "2026-10-23T17:32:45.690607+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245711652", "payload": {"business_name": "GDC Dental Center", "lead_key": "domain:gdcclinic.com"}, "timestamp": "2026-10-23T17:32:45.711694+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245724867", "payload": {"lead_key": "domain:gdcclinic.com", "proposal_id": "id_6889e11a8315896a"}, "timestamp": "2026-10-23T17:32:45.724910+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245749039", "payload": {"business_name": "Perfect Smile Dental", "lead_key": "domain:perfectsmile.am"}, "timestamp": "2026-10-23T17:32:45.749089+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245762848", "payload": {"lead_key": "domain:perfectsmile.am", "proposal_id": "id_a4715b6e920aa37a"}, "timestamp": "2026-10-23T17:32:45.762890+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245788449", "payload": {"business_name": "White Castle Dental", "lead_key": "domain:whitecastle.am"}, "timestamp": "2026-10-23T17:32:45.788500+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245804416", "payload": {"lead_key": "domain:whitecastle.am", "proposal_id": "id_6405e17e3cb6cff7"}, "timestamp": "2026-10-23T17:32:45.804464+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245826363", "payload": {"business_name": "Medesy Dental", "lead_key": "domain:medesy.am"}, "timestamp": "2026-10-23T17:32:45.828198+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245842571", "payload": {"lead_key": "domain:medesy.am", "proposal_id": "id_60a7df1d15d25dfd"}, "timestamp": "2026-10-23T17:32:45.842613+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245868315", "payload": {"business_name": "Individuum Dental", "lead_key": "domain:individuumclinic.com"}, "timestamp": "2026-10-23T17:32:45.868377+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245884312", "payload": {"lead_key": "domain:individuumclinic.com", "proposal_id": "id_6f476dce6840151e"}, "timestamp": "2026-10-23T17:32:45.884353+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245907801", "payload": {"business_name": "ESTHEMAX Dental", "lead_key": "domain:esthemax.am"}, "timestamp": "2026-10-23T17:32:45.907850+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245924282", "payload": {"lead_key": "domain:esthemax.am", "proposal_id": "id_b29429aa264a6e1b"}, "timestamp": "2026-10-23T17:32:45.924326+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173245950154", "payload": {"business_name": "EMIDENT Dental", "lead_key": "domain:emident.am"}, "timestamp": "2026-10-23T17:32:45.950211+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173245966342", "payload": {"lead_key": "domain:emident.am", "proposal_id": "id_ca2665eeb0b901b3"}, "timestamp": "2026-10-23T17:32:45.966386+00:00", "type": "proposal_added"}
