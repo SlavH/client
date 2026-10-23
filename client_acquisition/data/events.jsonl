@@ -311,3 +311,13 @@
 {"event_id": "evt_20261023174045400537", "payload": {"business_name": "George's Style", "lead_key": "domain:georgesstyle.com"}, "timestamp": "2026-10-23T17:40:45.400592+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174045430504", "payload": {"lead_key": "domain:georgesstyle.com", "proposal_id": "id_4c3b7ddd201ad4e4"}, "timestamp": "2026-10-23T17:40:45.430594+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174045483559", "payload": {"business_name": "HOS Beauty", "lead_key": "domain:hos.beauty"}, "timestamp": "2026-10-23T17:40:45.483616+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174102797532", "payload": {"business_name": "Evistep Enterprise", "lead_key": "domain:evistep.com"}, "timestamp": "2026-10-23T17:41:02.797586+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174102828810", "payload": {"lead_key": "domain:evistep.com", "proposal_id": "id_8678c3934b230a2a"}, "timestamp": "2026-10-23T17:41:02.828859+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174102873649", "payload": {"business_name": "Orven", "lead_key": "domain:orven.am"}, "timestamp": "2026-10-23T17:41:02.873695+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174102887902", "payload": {"lead_key": "domain:orven.am", "proposal_id": "id_8ac6f05b7027202b"}, "timestamp": "2026-10-23T17:41:02.887945+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174102910622", "payload": {"business_name": "Yogurt Software", "lead_key": "domain:yogurtsoftware.com"}, "timestamp": "2026-10-23T17:41:02.910665+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174102925789", "payload": {"lead_key": "domain:yogurtsoftware.com", "proposal_id": "id_fca1da2868e0445d"}, "timestamp": "2026-10-23T17:41:02.925826+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174102948337", "payload": {"business_name": "Yanium", "lead_key": "domain:yanium.com"}, "timestamp": "2026-10-23T17:41:02.948394+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174102963063", "payload": {"lead_key": "domain:yanium.com", "proposal_id": "id_c053a34db41671d8"}, "timestamp": "2026-10-23T17:41:02.963104+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174102985937", "payload": {"business_name": "eWorks", "lead_key": "domain:e-works.am"}, "timestamp": "2026-10-23T17:41:02.985981+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174102999906", "payload": {"lead_key": "domain:e-works.am", "proposal_id": "id_159bac948e4e5996"}, "timestamp": "2026-10-23T17:41:02.999940+00:00", "type": "proposal_added"}
