@@ -335,3 +335,15 @@
 {"event_id": "evt_20261023174122559512", "payload": {"lead_key": "domain:transimpex.am", "proposal_id": "id_0a26fc580ad97709"}, "timestamp": "2026-10-23T17:41:22.559563+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174122610723", "payload": {"business_name": "Unitrans", "lead_key": "domain:unitrans.am"}, "timestamp": "2026-10-23T17:41:22.610804+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174122646238", "payload": {"lead_key": "domain:unitrans.am", "proposal_id": "id_937e8e5cb4e4a238"}, "timestamp": "2026-10-23T17:41:22.646312+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174140013359", "payload": {"business_name": "Yeremyan Catering", "lead_key": "domain:yeremyancatering.com"}, "timestamp": "2026-10-23T17:41:40.013447+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174140047472", "payload": {"lead_key": "domain:yeremyancatering.com", "proposal_id": "id_ca48e22876c774e0"}, "timestamp": "2026-10-23T17:41:40.047522+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174140099555", "payload": {"business_name": "DARM Catering", "lead_key": "domain:darm.am"}, "timestamp": "2026-10-23T17:41:40.099608+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174140134769", "payload": {"lead_key": "domain:darm.am", "proposal_id": "id_1857d0060a1b5e1b"}, "timestamp": "2026-10-23T17:41:40.134821+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174140198563", "payload": {"business_name": "Central Kitchen Armenia", "lead_key": "domain:centralkitchenarmenia.com"}, "timestamp": "2026-10-23T17:41:40.198618+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174140237030", "payload": {"lead_key": "domain:centralkitchenarmenia.com", "proposal_id": "id_935cb5600d996bbf"}, "timestamp": "2026-10-23T17:41:40.237080+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174140277462", "payload": {"business_name": "Varosyan Events", "lead_key": "domain:varosyan.events"}, "timestamp": "2026-10-23T17:41:40.277515+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174140307083", "payload": {"lead_key": "domain:varosyan.events", "proposal_id": "id_7d01bc1bacd98adc"}, "timestamp": "2026-10-23T17:41:40.307132+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174140346536", "payload": {"business_name": "Perla Signature Events", "lead_key": "domain:perla.events"}, "timestamp": "2026-10-23T17:41:40.346585+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174140369665", "payload": {"lead_key": "domain:perla.events", "proposal_id": "id_dace71e024675e14"}, "timestamp": "2026-10-23T17:41:40.369710+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174140414487", "payload": {"business_name": "Salooote", "lead_key": "domain:salooote.am"}, "timestamp": "2026-10-23T17:41:40.414590+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174140443447", "payload": {"lead_key": "domain:salooote.am", "proposal_id": "id_ee3888c4ba9855fe"}, "timestamp": "2026-10-23T17:41:40.443504+00:00", "type": "proposal_added"}
