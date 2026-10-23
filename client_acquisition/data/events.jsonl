@@ -259,3 +259,18 @@
 {"event_id": "evt_20261023173902713507", "payload": {"lead_key": "domain:tsiran.am", "proposal_id": "id_77eac41813e20c4e"}, "timestamp": "2026-10-23T17:39:02.713550+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023173902753520", "payload": {"business_name": "Supermarket.am", "lead_key": "domain:supermarket.am"}, "timestamp": "2026-10-23T17:39:02.753572+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023173902781495", "payload": {"lead_key": "domain:supermarket.am", "proposal_id": "id_9d173c755490372d"}, "timestamp": "2026-10-23T17:39:02.781542+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173926760215", "payload": {"business_name": "Jaco Restaurant", "lead_key": "domain:jaco.am"}, "timestamp": "2026-10-23T17:39:26.760264+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173926772431", "payload": {"lead_key": "domain:jaco.am", "proposal_id": "id_02610c09edf4b46b"}, "timestamp": "2026-10-23T17:39:26.772471+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173926791495", "payload": {"business_name": "Live Chef", "lead_key": "domain:live-chef.com"}, "timestamp": "2026-10-23T17:39:26.791537+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173926810869", "payload": {"business_name": "Corpous Gastro Bar", "lead_key": "domain:corpous.am"}, "timestamp": "2026-10-23T17:39:26.810913+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173926823130", "payload": {"lead_key": "domain:corpous.am", "proposal_id": "id_a0212b726d4787b4"}, "timestamp": "2026-10-23T17:39:26.823171+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173926842025", "payload": {"business_name": "Jacobs Kitchen", "lead_key": "domain:jacobskitchen.am"}, "timestamp": "2026-10-23T17:39:26.842071+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173926853187", "payload": {"lead_key": "domain:jacobskitchen.am", "proposal_id": "id_278b7eec91098465"}, "timestamp": "2026-10-23T17:39:26.853222+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173926869938", "payload": {"business_name": "Danny's Cafe and Bar", "lead_key": "domain:dannys.am"}, "timestamp": "2026-10-23T17:39:26.869978+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173926881236", "payload": {"lead_key": "domain:dannys.am", "proposal_id": "id_c0c405e5333ade7b"}, "timestamp": "2026-10-23T17:39:26.881269+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173926898042", "payload": {"business_name": "EVN Diner", "lead_key": "domain:evndiner.com"}, "timestamp": "2026-10-23T17:39:26.898076+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173926908864", "payload": {"lead_key": "domain:evndiner.com", "proposal_id": "id_eec31112e07e54c0"}, "timestamp": "2026-10-23T17:39:26.908894+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173926925820", "payload": {"business_name": "Xorovi", "lead_key": "domain:xorovi.am"}, "timestamp": "2026-10-23T17:39:26.925858+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173926943082", "payload": {"business_name": "Gurman", "lead_key": "domain:gurman.am"}, "timestamp": "2026-10-23T17:39:26.943122+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173926960281", "payload": {"business_name": "House of Margot", "lead_key": "domain:margot.house"}, "timestamp": "2026-10-23T17:39:26.960318+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173926971425", "payload": {"lead_key": "domain:margot.house", "proposal_id": "id_2f1fb13ac9f325cc"}, "timestamp": "2026-10-23T17:39:26.971456+00:00", "type": "proposal_added"}
