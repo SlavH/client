@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anka Beauty Salon — Գեղեցկության սրահ Երևանում</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: #2d2d2d; line-height: 1.6; }
+    header { background: linear-gradient(135deg, #d63384, #f06595); color: #fff; padding: 60px 20px; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; opacity: 0.9; }
+    .cta { display: inline-block; margin-top: 20px; padding: 14px 32px; background: #fff; color: #d63384; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s; }
+    .cta:hover { transform: scale(1.05); }
+    section { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+    h2 { font-size: 1.8rem; margin-bottom: 30px; text-align: center; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card { background: #fff5f8; border-radius: 12px; padding: 30px; text-align: center; transition: box-shadow 0.3s; border: 1px solid #fce4ec; }
+    .card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+    .card h3 { margin-bottom: 10px; color: #d63384; }
+    .card p { font-size: 0.95rem; color: #555; }
+    .booking { background: #f8f9fa; padding: 40px 20px; }
+    .booking form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .booking input, .booking select { padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; }
+    .booking button { padding: 14px; background: #d63384; color: #fff; border: none; border-radius: 6px; font-size: 1rem; font-weight: 600; cursor: pointer; }
+    .contact { background: #fce4ec; padding: 40px 20px; text-align: center; }
+    .contact p { margin: 8px 0; font-size: 1.1rem; }
+    footer { background: #2d2d2d; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; }
+    @media (max-width: 600px) { header h1 { font-size: 1.8rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Anka Beauty Salon</h1>
+    <p>Գեղեցկության և խնամքի սրահ — Երևան, Պուշկին 33</p>
+    <a href="#booking" class="cta">Ամրագրել այց</a>
+  </header>
+
+  <section>
+    <h2>Մեր ծառայությունները</h2>
+    <div class="services">
+      <div class="card"><h3>Մազերի խնամք</h3><p>Կտրում, ներկում, ուղղում, վարսավիրություն</p></div>
+      <div class="card"><h3>Մանիկյուր և պեդիկյուր</h3><p>Դասական, ապարատային, գել-լաք</p></div>
+      <div class="card"><h3>Կոսմետոլոգիա</h3><p>Դեմքի խնամք, մաքրում, մերսում</p></div>
+      <div class="card"><h3>Հեռացում</h3><p>Մոմով, շուգարինգ, էլեկտրո էպիլյացիա</p></div>
+      <div class="card"><h3>Դիմահարդարում</h3><p>Առօրյա, երեկոյան, հարսանեկան</p></div>
+      <div class="card"><h3>Հոնքեր և թարթիչներ</h3><p>Կորեկցիա, ներկում, լամինացիա</p></div>
+    </div>
+  </section>
+
+  <section id="booking" class="booking">
+    <h2>Ամրագրել այց</h2>
+    <form>
+      <input type="text" placeholder="Անուն" required>
+      <input type="tel" placeholder="Հեռախոս" required>
+      <select>
+        <option>Ընտրեք ծառայությունը</option>
+        <option>Մազերի խնամք</option>
+        <option>Մանիկյուր / Պեդիկյուր</option>
+        <option>Կոսմետոլոգիա</option>
+        <option>Հեռացում</option>
+        <option>Դիմահարդարում</option>
+      </select>
+      <input type="date">
+      <button type="submit">Ուղարկել</button>
+    </form>
+  </section>
+
+  <div class="contact">
+    <h2>Կապ մեզ հետ</h2>
+    <p>📍 Պուշկին 33, Երևան 0002</p>
+    <p>📞 +374 44 880 880</p>
+    <p>🕐 Ամեն օր 9:00–20:00</p>
+  </div>
+
+  <footer>© 2026 Anka Beauty Salon — Գեղեցկության սրահ Երևանում</footer>
+</body>
+</html>
