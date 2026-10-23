@@ -379,3 +379,11 @@
 {"event_id": "evt_20261023174242871009", "payload": {"lead_key": "domain:yerevan.qsi.org", "proposal_id": "id_cfb367b6c35c634e"}, "timestamp": "2026-10-23T17:42:42.871048+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174242901060", "payload": {"business_name": "American University of Armenia", "lead_key": "domain:catalog.aua.am"}, "timestamp": "2026-10-23T17:42:42.901109+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174242920251", "payload": {"lead_key": "domain:catalog.aua.am", "proposal_id": "id_a3c5b48bfa8656dc"}, "timestamp": "2026-10-23T17:42:42.920294+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174300716491", "payload": {"business_name": "AMTRAVEL DMC", "lead_key": "domain:amtravel.am"}, "timestamp": "2026-10-23T17:43:00.716556+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174300766851", "payload": {"lead_key": "domain:amtravel.am", "proposal_id": "id_ac8badc96d96e785"}, "timestamp": "2026-10-23T17:43:00.766902+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174300804142", "payload": {"business_name": "Caucasus Gate", "lead_key": "domain:caucasusgates.com"}, "timestamp": "2026-10-23T17:43:00.804198+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174300821202", "payload": {"lead_key": "domain:caucasusgates.com", "proposal_id": "id_37cf1e67a0e2b12a"}, "timestamp": "2026-10-23T17:43:00.821248+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174300849184", "payload": {"business_name": "Travel Concept Armenia", "lead_key": "domain:travelconcept.am"}, "timestamp": "2026-10-23T17:43:00.849234+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174300866366", "payload": {"lead_key": "domain:travelconcept.am", "proposal_id": "id_3f2cf95879eafe2b"}, "timestamp": "2026-10-23T17:43:00.866430+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174300892936", "payload": {"business_name": "Phoenix Tour", "lead_key": "domain:phoenixtour.org"}, "timestamp": "2026-10-23T17:43:00.892980+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174300926186", "payload": {"lead_key": "domain:phoenixtour.org", "proposal_id": "id_bd45110af11d8e99"}, "timestamp": "2026-10-23T17:43:00.926234+00:00", "type": "proposal_added"}
