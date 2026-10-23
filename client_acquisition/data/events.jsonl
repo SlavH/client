@@ -405,3 +405,17 @@
 {"event_id": "evt_20261023174442298554", "payload": {"business_name": "FinCore Consulting", "lead_key": "domain:fincore.am"}, "timestamp": "2026-10-23T17:44:42.298605+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174442360548", "payload": {"business_name": "Alpha Accounting", "lead_key": "domain:alphaaccounting.am"}, "timestamp": "2026-10-23T17:44:42.360598+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174442421254", "payload": {"business_name": "ProAccounting", "lead_key": "domain:proaccounting.am"}, "timestamp": "2026-10-23T17:44:42.421304+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174524021158", "payload": {"business_name": "Cafe Central", "lead_key": "domain:cafecentral.am"}, "timestamp": "2026-10-23T17:45:24.021216+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174524069890", "payload": {"lead_key": "domain:cafecentral.am", "proposal_id": "id_b70a13405e39ed57"}, "timestamp": "2026-10-23T17:45:24.069943+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174524141769", "payload": {"business_name": "Urban Wine Bar", "lead_key": "domain:urbanwine.am"}, "timestamp": "2026-10-23T17:45:24.141820+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174524181362", "payload": {"lead_key": "domain:urbanwine.am", "proposal_id": "id_7a75a6c6859859e7"}, "timestamp": "2026-10-23T17:45:24.185410+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174524246921", "payload": {"business_name": "The Club", "lead_key": "domain:theclub.am"}, "timestamp": "2026-10-23T17:45:24.246972+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174524293782", "payload": {"lead_key": "domain:theclub.am", "proposal_id": "id_2fa91d30104109c4"}, "timestamp": "2026-10-23T17:45:24.293837+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174524364371", "payload": {"business_name": "Lali Kitchen and Bar", "lead_key": "domain:lali.am"}, "timestamp": "2026-10-23T17:45:24.366449+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174524410122", "payload": {"lead_key": "domain:lali.am", "proposal_id": "id_819cbf92746755f8"}, "timestamp": "2026-10-23T17:45:24.410175+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174524496772", "payload": {"business_name": "WorkSpace Cafe", "lead_key": "domain:workspaceyvn.am"}, "timestamp": "2026-10-23T17:45:24.496829+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174524543920", "payload": {"lead_key": "domain:workspaceyvn.am", "proposal_id": "id_0ab2a18373a833ff"}, "timestamp": "2026-10-23T17:45:24.543975+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174524619936", "payload": {"business_name": "Sorriso", "lead_key": "domain:sorriso.am"}, "timestamp": "2026-10-23T17:45:24.619993+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174524666553", "payload": {"lead_key": "domain:sorriso.am", "proposal_id": "id_21a3474682bc3553"}, "timestamp": "2026-10-23T17:45:24.666609+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174524830578", "payload": {"business_name": "GuestMe", "lead_key": "domain:guestme.am"}, "timestamp": "2026-10-23T17:45:24.830632+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174524872515", "payload": {"lead_key": "domain:guestme.am", "proposal_id": "id_23d5d8bc524061cb"}, "timestamp": "2026-10-23T17:45:24.872568+00:00", "type": "proposal_added"}
