@@ -25,8 +25,17 @@
       "leads": "leads.jsonl",
       "proposals": "proposals.jsonl",
       "events": "events.jsonl",
-      "suppression": "suppression.jsonl"
+      "suppression": "suppression.jsonl",
+      "sends": "sends.jsonl"
     }
+  },
+  "email": {
+    "dry_run_default": true,
+    "per_run_limit": 5,
+    "daily_limit": 10,
+    "test_recipient": null,
+    "from_email_env": "RESEND_FROM_EMAIL",
+    "api_key_env": "RESEND_API_KEY"
   },
   "git": {
     "remote": "origin",

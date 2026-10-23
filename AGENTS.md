@@ -58,6 +58,17 @@ python -m client_acquisition.scripts.crm validate
 python -m client_acquisition.scripts.crm export-report
 ```
 
+## Resend email sender commands (dry-run by default; `--send` for real submission)
+
+```bash
+python -m client_acquisition.scripts.resend_sender check-config
+python -m client_acquisition.scripts.resend_sender send-test --to <verified@example.com> [--send]
+python -m client_acquisition.scripts.resend_sender send-approved --lead-key <KEY> --to <recipient> [--send]
+```
+
+Never print or commit `RESEND_API_KEY` / `RESEND_FROM_EMAIL`. Read them from environment only.
+Real sends require explicit human approval (proposal status `approved`) and the `--send` flag.
+
 ## Tests
 
 ```bash

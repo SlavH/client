@@ -10,6 +10,7 @@ venv/
 
 # CRM runtime artifacts
 client_acquisition/data/.crm.lock
+client_acquisition/data/.sends.lock
 client_acquisition/data/*.tmp_*
 
 # Reports (generated)
