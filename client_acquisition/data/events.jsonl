@@ -675,3 +675,54 @@
 {"event_id": "evt_20261023182814497812", "payload": {"lead_key": "domain:europeanschool.am", "proposal_id": "id_c31b08ed146d1753"}, "timestamp": "2026-10-23T18:28:14.497862+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023182814544308", "payload": {"business_name": "Mozaika Kids Club", "lead_key": "domain:mozaika.am"}, "timestamp": "2026-10-23T18:28:14.544358+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023182814586288", "payload": {"lead_key": "domain:mozaika.am", "proposal_id": "id_3d47a0dc3cf564ab"}, "timestamp": "2026-10-23T18:28:14.586341+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183815807612", "payload": {"business_name": "Electric Networks of Armenia", "lead_key": "domain:ena.am"}, "timestamp": "2026-10-23T18:38:15.807663+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183815850167", "payload": {"business_name": "Enerex", "lead_key": "domain:enerex.am"}, "timestamp": "2026-10-23T18:38:15.850225+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183815894687", "payload": {"business_name": "Energy Provider LLC", "lead_key": "domain:energyprovider.am"}, "timestamp": "2026-10-23T18:38:15.894744+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183815938379", "payload": {"business_name": "Solaron", "lead_key": "domain:solaron.am"}, "timestamp": "2026-10-23T18:38:15.938456+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183815965860", "payload": {"lead_key": "domain:solaron.am", "proposal_id": "id_fc79df01795dc2cf"}, "timestamp": "2026-10-23T18:38:15.965907+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183816009140", "payload": {"business_name": "Agrovision", "lead_key": "domain:agrovision.am"}, "timestamp": "2026-10-23T18:38:16.009205+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816053332", "payload": {"business_name": "Mountain High Farms", "lead_key": "domain:mountainhighfarms.net"}, "timestamp": "2026-10-23T18:38:16.053384+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816080731", "payload": {"lead_key": "domain:mountainhighfarms.net", "proposal_id": "id_9b5deb827c920b0f"}, "timestamp": "2026-10-23T18:38:16.080777+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183816123768", "payload": {"business_name": "AgroLink Technologies", "lead_key": "domain:agrolink.am"}, "timestamp": "2026-10-23T18:38:16.123818+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816173114", "payload": {"business_name": "SkyAgro", "lead_key": "domain:skyagro.am"}, "timestamp": "2026-10-23T18:38:16.173169+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816200882", "payload": {"lead_key": "domain:skyagro.am", "proposal_id": "id_22bc8fbe12f0820f"}, "timestamp": "2026-10-23T18:38:16.200940+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183816245280", "payload": {"business_name": "Wine Works", "lead_key": "domain:wineworks.am"}, "timestamp": "2026-10-23T18:38:16.245333+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816272312", "payload": {"lead_key": "domain:wineworks.am", "proposal_id": "id_f27c7a1694323853"}, "timestamp": "2026-10-23T18:38:16.272359+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183816320871", "payload": {"business_name": "Aragats Ltd", "lead_key": "domain:aragatsltd.am"}, "timestamp": "2026-10-23T18:38:16.320927+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816370642", "payload": {"business_name": "ArmFab LLC", "lead_key": "domain:armfab.am"}, "timestamp": "2026-10-23T18:38:16.370701+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816401623", "payload": {"lead_key": "domain:armfab.am", "proposal_id": "id_1b8e814eef9c4ef6"}, "timestamp": "2026-10-23T18:38:16.401674+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183816451150", "payload": {"business_name": "Alpha Metal LLC", "lead_key": "domain:alphametal.am"}, "timestamp": "2026-10-23T18:38:16.451205+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816501596", "payload": {"lead_key": "domain:alphametal.am", "proposal_id": "id_82952b350080660b"}, "timestamp": "2026-10-23T18:38:16.501650+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183816548584", "payload": {"business_name": "HyePeak", "lead_key": "domain:hyepeak.com"}, "timestamp": "2026-10-23T18:38:16.548636+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816575977", "payload": {"lead_key": "domain:hyepeak.com", "proposal_id": "id_9281113c551382ce"}, "timestamp": "2026-10-23T18:38:16.576024+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183816619781", "payload": {"business_name": "Clean Line", "lead_key": "domain:cleanline.am"}, "timestamp": "2026-10-23T18:38:16.619833+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816647660", "payload": {"lead_key": "domain:cleanline.am", "proposal_id": "id_739a96f427a3d7fa"}, "timestamp": "2026-10-23T18:38:16.647708+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183816693952", "payload": {"business_name": "LuminaClean", "lead_key": "domain:luminaclean.am"}, "timestamp": "2026-10-23T18:38:16.694007+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816721032", "payload": {"lead_key": "domain:luminaclean.am", "proposal_id": "id_6d212019affd957c"}, "timestamp": "2026-10-23T18:38:16.721075+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183816764785", "payload": {"business_name": "Clean Yerevan", "lead_key": "domain:cleanyerevan.am"}, "timestamp": "2026-10-23T18:38:16.764836+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816793410", "payload": {"lead_key": "domain:cleanyerevan.am", "proposal_id": "id_7aa14a37c7140e6d"}, "timestamp": "2026-10-23T18:38:16.793454+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183816840136", "payload": {"business_name": "CLEAN.AM", "lead_key": "domain:cleaning.am"}, "timestamp": "2026-10-23T18:38:16.840187+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816867546", "payload": {"lead_key": "domain:cleaning.am", "proposal_id": "id_f62f96ca362bcd05"}, "timestamp": "2026-10-23T18:38:16.867599+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183816912939", "payload": {"business_name": "YVN Clean", "lead_key": "domain:yvn-clean.am"}, "timestamp": "2026-10-23T18:38:16.912996+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183816940731", "payload": {"lead_key": "domain:yvn-clean.am", "proposal_id": "id_d2344fb8a3c3aec3"}, "timestamp": "2026-10-23T18:38:16.940783+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183816986453", "payload": {"business_name": "Wolfsecurity", "lead_key": "domain:wolfsecurity.am"}, "timestamp": "2026-10-23T18:38:16.986513+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183817014630", "payload": {"lead_key": "domain:wolfsecurity.am", "proposal_id": "id_4ad11e1983d7ef1b"}, "timestamp": "2026-10-23T18:38:17.014683+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183817058587", "payload": {"business_name": "KING MARSHAL", "lead_key": "domain:kingmarshal.am"}, "timestamp": "2026-10-23T18:38:17.058643+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183817086845", "payload": {"lead_key": "domain:kingmarshal.am", "proposal_id": "id_16fca98e3ddb8811"}, "timestamp": "2026-10-23T18:38:17.086894+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183817134926", "payload": {"business_name": "SÄPPO", "lead_key": "domain:sappo.am"}, "timestamp": "2026-10-23T18:38:17.134986+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183817170212", "payload": {"lead_key": "domain:sappo.am", "proposal_id": "id_d9949da362e8ea3f"}, "timestamp": "2026-10-23T18:38:17.170269+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183817215751", "payload": {"business_name": "ARMOBIL", "lead_key": "domain:armobil.am"}, "timestamp": "2026-10-23T18:38:17.215814+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183817245703", "payload": {"lead_key": "domain:armobil.am", "proposal_id": "id_0ce767f693f18dd8"}, "timestamp": "2026-10-23T18:38:17.245748+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183817289802", "payload": {"business_name": "VIP GUARD", "lead_key": "domain:vipguard.am"}, "timestamp": "2026-10-23T18:38:17.289855+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183817317258", "payload": {"lead_key": "domain:vipguard.am", "proposal_id": "id_356695e3807e3f4a"}, "timestamp": "2026-10-23T18:38:17.317307+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183817361372", "payload": {"business_name": "GUARDIAN", "lead_key": "domain:guardian.am"}, "timestamp": "2026-10-23T18:38:17.361451+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183817389278", "payload": {"lead_key": "domain:guardian.am", "proposal_id": "id_23532f63e3bdc804"}, "timestamp": "2026-10-23T18:38:17.389320+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183817434145", "payload": {"business_name": "GRAND S", "lead_key": "domain:grandsecurity.am"}, "timestamp": "2026-10-23T18:38:17.434197+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183817463761", "payload": {"lead_key": "domain:grandsecurity.am", "proposal_id": "id_da796111d29ac8f2"}, "timestamp": "2026-10-23T18:38:17.463809+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183817509238", "payload": {"business_name": "Snapp", "lead_key": "domain:snapp.am"}, "timestamp": "2026-10-23T18:38:17.509292+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183817566759", "payload": {"lead_key": "domain:snapp.am", "proposal_id": "id_7a42058790fb5f7b"}, "timestamp": "2026-10-23T18:38:17.566817+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183817621880", "payload": {"business_name": "Sirius Capital", "lead_key": "domain:siriuscapital.am"}, "timestamp": "2026-10-23T18:38:17.621939+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183817672355", "payload": {"business_name": "OM Labs", "lead_key": "domain:om-labs.am"}, "timestamp": "2026-10-23T18:38:17.672449+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183817718090", "payload": {"business_name": "Ineco Group", "lead_key": "domain:inecogroup.am"}, "timestamp": "2026-10-23T18:38:17.718148+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183817773087", "payload": {"business_name": "Go Shop", "lead_key": "domain:goshop.am"}, "timestamp": "2026-10-23T18:38:17.773145+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183817822265", "payload": {"business_name": "Buy.am", "lead_key": "domain:teamgroup.am"}, "timestamp": "2026-10-23T18:38:17.822317+00:00", "type": "lead_added"}
