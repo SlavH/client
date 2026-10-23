@@ -490,3 +490,46 @@
 {"event_id": "evt_20261023181715036541", "payload": {"lead_key": "domain:erevanprint.com", "proposal_id": "id_dfa0037b6ff8905d"}, "timestamp": "2026-10-23T18:17:15.036594+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023181715103440", "payload": {"business_name": "Zangak Printing", "lead_key": "domain:zangak.am"}, "timestamp": "2026-10-23T18:17:15.103501+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023181715140877", "payload": {"lead_key": "domain:zangak.am", "proposal_id": "id_9074b5d836051dc3"}, "timestamp": "2026-10-23T18:17:15.140927+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749128000", "payload": {"business_name": "Optic Gallery", "lead_key": "domain:opticgallery.am"}, "timestamp": "2026-10-23T18:17:49.128054+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749150018", "payload": {"lead_key": "domain:opticgallery.am", "proposal_id": "id_28d016385295d7ca"}, "timestamp": "2026-10-23T18:17:49.150062+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749181926", "payload": {"business_name": "Lumiere Optics", "lead_key": "domain:lumiere.am"}, "timestamp": "2026-10-23T18:17:49.181972+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749201310", "payload": {"lead_key": "domain:lumiere.am", "proposal_id": "id_db74fb4db219a88c"}, "timestamp": "2026-10-23T18:17:49.201350+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749239700", "payload": {"business_name": "Look Optic", "lead_key": "domain:lookoptic.am"}, "timestamp": "2026-10-23T18:17:49.239749+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749259882", "payload": {"lead_key": "domain:lookoptic.am", "proposal_id": "id_ddef6dfa106f3491"}, "timestamp": "2026-10-23T18:17:49.259930+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749292436", "payload": {"business_name": "Optics.am", "lead_key": "domain:en.optics.am"}, "timestamp": "2026-10-23T18:17:49.292486+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749312336", "payload": {"lead_key": "domain:en.optics.am", "proposal_id": "id_061a624f5f36fbfd"}, "timestamp": "2026-10-23T18:17:49.312383+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749349737", "payload": {"business_name": "Interoptic Armenia", "lead_key": "domain:interoptic.am"}, "timestamp": "2026-10-23T18:17:49.349789+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749369840", "payload": {"lead_key": "domain:interoptic.am", "proposal_id": "id_661c409cab4d3b81"}, "timestamp": "2026-10-23T18:17:49.369884+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749402429", "payload": {"business_name": "Yellow Lark Waldorf Kindergarten", "lead_key": "domain:yellowlark.org"}, "timestamp": "2026-10-23T18:17:49.402480+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749422532", "payload": {"lead_key": "domain:yellowlark.org", "proposal_id": "id_582e92ea6a31936c"}, "timestamp": "2026-10-23T18:17:49.422576+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749461147", "payload": {"business_name": "Paddington Centre", "lead_key": "domain:paddington.am"}, "timestamp": "2026-10-23T18:17:49.461197+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749485430", "payload": {"lead_key": "domain:paddington.am", "proposal_id": "id_b7cbf3f071f4b01b"}, "timestamp": "2026-10-23T18:17:49.485481+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749519128", "payload": {"business_name": "Villa Montessori Armenia", "lead_key": "domain:villamontessori.am"}, "timestamp": "2026-10-23T18:17:49.519183+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749540363", "payload": {"lead_key": "domain:villamontessori.am", "proposal_id": "id_62105f6e0828e5fa"}, "timestamp": "2026-10-23T18:17:49.540424+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749577834", "payload": {"business_name": "Newtonic Preschool", "lead_key": "domain:newtonic.am"}, "timestamp": "2026-10-23T18:17:49.577883+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749598617", "payload": {"lead_key": "domain:newtonic.am", "proposal_id": "id_98f2b94c59dd91c6"}, "timestamp": "2026-10-23T18:17:49.598667+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749631078", "payload": {"business_name": "Dzer Gitak Kindergarten", "lead_key": "domain:dzergitak.am"}, "timestamp": "2026-10-23T18:17:49.631129+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749651175", "payload": {"lead_key": "domain:dzergitak.am", "proposal_id": "id_12049c1177197c5b"}, "timestamp": "2026-10-23T18:17:49.651219+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749684897", "payload": {"business_name": "ICLT Language School", "lead_key": "domain:iclt.am"}, "timestamp": "2026-10-23T18:17:49.684946+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749705561", "payload": {"lead_key": "domain:iclt.am", "proposal_id": "id_45f259a14d47aff0"}, "timestamp": "2026-10-23T18:17:49.705602+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749737005", "payload": {"business_name": "English with Laura", "lead_key": "domain:englishwithlaura.com"}, "timestamp": "2026-10-23T18:17:49.737055+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749757067", "payload": {"lead_key": "domain:englishwithlaura.com", "proposal_id": "id_9fb3a968601871d1"}, "timestamp": "2026-10-23T18:17:49.757111+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749789265", "payload": {"business_name": "Berlitz Armenia", "lead_key": "domain:berlitz.com"}, "timestamp": "2026-10-23T18:17:49.789322+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749809342", "payload": {"lead_key": "domain:berlitz.com", "proposal_id": "id_d68d99d9a150b0d8"}, "timestamp": "2026-10-23T18:17:49.809386+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749841742", "payload": {"business_name": "European Institute of International Languages", "lead_key": "domain:eiil.am"}, "timestamp": "2026-10-23T18:17:49.841795+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749862043", "payload": {"lead_key": "domain:eiil.am", "proposal_id": "id_22cef5959a56f03c"}, "timestamp": "2026-10-23T18:17:49.862085+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749894023", "payload": {"business_name": "Horizon of Expectation", "lead_key": "domain:horizonschool.am"}, "timestamp": "2026-10-23T18:17:49.894077+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749914609", "payload": {"lead_key": "domain:horizonschool.am", "proposal_id": "id_474bef9a8ac094cb"}, "timestamp": "2026-10-23T18:17:49.914655+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181749946924", "payload": {"business_name": "Spica Language School", "lead_key": "domain:spica.am"}, "timestamp": "2026-10-23T18:17:49.946977+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181749967473", "payload": {"lead_key": "domain:spica.am", "proposal_id": "id_b70fb81b3baaad7c"}, "timestamp": "2026-10-23T18:17:49.967520+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181750000337", "payload": {"business_name": "Educa Language Center", "lead_key": "domain:educalanguageschool.com"}, "timestamp": "2026-10-23T18:17:50.000390+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181750020974", "payload": {"lead_key": "domain:educalanguageschool.com", "proposal_id": "id_db9a7b1b37a1c157"}, "timestamp": "2026-10-23T18:17:50.021034+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181750054573", "payload": {"business_name": "Le Monde Language School", "lead_key": "domain:lemonde.am"}, "timestamp": "2026-10-23T18:17:50.054630+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181750080694", "payload": {"lead_key": "domain:lemonde.am", "proposal_id": "id_f084e131ffb722a8"}, "timestamp": "2026-10-23T18:17:50.080747+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181750117295", "payload": {"business_name": "LOOM Group", "lead_key": "domain:loomgroup.am"}, "timestamp": "2026-10-23T18:17:50.117347+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181750189420", "payload": {"business_name": "Designature Studio", "lead_key": "domain:designature.studio"}, "timestamp": "2026-10-23T18:17:50.189476+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181750222107", "payload": {"business_name": "IMAGEMAN Studio", "lead_key": "domain:imagemanstudio.com"}, "timestamp": "2026-10-23T18:17:50.222160+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181750255287", "payload": {"business_name": "KultHome", "lead_key": "domain:kulthome.com"}, "timestamp": "2026-10-23T18:17:50.255341+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181750288508", "payload": {"business_name": "RedLine Design", "lead_key": "domain:redline.am"}, "timestamp": "2026-10-23T18:17:50.288560+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181750321758", "payload": {"business_name": "VOLARSTUDIO", "lead_key": "domain:volarstudio.com"}, "timestamp": "2026-10-23T18:17:50.321810+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181750361323", "payload": {"business_name": "Zenit Studio", "lead_key": "domain:zenitstudio.am"}, "timestamp": "2026-10-23T18:17:50.361374+00:00", "type": "lead_added"}
