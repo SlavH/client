@@ -646,3 +646,7 @@
 {"event_id": "evt_20261023182502787665", "payload": {"lead_key": "domain:moninvitehotel.am", "proposal_id": "id_2718e08b15649c0a"}, "timestamp": "2026-10-23T18:25:02.787717+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023182539344824", "payload": {"business_name": "YourSpace", "lead_key": "domain:yourspace.am"}, "timestamp": "2026-10-23T18:25:39.344896+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023182539406101", "payload": {"lead_key": "domain:yourspace.am", "proposal_id": "id_7ea08215d93e68ed"}, "timestamp": "2026-10-23T18:25:39.406151+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182556820361", "payload": {"business_name": "YerevanRealty", "lead_key": "domain:yerevanrealty.am"}, "timestamp": "2026-10-23T18:25:56.822442+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182556885570", "payload": {"lead_key": "domain:yerevanrealty.am", "proposal_id": "id_51b82c630606302a"}, "timestamp": "2026-10-23T18:25:56.885654+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182556983451", "payload": {"business_name": "QAYL Group", "lead_key": "domain:qaylgroup.am"}, "timestamp": "2026-10-23T18:25:56.983514+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182557046133", "payload": {"lead_key": "domain:qaylgroup.am", "proposal_id": "id_763855c1082802ce"}, "timestamp": "2026-10-23T18:25:57.046186+00:00", "type": "proposal_added"}
