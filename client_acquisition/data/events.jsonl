@@ -587,3 +587,38 @@
 {"event_id": "evt_20261023181852300625", "payload": {"lead_key": "domain:thaiatmosphere.am", "proposal_id": "id_00fa3a323b04041b"}, "timestamp": "2026-10-23T18:18:52.300677+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023181852342210", "payload": {"business_name": "Thai Spa", "lead_key": "domain:thaispa.am"}, "timestamp": "2026-10-23T18:18:52.342270+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023181852368436", "payload": {"lead_key": "domain:thaispa.am", "proposal_id": "id_078bdbb22e9f5543"}, "timestamp": "2026-10-23T18:18:52.368480+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181947594305", "payload": {"business_name": "Pickup.am", "lead_key": "domain:pickup.am"}, "timestamp": "2026-10-23T18:19:47.594365+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181947617374", "payload": {"lead_key": "domain:pickup.am", "proposal_id": "id_f2ad43217ed43a2c"}, "timestamp": "2026-10-23T18:19:47.617442+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181947653907", "payload": {"business_name": "FT Courier", "lead_key": "domain:ftc.am"}, "timestamp": "2026-10-23T18:19:47.653960+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181947676826", "payload": {"lead_key": "domain:ftc.am", "proposal_id": "id_2e3530dca129fd35"}, "timestamp": "2026-10-23T18:19:47.676870+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181947713284", "payload": {"business_name": "DPD Armenia", "lead_key": "domain:dpd.am"}, "timestamp": "2026-10-23T18:19:47.713332+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181947736263", "payload": {"lead_key": "domain:dpd.am", "proposal_id": "id_72c69277a936ffec"}, "timestamp": "2026-10-23T18:19:47.736313+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181947772837", "payload": {"business_name": "JAN Agency", "lead_key": "domain:janagency.com"}, "timestamp": "2026-10-23T18:19:47.772889+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181947811047", "payload": {"business_name": "Roots Marketing Agency", "lead_key": "domain:rootsagency.am"}, "timestamp": "2026-10-23T18:19:47.811099+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181947848059", "payload": {"business_name": "Triune Digitals", "lead_key": "domain:triunedigitals.com"}, "timestamp": "2026-10-23T18:19:47.848111+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181947870776", "payload": {"lead_key": "domain:triunedigitals.com", "proposal_id": "id_b6f071305c132a50"}, "timestamp": "2026-10-23T18:19:47.870820+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181947908024", "payload": {"business_name": "Hepta Armenia", "lead_key": "domain:heptaarmenia.com"}, "timestamp": "2026-10-23T18:19:47.908073+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181947945345", "payload": {"business_name": "Digital Factory", "lead_key": "domain:digitalfactory.co"}, "timestamp": "2026-10-23T18:19:47.945418+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181947983382", "payload": {"business_name": "Media Stream", "lead_key": "domain:mediastream.am"}, "timestamp": "2026-10-23T18:19:47.983463+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948023540", "payload": {"business_name": "Persona Grata", "lead_key": "domain:personagrata.am"}, "timestamp": "2026-10-23T18:19:48.023597+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948064828", "payload": {"business_name": "Carousel Creative", "lead_key": "domain:carouselcreative.io"}, "timestamp": "2026-10-23T18:19:48.064894+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948121971", "payload": {"business_name": "Targmanich", "lead_key": "domain:targmanich.am"}, "timestamp": "2026-10-23T18:19:48.122033+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948148460", "payload": {"lead_key": "domain:targmanich.am", "proposal_id": "id_04361e6133e64347"}, "timestamp": "2026-10-23T18:19:48.148511+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181948207480", "payload": {"business_name": "Interpres Translation Center", "lead_key": "domain:interpres.am"}, "timestamp": "2026-10-23T18:19:48.207535+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948232184", "payload": {"lead_key": "domain:interpres.am", "proposal_id": "id_28cbd06ef4aefda6"}, "timestamp": "2026-10-23T18:19:48.232236+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181948270935", "payload": {"business_name": "Yerevan Coworking", "lead_key": "domain:evncoworking.com"}, "timestamp": "2026-10-23T18:19:48.271001+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948296532", "payload": {"lead_key": "domain:evncoworking.com", "proposal_id": "id_ccc3016b7f0b0016"}, "timestamp": "2026-10-23T18:19:48.296584+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181948334810", "payload": {"business_name": "The Area Coworking", "lead_key": "domain:thearea.am"}, "timestamp": "2026-10-23T18:19:48.334864+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948358340", "payload": {"lead_key": "domain:thearea.am", "proposal_id": "id_15d3650562aaf1b8"}, "timestamp": "2026-10-23T18:19:48.358395+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181948396349", "payload": {"business_name": "YerevanCowork", "lead_key": "domain:yerevancoworking.com"}, "timestamp": "2026-10-23T18:19:48.396433+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948419697", "payload": {"lead_key": "domain:yerevancoworking.com", "proposal_id": "id_268e8932d97fd664"}, "timestamp": "2026-10-23T18:19:48.419740+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181948457365", "payload": {"business_name": "Impact Hub Yerevan", "lead_key": "domain:yerevan.impacthub.net"}, "timestamp": "2026-10-23T18:19:48.457432+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948484565", "payload": {"lead_key": "domain:yerevan.impacthub.net", "proposal_id": "id_4dc456741adde7e7"}, "timestamp": "2026-10-23T18:19:48.484609+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181948533664", "payload": {"business_name": "COWO", "lead_key": "domain:cowo.am"}, "timestamp": "2026-10-23T18:19:48.533715+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948557347", "payload": {"lead_key": "domain:cowo.am", "proposal_id": "id_471d9ac24470b90b"}, "timestamp": "2026-10-23T18:19:48.557391+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181948595009", "payload": {"business_name": "Q.HUB", "lead_key": "domain:qhub.am"}, "timestamp": "2026-10-23T18:19:48.595057+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948618278", "payload": {"lead_key": "domain:qhub.am", "proposal_id": "id_85c90303bc80198e"}, "timestamp": "2026-10-23T18:19:48.618349+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181948663047", "payload": {"business_name": "Skilld Coworking", "lead_key": "domain:skilld.am"}, "timestamp": "2026-10-23T18:19:48.663099+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948686569", "payload": {"lead_key": "domain:skilld.am", "proposal_id": "id_6161c5d89357805a"}, "timestamp": "2026-10-23T18:19:48.686609+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181948725011", "payload": {"business_name": "Fabula Office Space", "lead_key": "domain:fabula.am"}, "timestamp": "2026-10-23T18:19:48.725064+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181948748864", "payload": {"lead_key": "domain:fabula.am", "proposal_id": "id_be5167a050c23711"}, "timestamp": "2026-10-23T18:19:48.748909+00:00", "type": "proposal_added"}
