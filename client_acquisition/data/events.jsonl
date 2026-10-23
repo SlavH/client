@@ -854,3 +854,24 @@
 {"event_id": "evt_20261023194859885000", "payload": {"business_name": "HILCO Welding Consumables", "lead_key": "domain:hilco.am"}, "timestamp": "2026-10-23T19:48:59.885056+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023194859946392", "payload": {"business_name": "Horizon LLC", "lead_key": "domain:pump.am"}, "timestamp": "2026-10-23T19:48:59.946475+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023194859985200", "payload": {"lead_key": "domain:pump.am", "proposal_id": "id_c3b90d29cea273c7"}, "timestamp": "2026-10-23T19:48:59.985333+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023195624284496", "payload": {"business_name": "Araratshin LLC", "lead_key": "domain:araratshin.am"}, "timestamp": "2026-10-23T19:56:24.284559+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195624323806", "payload": {"lead_key": "domain:araratshin.am", "proposal_id": "id_503e5a8bc2feca70"}, "timestamp": "2026-10-23T19:56:24.323856+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023195624389112", "payload": {"business_name": "Yerevan Bazalt LLC", "lead_key": "domain:yerevan-bazalt.construction.am"}, "timestamp": "2026-10-23T19:56:24.389165+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195624423779", "payload": {"lead_key": "domain:yerevan-bazalt.construction.am", "proposal_id": "id_b92bbbc6f081aa2d"}, "timestamp": "2026-10-23T19:56:24.423826+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023195624477197", "payload": {"business_name": "AAB Construction (AAB Project LLC)", "lead_key": "domain:aabconstruction.com"}, "timestamp": "2026-10-23T19:56:24.477262+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195624531687", "payload": {"business_name": "Amelia Mining", "lead_key": "domain:ameliamining.com"}, "timestamp": "2026-10-23T19:56:24.531740+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195624565913", "payload": {"lead_key": "domain:ameliamining.com", "proposal_id": "id_73d223b214d00bb1"}, "timestamp": "2026-10-23T19:56:24.565956+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023195624618965", "payload": {"business_name": "Any Tuff", "lead_key": "domain:anytuff.com"}, "timestamp": "2026-10-23T19:56:24.619018+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195624674517", "payload": {"business_name": "Narsan LLC", "lead_key": "domain:narsan.am"}, "timestamp": "2026-10-23T19:56:24.674571+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195624729365", "payload": {"business_name": "Metal Plus Trade", "lead_key": "domain:metal-plus-trade.construction.am"}, "timestamp": "2026-10-23T19:56:24.729542+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195624783453", "payload": {"business_name": "Mix Group (MixPaints LTD)", "lead_key": "domain:mixgroup.am"}, "timestamp": "2026-10-23T19:56:24.783505+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195624820280", "payload": {"lead_key": "domain:mixgroup.am", "proposal_id": "id_08c4b5dadc42a2b3"}, "timestamp": "2026-10-23T19:56:24.820339+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023195624879096", "payload": {"business_name": "ASEDL", "lead_key": "domain:asedl.am"}, "timestamp": "2026-10-23T19:56:24.879153+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195624918681", "payload": {"lead_key": "domain:asedl.am", "proposal_id": "id_da08ab722e319ce0"}, "timestamp": "2026-10-23T19:56:24.918731+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023195624975640", "payload": {"business_name": "Sino Armenia (Pro Dynamic LLC)", "lead_key": "domain:sino.am"}, "timestamp": "2026-10-23T19:56:24.975692+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195625012603", "payload": {"lead_key": "domain:sino.am", "proposal_id": "id_37557a6d717895eb"}, "timestamp": "2026-10-23T19:56:25.012651+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023195625069654", "payload": {"business_name": "Tiga Construction (Tiga Shin LLC)", "lead_key": "domain:tiga.am"}, "timestamp": "2026-10-23T19:56:25.069708+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195625126456", "payload": {"business_name": "Hilti Armenia (H-Con LLC)", "lead_key": "domain:hilti.group"}, "timestamp": "2026-10-23T19:56:25.126516+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195625166340", "payload": {"lead_key": "domain:hilti.group", "proposal_id": "id_feac23858c7f7bf6"}, "timestamp": "2026-10-23T19:56:25.166391+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023195625223730", "payload": {"business_name": "GevAr", "lead_key": "domain:gevar.construction.am"}, "timestamp": "2026-10-23T19:56:25.223784+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023195625259514", "payload": {"lead_key": "domain:gevar.construction.am", "proposal_id": "id_128118026e07d6c6"}, "timestamp": "2026-10-23T19:56:25.259567+00:00", "type": "proposal_added"}
