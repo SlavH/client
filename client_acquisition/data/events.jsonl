@@ -533,3 +533,37 @@
 {"event_id": "evt_20261023181750288508", "payload": {"business_name": "RedLine Design", "lead_key": "domain:redline.am"}, "timestamp": "2026-10-23T18:17:50.288560+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023181750321758", "payload": {"business_name": "VOLARSTUDIO", "lead_key": "domain:volarstudio.com"}, "timestamp": "2026-10-23T18:17:50.321810+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023181750361323", "payload": {"business_name": "Zenit Studio", "lead_key": "domain:zenitstudio.am"}, "timestamp": "2026-10-23T18:17:50.361374+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826152178", "payload": {"business_name": "VetExpert", "lead_key": "domain:vetexpert.am"}, "timestamp": "2026-10-23T18:18:26.152233+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826174700", "payload": {"lead_key": "domain:vetexpert.am", "proposal_id": "id_5e70c018a5b99598"}, "timestamp": "2026-10-23T18:18:26.174749+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181826208214", "payload": {"business_name": "Amiryan Vet", "lead_key": "domain:amiryanvet.am"}, "timestamp": "2026-10-23T18:18:26.208269+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826230326", "payload": {"lead_key": "domain:amiryanvet.am", "proposal_id": "id_d43a30d493d08f4a"}, "timestamp": "2026-10-23T18:18:26.230374+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181826264961", "payload": {"business_name": "VETHOME", "lead_key": "domain:vethome.am"}, "timestamp": "2026-10-23T18:18:26.265015+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826286806", "payload": {"lead_key": "domain:vethome.am", "proposal_id": "id_83e6161ce9709527"}, "timestamp": "2026-10-23T18:18:26.286857+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181826322265", "payload": {"business_name": "JOLI Pet Care Center", "lead_key": "domain:joli.am"}, "timestamp": "2026-10-23T18:18:26.322312+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826343394", "payload": {"lead_key": "domain:joli.am", "proposal_id": "id_b2c81848746b39a0"}, "timestamp": "2026-10-23T18:18:26.343465+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181826396132", "payload": {"business_name": "Vet Express", "lead_key": "domain:vetexpress.am"}, "timestamp": "2026-10-23T18:18:26.396183+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826421799", "payload": {"lead_key": "domain:vetexpress.am", "proposal_id": "id_6aed9bb1279406b1"}, "timestamp": "2026-10-23T18:18:26.421843+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181826455543", "payload": {"business_name": "IM VET", "lead_key": "domain:imvet.am"}, "timestamp": "2026-10-23T18:18:26.455589+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826478207", "payload": {"lead_key": "domain:imvet.am", "proposal_id": "id_254927ace7e59c87"}, "timestamp": "2026-10-23T18:18:26.478253+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181826512696", "payload": {"business_name": "VIU Driving School", "lead_key": "domain:viu.am"}, "timestamp": "2026-10-23T18:18:26.512745+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826534237", "payload": {"lead_key": "domain:viu.am", "proposal_id": "id_ba0ffce5149707f8"}, "timestamp": "2026-10-23T18:18:26.534279+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181826568061", "payload": {"business_name": "xDrive", "lead_key": "domain:xdrive.am"}, "timestamp": "2026-10-23T18:18:26.568110+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826589815", "payload": {"lead_key": "domain:xdrive.am", "proposal_id": "id_9d9984768f59e1d2"}, "timestamp": "2026-10-23T18:18:26.589858+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181826624806", "payload": {"business_name": "Drift Driving School", "lead_key": "domain:drift.am"}, "timestamp": "2026-10-23T18:18:26.624854+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826646977", "payload": {"lead_key": "domain:drift.am", "proposal_id": "id_2e35572c36ce6e30"}, "timestamp": "2026-10-23T18:18:26.647026+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181826681761", "payload": {"business_name": "Bravo Driving School", "lead_key": "domain:bravoavtodproc.am"}, "timestamp": "2026-10-23T18:18:26.681810+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826704192", "payload": {"lead_key": "domain:bravoavtodproc.am", "proposal_id": "id_aacafe1947acb1bb"}, "timestamp": "2026-10-23T18:18:26.704243+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181826802583", "payload": {"business_name": "Smile Drive", "lead_key": "domain:smiledrive.am"}, "timestamp": "2026-10-23T18:18:26.802638+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826851669", "payload": {"lead_key": "domain:smiledrive.am", "proposal_id": "id_4acad55874b2cc8c"}, "timestamp": "2026-10-23T18:18:26.851717+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181826929573", "payload": {"business_name": "Panorama Studios", "lead_key": "domain:panoramastudios.am"}, "timestamp": "2026-10-23T18:18:26.929624+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181826976524", "payload": {"lead_key": "domain:panoramastudios.am", "proposal_id": "id_abb1890bbd7acc1a"}, "timestamp": "2026-10-23T18:18:26.976567+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181827052646", "payload": {"business_name": "Zenith Photo Studio", "lead_key": "domain:zenith.am"}, "timestamp": "2026-10-23T18:18:27.052693+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181827118331", "payload": {"business_name": "Yuzis Yankobah", "lead_key": "domain:yuzisyankobah.com"}, "timestamp": "2026-10-23T18:18:27.118383+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181827168972", "payload": {"lead_key": "domain:yuzisyankobah.com", "proposal_id": "id_a62b90dd449e045f"}, "timestamp": "2026-10-23T18:18:27.169029+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181827219614", "payload": {"business_name": "Shade Studio", "lead_key": "domain:shade.photo"}, "timestamp": "2026-10-23T18:18:27.219664+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181827243706", "payload": {"lead_key": "domain:shade.photo", "proposal_id": "id_463c5c31546b3603"}, "timestamp": "2026-10-23T18:18:27.243755+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181827279121", "payload": {"business_name": "MANIFESTUM", "lead_key": "domain:manifestum.am"}, "timestamp": "2026-10-23T18:18:27.279172+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181827323025", "payload": {"business_name": "DreamShots", "lead_key": "domain:dreamshots.am"}, "timestamp": "2026-10-23T18:18:27.323076+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181827358318", "payload": {"business_name": "Level Studio", "lead_key": "domain:levelstudio.am"}, "timestamp": "2026-10-23T18:18:27.358365+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181827397174", "payload": {"business_name": "KH Production", "lead_key": "domain:khproduction.am"}, "timestamp": "2026-10-23T18:18:27.397223+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181827450944", "payload": {"lead_key": "domain:khproduction.am", "proposal_id": "id_26abdbeb5228014e"}, "timestamp": "2026-10-23T18:18:27.451169+00:00", "type": "proposal_added"}
