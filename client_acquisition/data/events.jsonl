@@ -299,3 +299,9 @@
 {"event_id": "evt_20261023174008748328", "payload": {"lead_key": "domain:armyanofficial.com", "proposal_id": "id_fcf759c4c2aa3b12"}, "timestamp": "2026-10-23T17:40:08.748367+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174008768911", "payload": {"business_name": "DIANA", "lead_key": "domain:diana.am"}, "timestamp": "2026-10-23T17:40:08.768961+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174008781780", "payload": {"lead_key": "domain:diana.am", "proposal_id": "id_022695ae2be61130"}, "timestamp": "2026-10-23T17:40:08.781820+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174028973198", "payload": {"business_name": "Arabkir Medical Center", "lead_key": "domain:arabkirmc.am"}, "timestamp": "2026-10-23T17:40:28.973254+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174029004273", "payload": {"lead_key": "domain:arabkirmc.am", "proposal_id": "id_932f997ca39d5fe8"}, "timestamp": "2026-10-23T17:40:29.004335+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174029041445", "payload": {"business_name": "Erebuni Medical Center", "lead_key": "domain:erebunimed.com"}, "timestamp": "2026-10-23T17:40:29.041495+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174029060286", "payload": {"lead_key": "domain:erebunimed.com", "proposal_id": "id_0b16a620e05c9d5d"}, "timestamp": "2026-10-23T17:40:29.060344+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174029085168", "payload": {"business_name": "Izmirlian Medical Center", "lead_key": "domain:i-mc.am"}, "timestamp": "2026-10-23T17:40:29.085216+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174029101097", "payload": {"lead_key": "domain:i-mc.am", "proposal_id": "id_39aaa6f0e477f697"}, "timestamp": "2026-10-23T17:40:29.101140+00:00", "type": "proposal_added"}
