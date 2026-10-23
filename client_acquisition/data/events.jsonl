@@ -419,3 +419,33 @@
 {"event_id": "evt_20261023174524666553", "payload": {"lead_key": "domain:sorriso.am", "proposal_id": "id_21a3474682bc3553"}, "timestamp": "2026-10-23T17:45:24.666609+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174524830578", "payload": {"business_name": "GuestMe", "lead_key": "domain:guestme.am"}, "timestamp": "2026-10-23T17:45:24.830632+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174524872515", "payload": {"lead_key": "domain:guestme.am", "proposal_id": "id_23d5d8bc524061cb"}, "timestamp": "2026-10-23T17:45:24.872568+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174633712882", "payload": {"business_name": "Maravilla Cafe", "lead_key": "domain:maravillacafe.com"}, "timestamp": "2026-10-23T17:46:33.712941+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174633731806", "payload": {"lead_key": "domain:maravillacafe.com", "proposal_id": "id_b7a4f3b59d528a16"}, "timestamp": "2026-10-23T17:46:33.731849+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174633761513", "payload": {"business_name": "Locals Coffee", "lead_key": "domain:locals.am"}, "timestamp": "2026-10-23T17:46:33.761560+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174633780366", "payload": {"lead_key": "domain:locals.am", "proposal_id": "id_4bc44dc19cd7f776"}, "timestamp": "2026-10-23T17:46:33.780431+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174633810244", "payload": {"business_name": "Dalan Art Gallery and Restaurant", "lead_key": "domain:dalan.am"}, "timestamp": "2026-10-23T17:46:33.810311+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174633829415", "payload": {"lead_key": "domain:dalan.am", "proposal_id": "id_44781fa7223943ac"}, "timestamp": "2026-10-23T17:46:33.829462+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174633864255", "payload": {"business_name": "Alex Bakery", "lead_key": "domain:instagram.com"}, "timestamp": "2026-10-23T17:46:33.864303+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174633884094", "payload": {"lead_key": "domain:instagram.com", "proposal_id": "id_5bdb15241a544677"}, "timestamp": "2026-10-23T17:46:33.884139+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174633914348", "payload": {"business_name": "Syrovarnya", "lead_key": "domain:syrovarnya.com"}, "timestamp": "2026-10-23T17:46:33.914420+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174633933122", "payload": {"lead_key": "domain:syrovarnya.com", "proposal_id": "id_997195cdce9e7d8d"}, "timestamp": "2026-10-23T17:46:33.933164+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174633965506", "payload": {"business_name": "Baguette and Co", "lead_key": "domain:baguetteandco.am"}, "timestamp": "2026-10-23T17:46:33.965554+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174633982746", "payload": {"lead_key": "domain:baguetteandco.am", "proposal_id": "id_e81146406cd53850"}, "timestamp": "2026-10-23T17:46:33.982790+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174634016597", "payload": {"business_name": "Chayniy Domik", "lead_key": "domain:tealodge.cafe"}, "timestamp": "2026-10-23T17:46:34.016645+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174634036544", "payload": {"lead_key": "domain:tealodge.cafe", "proposal_id": "id_a906ee7a998dfaef"}, "timestamp": "2026-10-23T17:46:34.036588+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174634069591", "payload": {"business_name": "Achajour", "lead_key": "domain:achajour.am"}, "timestamp": "2026-10-23T17:46:34.069640+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174634088567", "payload": {"lead_key": "domain:achajour.am", "proposal_id": "id_42e15840e8a24722"}, "timestamp": "2026-10-23T17:46:34.088618+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174634120559", "payload": {"business_name": "Alo Yerevan", "lead_key": "name:alo yerevan|yerevan|armenia"}, "timestamp": "2026-10-23T17:46:34.120607+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174634141477", "payload": {"lead_key": "name:alo yerevan|yerevan|armenia", "proposal_id": "id_589083525e26e306"}, "timestamp": "2026-10-23T17:46:34.141520+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174634172095", "payload": {"business_name": "Karas National Food Chain", "lead_key": "domain:karas.am"}, "timestamp": "2026-10-23T17:46:34.172139+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174634190744", "payload": {"lead_key": "domain:karas.am", "proposal_id": "id_9d151094b783d1c2"}, "timestamp": "2026-10-23T17:46:34.190790+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174634219557", "payload": {"business_name": "Maura", "lead_key": "domain:linktr.ee"}, "timestamp": "2026-10-23T17:46:34.219604+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174634239522", "payload": {"lead_key": "domain:linktr.ee", "proposal_id": "id_e353a49ffdf91312"}, "timestamp": "2026-10-23T17:46:34.239564+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174634270092", "payload": {"business_name": "Mangiare", "lead_key": "domain:mangiare-restaurant.com"}, "timestamp": "2026-10-23T17:46:34.270144+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174634289663", "payload": {"lead_key": "domain:mangiare-restaurant.com", "proposal_id": "id_937a35c2a752fce7"}, "timestamp": "2026-10-23T17:46:34.289706+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174634319796", "payload": {"business_name": "Eatnact", "lead_key": "domain:eatnact.am"}, "timestamp": "2026-10-23T17:46:34.319845+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174634339018", "payload": {"lead_key": "domain:eatnact.am", "proposal_id": "id_dc08a935472343a7"}, "timestamp": "2026-10-23T17:46:34.339063+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174634368112", "payload": {"business_name": "Forest Burger", "lead_key": "domain:forestburger.am"}, "timestamp": "2026-10-23T17:46:34.368157+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174634386787", "payload": {"lead_key": "domain:forestburger.am", "proposal_id": "id_1be9117abb103746"}, "timestamp": "2026-10-23T17:46:34.386835+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174634415355", "payload": {"business_name": "Pizzanini", "lead_key": "domain:pizzanini.am"}, "timestamp": "2026-10-23T17:46:34.415432+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174634434331", "payload": {"lead_key": "domain:pizzanini.am", "proposal_id": "id_5aa34252d5709ea8"}, "timestamp": "2026-10-23T17:46:34.434371+00:00", "type": "proposal_added"}
