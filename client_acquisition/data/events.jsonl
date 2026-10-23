@@ -650,3 +650,11 @@
 {"event_id": "evt_20261023182556885570", "payload": {"lead_key": "domain:yerevanrealty.am", "proposal_id": "id_51b82c630606302a"}, "timestamp": "2026-10-23T18:25:56.885654+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023182556983451", "payload": {"business_name": "QAYL Group", "lead_key": "domain:qaylgroup.am"}, "timestamp": "2026-10-23T18:25:56.983514+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023182557046133", "payload": {"lead_key": "domain:qaylgroup.am", "proposal_id": "id_763855c1082802ce"}, "timestamp": "2026-10-23T18:25:57.046186+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182616146901", "payload": {"business_name": "Autogroup", "lead_key": "domain:autogroup.am"}, "timestamp": "2026-10-23T18:26:16.147366+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182616214560", "payload": {"lead_key": "domain:autogroup.am", "proposal_id": "id_2c59b3e77641f64d"}, "timestamp": "2026-10-23T18:26:16.214613+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182616315599", "payload": {"business_name": "America Motors Yerevan", "lead_key": "domain:americamotors.am"}, "timestamp": "2026-10-23T18:26:16.315653+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182616391728", "payload": {"lead_key": "domain:americamotors.am", "proposal_id": "id_1fe52f871a8b2635"}, "timestamp": "2026-10-23T18:26:16.391782+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182616492598", "payload": {"business_name": "Fine Cars of Armenia", "lead_key": "domain:finecars.am"}, "timestamp": "2026-10-23T18:26:16.492653+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182616559560", "payload": {"lead_key": "domain:finecars.am", "proposal_id": "id_6408e09ebea8ede8"}, "timestamp": "2026-10-23T18:26:16.559616+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182616666611", "payload": {"business_name": "Dragon Motors", "lead_key": "domain:dragonmotors.am"}, "timestamp": "2026-10-23T18:26:16.666668+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182616730573", "payload": {"lead_key": "domain:dragonmotors.am", "proposal_id": "id_9f77ec0883ca1357"}, "timestamp": "2026-10-23T18:26:16.730625+00:00", "type": "proposal_added"}
