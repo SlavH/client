@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "Lead",
+  "type": "object",
+  "required": [
+    "lead_key",
+    "business_name",
+    "city",
+    "country",
+    "business_category",
+    "discovered_at",
+    "last_verified_at",
+    "status",
+    "score",
+    "score_explanation",
+    "source_urls",
+    "research_notes"
+  ],
+  "properties": {
+    "lead_key": {
+      "type": "string",
+      "description": "Stable unique key (normalized domain or name+location)"
+    },
+    "business_name": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "website_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "normalized_domain": {
+      "type": ["string", "null"]
+    },
+    "business_category": {
+      "type": "string"
+    },
+    "public_source_urls": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "discovered_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_verified_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evidence_observations": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "proposed_opportunity": {
+      "type": "string"
+    },
+    "fit_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "score_explanation": {
+      "type": "string"
+    },
+    "public_contact_page": {
+      "type": ["string", "null", "format": "uri"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["new", "scored", "proposal_drafted", "approved_for_sending", "contacted", "suppressed", "not_interested"]
+    },
+    "follow_up_eligible": {
+      "type": "boolean"
+    },
+    "research_notes": {
+      "type": "string"
+    },
+    "suppressed": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

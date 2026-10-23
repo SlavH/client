@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "Proposal",
+  "type": "object",
+  "required": [
+    "proposal_id",
+    "lead_key",
+    "subject",
+    "body",
+    "language",
+    "status",
+    "facts_used",
+    "created_at",
+    "approved_for_sending"
+  ],
+  "properties": {
+    "proposal_id": {
+      "type": "string"
+    },
+    "lead_key": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "enum": ["English", "Russian", "Armenian"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "approved", "sent", "archived"]
+    },
+    "facts_used": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "approved_for_sending": {
+      "type": "boolean"
+    },
+    "channel": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

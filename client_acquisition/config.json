@@ -1,0 +1,47 @@
+{
+  "target_market": {
+    "country": "Armenia",
+    "city": "Yerevan",
+    "regions": ["Yerevan", "Gyumri", "Vanadzor"],
+    "priority_city": "Yerevan"
+  },
+  "discovery": {
+    "max_businesses_per_run": 10,
+    "sources": ["business_directories", "maps_listings", "search_results", "professional_profiles"]
+  },
+  "scoring": {
+    "proposal_threshold": 60,
+    "max_score": 100
+  },
+  "proposal": {
+    "languages": [" Armenian", "Russian", "English"],
+    "default_language": "English",
+    "status_initial": "draft"
+  },
+  "data": {
+    "directory": "client_acquisition/data",
+    "external_directory": null,
+    "files": {
+      "leads": "leads.jsonl",
+      "proposals": "proposals.jsonl",
+      "events": "events.jsonl",
+      "suppression": "suppression.jsonl"
+    }
+  },
+  "git": {
+    "remote": "origin",
+    "branch": "master",
+    "safe_files_only": true,
+    "tracked_paths": [
+      "client_acquisition/",
+      "tests/",
+      "AGENTS.md",
+      "README.md"
+    ]
+  },
+  "safety": {
+    "no_external_send": true,
+    "suppression_precedence": true,
+    "draft_only_initial": true
+  }
+}
