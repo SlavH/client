@@ -157,3 +157,18 @@
 {"event_id": "evt_20261023173609121036", "payload": {"business_name": "Sievn Real Estate", "lead_key": "domain:sievn.am"}, "timestamp": "2026-10-23T17:36:09.121074+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023173609129184", "payload": {"lead_key": "domain:sievn.am", "proposal_id": "id_6bd6d193c072bb22"}, "timestamp": "2026-10-23T17:36:09.129220+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023173609146547", "payload": {"business_name": "Cascade Realty", "lead_key": "domain:cascaderealty.am"}, "timestamp": "2026-10-23T17:36:09.146591+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173628136455", "payload": {"business_name": "Armenia Medical Center", "lead_key": "domain:armeniamedicalcenter.am"}, "timestamp": "2026-10-23T17:36:28.136501+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173628144060", "payload": {"lead_key": "domain:armeniamedicalcenter.am", "proposal_id": "id_a5e64b08b16e620a"}, "timestamp": "2026-10-23T17:36:28.144095+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173628155713", "payload": {"business_name": "Cito Medical Center", "lead_key": "domain:citomed.am"}, "timestamp": "2026-10-23T17:36:28.155758+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173628163233", "payload": {"lead_key": "domain:citomed.am", "proposal_id": "id_2fc4f9f7a09da501"}, "timestamp": "2026-10-23T17:36:28.163270+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173628174845", "payload": {"business_name": "Nairi Medical Center", "lead_key": "domain:nairimed.com"}, "timestamp": "2026-10-23T17:36:28.174885+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173628182151", "payload": {"lead_key": "domain:nairimed.com", "proposal_id": "id_b3e24ac0f454ee6a"}, "timestamp": "2026-10-23T17:36:28.182181+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173628194521", "payload": {"business_name": "Wigmore Clinic", "lead_key": "domain:wigmore.am"}, "timestamp": "2026-10-23T17:36:28.194560+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173628201861", "payload": {"lead_key": "domain:wigmore.am", "proposal_id": "id_f723e5cb778fc785"}, "timestamp": "2026-10-23T17:36:28.201888+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173628213801", "payload": {"business_name": "Vardanants Medical Center", "lead_key": "domain:vardanants.am"}, "timestamp": "2026-10-23T17:36:28.213836+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173628220944", "payload": {"lead_key": "domain:vardanants.am", "proposal_id": "id_38758d817b2b4fe6"}, "timestamp": "2026-10-23T17:36:28.220971+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173628233670", "payload": {"business_name": "Best Life Medical Center", "lead_key": "domain:bestlife.am"}, "timestamp": "2026-10-23T17:36:28.233711+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173628241148", "payload": {"lead_key": "domain:bestlife.am", "proposal_id": "id_b64b7f85bd859624"}, "timestamp": "2026-10-23T17:36:28.241179+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173628255110", "payload": {"business_name": "Central Clinic", "lead_key": "domain:centralclinic.am"}, "timestamp": "2026-10-23T17:36:28.255155+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173628268948", "payload": {"business_name": "St. Grigor Lusavorich Medical Center", "lead_key": "domain:sgl.am"}, "timestamp": "2026-10-23T17:36:28.268995+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173628278436", "payload": {"lead_key": "domain:sgl.am", "proposal_id": "id_74f3b7d8889daae3"}, "timestamp": "2026-10-23T17:36:28.278479+00:00", "type": "proposal_added"}
