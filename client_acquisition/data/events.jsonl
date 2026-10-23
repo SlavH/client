@@ -213,3 +213,19 @@
 {"event_id": "evt_20261023173808767731", "payload": {"lead_key": "domain:thecascadetravel.com", "proposal_id": "id_2b35358e80d6a585"}, "timestamp": "2026-10-23T17:38:08.767765+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023173808783937", "payload": {"business_name": "Tatev Travel", "lead_key": "domain:tatev-travel.com"}, "timestamp": "2026-10-23T17:38:08.783974+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023173808793025", "payload": {"lead_key": "domain:tatev-travel.com", "proposal_id": "id_bc9600f4b022f690"}, "timestamp": "2026-10-23T17:38:08.793053+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173826488386", "payload": {"business_name": "Acba Bank", "lead_key": "domain:acba.am"}, "timestamp": "2026-10-23T17:38:26.488460+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173826497741", "payload": {"lead_key": "domain:acba.am", "proposal_id": "id_58e5f30fd1229b5a"}, "timestamp": "2026-10-23T17:38:26.497774+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173826512130", "payload": {"business_name": "IDBank", "lead_key": "domain:idbank.am"}, "timestamp": "2026-10-23T17:38:26.512169+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173826521235", "payload": {"lead_key": "domain:idbank.am", "proposal_id": "id_66765b619f48f9a2"}, "timestamp": "2026-10-23T17:38:26.521267+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173826536528", "payload": {"business_name": "Unibank", "lead_key": "domain:unibank.am"}, "timestamp": "2026-10-23T17:38:26.536568+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173826546047", "payload": {"lead_key": "domain:unibank.am", "proposal_id": "id_045c423c11574d82"}, "timestamp": "2026-10-23T17:38:26.546082+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173826562626", "payload": {"business_name": "VTB Armenia", "lead_key": "domain:vtb.am"}, "timestamp": "2026-10-23T17:38:26.562680+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173826572883", "payload": {"lead_key": "domain:vtb.am", "proposal_id": "id_bd0eb26746e59d4c"}, "timestamp": "2026-10-23T17:38:26.572921+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173826588968", "payload": {"business_name": "AMIO Bank", "lead_key": "domain:amiobank.am"}, "timestamp": "2026-10-23T17:38:26.589010+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173826598678", "payload": {"lead_key": "domain:amiobank.am", "proposal_id": "id_b70dc84ef6357a0a"}, "timestamp": "2026-10-23T17:38:26.598710+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173826614337", "payload": {"business_name": "Evocabank", "lead_key": "domain:evoca.am"}, "timestamp": "2026-10-23T17:38:26.614380+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173826624270", "payload": {"lead_key": "domain:evoca.am", "proposal_id": "id_33646fd14bb27864"}, "timestamp": "2026-10-23T17:38:26.624303+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173826646360", "payload": {"business_name": "Fast Bank", "lead_key": "domain:fastbank.am"}, "timestamp": "2026-10-23T17:38:26.646425+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173826656124", "payload": {"lead_key": "domain:fastbank.am", "proposal_id": "id_062e6f5ff0222bd1"}, "timestamp": "2026-10-23T17:38:26.656155+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173826671107", "payload": {"business_name": "AEB", "lead_key": "domain:aeb.am"}, "timestamp": "2026-10-23T17:38:26.671145+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173826680827", "payload": {"lead_key": "domain:aeb.am", "proposal_id": "id_1f9d748374b3470c"}, "timestamp": "2026-10-23T17:38:26.680857+00:00", "type": "proposal_added"}
