@@ -660,3 +660,5 @@
 {"event_id": "evt_20261023182616730573", "payload": {"lead_key": "domain:dragonmotors.am", "proposal_id": "id_9f77ec0883ca1357"}, "timestamp": "2026-10-23T18:26:16.730625+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023182656065366", "payload": {"business_name": "LuysOptic", "lead_key": "domain:luysoptic.am"}, "timestamp": "2026-10-23T18:26:56.065461+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023182656130056", "payload": {"lead_key": "domain:luysoptic.am", "proposal_id": "id_4568bce08313b78f"}, "timestamp": "2026-10-23T18:26:56.130107+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182713903040", "payload": {"business_name": "Rego Insurance", "lead_key": "domain:regoinsurance.am"}, "timestamp": "2026-10-23T18:27:13.903098+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182713963564", "payload": {"lead_key": "domain:regoinsurance.am", "proposal_id": "id_fbd6f71f0fee6d37"}, "timestamp": "2026-10-23T18:27:13.963616+00:00", "type": "proposal_added"}
