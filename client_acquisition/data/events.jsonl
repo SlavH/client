@@ -1,0 +1,6 @@
+{"event_id": "evt_20261023110345847586", "payload": {"business_name": "Garage Avo", "lead_key": "name:garage avo|yerevan|armenia"}, "timestamp": "2026-10-23T11:03:45.847629+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023110345849576", "payload": {"lead_key": "name:garage avo|yerevan|armenia", "proposal_id": "id_ea2f95d2c247bc5c"}, "timestamp": "2026-10-23T11:03:45.849602+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023110345854642", "payload": {"business_name": "Anka Beauty Salon", "lead_key": "name:anka beauty salon|yerevan|armenia"}, "timestamp": "2026-10-23T11:03:45.854668+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023110345855896", "payload": {"lead_key": "name:anka beauty salon|yerevan|armenia", "proposal_id": "id_fae0a992d5e33d5d"}, "timestamp": "2026-10-23T11:03:45.855919+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023110345861455", "payload": {"business_name": "Varda Nail Studio", "lead_key": "name:varda nail studio|yerevan|armenia"}, "timestamp": "2026-10-23T11:03:45.861481+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023110345862678", "payload": {"lead_key": "name:varda nail studio|yerevan|armenia", "proposal_id": "id_c57da1f083a4ddc0"}, "timestamp": "2026-10-23T11:03:45.862700+00:00", "type": "proposal_added"}
