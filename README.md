@@ -9,7 +9,7 @@ scores them, drafts personalized proposals, and persists everything to this GitH
 
 This is **not** an autonomous mass-messaging bot. It never sends emails, Telegram messages,
 contact forms, or any external communication unless an explicit human triggers an approved send
-through the Resend sender (see below). All proposals are drafts only by default.
+through the Gmail API sender (see below). All proposals are drafts only by default.
 
 ## Repository structure
 
@@ -34,7 +34,7 @@ client_acquisition/
     run_batch.py     # One-command recurring workflow
     discovery.py     # Lead scoring + proposal generation
     git_sync.py      # Safe GitHub sync (commit + push, no --force)
-    resend_sender.py # Resend email sender: check-config / send-test / send-approved
+    gmail_sender.py  # Gmail API email sender: check-config / send-test / send-approved
   templates/
     proposal.md
   reports/           # Generated reports (.gitkeep)
@@ -42,7 +42,7 @@ tests/
   test_crm.py
   test_deduplication.py
   test_safety.py
-  test_resend_sender.py
+  test_gmail_sender.py
 AGENTS.md            # Operational instructions for OpenCode
 README.md            # This file
 ```
@@ -74,7 +74,7 @@ Skip GitHub sync:
 python -m client_acquisition.scripts.run_batch --no-sync
 ```
 
-## Resend email sender (approved sends only)
+## Gmail API email sender (approved sends only)
 
 The sender is **dry-run by default**. A real submission requires the explicit `--send` flag.
 No secrets are ever printed, committed, or written to project files.
@@ -82,90 +82,96 @@ No secrets are ever printed, committed, or written to project files.
 Commands:
 ```bash
 # 1. Validate configuration (never exposes secret values)
-python -m client_acquisition.scripts.resend_sender check-config
+python -m client_acquisition.scripts.gmail_sender check-config
 
 # 2. Send one explicitly authorized test email (dry-run unless --send)
-python -m client_acquisition.scripts.resend_sender send-test --to verified@example.com [--send]
+python -m client_acquisition.scripts.gmail_sender send-test --to verified@gmail.com [--send]
 
 # 3. Send an approved proposal draft (dry-run unless --send)
-python -m client_acquisition.scripts.resend_sender send-approved --lead-key <KEY> --to <recipient> [--send]
+python -m client_acquisition.scripts.gmail_sender send-approved --lead-key <KEY> --to <recipient> [--send]
 ```
 
 Configuration is read from environment variables only (never hard-coded):
-- `RESEND_API_KEY` — Resend API key
-- `RESEND_FROM_EMAIL` — verified sender address
+- `GMAIL_CLIENT_ID` — OAuth2 client ID
+- `GMAIL_CLIENT_SECRET` — OAuth2 client secret
+- `GMAIL_REFRESH_TOKEN` — OAuth2 refresh token (long-lived)
+- `GMAIL_FROM_EMAIL` — sender address (your Gmail or verified alias)
 
 ### Colab setup (notebook cells)
 
-Install the official Resend Python SDK:
+Install the Google API client libraries:
 
 ```python
-!pip install -q resend
+!pip install -q google-api-python-client google-auth-oauthlib google-auth
 ```
 
-Configure secrets using Colab Secrets (left panel → lock icon → add `RESEND_API_KEY` and
-`RESEND_FROM_EMAIL`), then expose them as environment variables for the notebook runtime:
+Configure secrets using Colab Secrets (left panel → lock icon → add
+`GMAIL_CLIENT_ID`, `GMAIL_CLIENT_SECRET`, `GMAIL_REFRESH_TOKEN`, `GMAIL_FROM_EMAIL`), then
+expose them as environment variables for the notebook runtime:
 
 ```python
 import os
 from google.colab import userdata
 
 # Pull from Colab Secrets (values are not printed)
-os.environ["RESEND_API_KEY"] = userdata.get("RESEND_API_KEY")
-os.environ["RESEND_FROM_EMAIL"] = userdata.get("RESEND_FROM_EMAIL")
+os.environ["GMAIL_CLIENT_ID"] = userdata.get("GMAIL_CLIENT_ID")
+os.environ["GMAIL_CLIENT_SECRET"] = userdata.get("GMAIL_CLIENT_SECRET")
+os.environ["GMAIL_REFRESH_TOKEN"] = userdata.get("GMAIL_REFRESH_TOKEN")
+os.environ["GMAIL_FROM_EMAIL"] = userdata.get("GMAIL_FROM_EMAIL")
 ```
 
-Validate configuration without exposing the key:
+Before real sending, complete the OAuth flow once (Desktop app) to obtain a refresh token and
+store it in `GMAIL_REFRESH_TOKEN`.
+
+Validate configuration without exposing secrets:
 
 ```python
-!python -m client_acquisition.scripts.resend_sender check-config
+!python -m client_acquisition.scripts.gmail_sender check-config
 ```
 
 Run a dry-run test (no email is submitted; `--send` is omitted):
 
 ```python
-!python -m client_acquisition.scripts.resend_sender send-test --to verified-test@example.com
+!python -m client_acquisition.scripts.gmail_sender send-test --to verified-test@gmail.com
 ```
 
 Send one explicitly authorized test email (requires `--send` and a verified recipient):
 
 ```python
-!python -m client_acquisition.scripts.resend_sender send-test --to verified-test@example.com --send
+!python -m client_acquisition.scripts.gmail_sender send-test --to verified-test@gmail.com --send
 ```
 
 Resume after a Colab reconnect:
 
 ```python
 !git -C /content/client pull --ff-only
-!python -m client_acquisition.scripts.resend_sender check-config
+!python -m client_acquisition.scripts.gmail_sender check-config
 !python -m client_acquisition.scripts.crm stats
 ```
 
 CRM data lives in `client_acquisition/data/*.jsonl` and is restored from Git on reconnect.
 The sender is idempotent: re-running does not create duplicate sends for the same message.
 
-### Domain verification
+### Sending from Gmail
 
-Before real sends, verify your sending domain in Resend (Dashboard → Domains) and add the
-required DNS records (SPF/DKIM). `RESEND_FROM_EMAIL` must use a verified domain or a verified
-single sender address. `check-config` only validates that the env vars are present and that
-`RESEND_FROM_EMAIL` is a syntactically valid email; it does not verify domain ownership.
+`GMAIL_FROM_EMAIL` must be the Gmail account that owns the OAuth credentials (or an alias
+configured in that Gmail account). There is no separate domain verification step like Resend;
+Google handles sender identity through the OAuth account.
 
 ### Status semantics
 
-Resend API acceptance means `submitted`, **not** delivered. The sender records:
-- `submitted` — Resend accepted the message.
+Gmail API acceptance means `submitted`, **not** delivered. The sender records:
+- `submitted` — Gmail accepted the message.
 - `send_status_unknown` — API response was uncertain (no message ID); investigate before retrying.
 - `failed` — the provider rejected the submission.
 
-Delivery (`delivered`) and bounce (`bounced`) statuses require Resend webhooks or polling the
-Resend Email API by message ID; they are not polled by this tool. Never blindly resend an
-uncertain message.
+Delivery (`delivered`) and bounce (`bounced`) statuses are not polled by this tool. Never
+blindly resend an uncertain message.
 
 ### Limits
 
 - Default dry-run mode; real sends need `--send`.
-- Configurable per-run limit (default 5) and daily limit (default 10) in `config.json` `email`.
+- Configurable per-run limit (default 5) and daily limit (default 10) in `config.json` `gmail`.
 - No bulk blasting, no automatic follow-up campaigns.
 - Suppression list (`data/suppression.jsonl`) and existing send history are checked before every send.
 - Stable idempotency key per message payload; the same key is never reused with a different payload.
@@ -173,7 +179,7 @@ uncertain message.
 ## Safety
 
 - No external-send methods exist in the CRM (`crm_has_no_send_methods` tested). Sending lives
-  only in `resend_sender.py` and requires explicit human action.
+  only in `gmail_sender.py` and requires explicit human action.
 - Proposals are `draft` only; `approved_for_sending` is `false` and is **not** a send trigger.
 - `send-approved` requires proposal status `approved` (explicit human approval).
 - Suppression list takes precedence over all scores/statuses.
@@ -189,9 +195,9 @@ uncertain message.
 python -m unittest discover -s tests -v
 ```
 
-41 tests cover: domain normalization, duplicate detection, duplicate proposal prevention,
+55 tests cover: domain normalization, duplicate detection, duplicate proposal prevention,
 manual status preservation, suppression precedence, JSONL validation, atomic updates,
-repeated execution, no external-send behavior, mocked Resend sends (never real email),
+repeated execution, no external-send behavior, mocked Gmail sends (never real email),
 check-config secret handling, suppression/limits blocking, idempotency.
 
 ## GitHub sync

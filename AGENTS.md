@@ -58,15 +58,15 @@ python -m client_acquisition.scripts.crm validate
 python -m client_acquisition.scripts.crm export-report
 ```
 
-## Resend email sender commands (dry-run by default; `--send` for real submission)
+## Gmail API email sender commands (dry-run by default; `--send` for real submission)
 
 ```bash
-python -m client_acquisition.scripts.resend_sender check-config
-python -m client_acquisition.scripts.resend_sender send-test --to <verified@example.com> [--send]
-python -m client_acquisition.scripts.resend_sender send-approved --lead-key <KEY> --to <recipient> [--send]
+python -m client_acquisition.scripts.gmail_sender check-config
+python -m client_acquisition.scripts.gmail_sender send-test --to <verified@gmail.com> [--send]
+python -m client_acquisition.scripts.gmail_sender send-approved --lead-key <KEY> --to <recipient> [--send]
 ```
 
-Never print or commit `RESEND_API_KEY` / `RESEND_FROM_EMAIL`. Read them from environment only.
+Never print or commit `GMAIL_CLIENT_ID` / `GMAIL_CLIENT_SECRET` / `GMAIL_REFRESH_TOKEN` / `GMAIL_FROM_EMAIL`. Read them from environment only.
 Real sends require explicit human approval (proposal status `approved`) and the `--send` flag.
 
 ## Tests
@@ -75,9 +75,10 @@ Real sends require explicit human approval (proposal status `approved`) and the 
 python -m unittest discover -s tests -v
 ```
 
-25 tests cover: domain normalization, duplicate detection, duplicate proposal prevention,
+41 tests cover: domain normalization, duplicate detection, duplicate proposal prevention,
 manual status preservation, suppression precedence, JSONL validation, atomic updates,
-repeated execution, no external-send behavior.
+repeated execution, no external-send behavior, mocked Gmail sends (never real email),
+check-config secret handling, suppression/limits blocking, idempotency.
 
 ## /task and /tasklist (grinev/opencode-telegram)
 

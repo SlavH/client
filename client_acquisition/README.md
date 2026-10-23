@@ -1,6 +1,6 @@
 # Client Acquisition Module
 
-Persistent CRM and proposal-drafting system for client acquisition, plus an optional Resend
+Persistent CRM and proposal-drafting system for client acquisition, plus an optional Gmail API
 email sender for approved proposals (dry-run by default).
 
 ## CRM CLI
@@ -12,16 +12,16 @@ python -m client_acquisition.scripts.crm validate        # Validate JSONL record
 python -m client_acquisition.scripts.crm export-report   # Export CRM report JSON
 ```
 
-## Resend email sender CLI
+## Gmail API email sender CLI
 
 Dry-run by default. Real submission requires the explicit `--send` flag.
-Secrets are read only from environment variables (`RESEND_API_KEY`, `RESEND_FROM_EMAIL`)
-and are never printed or stored.
+Secrets are read only from environment variables (`GMAIL_CLIENT_ID`,
+`GMAIL_CLIENT_SECRET`, `GMAIL_REFRESH_TOKEN`, `GMAIL_FROM_EMAIL`) and are never printed or stored.
 
 ```bash
-python -m client_acquisition.scripts.resend_sender check-config
-python -m client_acquisition.scripts.resend_sender send-test --to verified@example.com [--send]
-python -m client_acquisition.scripts.resend_sender send-approved --lead-key <KEY> --to <recipient> [--send]
+python -m client_acquisition.scripts.gmail_sender check-config
+python -m client_acquisition.scripts.gmail_sender send-test --to verified@gmail.com [--send]
+python -m client_acquisition.scripts.gmail_sender send-approved --lead-key <KEY> --to <recipient> [--send]
 ```
 
 ## Recurring batch

@@ -1,13 +1,19 @@
-"""Resend email sender for approved client-acquisition proposals.
+"""Gmail API email sender for approved client-acquisition proposals.
 
 Dry-run by default. Requires an explicit --send flag for real submission.
 Never stores or prints secrets. Never sends to suppressed recipients.
 Never bulk-blasts or auto-follows up.
 
+Credentials (read from environment only, never committed):
+    GMAIL_CLIENT_ID     OAuth2 client ID
+    GMAIL_CLIENT_SECRET OAuth2 client secret
+    GMAIL_REFRESH_TOKEN OAuth2 refresh token (long-lived)
+    GMAIL_FROM_EMAIL    sender address (must be the Gmail account or an alias)
+
 CLI commands:
-    python -m client_acquisition.scripts.resend_sender check-config
-    python -m client_acquisition.scripts.resend_sender send-test --to RECIPIENT [--send]
-    python -m client_acquisition.scripts.resend_sender send-approved --lead-key KEY --to RECIPIENT [--send]
+    python -m client_acquisition.scripts.gmail_sender check-config
+    python -m client_acquisition.scripts.gmail_sender send-test --to RECIPIENT [--send]
+    python -m client_acquisition.scripts.gmail_sender send-approved --lead-key KEY --to RECIPIENT [--send]
 
 Data files:
     client_acquisition/data/sends.jsonl   -- send intent / history (append-only)
@@ -16,23 +22,28 @@ Data files:
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import json
 import os
 import re
 import sys
-import tempfile
 from datetime import datetime, timezone, date
+from email.mime.text import MIMEText
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-from client_acquisition.scripts.crm import CRM, normalize_domain, utc_now
+from google.oauth2.credentials import Credentials
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
+
+from client_acquisition.scripts.crm import CRM, utc_now
 
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 
 SEND_STATUSES = ("intent", "submitted", "delivered", "bounced", "failed", "send_status_unknown")
 
-DEFAULT_EMAIL_CONFIG = {
+DEFAULT_GMAIL_CONFIG = {
     "dry_run_default": True,
     "per_run_limit": 5,
     "daily_limit": 10,
@@ -82,7 +93,7 @@ class SendStore:
         self.lock_path = self.data_dir / self.LOCK_FILE_NAME
 
     def _lock(self):
-        import fcntl  # local import to keep module import light
+        import fcntl
         self.data_dir.mkdir(parents=True, exist_ok=True)
         fh = open(self.lock_path, "w", encoding="utf-8")
         fcntl.flock(fh.fileno(), fcntl.LOCK_EX)
@@ -179,82 +190,107 @@ class SendStore:
         return True
 
 
-class ResendSender:
+class GmailSender:
     def __init__(self, root: Path):
         self.root = Path(root)
         self.crm = CRM(root)
-        self.store = SendStore(self.crm.data_dir)
         self.config = self.crm.config
-        self.email_config = dict(DEFAULT_EMAIL_CONFIG)
-        self.email_config.update(self.config.get("email", {}))
+        self.gmail_config = dict(DEFAULT_GMAIL_CONFIG)
+        self.gmail_config.update(self.config.get("gmail", {}))
+        self.store = SendStore(self.crm.data_dir)
         self._run_sent_count = 0
-        self._resend_module = None
 
     # ------------------------------------------------------------------ config
     def _env(self, name: str) -> Optional[str]:
         return os.environ.get(name)
-
-    def api_key_env_name(self) -> str:
-        return str(self.email_config.get("api_key_env", "RESEND_API_KEY"))
-
-    def from_email_env_name(self) -> str:
-        return str(self.email_config.get("from_email_env", "RESEND_FROM_EMAIL"))
 
     def check_config(self) -> Dict[str, Any]:
         """Validate configuration without exposing secrets.
 
         Returns a dict with ok boolean and details. Secret values are never included.
         """
-        api_key_env = self.api_key_env_name()
-        from_env = self.from_email_env_name()
-        api_key = self._env(api_key_env)
-        from_email_value = self._env(from_env)
+        cid_env = str(self.gmail_config.get("client_id_env", "GMAIL_CLIENT_ID"))
+        secret_env = str(self.gmail_config.get("client_secret_env", "GMAIL_CLIENT_SECRET"))
+        refresh_env = str(self.gmail_config.get("refresh_token_env", "GMAIL_REFRESH_TOKEN"))
+        from_env = str(self.gmail_config.get("from_email_env", "GMAIL_FROM_EMAIL"))
+
+        client_id = self._env(cid_env)
+        client_secret = self._env(secret_env)
+        refresh_token = self._env(refresh_env)
+        from_email = self._env(from_env)
 
         details: List[str] = []
         ok = True
 
-        if not api_key:
+        if not client_id:
             ok = False
-            details.append(f"MISSING: {api_key_env} environment variable is not set")
+            details.append(f"MISSING: {cid_env} environment variable is not set")
         else:
-            details.append(f"OK: {api_key_env} is set (value withheld)")
+            details.append(f"OK: {cid_env} is set (value withheld)")
 
-        if not from_email_value:
+        if not client_secret:
+            ok = False
+            details.append(f"MISSING: {secret_env} environment variable is not set")
+        else:
+            details.append(f"OK: {secret_env} is set (value withheld)")
+
+        if not refresh_token:
+            ok = False
+            details.append(f"MISSING: {refresh_env} environment variable is not set")
+        else:
+            details.append(f"OK: {refresh_env} is set (value withheld)")
+
+        if not from_email:
             ok = False
             details.append(f"MISSING: {from_env} environment variable is not set")
-        elif not is_valid_email(from_email_value):
+        elif not is_valid_email(from_email):
             ok = False
             details.append(f"INVALID: {from_env} is not a valid email address")
         else:
             details.append(f"OK: {from_env} is set (value withheld)")
 
-        dry_run = bool(self.email_config.get("dry_run_default", True))
+        dry_run = bool(self.gmail_config.get("dry_run_default", True))
         details.append(f"dry_run_default={dry_run}")
-        details.append(f"per_run_limit={self.email_config.get('per_run_limit')}")
-        details.append(f"daily_limit={self.email_config.get('daily_limit')}")
+        details.append(f"per_run_limit={self.gmail_config.get('per_run_limit')}")
+        details.append(f"daily_limit={self.gmail_config.get('daily_limit')}")
 
         return {"ok": ok, "details": details}
 
-    # ------------------------------------------------------------------ resend client
-    def _get_resend(self):
-        """Lazily import the Resend SDK. Not required for dry-run."""
-        if self._resend_module is not None:
-            return self._resend_module
-        try:
-            import resend  # type: ignore
-            self._resend_module = resend
-        except Exception as exc:
-            self._resend_module = None
-            raise RuntimeError(
-                "resend Python SDK is not installed. "
-                "Install with: pip install resend\n"
-                "Original error: %s" % exc
-            )
-        return self._resend_module
+    # ------------------------------------------------------------------ gmail client
+    def _get_gmail_service(self):
+        """Build an authenticated Gmail API service from env credentials.
 
-    def _configure_resend(self, api_key: str) -> None:
-        resend = self._get_resend()
-        resend.api_key = api_key
+        Uses client_id + client_secret + refresh_token so the access token is
+        refreshed automatically by google-auth. No interactive browser flow.
+        """
+        client_id = self._env(str(self.gmail_config.get("client_id_env", "GMAIL_CLIENT_ID")))
+        client_secret = self._env(str(self.gmail_config.get("client_secret_env", "GMAIL_CLIENT_SECRET")))
+        refresh_token = self._env(str(self.gmail_config.get("refresh_token_env", "GMAIL_REFRESH_TOKEN")))
+
+        if not client_id or not client_secret or not refresh_token:
+            raise RuntimeError(
+                "GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET and GMAIL_REFRESH_TOKEN "
+                "must all be set. Obtain them via the Google Cloud Console OAuth "
+                "flow (Desktop app) and store them in environment variables / "
+                "Colab Secrets."
+            )
+
+        creds = Credentials(
+            token=None,
+            refresh_token=refresh_token,
+            client_id=client_id,
+            client_secret=client_secret,
+            token_uri="https://oauth2.googleapis.com/token",
+        )
+        return build("gmail", "v1", credentials=creds, cache_discovery=False)
+
+    def _raw_message(self, from_email: str, recipient: str, subject: str, body: str) -> str:
+        message = MIMEText(body, "plain", "utf-8")
+        message["To"] = recipient
+        message["From"] = from_email
+        message["Subject"] = subject
+        raw = base64.urlsafe_b64encode(message.as_bytes()).decode("ascii")
+        return raw
 
     # ------------------------------------------------------------------ suppression / history
     def is_recipient_suppressed(self, recipient: str) -> Tuple[bool, Optional[str]]:
@@ -266,7 +302,6 @@ class ResendSender:
         )
         if suppressed:
             return True, reason
-        # Also check suppression entries keyed directly by email
         for rec in self.crm.read_suppression():
             if rec.get("_malformed"):
                 continue
@@ -288,17 +323,16 @@ class ResendSender:
                 continue
             created = rec.get("created_at", "")
             if created.startswith(today):
-                # Count only real submission attempts, not pure intents that never left dry-run.
                 if rec.get("status") in ("submitted", "delivered", "bounced", "failed", "send_status_unknown"):
                     count += 1
         return count
 
     def run_limit_remaining(self) -> int:
-        limit = int(self.email_config.get("per_run_limit", 5))
+        limit = int(self.gmail_config.get("per_run_limit", 5))
         return max(0, limit - self._run_sent_count)
 
     def daily_limit_remaining(self) -> int:
-        limit = int(self.email_config.get("daily_limit", 10))
+        limit = int(self.gmail_config.get("daily_limit", 10))
         return max(0, limit - self.count_sends_today())
 
     # ------------------------------------------------------------------ send core
@@ -326,6 +360,7 @@ class ResendSender:
             "message_id": message_id,
             "error": error,
             "attempt": attempt,
+            "provider": "gmail",
         }
 
     def _record_intent(
@@ -346,44 +381,36 @@ class ResendSender:
     def _update_send(self, send_id: str, **fields) -> None:
         self.store.update(send_id, fields)
 
-    def _call_resend(
+    def _call_gmail(
         self,
-        api_key: str,
         from_email: str,
         recipient: str,
         subject: str,
         body: str,
         idempotency_key: str,
     ) -> Tuple[bool, Optional[str], Optional[str]]:
-        """Call Resend API. Returns (success, message_id, error).
+        """Call Gmail API. Returns (success, message_id, error).
 
-        On success with an id -> (True, id, None).
-        On uncertain / missing id -> (False, None, "uncertain_response").
-        On exception -> (False, None, error_message).
+        On success -> (True, gmail_message_id, None).
+        On uncertain / HTTP error -> (False, None, error_message). Never blindly resend.
         """
-        resend = self._configure_resend_and_get(api_key)
+        service = self._get_gmail_service()
         try:
-            response = resend.Emails.send({
-                "from": from_email,
-                "to": [recipient],
-                "subject": subject,
-                "html": body,
-                "idempotency_key": idempotency_key,
-            })
-        except Exception as exc:  # network / provider error
-            return False, None, f"resend_exception: {type(exc).__name__}: {exc}"
+            raw = self._raw_message(from_email, recipient, subject, body)
+            response = service.users().messages().send(
+                userId="me", body={"raw": raw}
+            ).execute()
+        except HttpError as exc:
+            return False, None, f"gmail_http_error: {exc.resp.status} {exc}"
+        except Exception as exc:  # network / auth error
+            return False, None, f"gmail_exception: {type(exc).__name__}: {exc}"
 
         if not isinstance(response, dict):
             return False, None, f"uncertain_response: unexpected type {type(response).__name__}"
         message_id = response.get("id")
         if message_id:
             return True, str(message_id), None
-        # API accepted but no stable id -> uncertain, never blindly resend.
         return False, None, "uncertain_response: no message id in response"
-
-    def _configure_resend_and_get(self, api_key: str):
-        self._configure_resend(api_key)
-        return self._get_resend()
 
     # ------------------------------------------------------------------ commands
     def cmd_check_config(self) -> int:
@@ -420,26 +447,21 @@ class ResendSender:
                 return False, f"send intent already exists (status={st}); not resubmitting"
 
         if self.daily_limit_remaining() <= 0:
-            return False, f"daily limit reached ({self.email_config.get('daily_limit')})"
+            return False, f"daily limit reached ({self.gmail_config.get('daily_limit')})"
         if self.run_limit_remaining() <= 0:
-            return False, f"per-run limit reached ({self.email_config.get('per_run_limit')})"
+            return False, f"per-run limit reached ({self.gmail_config.get('per_run_limit')})"
 
         return True, "ok"
 
     def cmd_send_test(self, to: str, send: bool) -> int:
         """Send one explicitly authorized test email. Dry-run unless --send."""
         dry_run = not send
-        api_key_env = self.api_key_env_name()
-        from_env = self.from_email_env_name()
-        api_key = self._env(api_key_env)
+        from_env = str(self.gmail_config.get("from_email_env", "GMAIL_FROM_EMAIL"))
         from_email = self._env(from_env)
 
         print(f"send-test: recipient={to}")
         print(f"send-test: dry_run={dry_run}")
 
-        if not dry_run and not api_key:
-            print(f"ERROR: {api_key_env} is required for real sends.", file=sys.stderr)
-            return 1
         if not dry_run and not from_email:
             print(f"ERROR: {from_env} is required for real sends.", file=sys.stderr)
             return 1
@@ -466,22 +488,22 @@ class ResendSender:
             self._update_send(send_id, status="submitted", message_id=None,
                               error="dry_run: no API call made")
             self._run_sent_count += 1
-            print("DRY-RUN: no email submitted to Resend. Intent recorded as submitted (dry-run).")
+            print("DRY-RUN: no email submitted to Gmail. Intent recorded as submitted (dry-run).")
             return 0
 
-        success, message_id, error = self._call_resend(
-            api_key, from_email, to, subject, body, idempotency_key
+        success, message_id, error = self._call_gmail(
+            from_email, to, subject, body, idempotency_key
         )
         if success:
             self._update_send(send_id, status="submitted", message_id=message_id, error=None)
             self._run_sent_count += 1
             print(f"SENT: message_id={message_id}")
-            print("NOTE: 'submitted' means Resend accepted the message, not that it was delivered.")
+            print("NOTE: 'submitted' means Gmail accepted the message, not that it was delivered.")
             return 0
         if error and "uncertain" in (error or ""):
             self._update_send(send_id, status="send_status_unknown", message_id=None, error=error)
             print(f"UNCERTAIN: {error}")
-            print("Investigate in Resend dashboard before retrying. Do not blindly resend.")
+            print("Investigate in Gmail / Google Cloud before retrying. Do not blindly resend.")
             return 1
         self._update_send(send_id, status="failed", message_id=None, error=error)
         print(f"FAILED: {error}", file=sys.stderr)
@@ -490,16 +512,11 @@ class ResendSender:
     def cmd_send_approved(self, lead_key: str, to: str, send: bool) -> int:
         """Send an approved proposal draft. Requires proposal status == 'approved'. Dry-run unless --send."""
         dry_run = not send
-        api_key_env = self.api_key_env_name()
-        from_env = self.from_email_env_name()
-        api_key = self._env(api_key_env)
+        from_env = str(self.gmail_config.get("from_email_env", "GMAIL_FROM_EMAIL"))
         from_email = self._env(from_env)
 
         print(f"send-approved: lead_key={lead_key} recipient={to} dry_run={dry_run}")
 
-        if not dry_run and not api_key:
-            print(f"ERROR: {api_key_env} is required for real sends.", file=sys.stderr)
-            return 1
         if not dry_run and not from_email:
             print(f"ERROR: {from_env} is required for real sends.", file=sys.stderr)
             return 1
@@ -546,22 +563,22 @@ class ResendSender:
             self._update_send(send_id, status="submitted", message_id=None,
                               error="dry_run: no API call made")
             self._run_sent_count += 1
-            print("DRY-RUN: no email submitted to Resend. Intent recorded as submitted (dry-run).")
+            print("DRY-RUN: no email submitted to Gmail. Intent recorded as submitted (dry-run).")
             return 0
 
-        success, message_id, error = self._call_resend(
-            api_key, from_email, to, subject, body, idempotency_key
+        success, message_id, error = self._call_gmail(
+            from_email, to, subject, body, idempotency_key
         )
         if success:
             self._update_send(send_id, status="submitted", message_id=message_id, error=None)
             self._run_sent_count += 1
             print(f"SENT: message_id={message_id}")
-            print("NOTE: 'submitted' means Resend accepted the message, not that it was delivered.")
+            print("NOTE: 'submitted' means Gmail accepted the message, not that it was delivered.")
             return 0
         if error and "uncertain" in (error or ""):
             self._update_send(send_id, status="send_status_unknown", message_id=None, error=error)
             print(f"UNCERTAIN: {error}")
-            print("Investigate in Resend dashboard before retrying. Do not blindly resend.")
+            print("Investigate in Gmail / Google Cloud before retrying. Do not blindly resend.")
             return 1
         self._update_send(send_id, status="failed", message_id=None, error=error)
         print(f"FAILED: {error}", file=sys.stderr)
@@ -569,21 +586,21 @@ class ResendSender:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="resend_sender", description="Resend email sender (dry-run by default)")
+    parser = argparse.ArgumentParser(prog="gmail_sender", description="Gmail API email sender (dry-run by default)")
     sub = parser.add_subparsers(dest="command", required=True)
 
-    p_check = sub.add_parser("check-config", help="Validate email configuration without exposing secrets")
+    p_check = sub.add_parser("check-config", help="Validate Gmail configuration without exposing secrets")
     p_check.set_defaults(func=lambda a, s: s.cmd_check_config())
 
     p_test = sub.add_parser("send-test", help="Send one explicitly authorized test email (dry-run unless --send)")
-    p_test.add_argument("--to", required=True, help="Verified test recipient email address")
-    p_test.add_argument("--send", action="store_true", help="Really send via Resend (default: dry-run)")
+    p_test.add_argument("--to", required=True, help="Recipient email address")
+    p_test.add_argument("--send", action="store_true", help="Really send via Gmail API (default: dry-run)")
     p_test.set_defaults(func=lambda a, s: s.cmd_send_test(a.to, a.send))
 
     p_approved = sub.add_parser("send-approved", help="Send an approved proposal draft (dry-run unless --send)")
     p_approved.add_argument("--lead-key", required=True, help="CRM lead key of the approved proposal")
     p_approved.add_argument("--to", required=True, help="Recipient email address")
-    p_approved.add_argument("--send", action="store_true", help="Really send via Resend (default: dry-run)")
+    p_approved.add_argument("--send", action="store_true", help="Really send via Gmail API (default: dry-run)")
     p_approved.set_defaults(func=lambda a, s: s.cmd_send_approved(a.lead_key, a.to, a.send))
 
     return parser
@@ -592,7 +609,7 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: Optional[List[str]] = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
-    sender = ResendSender(Path.cwd())
+    sender = GmailSender(Path.cwd())
     return args.func(args, sender)
 
 

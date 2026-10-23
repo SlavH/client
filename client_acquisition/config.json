@@ -6,7 +6,7 @@
     "priority_city": "Yerevan"
   },
   "discovery": {
-    "max_businesses_per_run": 10,
+    "max_businesses_per_run": 100,
     "sources": ["business_directories", "maps_listings", "search_results", "professional_profiles"]
   },
   "scoring": {
@@ -29,13 +29,14 @@
       "sends": "sends.jsonl"
     }
   },
-  "email": {
+  "gmail": {
     "dry_run_default": true,
     "per_run_limit": 5,
     "daily_limit": 10,
-    "test_recipient": null,
-    "from_email_env": "RESEND_FROM_EMAIL",
-    "api_key_env": "RESEND_API_KEY"
+    "client_id_env": "GMAIL_CLIENT_ID",
+    "client_secret_env": "GMAIL_CLIENT_SECRET",
+    "refresh_token_env": "GMAIL_REFRESH_TOKEN",
+    "from_email_env": "GMAIL_FROM_EMAIL"
   },
   "git": {
     "remote": "origin",
