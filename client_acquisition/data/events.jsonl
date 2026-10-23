@@ -239,3 +239,23 @@
 {"event_id": "evt_20261023173844081513", "payload": {"lead_key": "domain:silinsurance.am", "proposal_id": "id_f37a66b42c564565"}, "timestamp": "2026-10-23T17:38:44.081562+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023173844119294", "payload": {"business_name": "INGO Armenia", "lead_key": "domain:ingoarmenia.am"}, "timestamp": "2026-10-23T17:38:44.119344+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023173844145951", "payload": {"lead_key": "domain:ingoarmenia.am", "proposal_id": "id_a1793fd1b9a76223"}, "timestamp": "2026-10-23T17:38:44.145995+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173902157212", "payload": {"business_name": "Yerevan City", "lead_key": "domain:yerevan-city.am"}, "timestamp": "2026-10-23T17:39:02.157271+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173902183506", "payload": {"lead_key": "domain:yerevan-city.am", "proposal_id": "id_a10f87fdb91d51ac"}, "timestamp": "2026-10-23T17:39:02.183550+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173902220654", "payload": {"business_name": "SAS Group", "lead_key": "domain:sas.am"}, "timestamp": "2026-10-23T17:39:02.220707+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173902244940", "payload": {"lead_key": "domain:sas.am", "proposal_id": "id_7dcac46638ff7ff7"}, "timestamp": "2026-10-23T17:39:02.244996+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173902284566", "payload": {"business_name": "Carrefour Armenia", "lead_key": "domain:carrefour.am"}, "timestamp": "2026-10-23T17:39:02.284613+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173902308495", "payload": {"lead_key": "domain:carrefour.am", "proposal_id": "id_3908961d3ee2b93e"}, "timestamp": "2026-10-23T17:39:02.308539+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173902345287", "payload": {"business_name": "Zovq", "lead_key": "domain:norzovq.am"}, "timestamp": "2026-10-23T17:39:02.345385+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173902375161", "payload": {"lead_key": "domain:norzovq.am", "proposal_id": "id_84cb96bb119e8079"}, "timestamp": "2026-10-23T17:39:02.375205+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173902414518", "payload": {"business_name": "MG Market", "lead_key": "domain:mgmarket.am"}, "timestamp": "2026-10-23T17:39:02.414565+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173902439606", "payload": {"lead_key": "domain:mgmarket.am", "proposal_id": "id_61a417c787d6a326"}, "timestamp": "2026-10-23T17:39:02.439657+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173902479931", "payload": {"business_name": "Evrika Supermarket", "lead_key": "domain:evrika.am"}, "timestamp": "2026-10-23T17:39:02.479987+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173902508505", "payload": {"lead_key": "domain:evrika.am", "proposal_id": "id_1007df89e0cd6517"}, "timestamp": "2026-10-23T17:39:02.508552+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173902548527", "payload": {"business_name": "Gurmenia", "lead_key": "domain:gurmenia.am"}, "timestamp": "2026-10-23T17:39:02.548576+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173902574529", "payload": {"lead_key": "domain:gurmenia.am", "proposal_id": "id_bf7c105dd8fceb3a"}, "timestamp": "2026-10-23T17:39:02.574574+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173902616521", "payload": {"business_name": "Parma", "lead_key": "domain:parma.am"}, "timestamp": "2026-10-23T17:39:02.616576+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173902644849", "payload": {"lead_key": "domain:parma.am", "proposal_id": "id_de0982fdf16aeceb"}, "timestamp": "2026-10-23T17:39:02.644899+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173902686521", "payload": {"business_name": "Tsiran Markets", "lead_key": "domain:tsiran.am"}, "timestamp": "2026-10-23T17:39:02.686571+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173902713507", "payload": {"lead_key": "domain:tsiran.am", "proposal_id": "id_77eac41813e20c4e"}, "timestamp": "2026-10-23T17:39:02.713550+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173902753520", "payload": {"business_name": "Supermarket.am", "lead_key": "domain:supermarket.am"}, "timestamp": "2026-10-23T17:39:02.753572+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173902781495", "payload": {"lead_key": "domain:supermarket.am", "proposal_id": "id_9d173c755490372d"}, "timestamp": "2026-10-23T17:39:02.781542+00:00", "type": "proposal_added"}
