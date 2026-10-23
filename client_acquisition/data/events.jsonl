@@ -369,3 +369,13 @@
 {"event_id": "evt_20261023174218598377", "payload": {"lead_key": "domain:meditech.am", "proposal_id": "id_51f886de350dcee3"}, "timestamp": "2026-10-23T17:42:18.598440+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174218622191", "payload": {"business_name": "Pharm.am", "lead_key": "domain:pharm.am"}, "timestamp": "2026-10-23T17:42:18.622237+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174218637235", "payload": {"lead_key": "domain:pharm.am", "proposal_id": "id_f60f36d3b63c9447"}, "timestamp": "2026-10-23T17:42:18.637275+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174242617542", "payload": {"business_name": "Gladzor University", "lead_key": "domain:gladzor.am"}, "timestamp": "2026-10-23T17:42:42.617597+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174242653358", "payload": {"lead_key": "domain:gladzor.am", "proposal_id": "id_832e1aabb62dce12"}, "timestamp": "2026-10-23T17:42:42.654558+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174242722318", "payload": {"business_name": "Armenian State Pedagogical University", "lead_key": "domain:aspu.am"}, "timestamp": "2026-10-23T17:42:42.722373+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174242759515", "payload": {"lead_key": "domain:aspu.am", "proposal_id": "id_2c2b2acfada4a66b"}, "timestamp": "2026-10-23T17:42:42.759561+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174242806160", "payload": {"business_name": "Northern University", "lead_key": "domain:northern.am"}, "timestamp": "2026-10-23T17:42:42.806220+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174242824435", "payload": {"lead_key": "domain:northern.am", "proposal_id": "id_2dc9dd6c51498c35"}, "timestamp": "2026-10-23T17:42:42.824479+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174242853002", "payload": {"business_name": "QSI International School", "lead_key": "domain:yerevan.qsi.org"}, "timestamp": "2026-10-23T17:42:42.853050+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174242871009", "payload": {"lead_key": "domain:yerevan.qsi.org", "proposal_id": "id_cfb367b6c35c634e"}, "timestamp": "2026-10-23T17:42:42.871048+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174242901060", "payload": {"business_name": "American University of Armenia", "lead_key": "domain:catalog.aua.am"}, "timestamp": "2026-10-23T17:42:42.901109+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174242920251", "payload": {"lead_key": "domain:catalog.aua.am", "proposal_id": "id_a3c5b48bfa8656dc"}, "timestamp": "2026-10-23T17:42:42.920294+00:00", "type": "proposal_added"}
