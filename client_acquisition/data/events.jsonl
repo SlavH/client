@@ -355,3 +355,17 @@
 {"event_id": "evt_20261023174158622283", "payload": {"business_name": "Cube Construct", "lead_key": "domain:cubeco.am"}, "timestamp": "2026-10-23T17:41:58.622328+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174158646537", "payload": {"business_name": "Yerevanshin", "lead_key": "domain:yerevanshin.am"}, "timestamp": "2026-10-23T17:41:58.646581+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174158660989", "payload": {"lead_key": "domain:yerevanshin.am", "proposal_id": "id_b5d95c2d4dc96457"}, "timestamp": "2026-10-23T17:41:58.661029+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174218365008", "payload": {"business_name": "SteriGroup", "lead_key": "domain:sterigroup.am"}, "timestamp": "2026-10-23T17:42:18.365054+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174218379256", "payload": {"lead_key": "domain:sterigroup.am", "proposal_id": "id_bae2f075a310f119"}, "timestamp": "2026-10-23T17:42:18.379288+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174218402045", "payload": {"business_name": "ABA Pharm", "lead_key": "domain:abapharm.am"}, "timestamp": "2026-10-23T17:42:18.402088+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174218416583", "payload": {"lead_key": "domain:abapharm.am", "proposal_id": "id_e1077d8b2dd5795f"}, "timestamp": "2026-10-23T17:42:18.416622+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174218439599", "payload": {"business_name": "Marg Pharma", "lead_key": "domain:margpharma.com"}, "timestamp": "2026-10-23T17:42:18.439641+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174218473304", "payload": {"business_name": "Vanson Medical", "lead_key": "domain:vansonmed.am"}, "timestamp": "2026-10-23T17:42:18.473360+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174218487938", "payload": {"lead_key": "domain:vansonmed.am", "proposal_id": "id_37913cd90c7bcfde"}, "timestamp": "2026-10-23T17:42:18.487974+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174218511049", "payload": {"business_name": "MV Medtech", "lead_key": "domain:mvmedtech.am"}, "timestamp": "2026-10-23T17:42:18.511094+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174218535245", "payload": {"business_name": "SIUN Medical Equipment", "lead_key": "domain:siun.am"}, "timestamp": "2026-10-23T17:42:18.535295+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174218559212", "payload": {"business_name": "DIAVANT", "lead_key": "domain:diavant.am"}, "timestamp": "2026-10-23T17:42:18.559259+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174218583130", "payload": {"business_name": "Meditech", "lead_key": "domain:meditech.am"}, "timestamp": "2026-10-23T17:42:18.583175+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174218598377", "payload": {"lead_key": "domain:meditech.am", "proposal_id": "id_51f886de350dcee3"}, "timestamp": "2026-10-23T17:42:18.598440+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174218622191", "payload": {"business_name": "Pharm.am", "lead_key": "domain:pharm.am"}, "timestamp": "2026-10-23T17:42:18.622237+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174218637235", "payload": {"lead_key": "domain:pharm.am", "proposal_id": "id_f60f36d3b63c9447"}, "timestamp": "2026-10-23T17:42:18.637275+00:00", "type": "proposal_added"}
