@@ -630,3 +630,17 @@
 {"event_id": "evt_20261023182025400243", "payload": {"lead_key": "domain:viva.am", "proposal_id": "id_b4889be80c8096fa"}, "timestamp": "2026-10-23T18:20:25.400298+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023182244165333", "payload": {"business_name": "ASMO Logistics", "lead_key": "domain:log.asmo.am"}, "timestamp": "2026-10-23T18:22:44.165385+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023182244191625", "payload": {"lead_key": "domain:log.asmo.am", "proposal_id": "id_6cc0188faee67bcf"}, "timestamp": "2026-10-23T18:22:44.191677+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182502336125", "payload": {"business_name": "Rooftop Apart-Hotel", "lead_key": "domain:rooftopaparthotel.com"}, "timestamp": "2026-10-23T18:25:02.336181+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182502360393", "payload": {"lead_key": "domain:rooftopaparthotel.com", "proposal_id": "id_4c9882add3b92867"}, "timestamp": "2026-10-23T18:25:02.360452+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182502398897", "payload": {"business_name": "Hilltop North Avenue by Stellar Hotels", "lead_key": "domain:hilltopnorthavenue.stellarhotels.ru"}, "timestamp": "2026-10-23T18:25:02.398943+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182502423002", "payload": {"lead_key": "domain:hilltopnorthavenue.stellarhotels.ru", "proposal_id": "id_ed5dddabb5f40b8e"}, "timestamp": "2026-10-23T18:25:02.423044+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182502467010", "payload": {"business_name": "Orion ApartHotel", "lead_key": "domain:orionaparthotel.am"}, "timestamp": "2026-10-23T18:25:02.467056+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182502492045", "payload": {"lead_key": "domain:orionaparthotel.am", "proposal_id": "id_fce8a7b2ed7ccc53"}, "timestamp": "2026-10-23T18:25:02.492094+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182502533310", "payload": {"business_name": "Seva Apart-Hotel Komitas", "lead_key": "domain:sevaaparthotel.am"}, "timestamp": "2026-10-23T18:25:02.533358+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182502557363", "payload": {"lead_key": "domain:sevaaparthotel.am", "proposal_id": "id_11ca7cb9eb6024aa"}, "timestamp": "2026-10-23T18:25:02.557422+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182502598766", "payload": {"business_name": "Sweet Home Apart-Hotel", "lead_key": "domain:sweethomeaparthotel.am"}, "timestamp": "2026-10-23T18:25:02.598815+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182502623508", "payload": {"lead_key": "domain:sweethomeaparthotel.am", "proposal_id": "id_70372913a563a1ad"}, "timestamp": "2026-10-23T18:25:02.623550+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182502662656", "payload": {"business_name": "Elkoaparthotel", "lead_key": "domain:elkoaparthotel.am"}, "timestamp": "2026-10-23T18:25:02.662707+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182502699570", "payload": {"lead_key": "domain:elkoaparthotel.am", "proposal_id": "id_144e9001a75765ec"}, "timestamp": "2026-10-23T18:25:02.699622+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182502759510", "payload": {"business_name": "Mon Invite Hotel", "lead_key": "domain:moninvitehotel.am"}, "timestamp": "2026-10-23T18:25:02.759568+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182502787665", "payload": {"lead_key": "domain:moninvitehotel.am", "proposal_id": "id_2718e08b15649c0a"}, "timestamp": "2026-10-23T18:25:02.787717+00:00", "type": "proposal_added"}
