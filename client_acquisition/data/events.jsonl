@@ -831,3 +831,15 @@
 {"event_id": "evt_20261023191440887525", "payload": {"lead_key": "domain:gmm.am", "proposal_id": "id_29e60c74f01e9f74"}, "timestamp": "2026-10-23T19:14:40.887572+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023191440964484", "payload": {"business_name": "LaserWar Armenia", "lead_key": "domain:laserwar.am"}, "timestamp": "2026-10-23T19:14:40.964538+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023191441029471", "payload": {"lead_key": "domain:laserwar.am", "proposal_id": "id_21677a76b8e3a8e7"}, "timestamp": "2026-10-23T19:14:41.029521+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023192341720600", "payload": {"business_name": "EcoStep", "lead_key": "domain:ecostep.am"}, "timestamp": "2026-10-23T19:23:41.720654+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023192341759017", "payload": {"lead_key": "domain:ecostep.am", "proposal_id": "id_aa750e3c44a5ba76"}, "timestamp": "2026-10-23T19:23:41.759066+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023192341814619", "payload": {"business_name": "SOLARTEC Group", "lead_key": "domain:solartecgroup.com"}, "timestamp": "2026-10-23T19:23:41.814671+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023192341847851", "payload": {"lead_key": "domain:solartecgroup.com", "proposal_id": "id_0aa78ccc1d9c125b"}, "timestamp": "2026-10-23T19:23:41.847896+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023192341898577", "payload": {"business_name": "Rubinar", "lead_key": "domain:rubinar.am"}, "timestamp": "2026-10-23T19:23:41.898626+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023192341932040", "payload": {"lead_key": "domain:rubinar.am", "proposal_id": "id_1b53a1cc1e78e50e"}, "timestamp": "2026-10-23T19:23:41.932090+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023192342009461", "payload": {"business_name": "Veolia Armenia (Veolia Jur CJSC)", "lead_key": "domain:veolia.am"}, "timestamp": "2026-10-23T19:23:42.009514+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023192342044126", "payload": {"lead_key": "domain:veolia.am", "proposal_id": "id_8d893c5d40e92a3e"}, "timestamp": "2026-10-23T19:23:42.044173+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023192342098131", "payload": {"business_name": "Khimmaster LLC", "lead_key": "domain:wastewater.am"}, "timestamp": "2026-10-23T19:23:42.098188+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023192342134575", "payload": {"lead_key": "domain:wastewater.am", "proposal_id": "id_28fd81c8790460d8"}, "timestamp": "2026-10-23T19:23:42.134626+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023192342193616", "payload": {"business_name": "EDMET LLC", "lead_key": "domain:edmet.am"}, "timestamp": "2026-10-23T19:23:42.193668+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023192342226721", "payload": {"lead_key": "domain:edmet.am", "proposal_id": "id_e5f2b42a63fe26d3"}, "timestamp": "2026-10-23T19:23:42.226769+00:00", "type": "proposal_added"}
