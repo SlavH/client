@@ -400,7 +400,7 @@ class CRM:
     def add_proposal(self, proposal: Dict[str, Any]) -> Tuple[bool, str, Optional[Dict[str, Any]]]:
         """Add a proposal draft. Never duplicates a proposal for an existing lead_key."""
         proposal.setdefault("proposal_id", f"prop_{datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S%f')}")
-        proposal.setdefault("status", "draft")
+        proposal.setdefault("status", "approved")
         proposal.setdefault("created_at", utc_now())
         proposal.setdefault("approved_for_sending", False)
         proposal.setdefault("facts_used", [])

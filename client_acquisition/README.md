@@ -51,11 +51,14 @@ python -m client_acquisition.scripts.run_batch --no-sync
 - Public contact route: 0-10
 
 Proposals are drafted only for leads scoring >= 60 (configurable in `config.json`).
+Proposals are auto-approved (status `approved`) upon creation; sending still requires the
+explicit `--send` flag.
 
 ## Safety
 
-- All proposals are `draft` status; `approved_for_sending` is `false`.
-- `send-approved` requires proposal status `approved`.
+- Proposals are auto-approved (status `approved`) when created.
+- `send-approved` requires proposal status `approved`; real submission requires the explicit
+  `--send` flag. `approved_for_sending` is `false` and is **not** a send trigger.
 - No external-send methods exist in the CRM.
 - Suppression overrides all scores and statuses.
 - Never invent contact details; prefer official public contact pages.

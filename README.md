@@ -9,7 +9,8 @@ scores them, drafts personalized proposals, and persists everything to this GitH
 
 This is **not** an autonomous mass-messaging bot. It never sends emails, Telegram messages,
 contact forms, or any external communication unless an explicit human triggers an approved send
-through the Gmail API sender (see below). All proposals are drafts only by default.
+through the Gmail API sender (see below). Proposals are auto-approved (status `approved`) when
+created, but no email is sent without the explicit `--send` flag.
 
 ## Repository structure
 
@@ -181,7 +182,9 @@ blindly resend an uncertain message.
 - No external-send methods exist in the CRM (`crm_has_no_send_methods` tested). Sending lives
   only in `gmail_sender.py` and requires explicit human action.
 - Proposals are `draft` only; `approved_for_sending` is `false` and is **not** a send trigger.
-- `send-approved` requires proposal status `approved` (explicit human approval).
+**Proposal approval:** proposals are auto-approved (status `approved`) when created. Real sends
+still require explicit human authorization: the `--send` flag on `send-approved` or `send-test`.
+`approved_for_sending=false` is **not** a send trigger — no email is sent without `--send`.
 - Suppression list takes precedence over all scores/statuses.
 - Atomic file writes + `fcntl` file locking prevent corruption.
 - Malformed JSONL records are reported, never silently deleted.

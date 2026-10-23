@@ -63,7 +63,7 @@ Proposals drafted only for score >= 60 (configable threshold).
 - Include a subject line.
 - Record `facts_used` for personalization.
 - Never invent contact info. Prefer official public contact pages.
-- Status: `draft` initially.
+- Status: `approved` initially (auto-approved). Sending still requires explicit `--send`.
 
 ## Deduplication
 

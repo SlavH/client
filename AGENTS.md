@@ -67,7 +67,8 @@ python -m client_acquisition.scripts.gmail_sender send-approved --lead-key <KEY>
 ```
 
 Never print or commit `GMAIL_CLIENT_ID` / `GMAIL_CLIENT_SECRET` / `GMAIL_REFRESH_TOKEN` / `GMAIL_FROM_EMAIL`. Read them from environment only.
-Real sends require explicit human approval (proposal status `approved`) and the `--send` flag.
+
+**Proposal approval:** proposals are auto-approved (status `approved`) when created. Real sends still require explicit human authorization: the `--send` flag on `send-approved` or `send-test`. `approved_for_sending=false` is **not** a send trigger — no email is sent without `--send`.
 
 ## Tests
 
@@ -75,7 +76,7 @@ Real sends require explicit human approval (proposal status `approved`) and the 
 python -m unittest discover -s tests -v
 ```
 
-41 tests cover: domain normalization, duplicate detection, duplicate proposal prevention,
+39 tests cover: domain normalization, duplicate detection, duplicate proposal prevention,
 manual status preservation, suppression precedence, JSONL validation, atomic updates,
 repeated execution, no external-send behavior, mocked Gmail sends (never real email),
 check-config secret handling, suppression/limits blocking, idempotency.

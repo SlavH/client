@@ -271,7 +271,7 @@ def generate_proposal(lead: Dict[str, Any], language: str = "English") -> Dict[s
         "subject": subject,
         "body": body,
         "language": language,
-        "status": "draft",
+        "status": "approved",
         "facts_used": facts_used,
         "created_at": utc_now_iso(),
         "approved_for_sending": False,

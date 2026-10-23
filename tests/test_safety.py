@@ -27,7 +27,7 @@ class TestNoExternalSend(unittest.TestCase):
             "fit_score": 80,
         }
         prop = generate_proposal(lead, language="English")
-        self.assertEqual(prop["status"], "draft")
+        self.assertEqual(prop["status"], "approved")
         self.assertFalse(prop["approved_for_sending"])
         self.assertTrue(len(prop["facts_used"]) > 0)
         self.assertIsInstance(prop["facts_used"], list)
