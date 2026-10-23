@@ -658,3 +658,5 @@
 {"event_id": "evt_20261023182616559560", "payload": {"lead_key": "domain:finecars.am", "proposal_id": "id_6408e09ebea8ede8"}, "timestamp": "2026-10-23T18:26:16.559616+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023182616666611", "payload": {"business_name": "Dragon Motors", "lead_key": "domain:dragonmotors.am"}, "timestamp": "2026-10-23T18:26:16.666668+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023182616730573", "payload": {"lead_key": "domain:dragonmotors.am", "proposal_id": "id_9f77ec0883ca1357"}, "timestamp": "2026-10-23T18:26:16.730625+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182656065366", "payload": {"business_name": "LuysOptic", "lead_key": "domain:luysoptic.am"}, "timestamp": "2026-10-23T18:26:56.065461+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182656130056", "payload": {"lead_key": "domain:luysoptic.am", "proposal_id": "id_4568bce08313b78f"}, "timestamp": "2026-10-23T18:26:56.130107+00:00", "type": "proposal_added"}
