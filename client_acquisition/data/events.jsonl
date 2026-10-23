@@ -127,3 +127,25 @@
 {"event_id": "evt_20261023173245924282", "payload": {"lead_key": "domain:esthemax.am", "proposal_id": "id_b29429aa264a6e1b"}, "timestamp": "2026-10-23T17:32:45.924326+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023173245950154", "payload": {"business_name": "EMIDENT Dental", "lead_key": "domain:emident.am"}, "timestamp": "2026-10-23T17:32:45.950211+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023173245966342", "payload": {"lead_key": "domain:emident.am", "proposal_id": "id_ca2665eeb0b901b3"}, "timestamp": "2026-10-23T17:32:45.966386+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173549243591", "payload": {"business_name": "Yerevan Audit Consult", "lead_key": "domain:yerevanaudit.am"}, "timestamp": "2026-10-23T17:35:49.243638+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549252612", "payload": {"business_name": "Baker Tilly Armenia", "lead_key": "domain:bakertilly.am"}, "timestamp": "2026-10-23T17:35:49.252647+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549261584", "payload": {"business_name": "Audit Pro", "lead_key": "domain:auditpro.am"}, "timestamp": "2026-10-23T17:35:49.261619+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549270573", "payload": {"business_name": "AMH Audit", "lead_key": "domain:amhaudit.am"}, "timestamp": "2026-10-23T17:35:49.270621+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549280048", "payload": {"business_name": "Crowe Armenia", "lead_key": "domain:asatryans.com"}, "timestamp": "2026-10-23T17:35:49.280084+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549289541", "payload": {"business_name": "Moore Armenia", "lead_key": "domain:moore-armenia.am"}, "timestamp": "2026-10-23T17:35:49.289578+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549298987", "payload": {"business_name": "Prima Finance", "lead_key": "domain:primafinance.am"}, "timestamp": "2026-10-23T17:35:49.299024+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549308579", "payload": {"business_name": "SmartSoft", "lead_key": "domain:smartsoft.am"}, "timestamp": "2026-10-23T17:35:49.308625+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549314820", "payload": {"lead_key": "domain:smartsoft.am", "proposal_id": "id_6e13d52d2b4b58b7"}, "timestamp": "2026-10-23T17:35:49.314849+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173549324325", "payload": {"business_name": "Zenta", "lead_key": "domain:zenta.co"}, "timestamp": "2026-10-23T17:35:49.324359+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549334082", "payload": {"business_name": "Global Software", "lead_key": "domain:globalsoftcorp.com"}, "timestamp": "2026-10-23T17:35:49.334114+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549340541", "payload": {"lead_key": "domain:globalsoftcorp.com", "proposal_id": "id_1106f9c7f4aa8084"}, "timestamp": "2026-10-23T17:35:49.340567+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173549350113", "payload": {"business_name": "Colitely", "lead_key": "domain:colitely.com"}, "timestamp": "2026-10-23T17:35:49.350141+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549356525", "payload": {"lead_key": "domain:colitely.com", "proposal_id": "id_94454403458fc47b"}, "timestamp": "2026-10-23T17:35:49.356552+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173549366446", "payload": {"business_name": "Vinur", "lead_key": "domain:vinur.info"}, "timestamp": "2026-10-23T17:35:49.366481+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549372913", "payload": {"lead_key": "domain:vinur.info", "proposal_id": "id_c69c2c0a79fd8502"}, "timestamp": "2026-10-23T17:35:49.372943+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173549383072", "payload": {"business_name": "KSPE Software", "lead_key": "domain:kspe.am"}, "timestamp": "2026-10-23T17:35:49.383105+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549389689", "payload": {"lead_key": "domain:kspe.am", "proposal_id": "id_af28f3aedce152e3"}, "timestamp": "2026-10-23T17:35:49.389718+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173549402619", "payload": {"business_name": "HZORTECH", "lead_key": "domain:hzortech.com"}, "timestamp": "2026-10-23T17:35:49.402658+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549410388", "payload": {"lead_key": "domain:hzortech.com", "proposal_id": "id_c13df1b62b0777bb"}, "timestamp": "2026-10-23T17:35:49.410452+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173549420693", "payload": {"business_name": "ArmSoft", "lead_key": "domain:arm-soft.am"}, "timestamp": "2026-10-23T17:35:49.420727+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173549427524", "payload": {"lead_key": "domain:arm-soft.am", "proposal_id": "id_b211b5acb0d14102"}, "timestamp": "2026-10-23T17:35:49.427552+00:00", "type": "proposal_added"}
