@@ -663,3 +663,11 @@
 {"event_id": "evt_20261023182713903040", "payload": {"business_name": "Rego Insurance", "lead_key": "domain:regoinsurance.am"}, "timestamp": "2026-10-23T18:27:13.903098+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023182713963564", "payload": {"lead_key": "domain:regoinsurance.am", "proposal_id": "id_fbd6f71f0fee6d37"}, "timestamp": "2026-10-23T18:27:13.963616+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023182736898359", "payload": {"business_name": "Accurate Group", "lead_key": "domain:accurate.am"}, "timestamp": "2026-10-23T18:27:36.898447+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182753170141", "payload": {"business_name": "ArtLunch", "lead_key": "domain:artlunch.am"}, "timestamp": "2026-10-23T18:27:53.170199+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182753196326", "payload": {"lead_key": "domain:artlunch.am", "proposal_id": "id_ccc00e26881b1e31"}, "timestamp": "2026-10-23T18:27:53.196374+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182753245044", "payload": {"business_name": "Margaryan Business Group", "lead_key": "domain:mbgroup.am"}, "timestamp": "2026-10-23T18:27:53.245155+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182753275568", "payload": {"lead_key": "domain:mbgroup.am", "proposal_id": "id_c9d0571935085d35"}, "timestamp": "2026-10-23T18:27:53.275616+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182753320091", "payload": {"business_name": "Soho Pastry Shop", "lead_key": "domain:soho.am"}, "timestamp": "2026-10-23T18:27:53.320146+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182753347152", "payload": {"lead_key": "domain:soho.am", "proposal_id": "id_fe2366797595c0ae"}, "timestamp": "2026-10-23T18:27:53.347200+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182753389709", "payload": {"business_name": "2Sweet Cafe", "lead_key": "domain:2sweet.am"}, "timestamp": "2026-10-23T18:27:53.389763+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182753416113", "payload": {"lead_key": "domain:2sweet.am", "proposal_id": "id_14ac3878de0c44e9"}, "timestamp": "2026-10-23T18:27:53.416165+00:00", "type": "proposal_added"}
