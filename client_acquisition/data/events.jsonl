@@ -284,3 +284,18 @@
 {"event_id": "evt_20261023173947060247", "payload": {"lead_key": "domain:demokrat.am", "proposal_id": "id_5452cce5fd155438"}, "timestamp": "2026-10-23T17:39:47.060279+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023173947078238", "payload": {"business_name": "MEK Furniture", "lead_key": "domain:mekfurniture.am"}, "timestamp": "2026-10-23T17:39:47.078276+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023173947097903", "payload": {"business_name": "VLV Centre", "lead_key": "domain:vlv.am"}, "timestamp": "2026-10-23T17:39:47.097943+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174008543159", "payload": {"business_name": "Concept by Vremena Goda", "lead_key": "domain:conceptbyvg.am"}, "timestamp": "2026-10-23T17:40:08.543209+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174008555088", "payload": {"lead_key": "domain:conceptbyvg.am", "proposal_id": "id_ce46424ae8d5c8da"}, "timestamp": "2026-10-23T17:40:08.555127+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174008573620", "payload": {"business_name": "Via Artis", "lead_key": "domain:viaartis.am"}, "timestamp": "2026-10-23T17:40:08.573664+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174008585415", "payload": {"lead_key": "domain:viaartis.am", "proposal_id": "id_f3b3dad9315d4357"}, "timestamp": "2026-10-23T17:40:08.585451+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174008604006", "payload": {"business_name": "LaGalleria", "lead_key": "domain:lagalleria.am"}, "timestamp": "2026-10-23T17:40:08.604048+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174008616111", "payload": {"lead_key": "domain:lagalleria.am", "proposal_id": "id_78a92273f41ef405"}, "timestamp": "2026-10-23T17:40:08.616147+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174008635525", "payload": {"business_name": "Jyra", "lead_key": "domain:jyra.am"}, "timestamp": "2026-10-23T17:40:08.635566+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174008655701", "payload": {"business_name": "Machon", "lead_key": "domain:machon.am"}, "timestamp": "2026-10-23T17:40:08.655745+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174008668604", "payload": {"lead_key": "domain:machon.am", "proposal_id": "id_61b3ae0bf009d303"}, "timestamp": "2026-10-23T17:40:08.668644+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174008698327", "payload": {"business_name": "Rien-a-Porter", "lead_key": "domain:rien-a-porter.com"}, "timestamp": "2026-10-23T17:40:08.698376+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174008712305", "payload": {"lead_key": "domain:rien-a-porter.com", "proposal_id": "id_089009faed8e7bbe"}, "timestamp": "2026-10-23T17:40:08.712347+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174008735699", "payload": {"business_name": "ARMYAN", "lead_key": "domain:armyanofficial.com"}, "timestamp": "2026-10-23T17:40:08.735745+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174008748328", "payload": {"lead_key": "domain:armyanofficial.com", "proposal_id": "id_fcf759c4c2aa3b12"}, "timestamp": "2026-10-23T17:40:08.748367+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174008768911", "payload": {"business_name": "DIANA", "lead_key": "domain:diana.am"}, "timestamp": "2026-10-23T17:40:08.768961+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174008781780", "payload": {"lead_key": "domain:diana.am", "proposal_id": "id_022695ae2be61130"}, "timestamp": "2026-10-23T17:40:08.781820+00:00", "type": "proposal_added"}
