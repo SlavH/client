@@ -811,3 +811,23 @@
 {"event_id": "evt_20261023190644995570", "payload": {"lead_key": "domain:yerevanpark.am", "proposal_id": "id_40adc60b428171f0"}, "timestamp": "2026-10-23T19:06:44.995628+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023190645122360", "payload": {"business_name": "Planetarium 1 Yerevan", "lead_key": "domain:planetarium.am"}, "timestamp": "2026-10-23T19:06:45.122448+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023190645170389", "payload": {"lead_key": "domain:planetarium.am", "proposal_id": "id_ebc7416a2fe8fcb2"}, "timestamp": "2026-10-23T19:06:45.170460+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023191439354641", "payload": {"business_name": "Yerevan Quest", "lead_key": "domain:yerevanquest.am"}, "timestamp": "2026-10-23T19:14:39.354704+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023191439445771", "payload": {"lead_key": "domain:yerevanquest.am", "proposal_id": "id_8491da202af7d5f8"}, "timestamp": "2026-10-23T19:14:39.445849+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023191439576027", "payload": {"business_name": "Galacticus", "lead_key": "domain:galacticus.am"}, "timestamp": "2026-10-23T19:14:39.576097+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023191439651357", "payload": {"lead_key": "domain:galacticus.am", "proposal_id": "id_c5299420b8177935"}, "timestamp": "2026-10-23T19:14:39.651446+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023191439721307", "payload": {"business_name": "Moscow Cinema", "lead_key": "domain:moscowcinema.com"}, "timestamp": "2026-10-23T19:14:39.721366+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023191439778272", "payload": {"lead_key": "domain:moscowcinema.com", "proposal_id": "id_8078e4e2c326cf2f"}, "timestamp": "2026-10-23T19:14:39.778339+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023191439905133", "payload": {"business_name": "WARPOINT", "lead_key": "domain:yerevan.warpoint.com"}, "timestamp": "2026-10-23T19:14:39.905188+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023191439974503", "payload": {"lead_key": "domain:yerevan.warpoint.com", "proposal_id": "id_8c60e26660de78e9"}, "timestamp": "2026-10-23T19:14:39.974553+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023191440082325", "payload": {"business_name": "Cinema Star", "lead_key": "domain:cinemastar.am"}, "timestamp": "2026-10-23T19:14:40.082383+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023191440165937", "payload": {"lead_key": "domain:cinemastar.am", "proposal_id": "id_08295c5fac4d5e65"}, "timestamp": "2026-10-23T19:14:40.165988+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023191440293621", "payload": {"business_name": "Arena Bowling & Billiards Club", "lead_key": "domain:bowling.am"}, "timestamp": "2026-10-23T19:14:40.293675+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023191440372366", "payload": {"lead_key": "domain:bowling.am", "proposal_id": "id_53436ec3a8f69871"}, "timestamp": "2026-10-23T19:14:40.372444+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023191440500624", "payload": {"business_name": "Museum of Illusions", "lead_key": "domain:museumofillusions.am"}, "timestamp": "2026-10-23T19:14:40.500683+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023191440582910", "payload": {"lead_key": "domain:museumofillusions.am", "proposal_id": "id_57329c76f55acf59"}, "timestamp": "2026-10-23T19:14:40.582976+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023191440693360", "payload": {"business_name": "Strikeball Armenia", "lead_key": "domain:strikeball.army"}, "timestamp": "2026-10-23T19:14:40.693783+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023191440745699", "payload": {"lead_key": "domain:strikeball.army", "proposal_id": "id_87cf6ac47d6759f0"}, "timestamp": "2026-10-23T19:14:40.745744+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023191440851044", "payload": {"business_name": "Garage Park", "lead_key": "domain:gmm.am"}, "timestamp": "2026-10-23T19:14:40.851094+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023191440887525", "payload": {"lead_key": "domain:gmm.am", "proposal_id": "id_29e60c74f01e9f74"}, "timestamp": "2026-10-23T19:14:40.887572+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023191440964484", "payload": {"business_name": "LaserWar Armenia", "lead_key": "domain:laserwar.am"}, "timestamp": "2026-10-23T19:14:40.964538+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023191441029471", "payload": {"lead_key": "domain:laserwar.am", "proposal_id": "id_21677a76b8e3a8e7"}, "timestamp": "2026-10-23T19:14:41.029521+00:00", "type": "proposal_added"}
