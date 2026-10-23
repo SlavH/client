@@ -347,3 +347,11 @@
 {"event_id": "evt_20261023174140369665", "payload": {"lead_key": "domain:perla.events", "proposal_id": "id_dace71e024675e14"}, "timestamp": "2026-10-23T17:41:40.369710+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174140414487", "payload": {"business_name": "Salooote", "lead_key": "domain:salooote.am"}, "timestamp": "2026-10-23T17:41:40.414590+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174140443447", "payload": {"lead_key": "domain:salooote.am", "proposal_id": "id_ee3888c4ba9855fe"}, "timestamp": "2026-10-23T17:41:40.443504+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174158506294", "payload": {"business_name": "Berg Construction", "lead_key": "domain:bergconstruction.am"}, "timestamp": "2026-10-23T17:41:58.506367+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174158523265", "payload": {"lead_key": "domain:bergconstruction.am", "proposal_id": "id_28441958ea8bc0f8"}, "timestamp": "2026-10-23T17:41:58.523312+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174158548029", "payload": {"business_name": "Vemshin Construction", "lead_key": "domain:vemshin.com"}, "timestamp": "2026-10-23T17:41:58.548097+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174158570212", "payload": {"business_name": "Filishin", "lead_key": "domain:filishin.am"}, "timestamp": "2026-10-23T17:41:58.570258+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174158592962", "payload": {"business_name": "Metroshin", "lead_key": "domain:metroshin.am"}, "timestamp": "2026-10-23T17:41:58.593008+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174158622283", "payload": {"business_name": "Cube Construct", "lead_key": "domain:cubeco.am"}, "timestamp": "2026-10-23T17:41:58.622328+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174158646537", "payload": {"business_name": "Yerevanshin", "lead_key": "domain:yerevanshin.am"}, "timestamp": "2026-10-23T17:41:58.646581+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174158660989", "payload": {"lead_key": "domain:yerevanshin.am", "proposal_id": "id_b5d95c2d4dc96457"}, "timestamp": "2026-10-23T17:41:58.661029+00:00", "type": "proposal_added"}
