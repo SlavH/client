@@ -622,3 +622,9 @@
 {"event_id": "evt_20261023181948686569", "payload": {"lead_key": "domain:skilld.am", "proposal_id": "id_6161c5d89357805a"}, "timestamp": "2026-10-23T18:19:48.686609+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023181948725011", "payload": {"business_name": "Fabula Office Space", "lead_key": "domain:fabula.am"}, "timestamp": "2026-10-23T18:19:48.725064+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023181948748864", "payload": {"lead_key": "domain:fabula.am", "proposal_id": "id_be5167a050c23711"}, "timestamp": "2026-10-23T18:19:48.748909+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182025240928", "payload": {"business_name": "Team Telecom Armenia", "lead_key": "domain:telecomarmenia.am"}, "timestamp": "2026-10-23T18:20:25.240982+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182025266210", "payload": {"lead_key": "domain:telecomarmenia.am", "proposal_id": "id_79d9e4f3e914b596"}, "timestamp": "2026-10-23T18:20:25.266255+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182025305317", "payload": {"business_name": "Ucom", "lead_key": "domain:ucom.am"}, "timestamp": "2026-10-23T18:20:25.305366+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182025329563", "payload": {"lead_key": "domain:ucom.am", "proposal_id": "id_ab8549695e0e0af0"}, "timestamp": "2026-10-23T18:20:25.329607+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182025375067", "payload": {"business_name": "Viva", "lead_key": "domain:viva.am"}, "timestamp": "2026-10-23T18:20:25.375115+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182025400243", "payload": {"lead_key": "domain:viva.am", "proposal_id": "id_b4889be80c8096fa"}, "timestamp": "2026-10-23T18:20:25.400298+00:00", "type": "proposal_added"}
