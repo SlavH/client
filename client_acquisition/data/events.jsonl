@@ -229,3 +229,13 @@
 {"event_id": "evt_20261023173826656124", "payload": {"lead_key": "domain:fastbank.am", "proposal_id": "id_062e6f5ff0222bd1"}, "timestamp": "2026-10-23T17:38:26.656155+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023173826671107", "payload": {"business_name": "AEB", "lead_key": "domain:aeb.am"}, "timestamp": "2026-10-23T17:38:26.671145+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023173826680827", "payload": {"lead_key": "domain:aeb.am", "proposal_id": "id_1f9d748374b3470c"}, "timestamp": "2026-10-23T17:38:26.680857+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173843870814", "payload": {"business_name": "EFES Insurance", "lead_key": "domain:efes.am"}, "timestamp": "2026-10-23T17:38:43.870864+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173843895520", "payload": {"lead_key": "domain:efes.am", "proposal_id": "id_3790367a273e1300"}, "timestamp": "2026-10-23T17:38:43.895564+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173843931623", "payload": {"business_name": "IMG Group", "lead_key": "domain:imgroup.am"}, "timestamp": "2026-10-23T17:38:43.931670+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173843955420", "payload": {"lead_key": "domain:imgroup.am", "proposal_id": "id_86080fcdb5ea4aca"}, "timestamp": "2026-10-23T17:38:43.955461+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173843994504", "payload": {"business_name": "REGO Insurance", "lead_key": "domain:uhif.am"}, "timestamp": "2026-10-23T17:38:43.994550+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173844018492", "payload": {"lead_key": "domain:uhif.am", "proposal_id": "id_dc59268e7167adb8"}, "timestamp": "2026-10-23T17:38:44.018537+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173844055561", "payload": {"business_name": "SIL Insurance", "lead_key": "domain:silinsurance.am"}, "timestamp": "2026-10-23T17:38:44.055609+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173844081513", "payload": {"lead_key": "domain:silinsurance.am", "proposal_id": "id_f37a66b42c564565"}, "timestamp": "2026-10-23T17:38:44.081562+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173844119294", "payload": {"business_name": "INGO Armenia", "lead_key": "domain:ingoarmenia.am"}, "timestamp": "2026-10-23T17:38:44.119344+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173844145951", "payload": {"lead_key": "domain:ingoarmenia.am", "proposal_id": "id_a1793fd1b9a76223"}, "timestamp": "2026-10-23T17:38:44.145995+00:00", "type": "proposal_added"}
