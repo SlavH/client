@@ -172,3 +172,44 @@
 {"event_id": "evt_20261023173628255110", "payload": {"business_name": "Central Clinic", "lead_key": "domain:centralclinic.am"}, "timestamp": "2026-10-23T17:36:28.255155+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023173628268948", "payload": {"business_name": "St. Grigor Lusavorich Medical Center", "lead_key": "domain:sgl.am"}, "timestamp": "2026-10-23T17:36:28.268995+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023173628278436", "payload": {"lead_key": "domain:sgl.am", "proposal_id": "id_74f3b7d8889daae3"}, "timestamp": "2026-10-23T17:36:28.278479+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808317614", "payload": {"business_name": "Yeremyan Projects", "lead_key": "domain:yeremyanprojects.com"}, "timestamp": "2026-10-23T17:38:08.317656+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808325380", "payload": {"lead_key": "domain:yeremyanprojects.com", "proposal_id": "id_349ca58ae7bb10c3"}, "timestamp": "2026-10-23T17:38:08.325430+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808337494", "payload": {"business_name": "Fabrica Group", "lead_key": "domain:fabricagroup.am"}, "timestamp": "2026-10-23T17:38:08.337526+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808345076", "payload": {"lead_key": "domain:fabricagroup.am", "proposal_id": "id_8a9066a4f0304519"}, "timestamp": "2026-10-23T17:38:08.345102+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808357040", "payload": {"business_name": "Baklachoff Collection", "lead_key": "domain:baklachoff.com"}, "timestamp": "2026-10-23T17:38:08.357070+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808364692", "payload": {"lead_key": "domain:baklachoff.com", "proposal_id": "id_59f1e5cee3218790"}, "timestamp": "2026-10-23T17:38:08.364717+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808376751", "payload": {"business_name": "Collective Group", "lead_key": "domain:collective.am"}, "timestamp": "2026-10-23T17:38:08.376780+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808384479", "payload": {"lead_key": "domain:collective.am", "proposal_id": "id_b44a02c6e43c4dc5"}, "timestamp": "2026-10-23T17:38:08.384505+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808396741", "payload": {"business_name": "Beatles Pub", "lead_key": "domain:beatles.pub"}, "timestamp": "2026-10-23T17:38:08.396768+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808404483", "payload": {"lead_key": "domain:beatles.pub", "proposal_id": "id_fbf5cefb27c1123d"}, "timestamp": "2026-10-23T17:38:08.404507+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808416805", "payload": {"business_name": "Gustav", "lead_key": "domain:gustav.am"}, "timestamp": "2026-10-23T17:38:08.416834+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808424678", "payload": {"lead_key": "domain:gustav.am", "proposal_id": "id_c8c6f704f3cc1801"}, "timestamp": "2026-10-23T17:38:08.424704+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808437437", "payload": {"business_name": "Figaro", "lead_key": "domain:figaro.am"}, "timestamp": "2026-10-23T17:38:08.437472+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808445547", "payload": {"lead_key": "domain:figaro.am", "proposal_id": "id_9cfa3bb7fe23bedf"}, "timestamp": "2026-10-23T17:38:08.445578+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808458202", "payload": {"business_name": "Andrew Kitchen and Bar", "lead_key": "domain:andrew.kitchen"}, "timestamp": "2026-10-23T17:38:08.458238+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808466443", "payload": {"lead_key": "domain:andrew.kitchen", "proposal_id": "id_1fa7e4c554e34004"}, "timestamp": "2026-10-23T17:38:08.466474+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808480325", "payload": {"business_name": "REDstore", "lead_key": "domain:redstore.am"}, "timestamp": "2026-10-23T17:38:08.480364+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808494674", "payload": {"business_name": "Notebookcentre", "lead_key": "domain:notebookcentre.am"}, "timestamp": "2026-10-23T17:38:08.494717+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808509123", "payload": {"business_name": "ITPlaza", "lead_key": "domain:itplaza.am"}, "timestamp": "2026-10-23T17:38:08.509166+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808523941", "payload": {"business_name": "CompShop", "lead_key": "domain:compshop.am"}, "timestamp": "2026-10-23T17:38:08.523986+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808538768", "payload": {"business_name": "CHIP", "lead_key": "domain:chip.am"}, "timestamp": "2026-10-23T17:38:08.538814+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808553164", "payload": {"business_name": "Mtech", "lead_key": "domain:mtech.am"}, "timestamp": "2026-10-23T17:38:08.553206+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808568349", "payload": {"business_name": "Zigzag", "lead_key": "domain:zigzag.am"}, "timestamp": "2026-10-23T17:38:08.568416+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808578253", "payload": {"lead_key": "domain:zigzag.am", "proposal_id": "id_ea29a6078fdd4c71"}, "timestamp": "2026-10-23T17:38:08.578289+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808593472", "payload": {"business_name": "NOUT", "lead_key": "domain:nout.am"}, "timestamp": "2026-10-23T17:38:08.593518+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808609314", "payload": {"business_name": "Hyur Service", "lead_key": "domain:hyurservice.com"}, "timestamp": "2026-10-23T17:38:08.609359+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808618295", "payload": {"lead_key": "domain:hyurservice.com", "proposal_id": "id_be526dc10861a4c9"}, "timestamp": "2026-10-23T17:38:08.618331+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808633153", "payload": {"business_name": "Armenia Travel", "lead_key": "domain:armeniatravel.am"}, "timestamp": "2026-10-23T17:38:08.633201+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808642074", "payload": {"lead_key": "domain:armeniatravel.am", "proposal_id": "id_dc1e5e9775f65d3c"}, "timestamp": "2026-10-23T17:38:08.642108+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808657079", "payload": {"business_name": "Sara Voyage", "lead_key": "domain:saravoyage.am"}, "timestamp": "2026-10-23T17:38:08.657124+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808666322", "payload": {"lead_key": "domain:saravoyage.am", "proposal_id": "id_9b739acea7566f3b"}, "timestamp": "2026-10-23T17:38:08.666358+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808681534", "payload": {"business_name": "Horizon Travel", "lead_key": "domain:horizontravelarmenia.com"}, "timestamp": "2026-10-23T17:38:08.681587+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808690479", "payload": {"lead_key": "domain:horizontravelarmenia.com", "proposal_id": "id_8b05e3458ba79f8a"}, "timestamp": "2026-10-23T17:38:08.690515+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808706376", "payload": {"business_name": "Armen Tour", "lead_key": "domain:armeniatour.com"}, "timestamp": "2026-10-23T17:38:08.706433+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808715389", "payload": {"lead_key": "domain:armeniatour.com", "proposal_id": "id_26a4c90507041e4c"}, "timestamp": "2026-10-23T17:38:08.715436+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808730075", "payload": {"business_name": "One Way Tour", "lead_key": "domain:onewaytour.com"}, "timestamp": "2026-10-23T17:38:08.730108+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808739606", "payload": {"lead_key": "domain:onewaytour.com", "proposal_id": "id_b2fb28bf6d0cd2df"}, "timestamp": "2026-10-23T17:38:08.739638+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808756387", "payload": {"business_name": "Cascade Travel", "lead_key": "domain:thecascadetravel.com"}, "timestamp": "2026-10-23T17:38:08.756440+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808767731", "payload": {"lead_key": "domain:thecascadetravel.com", "proposal_id": "id_2b35358e80d6a585"}, "timestamp": "2026-10-23T17:38:08.767765+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173808783937", "payload": {"business_name": "Tatev Travel", "lead_key": "domain:tatev-travel.com"}, "timestamp": "2026-10-23T17:38:08.783974+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173808793025", "payload": {"lead_key": "domain:tatev-travel.com", "proposal_id": "id_bc9600f4b022f690"}, "timestamp": "2026-10-23T17:38:08.793053+00:00", "type": "proposal_added"}
