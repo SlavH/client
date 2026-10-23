@@ -726,3 +726,18 @@
 {"event_id": "evt_20261023183817718090", "payload": {"business_name": "Ineco Group", "lead_key": "domain:inecogroup.am"}, "timestamp": "2026-10-23T18:38:17.718148+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023183817773087", "payload": {"business_name": "Go Shop", "lead_key": "domain:goshop.am"}, "timestamp": "2026-10-23T18:38:17.773145+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023183817822265", "payload": {"business_name": "Buy.am", "lead_key": "domain:teamgroup.am"}, "timestamp": "2026-10-23T18:38:17.822317+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183949560645", "payload": {"business_name": "Armenian Travertine Mining Company", "lead_key": "domain:atmc.am"}, "timestamp": "2026-10-23T18:39:49.560711+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183949621729", "payload": {"lead_key": "domain:atmc.am", "proposal_id": "id_56174f4d0d846a60"}, "timestamp": "2026-10-23T18:39:49.621787+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183949673051", "payload": {"business_name": "S and A Mining", "lead_key": "domain:samining.am"}, "timestamp": "2026-10-23T18:39:49.673103+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183949725729", "payload": {"business_name": "ML Mining", "lead_key": "domain:mlmining.am"}, "timestamp": "2026-10-23T18:39:49.725781+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183949799116", "payload": {"business_name": "Veks", "lead_key": "domain:veksgroup.com"}, "timestamp": "2026-10-23T18:39:49.799174+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183949870994", "payload": {"lead_key": "domain:veksgroup.com", "proposal_id": "id_d8a6f0b58fcd3ce9"}, "timestamp": "2026-10-23T18:39:49.871051+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183949988037", "payload": {"business_name": "Khachaturov Group", "lead_key": "domain:khachaturovgroup.am"}, "timestamp": "2026-10-23T18:39:49.988097+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183950105322", "payload": {"business_name": "Orient Stone", "lead_key": "domain:orientstone.am"}, "timestamp": "2026-10-23T18:39:50.105378+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183950180096", "payload": {"lead_key": "domain:orientstone.am", "proposal_id": "id_6f421d7eb95f7549"}, "timestamp": "2026-10-23T18:39:50.180150+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183950309469", "payload": {"business_name": "Yerevan Mall", "lead_key": "domain:yerevanmall.am"}, "timestamp": "2026-10-23T18:39:50.309522+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183950382610", "payload": {"lead_key": "domain:yerevanmall.am", "proposal_id": "id_bf1e6ff5f371c2ad"}, "timestamp": "2026-10-23T18:39:50.382668+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183950480216", "payload": {"business_name": "Dalma Garden Mall", "lead_key": "domain:dalma.am"}, "timestamp": "2026-10-23T18:39:50.480266+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183950529703", "payload": {"lead_key": "domain:dalma.am", "proposal_id": "id_5b1db7250fa5fe5c"}, "timestamp": "2026-10-23T18:39:50.529755+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023183950659605", "payload": {"business_name": "Miniso", "lead_key": "domain:miniso.am"}, "timestamp": "2026-10-23T18:39:50.659660+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023183950734133", "payload": {"lead_key": "domain:miniso.am", "proposal_id": "id_ca9d6cc5fba6900b"}, "timestamp": "2026-10-23T18:39:50.734186+00:00", "type": "proposal_added"}
