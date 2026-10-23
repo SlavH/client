@@ -321,3 +321,17 @@
 {"event_id": "evt_20261023174102963063", "payload": {"lead_key": "domain:yanium.com", "proposal_id": "id_c053a34db41671d8"}, "timestamp": "2026-10-23T17:41:02.963104+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174102985937", "payload": {"business_name": "eWorks", "lead_key": "domain:e-works.am"}, "timestamp": "2026-10-23T17:41:02.985981+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174102999906", "payload": {"lead_key": "domain:e-works.am", "proposal_id": "id_159bac948e4e5996"}, "timestamp": "2026-10-23T17:41:02.999940+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174122018545", "payload": {"business_name": "CIO Logistics", "lead_key": "domain:ciologistics.com"}, "timestamp": "2026-10-23T17:41:22.018609+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174122070319", "payload": {"business_name": "APAVEN", "lead_key": "domain:apaven.com"}, "timestamp": "2026-10-23T17:41:22.070370+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174122102503", "payload": {"lead_key": "domain:apaven.com", "proposal_id": "id_b31e3de572ef3a46"}, "timestamp": "2026-10-23T17:41:22.102550+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174122160552", "payload": {"business_name": "Valantis Group", "lead_key": "domain:valantis.am"}, "timestamp": "2026-10-23T17:41:22.160608+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174122220553", "payload": {"business_name": "Logistics Plus", "lead_key": "domain:logisticsplus.am"}, "timestamp": "2026-10-23T17:41:22.220611+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174122257253", "payload": {"lead_key": "domain:logisticsplus.am", "proposal_id": "id_a4acc24447937076"}, "timestamp": "2026-10-23T17:41:22.257311+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174122317564", "payload": {"business_name": "Pazand", "lead_key": "domain:pazand.am"}, "timestamp": "2026-10-23T17:41:22.317619+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174122361561", "payload": {"lead_key": "domain:pazand.am", "proposal_id": "id_890f44c89497ea64"}, "timestamp": "2026-10-23T17:41:22.361617+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174122428376", "payload": {"business_name": "iCargo", "lead_key": "domain:icargo.am"}, "timestamp": "2026-10-23T17:41:22.428462+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174122464534", "payload": {"lead_key": "domain:icargo.am", "proposal_id": "id_46d561797bb2929c"}, "timestamp": "2026-10-23T17:41:22.464592+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174122524541", "payload": {"business_name": "Transimpex", "lead_key": "domain:transimpex.am"}, "timestamp": "2026-10-23T17:41:22.524597+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174122559512", "payload": {"lead_key": "domain:transimpex.am", "proposal_id": "id_0a26fc580ad97709"}, "timestamp": "2026-10-23T17:41:22.559563+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174122610723", "payload": {"business_name": "Unitrans", "lead_key": "domain:unitrans.am"}, "timestamp": "2026-10-23T17:41:22.610804+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174122646238", "payload": {"lead_key": "domain:unitrans.am", "proposal_id": "id_937e8e5cb4e4a238"}, "timestamp": "2026-10-23T17:41:22.646312+00:00", "type": "proposal_added"}
