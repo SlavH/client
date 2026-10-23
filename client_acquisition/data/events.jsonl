@@ -449,3 +449,9 @@
 {"event_id": "evt_20261023174634386787", "payload": {"lead_key": "domain:forestburger.am", "proposal_id": "id_1be9117abb103746"}, "timestamp": "2026-10-23T17:46:34.386835+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174634415355", "payload": {"business_name": "Pizzanini", "lead_key": "domain:pizzanini.am"}, "timestamp": "2026-10-23T17:46:34.415432+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174634434331", "payload": {"lead_key": "domain:pizzanini.am", "proposal_id": "id_5aa34252d5709ea8"}, "timestamp": "2026-10-23T17:46:34.434371+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174655067941", "payload": {"business_name": "Liga Insurance", "lead_key": "domain:liga.am"}, "timestamp": "2026-10-23T17:46:55.067994+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174655086315", "payload": {"lead_key": "domain:liga.am", "proposal_id": "id_df1604e6a52a029c"}, "timestamp": "2026-10-23T17:46:55.086359+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174655115921", "payload": {"business_name": "Export Insurance Agency of Armenia", "lead_key": "domain:eia.am"}, "timestamp": "2026-10-23T17:46:55.115966+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174655134125", "payload": {"lead_key": "domain:eia.am", "proposal_id": "id_ef3ad74720e92f8a"}, "timestamp": "2026-10-23T17:46:55.134169+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174655163173", "payload": {"business_name": "Nairi Insurance", "lead_key": "name:nairi insurance|yerevan|armenia"}, "timestamp": "2026-10-23T17:46:55.163216+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174655181007", "payload": {"lead_key": "name:nairi insurance|yerevan|armenia", "proposal_id": "id_be232b786b97ba93"}, "timestamp": "2026-10-23T17:46:55.181046+00:00", "type": "proposal_added"}
