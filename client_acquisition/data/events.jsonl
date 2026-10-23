@@ -458,3 +458,35 @@
 {"event_id": "evt_20261023174808719841", "payload": {"business_name": "Gravity", "lead_key": "domain:gravity-evn.com"}, "timestamp": "2026-10-23T17:48:08.719901+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023175834294565", "payload": {"business_name": "DMCArmenia", "lead_key": "domain:dmcarmenia.com"}, "timestamp": "2026-10-23T17:58:34.294625+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023175834338777", "payload": {"lead_key": "domain:dmcarmenia.com", "proposal_id": "id_654eadd662340acc"}, "timestamp": "2026-10-23T17:58:34.338828+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181713320393", "payload": {"business_name": "Subaru Motors", "lead_key": "domain:subarumotors.am"}, "timestamp": "2026-10-23T18:17:13.320476+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181713369354", "payload": {"lead_key": "domain:subarumotors.am", "proposal_id": "id_bb37b9d527b6a9a9"}, "timestamp": "2026-10-23T18:17:13.369424+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181713442685", "payload": {"business_name": "Schwarz Auto Service", "lead_key": "domain:schwarz.am"}, "timestamp": "2026-10-23T18:17:13.442739+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181713480225", "payload": {"lead_key": "domain:schwarz.am", "proposal_id": "id_5b5c2328667dce4b"}, "timestamp": "2026-10-23T18:17:13.480277+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181713540573", "payload": {"business_name": "Bimmer Town", "lead_key": "domain:bimmertown.am"}, "timestamp": "2026-10-23T18:17:13.540623+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181713576240", "payload": {"lead_key": "domain:bimmertown.am", "proposal_id": "id_99fda24c4a66ac55"}, "timestamp": "2026-10-23T18:17:13.576290+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181713648580", "payload": {"business_name": "ABC Motors", "lead_key": "domain:abcmotors.am"}, "timestamp": "2026-10-23T18:17:13.648631+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181713691718", "payload": {"lead_key": "domain:abcmotors.am", "proposal_id": "id_96ea0c3a3b3ddb2b"}, "timestamp": "2026-10-23T18:17:13.691769+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181713741615", "payload": {"business_name": "AMTech Garage", "lead_key": "domain:amtech.am"}, "timestamp": "2026-10-23T18:17:13.741665+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181713762877", "payload": {"lead_key": "domain:amtech.am", "proposal_id": "id_237fe0ed0cf119da"}, "timestamp": "2026-10-23T18:17:13.762924+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181713798156", "payload": {"business_name": "VoltArmenia", "lead_key": "domain:voltarmenia.am"}, "timestamp": "2026-10-23T18:17:13.798208+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181713823011", "payload": {"lead_key": "domain:voltarmenia.am", "proposal_id": "id_24b620eb7d43a851"}, "timestamp": "2026-10-23T18:17:13.823064+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181713860580", "payload": {"business_name": "Yerevan State University", "lead_key": "domain:ysu.am"}, "timestamp": "2026-10-23T18:17:13.860636+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181713888475", "payload": {"lead_key": "domain:ysu.am", "proposal_id": "id_8f56052b97ffd524"}, "timestamp": "2026-10-23T18:17:13.888530+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181713994591", "payload": {"business_name": "British International School of Armenia", "lead_key": "domain:bis.am"}, "timestamp": "2026-10-23T18:17:13.994648+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181714043317", "payload": {"lead_key": "domain:bis.am", "proposal_id": "id_4ca98559b4399ef3"}, "timestamp": "2026-10-23T18:17:14.043371+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181714212820", "payload": {"business_name": "Print Partner", "lead_key": "domain:printpartner.am"}, "timestamp": "2026-10-23T18:17:14.212882+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181714261872", "payload": {"lead_key": "domain:printpartner.am", "proposal_id": "id_75786d8dac47abea"}, "timestamp": "2026-10-23T18:17:14.261926+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181714334988", "payload": {"business_name": "Time To Print", "lead_key": "domain:timetoprint.am"}, "timestamp": "2026-10-23T18:17:14.335041+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181714383002", "payload": {"lead_key": "domain:timetoprint.am", "proposal_id": "id_5eb18f859143f14e"}, "timestamp": "2026-10-23T18:17:14.383056+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181714458563", "payload": {"business_name": "Printing.am", "lead_key": "domain:printing.am"}, "timestamp": "2026-10-23T18:17:14.458628+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181714505535", "payload": {"lead_key": "domain:printing.am", "proposal_id": "id_beda2ecabb04099d"}, "timestamp": "2026-10-23T18:17:14.505589+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181714582587", "payload": {"business_name": "OPRINT", "lead_key": "domain:oprint.am"}, "timestamp": "2026-10-23T18:17:14.582644+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181714629347", "payload": {"lead_key": "domain:oprint.am", "proposal_id": "id_3830238c365c5df3"}, "timestamp": "2026-10-23T18:17:14.629419+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181714712593", "payload": {"business_name": "Level Print", "lead_key": "domain:levelprint.am"}, "timestamp": "2026-10-23T18:17:14.712655+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181714765727", "payload": {"lead_key": "domain:levelprint.am", "proposal_id": "id_d9c0e5a8356a9b33"}, "timestamp": "2026-10-23T18:17:14.765779+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181714847554", "payload": {"business_name": "VLL-Print", "lead_key": "domain:vllprint.am"}, "timestamp": "2026-10-23T18:17:14.847610+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181714905059", "payload": {"lead_key": "domain:vllprint.am", "proposal_id": "id_d3b2e19524079a85"}, "timestamp": "2026-10-23T18:17:14.905113+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181714986583", "payload": {"business_name": "Erevan Print", "lead_key": "domain:erevanprint.com"}, "timestamp": "2026-10-23T18:17:14.986639+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181715036541", "payload": {"lead_key": "domain:erevanprint.com", "proposal_id": "id_dfa0037b6ff8905d"}, "timestamp": "2026-10-23T18:17:15.036594+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181715103440", "payload": {"business_name": "Zangak Printing", "lead_key": "domain:zangak.am"}, "timestamp": "2026-10-23T18:17:15.103501+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181715140877", "payload": {"lead_key": "domain:zangak.am", "proposal_id": "id_9074b5d836051dc3"}, "timestamp": "2026-10-23T18:17:15.140927+00:00", "type": "proposal_added"}
