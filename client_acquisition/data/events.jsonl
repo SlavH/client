@@ -567,3 +567,23 @@
 {"event_id": "evt_20261023181827358318", "payload": {"business_name": "Level Studio", "lead_key": "domain:levelstudio.am"}, "timestamp": "2026-10-23T18:18:27.358365+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023181827397174", "payload": {"business_name": "KH Production", "lead_key": "domain:khproduction.am"}, "timestamp": "2026-10-23T18:18:27.397223+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023181827450944", "payload": {"lead_key": "domain:khproduction.am", "proposal_id": "id_26abdbeb5228014e"}, "timestamp": "2026-10-23T18:18:27.451169+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181851671777", "payload": {"business_name": "HALDI Consult", "lead_key": "domain:haldi.am"}, "timestamp": "2026-10-23T18:18:51.671842+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181851713766", "payload": {"business_name": "MEP Consulting Engineers", "lead_key": "domain:mepcad.am"}, "timestamp": "2026-10-23T18:18:51.713828+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181851754802", "payload": {"business_name": "Jrtuk", "lead_key": "domain:jrtuc.am"}, "timestamp": "2026-10-23T18:18:51.754865+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181851791550", "payload": {"business_name": "JINJ Engineering", "lead_key": "domain:jinjconsult.com"}, "timestamp": "2026-10-23T18:18:51.791601+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181851830996", "payload": {"business_name": "IED Consulting", "lead_key": "domain:iedconsult.com"}, "timestamp": "2026-10-23T18:18:51.831053+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181851870097", "payload": {"business_name": "Integral Design and Engineering", "lead_key": "domain:integral.am"}, "timestamp": "2026-10-23T18:18:51.870150+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181851930800", "payload": {"business_name": "S-Project", "lead_key": "domain:s-project.am"}, "timestamp": "2026-10-23T18:18:51.930852+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181851984612", "payload": {"business_name": "Zynk Engineering", "lead_key": "domain:zynk.am"}, "timestamp": "2026-10-23T18:18:51.984663+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181852021763", "payload": {"business_name": "Wine and Grapes Spa", "lead_key": "domain:wgspa.com"}, "timestamp": "2026-10-23T18:18:52.021812+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181852044720", "payload": {"lead_key": "domain:wgspa.com", "proposal_id": "id_ddc9e671c82ba447"}, "timestamp": "2026-10-23T18:18:52.044764+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181852082357", "payload": {"business_name": "Relax SPA Center", "lead_key": "domain:relaxspacenter.com"}, "timestamp": "2026-10-23T18:18:52.082433+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181852105667", "payload": {"lead_key": "domain:relaxspacenter.com", "proposal_id": "id_667cb1362d49647a"}, "timestamp": "2026-10-23T18:18:52.105717+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181852145002", "payload": {"business_name": "Milana Spa and Wellness Center", "lead_key": "domain:milana.am"}, "timestamp": "2026-10-23T18:18:52.145056+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181852169135", "payload": {"lead_key": "domain:milana.am", "proposal_id": "id_8ef3deded8bb5743"}, "timestamp": "2026-10-23T18:18:52.169179+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181852206251", "payload": {"business_name": "Mandala Spa and Wellness Center", "lead_key": "domain:goldenpalacehotel.am"}, "timestamp": "2026-10-23T18:18:52.206297+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181852229617", "payload": {"lead_key": "domain:goldenpalacehotel.am", "proposal_id": "id_ed5e3eecc43bd1ad"}, "timestamp": "2026-10-23T18:18:52.229663+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181852272569", "payload": {"business_name": "Thai Atmosphere Spa", "lead_key": "domain:thaiatmosphere.am"}, "timestamp": "2026-10-23T18:18:52.272621+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181852300625", "payload": {"lead_key": "domain:thaiatmosphere.am", "proposal_id": "id_00fa3a323b04041b"}, "timestamp": "2026-10-23T18:18:52.300677+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023181852342210", "payload": {"business_name": "Thai Spa", "lead_key": "domain:thaispa.am"}, "timestamp": "2026-10-23T18:18:52.342270+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023181852368436", "payload": {"lead_key": "domain:thaispa.am", "proposal_id": "id_078bdbb22e9f5543"}, "timestamp": "2026-10-23T18:18:52.368480+00:00", "type": "proposal_added"}
