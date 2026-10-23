@@ -455,3 +455,4 @@
 {"event_id": "evt_20261023174655134125", "payload": {"lead_key": "domain:eia.am", "proposal_id": "id_ef3ad74720e92f8a"}, "timestamp": "2026-10-23T17:46:55.134169+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174655163173", "payload": {"business_name": "Nairi Insurance", "lead_key": "name:nairi insurance|yerevan|armenia"}, "timestamp": "2026-10-23T17:46:55.163216+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174655181007", "payload": {"lead_key": "name:nairi insurance|yerevan|armenia", "proposal_id": "id_be232b786b97ba93"}, "timestamp": "2026-10-23T17:46:55.181046+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174808719841", "payload": {"business_name": "Gravity", "lead_key": "domain:gravity-evn.com"}, "timestamp": "2026-10-23T17:48:08.719901+00:00", "type": "lead_added"}
