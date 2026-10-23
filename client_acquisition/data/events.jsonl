@@ -396,3 +396,12 @@
 {"event_id": "evt_20261023174424112657", "payload": {"business_name": "Vardanyan", "lead_key": "domain:vardanyan.am"}, "timestamp": "2026-10-23T17:44:24.112709+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174424152044", "payload": {"lead_key": "domain:vardanyan.am", "proposal_id": "id_cb9a8893fbf50243"}, "timestamp": "2026-10-23T17:44:24.152092+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174424244001", "payload": {"business_name": "LegalLab", "lead_key": "domain:legallab.co"}, "timestamp": "2026-10-23T17:44:24.244048+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174441938578", "payload": {"business_name": "SLclinic", "lead_key": "domain:slclinic.am"}, "timestamp": "2026-10-23T17:44:41.938637+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174441975978", "payload": {"lead_key": "domain:slclinic.am", "proposal_id": "id_dbc593488b17b68e"}, "timestamp": "2026-10-23T17:44:41.976028+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174442038544", "payload": {"business_name": "ProfTax", "lead_key": "domain:proftax.am"}, "timestamp": "2026-10-23T17:44:42.038595+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174442098547", "payload": {"business_name": "Alias LLC", "lead_key": "domain:alias.am"}, "timestamp": "2026-10-23T17:44:42.098598+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174442161561", "payload": {"business_name": "STRTGY", "lead_key": "domain:strtgy.am"}, "timestamp": "2026-10-23T17:44:42.161614+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174442232563", "payload": {"business_name": "IT Reports", "lead_key": "domain:itreports.am"}, "timestamp": "2026-10-23T17:44:42.232618+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174442298554", "payload": {"business_name": "FinCore Consulting", "lead_key": "domain:fincore.am"}, "timestamp": "2026-10-23T17:44:42.298605+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174442360548", "payload": {"business_name": "Alpha Accounting", "lead_key": "domain:alphaaccounting.am"}, "timestamp": "2026-10-23T17:44:42.360598+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174442421254", "payload": {"business_name": "ProAccounting", "lead_key": "domain:proaccounting.am"}, "timestamp": "2026-10-23T17:44:42.421304+00:00", "type": "lead_added"}
