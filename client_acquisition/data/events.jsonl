@@ -644,3 +644,5 @@
 {"event_id": "evt_20261023182502699570", "payload": {"lead_key": "domain:elkoaparthotel.am", "proposal_id": "id_144e9001a75765ec"}, "timestamp": "2026-10-23T18:25:02.699622+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023182502759510", "payload": {"business_name": "Mon Invite Hotel", "lead_key": "domain:moninvitehotel.am"}, "timestamp": "2026-10-23T18:25:02.759568+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023182502787665", "payload": {"lead_key": "domain:moninvitehotel.am", "proposal_id": "id_2718e08b15649c0a"}, "timestamp": "2026-10-23T18:25:02.787717+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023182539344824", "payload": {"business_name": "YourSpace", "lead_key": "domain:yourspace.am"}, "timestamp": "2026-10-23T18:25:39.344896+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023182539406101", "payload": {"lead_key": "domain:yourspace.am", "proposal_id": "id_7ea08215d93e68ed"}, "timestamp": "2026-10-23T18:25:39.406151+00:00", "type": "proposal_added"}
