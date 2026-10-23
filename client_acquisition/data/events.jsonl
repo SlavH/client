@@ -305,3 +305,9 @@
 {"event_id": "evt_20261023174029060286", "payload": {"lead_key": "domain:erebunimed.com", "proposal_id": "id_0b16a620e05c9d5d"}, "timestamp": "2026-10-23T17:40:29.060344+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174029085168", "payload": {"business_name": "Izmirlian Medical Center", "lead_key": "domain:i-mc.am"}, "timestamp": "2026-10-23T17:40:29.085216+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174029101097", "payload": {"lead_key": "domain:i-mc.am", "proposal_id": "id_39aaa6f0e477f697"}, "timestamp": "2026-10-23T17:40:29.101140+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174045255426", "payload": {"business_name": "Beauty Atelier By Tanya", "lead_key": "domain:beautyatelier.am"}, "timestamp": "2026-10-23T17:40:45.255484+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174045305305", "payload": {"business_name": "CMYK Beauty Studio", "lead_key": "domain:cmyk.am"}, "timestamp": "2026-10-23T17:40:45.305355+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174045336453", "payload": {"lead_key": "domain:cmyk.am", "proposal_id": "id_aae029b93159ed01"}, "timestamp": "2026-10-23T17:40:45.336499+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174045400537", "payload": {"business_name": "George's Style", "lead_key": "domain:georgesstyle.com"}, "timestamp": "2026-10-23T17:40:45.400592+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174045430504", "payload": {"lead_key": "domain:georgesstyle.com", "proposal_id": "id_4c3b7ddd201ad4e4"}, "timestamp": "2026-10-23T17:40:45.430594+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174045483559", "payload": {"business_name": "HOS Beauty", "lead_key": "domain:hos.beauty"}, "timestamp": "2026-10-23T17:40:45.483616+00:00", "type": "lead_added"}
