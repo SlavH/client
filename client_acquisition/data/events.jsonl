@@ -274,3 +274,13 @@
 {"event_id": "evt_20261023173926943082", "payload": {"business_name": "Gurman", "lead_key": "domain:gurman.am"}, "timestamp": "2026-10-23T17:39:26.943122+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023173926960281", "payload": {"business_name": "House of Margot", "lead_key": "domain:margot.house"}, "timestamp": "2026-10-23T17:39:26.960318+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023173926971425", "payload": {"lead_key": "domain:margot.house", "proposal_id": "id_2f1fb13ac9f325cc"}, "timestamp": "2026-10-23T17:39:26.971456+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173946935647", "payload": {"business_name": "Nera", "lead_key": "domain:nera.am"}, "timestamp": "2026-10-23T17:39:46.935692+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173946954321", "payload": {"business_name": "Ashley Home Store Armenia", "lead_key": "domain:ashleyhome.am"}, "timestamp": "2026-10-23T17:39:46.954364+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173946972274", "payload": {"business_name": "Bogart Interior Salon", "lead_key": "domain:bogart.am"}, "timestamp": "2026-10-23T17:39:46.972314+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173946996534", "payload": {"business_name": "NIKO Group", "lead_key": "domain:niko.am"}, "timestamp": "2026-10-23T17:39:46.996580+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173947011833", "payload": {"lead_key": "domain:niko.am", "proposal_id": "id_80dd66e657b070ca"}, "timestamp": "2026-10-23T17:39:47.011874+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173947030075", "payload": {"business_name": "DanMarc", "lead_key": "domain:danmarc.am"}, "timestamp": "2026-10-23T17:39:47.030115+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173947048693", "payload": {"business_name": "Demokrat", "lead_key": "domain:demokrat.am"}, "timestamp": "2026-10-23T17:39:47.048731+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173947060247", "payload": {"lead_key": "domain:demokrat.am", "proposal_id": "id_5452cce5fd155438"}, "timestamp": "2026-10-23T17:39:47.060279+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023173947078238", "payload": {"business_name": "MEK Furniture", "lead_key": "domain:mekfurniture.am"}, "timestamp": "2026-10-23T17:39:47.078276+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023173947097903", "payload": {"business_name": "VLV Centre", "lead_key": "domain:vlv.am"}, "timestamp": "2026-10-23T17:39:47.097943+00:00", "type": "lead_added"}
