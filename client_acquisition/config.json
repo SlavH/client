@@ -2,19 +2,32 @@
   "target_market": {
     "country": "Armenia",
     "city": "Yerevan",
-    "regions": ["Yerevan", "Gyumri", "Vanadzor"],
+    "regions": [
+      "Yerevan",
+      "Gyumri",
+      "Vanadzor"
+    ],
     "priority_city": "Yerevan"
   },
   "discovery": {
-    "max_businesses_per_run": 100,
-    "sources": ["business_directories", "maps_listings", "search_results", "professional_profiles"]
+    "max_businesses_per_run": 9999,
+    "sources": [
+      "business_directories",
+      "maps_listings",
+      "search_results",
+      "professional_profiles"
+    ]
   },
   "scoring": {
     "proposal_threshold": 60,
     "max_score": 100
   },
   "proposal": {
-    "languages": [" Armenian", "Russian", "English"],
+    "languages": [
+      " Armenian",
+      "Russian",
+      "English"
+    ],
     "default_language": "English",
     "status_initial": "draft"
   },
