@@ -387,3 +387,12 @@
 {"event_id": "evt_20261023174300866366", "payload": {"lead_key": "domain:travelconcept.am", "proposal_id": "id_3f2cf95879eafe2b"}, "timestamp": "2026-10-23T17:43:00.866430+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023174300892936", "payload": {"business_name": "Phoenix Tour", "lead_key": "domain:phoenixtour.org"}, "timestamp": "2026-10-23T17:43:00.892980+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023174300926186", "payload": {"lead_key": "domain:phoenixtour.org", "proposal_id": "id_bd45110af11d8e99"}, "timestamp": "2026-10-23T17:43:00.926234+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174423780061", "payload": {"business_name": "Astudio", "lead_key": "domain:astudio.am"}, "timestamp": "2026-10-23T17:44:23.780136+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174423817916", "payload": {"lead_key": "domain:astudio.am", "proposal_id": "id_27cba44405df622e"}, "timestamp": "2026-10-23T17:44:23.817965+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174423891554", "payload": {"business_name": "The Only Group", "lead_key": "domain:the-only-group.com"}, "timestamp": "2026-10-23T17:44:23.891606+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174423931531", "payload": {"lead_key": "domain:the-only-group.com", "proposal_id": "id_ebdb06aa398f14be"}, "timestamp": "2026-10-23T17:44:23.931581+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174423996502", "payload": {"business_name": "2PEOPLE IT", "lead_key": "domain:2people.dev"}, "timestamp": "2026-10-23T17:44:23.996552+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174424051530", "payload": {"lead_key": "domain:2people.dev", "proposal_id": "id_058bbe169a544f48"}, "timestamp": "2026-10-23T17:44:24.051585+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174424112657", "payload": {"business_name": "Vardanyan", "lead_key": "domain:vardanyan.am"}, "timestamp": "2026-10-23T17:44:24.112709+00:00", "type": "lead_added"}
+{"event_id": "evt_20261023174424152044", "payload": {"lead_key": "domain:vardanyan.am", "proposal_id": "id_cb9a8893fbf50243"}, "timestamp": "2026-10-23T17:44:24.152092+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261023174424244001", "payload": {"business_name": "LegalLab", "lead_key": "domain:legallab.co"}, "timestamp": "2026-10-23T17:44:24.244048+00:00", "type": "lead_added"}
