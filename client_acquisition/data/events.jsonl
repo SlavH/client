@@ -999,3 +999,5 @@
 {"event_id": "evt_20261024090658124302", "payload": {"lead_key": "domain:aquilatranslation.com", "proposal_id": "id_30a147bdc4dffb77"}, "timestamp": "2026-10-24T09:06:58.124351+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024090658185417", "payload": {"business_name": "Translation.am", "lead_key": "domain:translation.am"}, "timestamp": "2026-10-24T09:06:58.185488+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024090658225314", "payload": {"lead_key": "domain:translation.am", "proposal_id": "id_380bf014ad5bedab"}, "timestamp": "2026-10-24T09:06:58.225361+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090713119768", "payload": {"business_name": "VitaMed Medical Center", "lead_key": "domain:vitamed.am"}, "timestamp": "2026-10-24T09:07:13.119834+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090713229654", "payload": {"lead_key": "domain:vitamed.am", "proposal_id": "id_396a9134eb9e68b7"}, "timestamp": "2026-10-24T09:07:13.229708+00:00", "type": "proposal_added"}
