@@ -1295,3 +1295,5 @@
 {"event_id": "evt_20261024091634849768", "payload": {"lead_key": "name:mariam beauty salon|yerevan|armenia", "proposal_id": "id_d1d43356b180b542"}, "timestamp": "2026-10-24T09:16:34.849821+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024091653583757", "payload": {"business_name": "BYD Armenia by Ecomotors", "lead_key": "name:byd armenia by ecomotors|yerevan|armenia"}, "timestamp": "2026-10-24T09:16:53.583818+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024091653715729", "payload": {"lead_key": "name:byd armenia by ecomotors|yerevan|armenia", "proposal_id": "id_acacd5d5db28d6ef"}, "timestamp": "2026-10-24T09:16:53.715789+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024091706652797", "payload": {"business_name": "Your Target Marketing", "lead_key": "name:your target marketing|yerevan|armenia"}, "timestamp": "2026-10-24T09:17:06.652911+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024091706707049", "payload": {"lead_key": "name:your target marketing|yerevan|armenia", "proposal_id": "id_00f620e9c95f6dee"}, "timestamp": "2026-10-24T09:17:06.707104+00:00", "type": "proposal_added"}
