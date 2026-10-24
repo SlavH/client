@@ -945,3 +945,27 @@
 {"event_id": "evt_20261024090513511619", "payload": {"lead_key": "domain:metruminvest.am", "proposal_id": "id_858cb6ffa03d32c9"}, "timestamp": "2026-10-24T09:05:13.511672+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024090513571526", "payload": {"business_name": "Levs Construction", "lead_key": "domain:levs.am"}, "timestamp": "2026-10-24T09:05:13.571580+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024090513609712", "payload": {"lead_key": "domain:levs.am", "proposal_id": "id_962741b2ffb87bb0"}, "timestamp": "2026-10-24T09:05:13.609764+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090528518237", "payload": {"business_name": "Grand Hotel Yerevan Spa", "lead_key": "domain:grandhotelyerevan.com"}, "timestamp": "2026-10-24T09:05:28.518292+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090528595522", "payload": {"lead_key": "domain:grandhotelyerevan.com", "proposal_id": "id_34666203316ef37f"}, "timestamp": "2026-10-24T09:05:28.595571+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090552567690", "payload": {"business_name": "Premier Foods", "lead_key": "domain:premierfoods.am"}, "timestamp": "2026-10-24T09:05:52.567750+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090552648898", "payload": {"lead_key": "domain:premierfoods.am", "proposal_id": "id_618f1dacdf27dc07"}, "timestamp": "2026-10-24T09:05:52.648960+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090552761522", "payload": {"business_name": "Evrika Supermarket", "lead_key": "domain:evrikasupermarket.am"}, "timestamp": "2026-10-24T09:05:52.761573+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090552803845", "payload": {"lead_key": "domain:evrikasupermarket.am", "proposal_id": "id_4f49f09a7ede5006"}, "timestamp": "2026-10-24T09:05:52.803894+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090552930804", "payload": {"business_name": "Food Depot", "lead_key": "domain:fooddepot.am"}, "timestamp": "2026-10-24T09:05:52.930853+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090553024642", "payload": {"lead_key": "domain:fooddepot.am", "proposal_id": "id_673f730489dac377"}, "timestamp": "2026-10-24T09:05:53.024695+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090553127694", "payload": {"business_name": "MEK Furniture", "lead_key": "domain:mekfurniture.net"}, "timestamp": "2026-10-24T09:05:53.127744+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090553195957", "payload": {"lead_key": "domain:mekfurniture.net", "proposal_id": "id_7a43e267b824812d"}, "timestamp": "2026-10-24T09:05:53.196007+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090553272021", "payload": {"business_name": "Furniture Emporium", "lead_key": "domain:furnitureemporium.am"}, "timestamp": "2026-10-24T09:05:53.272068+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090553351641", "payload": {"lead_key": "domain:furnitureemporium.am", "proposal_id": "id_c10684525e475fd2"}, "timestamp": "2026-10-24T09:05:53.351690+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090553432079", "payload": {"business_name": "FurniArt", "lead_key": "domain:furniart.am"}, "timestamp": "2026-10-24T09:05:53.432139+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090553484846", "payload": {"lead_key": "domain:furniart.am", "proposal_id": "id_3ec0870e3453451f"}, "timestamp": "2026-10-24T09:05:53.484897+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090553568905", "payload": {"business_name": "Bombus Furniture", "lead_key": "domain:bombus.am"}, "timestamp": "2026-10-24T09:05:53.568954+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090553620233", "payload": {"lead_key": "domain:bombus.am", "proposal_id": "id_58b14c79154e4d32"}, "timestamp": "2026-10-24T09:05:53.620280+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090553718192", "payload": {"business_name": "Van Arman Group", "lead_key": "domain:vanarmangroup.com"}, "timestamp": "2026-10-24T09:05:53.718244+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090553788997", "payload": {"lead_key": "domain:vanarmangroup.com", "proposal_id": "id_ec844c7a63e4a495"}, "timestamp": "2026-10-24T09:05:53.789052+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090553903190", "payload": {"business_name": "Fine Furniture", "lead_key": "domain:finefurniture.am"}, "timestamp": "2026-10-24T09:05:53.903246+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090553980426", "payload": {"lead_key": "domain:finefurniture.am", "proposal_id": "id_0dc578a88029ed9b"}, "timestamp": "2026-10-24T09:05:53.980513+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090554040181", "payload": {"business_name": "Gevorgyan's Furniture", "lead_key": "domain:gevorgyans.am"}, "timestamp": "2026-10-24T09:05:54.040245+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090554078594", "payload": {"lead_key": "domain:gevorgyans.am", "proposal_id": "id_f9771cd1764e8b8d"}, "timestamp": "2026-10-24T09:05:54.078639+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090554142087", "payload": {"business_name": "Domus", "lead_key": "domain:domus.am"}, "timestamp": "2026-10-24T09:05:54.142140+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090554185657", "payload": {"lead_key": "domain:domus.am", "proposal_id": "id_98e78377f3b1d89f"}, "timestamp": "2026-10-24T09:05:54.185710+00:00", "type": "proposal_added"}
