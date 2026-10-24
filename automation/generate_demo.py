@@ -222,6 +222,17 @@ def main() -> int:
     else:
         raise SystemExit("provide --index or --lead-key")
 
+    # Idempotent: do not recreate or rename an already completed demo.
+    if OUT.exists():
+        for meta_path in OUT.glob("*/demo-metadata.json"):
+            try:
+                meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                continue
+            if meta.get("lead_key") == lead.get("lead_key"):
+                print(meta_path.parent.name)
+                return 0
+
     used = {p.name for p in OUT.iterdir() if p.is_dir()} if OUT.exists() else set()
     slug = unique_slug(lead, used)
     target = OUT / slug
