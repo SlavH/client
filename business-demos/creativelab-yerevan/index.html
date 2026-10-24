@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CreativeLab | Concept Demo Website</title>
+  <meta name="description" content="Unofficial concept demo website for CreativeLab, a marketing agency business in Yerevan, Armenia.">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --accent: #2563eb;
+      --surface: #f8fafc;
+      --font: Inter, system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
+    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
+    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
+    .hero p { max-width: 760px; font-size: 1.15rem; }
+    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
+    section { padding: 4rem 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
+    .card h2 { margin-top: 0; color: var(--bg); }
+    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
+    .button.primary { background: var(--accent); color: #ffffff; }
+    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
+    form { display: grid; gap: .75rem; }
+    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
+    textarea { min-height: 130px; }
+    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
+    footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
+    .muted { color: #6b7280; }
+    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a href="#top">CreativeLab</a>
+        <div>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <span class="badge">marketing agency concept demo</span>
+        <h1>CreativeLab</h1>
+        <p>A clearer, faster, and more trustworthy website concept for a marketing agency business in Yerevan, Armenia.</p>
+        <p><span>Fit score: 69/100</span></p>
+        <a class="button primary" href="#contact">Request information</a>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap grid">
+        <article class="card">
+          <h2>What we verified</h2>
+          <ul><li>Official website with phone.</li></ul>
+        </article>
+        <article class="card">
+          <h2>Proposed improvement</h2>
+          <p>A clearer online inquiry and service presentation workflow tailored to the business</p>
+          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
+        </article>
+        <article class="card">
+          <h2>Public sources</h2>
+          <ul><li><a href="http://www.creativelab.am" target="_blank" rel="noopener">http://www.creativelab.am</a></li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap grid">
+        <article class="card">
+          <h2>Contact routes</h2>
+          <p><a class="button secondary" href="http://www.creativelab.am" target="_blank" rel="noopener">Current website</a></p>
+          <p class="muted">Verified contact details should be confirmed before production use.</p>
+        </article>
+        <article class="card">
+          <h2>Demo inquiry form</h2>
+          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button class="button primary" type="submit">Send inquiry</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="notice">
+          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of CreativeLab, and no booking, payment, or contact request is submitted by this demo.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
+    </div>
+  </footer>
+</body>
+</html>
