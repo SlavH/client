@@ -1001,3 +1001,9 @@
 {"event_id": "evt_20261024090658225314", "payload": {"lead_key": "domain:translation.am", "proposal_id": "id_380bf014ad5bedab"}, "timestamp": "2026-10-24T09:06:58.225361+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024090713119768", "payload": {"business_name": "VitaMed Medical Center", "lead_key": "domain:vitamed.am"}, "timestamp": "2026-10-24T09:07:13.119834+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024090713229654", "payload": {"lead_key": "domain:vitamed.am", "proposal_id": "id_396a9134eb9e68b7"}, "timestamp": "2026-10-24T09:07:13.229708+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090738922282", "payload": {"business_name": "Ankyun Restaurant", "lead_key": "domain:ankyun.am"}, "timestamp": "2026-10-24T09:07:38.922338+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090738963923", "payload": {"lead_key": "domain:ankyun.am", "proposal_id": "id_2bcb9a7a7405faa0"}, "timestamp": "2026-10-24T09:07:38.963971+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090739027408", "payload": {"business_name": "Dzenoffood", "lead_key": "domain:dzenoffood.am"}, "timestamp": "2026-10-24T09:07:39.027494+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090739067055", "payload": {"lead_key": "domain:dzenoffood.am", "proposal_id": "id_409573f882e23611"}, "timestamp": "2026-10-24T09:07:39.067102+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090739129856", "payload": {"business_name": "Kababji Orient", "lead_key": "domain:kababjiorientoyerevan.com"}, "timestamp": "2026-10-24T09:07:39.129907+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090739171031", "payload": {"lead_key": "domain:kababjiorientoyerevan.com", "proposal_id": "id_02f05588fd7cb8e4"}, "timestamp": "2026-10-24T09:07:39.171085+00:00", "type": "proposal_added"}
