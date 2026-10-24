@@ -995,3 +995,7 @@
 {"event_id": "evt_20261024090641062984", "payload": {"lead_key": "domain:incredo.co", "proposal_id": "id_b5149021550bde6f"}, "timestamp": "2026-10-24T09:06:41.063032+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024090641123755", "payload": {"business_name": "Incrity", "lead_key": "domain:incrity.com"}, "timestamp": "2026-10-24T09:06:41.123821+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024090641163761", "payload": {"lead_key": "domain:incrity.com", "proposal_id": "id_a273d41ba83bd611"}, "timestamp": "2026-10-24T09:06:41.163809+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090658083885", "payload": {"business_name": "Aquila Translation", "lead_key": "domain:aquilatranslation.com"}, "timestamp": "2026-10-24T09:06:58.083948+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090658124302", "payload": {"lead_key": "domain:aquilatranslation.com", "proposal_id": "id_30a147bdc4dffb77"}, "timestamp": "2026-10-24T09:06:58.124351+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090658185417", "payload": {"business_name": "Translation.am", "lead_key": "domain:translation.am"}, "timestamp": "2026-10-24T09:06:58.185488+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090658225314", "payload": {"lead_key": "domain:translation.am", "proposal_id": "id_380bf014ad5bedab"}, "timestamp": "2026-10-24T09:06:58.225361+00:00", "type": "proposal_added"}
