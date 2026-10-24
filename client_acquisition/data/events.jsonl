@@ -1227,3 +1227,5 @@
 {"event_id": "evt_20261024091309061744", "payload": {"lead_key": "name:security systems|yerevan|armenia", "proposal_id": "id_74b492a9953b10f8"}, "timestamp": "2026-10-24T09:13:09.061798+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024091309174631", "payload": {"business_name": "Computer Emergency", "lead_key": "name:computer emergency|yerevan|armenia"}, "timestamp": "2026-10-24T09:13:09.174679+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024091309274419", "payload": {"lead_key": "name:computer emergency|yerevan|armenia", "proposal_id": "id_9fde6a20737c94c3"}, "timestamp": "2026-10-24T09:13:09.274500+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024091321932010", "payload": {"business_name": "Optic House", "lead_key": "name:optic house|yerevan|armenia"}, "timestamp": "2026-10-24T09:13:21.932065+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024091321991363", "payload": {"lead_key": "name:optic house|yerevan|armenia", "proposal_id": "id_92023be2fa8d945a"}, "timestamp": "2026-10-24T09:13:21.991424+00:00", "type": "proposal_added"}
