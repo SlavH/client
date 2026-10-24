@@ -875,3 +875,41 @@
 {"event_id": "evt_20261023195625166340", "payload": {"lead_key": "domain:hilti.group", "proposal_id": "id_feac23858c7f7bf6"}, "timestamp": "2026-10-23T19:56:25.166391+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261023195625223730", "payload": {"business_name": "GevAr", "lead_key": "domain:gevar.construction.am"}, "timestamp": "2026-10-23T19:56:25.223784+00:00", "type": "lead_added"}
 {"event_id": "evt_20261023195625259514", "payload": {"lead_key": "domain:gevar.construction.am", "proposal_id": "id_128118026e07d6c6"}, "timestamp": "2026-10-23T19:56:25.259567+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090334408731", "payload": {"business_name": "Sewing Factory Armenia", "lead_key": "domain:sewingfactory.am"}, "timestamp": "2026-10-24T09:03:34.408833+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090334447766", "payload": {"lead_key": "domain:sewingfactory.am", "proposal_id": "id_3d0ca78eaf667828"}, "timestamp": "2026-10-24T09:03:34.447816+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090334503587", "payload": {"business_name": "Andor Hotel", "lead_key": "domain:andorhotel.com"}, "timestamp": "2026-10-24T09:03:34.503636+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090334539276", "payload": {"lead_key": "domain:andorhotel.com", "proposal_id": "id_c885e6e4f8ff1af5"}, "timestamp": "2026-10-24T09:03:34.539323+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090334595427", "payload": {"business_name": "Pikasso OOH", "lead_key": "domain:pikasso.com"}, "timestamp": "2026-10-24T09:03:34.595498+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090334647114", "payload": {"lead_key": "domain:pikasso.com", "proposal_id": "id_c0d433d571c2ff95"}, "timestamp": "2026-10-24T09:03:34.647164+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090426367192", "payload": {"business_name": "Edent Dental Clinic", "lead_key": "domain:edent.am"}, "timestamp": "2026-10-24T09:04:26.367245+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090426414523", "payload": {"lead_key": "domain:edent.am", "proposal_id": "id_a68ff27f3d745856"}, "timestamp": "2026-10-24T09:04:26.414574+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090426482220", "payload": {"business_name": "Implantum Dental Center", "lead_key": "domain:implantum.am"}, "timestamp": "2026-10-24T09:04:26.482267+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090426594597", "payload": {"lead_key": "domain:implantum.am", "proposal_id": "id_75de20b10b531e31"}, "timestamp": "2026-10-24T09:04:26.594655+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090426738716", "payload": {"business_name": "Mary Clinic", "lead_key": "domain:maryclinic.am"}, "timestamp": "2026-10-24T09:04:26.738768+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090426836664", "payload": {"lead_key": "domain:maryclinic.am", "proposal_id": "id_466c6c263643c693"}, "timestamp": "2026-10-24T09:04:26.836718+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090426973414", "payload": {"business_name": "France Med Yerevan", "lead_key": "domain:france-med.com"}, "timestamp": "2026-10-24T09:04:26.973502+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090427068668", "payload": {"lead_key": "domain:france-med.com", "proposal_id": "id_b1591ca3af4aff4c"}, "timestamp": "2026-10-24T09:04:27.068728+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090427157711", "payload": {"business_name": "Orange Fitness", "lead_key": "domain:orangefitness.am"}, "timestamp": "2026-10-24T09:04:27.157766+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090427203945", "payload": {"lead_key": "domain:orangefitness.am", "proposal_id": "id_6508dc7c69571025"}, "timestamp": "2026-10-24T09:04:27.203998+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090427325860", "payload": {"business_name": "Tutunjian Fitness", "lead_key": "domain:tutunjianfitness.com"}, "timestamp": "2026-10-24T09:04:27.325919+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090427367407", "payload": {"lead_key": "domain:tutunjianfitness.com", "proposal_id": "id_7ead2e07fcd0f7d6"}, "timestamp": "2026-10-24T09:04:27.367460+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090427429685", "payload": {"business_name": "BAC Accounting", "lead_key": "domain:bac.am"}, "timestamp": "2026-10-24T09:04:27.429739+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090427511095", "payload": {"lead_key": "domain:bac.am", "proposal_id": "id_49c4d8a7f637828d"}, "timestamp": "2026-10-24T09:04:27.511144+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090427666229", "payload": {"business_name": "ARMAT Interior Design", "lead_key": "domain:armatdesign.am"}, "timestamp": "2026-10-24T09:04:27.666285+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090427755637", "payload": {"lead_key": "domain:armatdesign.am", "proposal_id": "id_5e27e5f6e2da8553"}, "timestamp": "2026-10-24T09:04:27.755689+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090427897322", "payload": {"business_name": "AA Design", "lead_key": "domain:aadesign.am"}, "timestamp": "2026-10-24T09:04:27.897377+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090427989087", "payload": {"lead_key": "domain:aadesign.am", "proposal_id": "id_71b37a8e6c721d3c"}, "timestamp": "2026-10-24T09:04:27.989142+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090428126639", "payload": {"business_name": "Trivia Design", "lead_key": "domain:trivia.design"}, "timestamp": "2026-10-24T09:04:28.126698+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090428217549", "payload": {"lead_key": "domain:trivia.design", "proposal_id": "id_51c74dfe941c29e8"}, "timestamp": "2026-10-24T09:04:28.217601+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090428358166", "payload": {"business_name": "Art House Design", "lead_key": "domain:arthouse.am"}, "timestamp": "2026-10-24T09:04:28.358222+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090428451011", "payload": {"lead_key": "domain:arthouse.am", "proposal_id": "id_c9357c73fc5267d1"}, "timestamp": "2026-10-24T09:04:28.451068+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090428533863", "payload": {"business_name": "Yanvet", "lead_key": "domain:yanvet.am"}, "timestamp": "2026-10-24T09:04:28.533916+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090428608641", "payload": {"lead_key": "domain:yanvet.am", "proposal_id": "id_8fb15bc532f318e4"}, "timestamp": "2026-10-24T09:04:28.608700+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090428750248", "payload": {"business_name": "ArmFarm", "lead_key": "domain:armfarm.com"}, "timestamp": "2026-10-24T09:04:28.750304+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090428839937", "payload": {"lead_key": "domain:armfarm.com", "proposal_id": "id_18f7c5becc87d79c"}, "timestamp": "2026-10-24T09:04:28.839994+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090428988623", "payload": {"business_name": "Targeting", "lead_key": "domain:targeting.am"}, "timestamp": "2026-10-24T09:04:28.988675+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090429077812", "payload": {"lead_key": "domain:targeting.am", "proposal_id": "id_c7c95741e6cca114"}, "timestamp": "2026-10-24T09:04:29.077867+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090429220180", "payload": {"business_name": "Tanger Loft", "lead_key": "domain:tanger.am"}, "timestamp": "2026-10-24T09:04:29.220237+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090429311288", "payload": {"lead_key": "domain:tanger.am", "proposal_id": "id_9cbb3b9a16919e1a"}, "timestamp": "2026-10-24T09:04:29.311346+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090429458098", "payload": {"business_name": "Loft Coworking", "lead_key": "domain:loftcoworking.am"}, "timestamp": "2026-10-24T09:04:29.458156+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090429559003", "payload": {"lead_key": "domain:loftcoworking.am", "proposal_id": "id_073366050ac687ef"}, "timestamp": "2026-10-24T09:04:29.559058+00:00", "type": "proposal_added"}
