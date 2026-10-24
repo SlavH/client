@@ -21,7 +21,7 @@ def run_batch(indices: list[int]) -> list[str]:
     procs = []
     for idx in indices:
         proc = subprocess.Popen(
-            [sys.executable, "automation/generate_demo.py", "--index", str(idx)],
+            [sys.executable, "automation/generate_demo.py", "--index", str(idx), "--force"],
             cwd=ROOT,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
