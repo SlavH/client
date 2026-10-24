@@ -1,0 +1,10 @@
+{
+  "lead_key": "domain:amiobank.am",
+  "business_name": "AMIO Bank",
+  "city": "Yerevan",
+  "country": "Armenia",
+  "business_category": "bank",
+  "website_url": "https://amiobank.am/en",
+  "status": "completed",
+  "demo_type": "static-html-concept"
+}
