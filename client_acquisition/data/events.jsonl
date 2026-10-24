@@ -1007,3 +1007,5 @@
 {"event_id": "evt_20261024090739067055", "payload": {"lead_key": "domain:dzenoffood.am", "proposal_id": "id_409573f882e23611"}, "timestamp": "2026-10-24T09:07:39.067102+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024090739129856", "payload": {"business_name": "Kababji Orient", "lead_key": "domain:kababjiorientoyerevan.com"}, "timestamp": "2026-10-24T09:07:39.129907+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024090739171031", "payload": {"lead_key": "domain:kababjiorientoyerevan.com", "proposal_id": "id_02f05588fd7cb8e4"}, "timestamp": "2026-10-24T09:07:39.171085+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090809206104", "payload": {"business_name": "Lavanda Ophthalmological Center", "lead_key": "domain:lavanda.am"}, "timestamp": "2026-10-24T09:08:09.206165+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090809263658", "payload": {"lead_key": "domain:lavanda.am", "proposal_id": "id_ddc5717a4042a7fd"}, "timestamp": "2026-10-24T09:08:09.263709+00:00", "type": "proposal_added"}
