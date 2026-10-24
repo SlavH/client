@@ -65,4 +65,3 @@ for batch_no, start in enumerate(range(START, total, BATCH), start=1):
     print(f"pushed batch {batch_no}", flush=True)
 
 print("completed generator run", flush=True)
-PY
