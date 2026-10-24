@@ -1229,3 +1229,7 @@
 {"event_id": "evt_20261024091309274419", "payload": {"lead_key": "name:computer emergency|yerevan|armenia", "proposal_id": "id_9fde6a20737c94c3"}, "timestamp": "2026-10-24T09:13:09.274500+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024091321932010", "payload": {"business_name": "Optic House", "lead_key": "name:optic house|yerevan|armenia"}, "timestamp": "2026-10-24T09:13:21.932065+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024091321991363", "payload": {"lead_key": "name:optic house|yerevan|armenia", "proposal_id": "id_92023be2fa8d945a"}, "timestamp": "2026-10-24T09:13:21.991424+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024091352094113", "payload": {"business_name": "Trattoria La Cucina", "lead_key": "name:trattoria la cucina|yerevan|armenia"}, "timestamp": "2026-10-24T09:13:52.095171+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024091352173422", "payload": {"lead_key": "name:trattoria la cucina|yerevan|armenia", "proposal_id": "id_d709b6fdde40eb35"}, "timestamp": "2026-10-24T09:13:52.173512+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024091352312368", "payload": {"business_name": "Getap Restaurant", "lead_key": "name:getap restaurant|yerevan|armenia"}, "timestamp": "2026-10-24T09:13:52.312419+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024091352442703", "payload": {"lead_key": "name:getap restaurant|yerevan|armenia", "proposal_id": "id_cc9db013dbe8848a"}, "timestamp": "2026-10-24T09:13:52.442759+00:00", "type": "proposal_added"}
