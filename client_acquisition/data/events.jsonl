@@ -913,3 +913,35 @@
 {"event_id": "evt_20261024090429311288", "payload": {"lead_key": "domain:tanger.am", "proposal_id": "id_9cbb3b9a16919e1a"}, "timestamp": "2026-10-24T09:04:29.311346+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024090429458098", "payload": {"business_name": "Loft Coworking", "lead_key": "domain:loftcoworking.am"}, "timestamp": "2026-10-24T09:04:29.458156+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024090429559003", "payload": {"lead_key": "domain:loftcoworking.am", "proposal_id": "id_073366050ac687ef"}, "timestamp": "2026-10-24T09:04:29.559058+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090511336996", "payload": {"business_name": "Smartbox Electronics", "lead_key": "domain:smartbox.am"}, "timestamp": "2026-10-24T09:05:11.337056+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090511383224", "payload": {"lead_key": "domain:smartbox.am", "proposal_id": "id_983740c54f00b4de"}, "timestamp": "2026-10-24T09:05:11.383278+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090511515911", "payload": {"business_name": "Viva Electronics", "lead_key": "domain:vivaelectronics.am"}, "timestamp": "2026-10-24T09:05:11.515971+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090511670682", "payload": {"lead_key": "domain:vivaelectronics.am", "proposal_id": "id_3bc1639d439e7358"}, "timestamp": "2026-10-24T09:05:11.670739+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090511914911", "payload": {"business_name": "X-Tech", "lead_key": "domain:x-tech.am"}, "timestamp": "2026-10-24T09:05:11.914965+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090512066105", "payload": {"lead_key": "domain:x-tech.am", "proposal_id": "id_30768bbc609e199b"}, "timestamp": "2026-10-24T09:05:12.066165+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090512266723", "payload": {"business_name": "Tesnum.am", "lead_key": "domain:tesnum.am"}, "timestamp": "2026-10-24T09:05:12.266777+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090512365056", "payload": {"lead_key": "domain:tesnum.am", "proposal_id": "id_8bfd87a01ac36d6a"}, "timestamp": "2026-10-24T09:05:12.365109+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090512431145", "payload": {"business_name": "Non Gravity", "lead_key": "domain:nongravity.org"}, "timestamp": "2026-10-24T09:05:12.431203+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090512469158", "payload": {"lead_key": "domain:nongravity.org", "proposal_id": "id_9275d072f63ef424"}, "timestamp": "2026-10-24T09:05:12.469210+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090512527974", "payload": {"business_name": "Armenia Insurance", "lead_key": "domain:armeniainsurance.am"}, "timestamp": "2026-10-24T09:05:12.528038+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090512568925", "payload": {"lead_key": "domain:armeniainsurance.am", "proposal_id": "id_af5d8d2eb6cdee9d"}, "timestamp": "2026-10-24T09:05:12.568990+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090512635600", "payload": {"business_name": "Boyadjian Dental Clinic", "lead_key": "domain:dentforever.com"}, "timestamp": "2026-10-24T09:05:12.635659+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090512678257", "payload": {"lead_key": "domain:dentforever.com", "proposal_id": "id_99625928cf167ca9"}, "timestamp": "2026-10-24T09:05:12.678319+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090512743488", "payload": {"business_name": "Aregak Dental Clinic", "lead_key": "domain:aregak.com"}, "timestamp": "2026-10-24T09:05:12.743553+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090512792620", "payload": {"lead_key": "domain:aregak.com", "proposal_id": "id_12de39763ca2f259"}, "timestamp": "2026-10-24T09:05:12.792685+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090512873706", "payload": {"business_name": "AM-PG Group Printing", "lead_key": "domain:ampg.am"}, "timestamp": "2026-10-24T09:05:12.873765+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090512911799", "payload": {"lead_key": "domain:ampg.am", "proposal_id": "id_49cee0ab1f91eea5"}, "timestamp": "2026-10-24T09:05:12.911854+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090512973744", "payload": {"business_name": "Sun Print", "lead_key": "domain:sunprint.am"}, "timestamp": "2026-10-24T09:05:12.973801+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090513013094", "payload": {"lead_key": "domain:sunprint.am", "proposal_id": "id_79b731a754678dc8"}, "timestamp": "2026-10-24T09:05:13.013152+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090513073738", "payload": {"business_name": "CreativeLab", "lead_key": "domain:creativelab.am"}, "timestamp": "2026-10-24T09:05:13.073800+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090513112999", "payload": {"lead_key": "domain:creativelab.am", "proposal_id": "id_e9cebb37ca783fff"}, "timestamp": "2026-10-24T09:05:13.113053+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090513173572", "payload": {"business_name": "Mine-Brands", "lead_key": "domain:mine-brands.com"}, "timestamp": "2026-10-24T09:05:13.173631+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090513212522", "payload": {"lead_key": "domain:mine-brands.com", "proposal_id": "id_c513412b2692115b"}, "timestamp": "2026-10-24T09:05:13.212578+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090513273381", "payload": {"business_name": "Jan Armenia", "lead_key": "domain:janarmenia.com"}, "timestamp": "2026-10-24T09:05:13.273438+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090513312243", "payload": {"lead_key": "domain:janarmenia.com", "proposal_id": "id_c0cc7462ecf4c988"}, "timestamp": "2026-10-24T09:05:13.312297+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090513374333", "payload": {"business_name": "Construction.am", "lead_key": "domain:construction.am"}, "timestamp": "2026-10-24T09:05:13.374391+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090513413178", "payload": {"lead_key": "domain:construction.am", "proposal_id": "id_57acb6e03eee130d"}, "timestamp": "2026-10-24T09:05:13.413232+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090513473104", "payload": {"business_name": "Metrum Invest", "lead_key": "domain:metruminvest.am"}, "timestamp": "2026-10-24T09:05:13.473166+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090513511619", "payload": {"lead_key": "domain:metruminvest.am", "proposal_id": "id_858cb6ffa03d32c9"}, "timestamp": "2026-10-24T09:05:13.511672+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090513571526", "payload": {"business_name": "Levs Construction", "lead_key": "domain:levs.am"}, "timestamp": "2026-10-24T09:05:13.571580+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090513609712", "payload": {"lead_key": "domain:levs.am", "proposal_id": "id_962741b2ffb87bb0"}, "timestamp": "2026-10-24T09:05:13.609764+00:00", "type": "proposal_added"}
