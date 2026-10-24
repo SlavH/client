@@ -969,3 +969,5 @@
 {"event_id": "evt_20261024090554078594", "payload": {"lead_key": "domain:gevorgyans.am", "proposal_id": "id_f9771cd1764e8b8d"}, "timestamp": "2026-10-24T09:05:54.078639+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024090554142087", "payload": {"business_name": "Domus", "lead_key": "domain:domus.am"}, "timestamp": "2026-10-24T09:05:54.142140+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024090554185657", "payload": {"lead_key": "domain:domus.am", "proposal_id": "id_98e78377f3b1d89f"}, "timestamp": "2026-10-24T09:05:54.185710+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090605280720", "payload": {"business_name": "VIP Driving School", "lead_key": "domain:vipdriving.am"}, "timestamp": "2026-10-24T09:06:05.280779+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090605324168", "payload": {"lead_key": "domain:vipdriving.am", "proposal_id": "id_8d6995c546e26595"}, "timestamp": "2026-10-24T09:06:05.324217+00:00", "type": "proposal_added"}
