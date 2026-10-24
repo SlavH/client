@@ -1,117 +1,270 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>REDstore | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for REDstore, a electronics store business in Yerevan, Armenia.">
-  <style>
-    :root {
-      --bg: #111827;
-      --accent: #16a34a;
-      --surface: #f9fafb;
-      --font: Georgia, serif;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
-    section { padding: 4rem 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
-    .button.primary { background: var(--accent); color: #ffffff; }
-    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
-    form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
-    footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REDstore Yerevan | Electronics Store Concept Demo</title>
+<meta name="description" content="Concept demo for REDstore electronics store in Yerevan, Armenia (lead index 107). Static HTML prototype.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f5f7fa; color: #1a1a1a; line-height: 1.6; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+  header { background: #fff; border-bottom: 1px solid #e5e7eb; position: sticky; top: 0; z-index: 100; }
+  .topbar { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; font-size: 0.85rem; color: #666; }
+  .topbar .lang a { color: #0066cc; text-decoration: none; margin-left: 12px; }
+  .topbar .currency { margin-left: auto; font-weight: 600; color: #111; }
+  .navbar { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+  .logo { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.5px; text-decoration: none; color: #1a1a1a; display: flex; align-items: center; gap: 8px; }
+  .logo .mark { width: 32px; height: 32px; background: #d00000; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; font-size: 1rem; }
+  .nav-links { display: flex; gap: 26px; list-style: none; }
+  .nav-links a { text-decoration: none; color: #333; font-weight: 500; font-size: 0.95rem; }
+  .nav-links a:hover { color: #d00000; }
+  .nav-actions { display: flex; align-items: center; gap: 16px; }
+  .search { position: relative; }
+  .search input { padding: 8px 14px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 0.9rem; width: 200px; }
+  .btn { border: none; border-radius: 8px; padding: 9px 18px; font-size: 0.9rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; }
+  .btn-primary { background: #d00000; color: #fff; }
+  .btn-primary:hover { background: #a80000; }
+  .btn-outline { background: transparent; border: 1px solid #d1d5db; color: #333; }
+  .btn-outline:hover { background: #f3f4f6; }
+  .hero { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); color: #fff; padding: 70px 0 60px; border-radius: 16px; margin: 32px 0; text-align: center; }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; margin-bottom: 14px; letter-spacing: -1px; }
+  .hero p { font-size: 1.15rem; color: #cbd5e1; margin-bottom: 24px; max-width: 700px; margin-left: auto; margin-right: auto; }
+  .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .categories { padding: 48px 0; }
+  .section-header { text-align: center; margin-bottom: 32px; }
+  .section-header h2 { font-size: 1.75rem; font-weight: 700; margin-bottom: 8px; color: #111; }
+  .section-header p { color: #666; }
+  .cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+  .cat-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px 16px; text-align: center; text-decoration: none; color: #1a1a1a; transition: transform .2s, box-shadow .2s; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .cat-card:hover { transform: translateY(-3px); box-shadow: 0 10px 25px -5px rgba(0,0,0,.08); border-color: #d00000; }
+  .cat-card .icon { width: 48px; height: 48px; background: #fef2f2; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #d00000; }
+  .cat-card span { font-weight: 600; font-size: 0.95rem; }
+  .products { padding: 48px 0; background: #fff; }
+  .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+  .product-card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: #fff; transition: box-shadow .2s; display: flex; flex-direction: column; height: 100%; }
+  .product-card:hover { box-shadow: 0 12px 30px -6px rgba(0,0,0,.08); }
+  .product-img { width: 100%; height: 160px; background: #f3f4f6; border-radius: 10px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; color: #9ca3af; font-size: 0.85rem; }
+  .product-card h3 { font-size: 1rem; margin-bottom: 6px; font-weight: 600; color: #1a1a1a; line-height: 1.3; }
+  .product-meta { display: flex; justify-content: space-between; align-items: baseline; margin-top: auto; }
+  .price { font-size: 1.1rem; font-weight: 700; color: #d00000; }
+  .installment { font-size: 0.8rem; color: #6b7280; }
+  .info-bar { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 40px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+  .info-item h4 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; color: #666; margin-bottom: 6px; font-weight: 600; }
+  .info-item p { color: #1a1a1a; font-size: 1.05rem; }
+  .store-map-placeholder { margin: 40px 0; border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; background: #eef2f6; height: 300px; display: flex; align-items: center; justify-content: center; color: #6b7280; font-size: 0.95rem; }
+  .notice { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 14px 18px; margin: 32px 0; border-radius: 0 8px 8px 0; font-size: 0.85rem; color: #92400e; line-height: 1.55; }
+  footer { background: #111; color: #e5e7eb; padding: 48px 0 24px; border-top: 1px solid #222; margin-top: 40px; }
+  .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 30px; margin-bottom: 32px; }
+  .footer-col h4 { color: #fff; font-size: 1rem; margin-bottom: 16px; font-weight: 600; }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 8px; }
+  .footer-col a { color: #9ca3af; text-decoration: none; font-size: 0.9rem; }
+  .footer-col a:hover { color: #fff; }
+  .footer-bottom { border-top: 1px solid #222; padding-top: 24px; font-size: 0.85rem; color: #6b7280; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .badge { display: inline-block; background: #d00000; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+  @media (max-width: 640px) { .nav-links { display: none; } .search input { width: 140px; } .hero-actions { flex-direction: column; align-items: center; } .topbar { flex-direction: column; gap: 8px; align-items: flex-start; } .topbar .currency { margin-left: 0; } }
+</style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <nav>
-        <a href="#top">REDstore</a>
-        <div>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+
+<header>
+  <div class="container">
+    <div class="topbar">
+      <div class="lang">EN | <span style="color:#333">AM</span> | RU</div>
+      <div class="currency">AMD | USD | EUR | RUB</div>
     </div>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="wrap">
-        <span class="badge">electronics store concept demo</span>
-        <h1>REDstore</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a electronics store business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 54/100</span></p>
-        <a class="button primary" href="#contact">Request information</a>
+    <div class="navbar">
+      <a href="#" class="logo"><div class="mark">R</div>REDstore</a>
+      <ul class="nav-links">
+        <li><a href="#">Smartphones</a></li>
+        <li><a href="#">Tablets</a></li>
+        <li><a href="#">Watches</a></li>
+        <li><a href="#">Notebooks</a></li>
+        <li><a href="#">Computers</a></li>
+        <li><a href="#">TV</a></li>
+        <li><a href="#">Audio</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search"><input type="text" placeholder="Search"></div>
+        <a href="#" class="btn btn-outline">Login</a>
+        <a href="#" class="btn btn-primary">Cart</a>
       </div>
-    </section>
+    </div>
+  </div>
+</header>
 
-    <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>Online electronics shop; website could benefit from improved search and customer account features.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Improved search and customer account features</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://redstore.am/en" target="_blank" rel="noopener">https://redstore.am/en</a></li></ul>
-        </article>
+<main class="container">
+  <section class="hero">
+    <span class="badge">ELECTRONICS &bull; YEREVAN, ARMENIA</span>
+    <h1>REDstore &mdash; Best online electronics shop in Armenia</h1>
+    <p>iPhone, MacBook, Samsung, Dreame and more. Fast delivery and reliable shopping from Yerevan.</p>
+    <div class="hero-actions">
+      <a href="#" class="btn btn-primary">Shop Smartphones</a>
+      <a href="#" class="btn btn-outline">View All Categories</a>
+      <a href="#" class="btn btn-outline">Download REDstore App</a>
+    </div>
+  </section>
+
+  <section class="categories">
+    <div class="section-header">
+      <h2>Shop by Category</h2>
+      <p>Explore our electronics range</p>
+    </div>
+    <div class="cat-grid">
+      <a href="#" class="cat-card"><div class="icon">📱</div><span>Smartphones</span></a>
+      <a href="#" class="cat-card"><div class="icon">💻</div><span>Notebooks</span></a>
+      <a href="#" class="cat-card"><div class="icon">⌚</div><span>Watches</span></a>
+      <a href="#" class="cat-card"><div class="icon">📺</div><span>TV</span></a>
+      <a href="#" class="cat-card"><div class="icon">🎧</div><span>Audio</span></a>
+      <a href="#" class="cat-card"><div class="icon">🖥️</div><span>Computers</span></a>
+      <a href="#" class="cat-card"><div class="icon">🎮</div><span>Game Consoles</span></a>
+      <a href="#" class="cat-card"><div class="icon">📷</div><span>Photo &amp; Video</span></a>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="section-header" style="display:flex; justify-content:space-between; align-items:center; text-align:left;">
+      <div>
+        <h2>Featured Products</h2>
+        <p>Placeholder pricing in AMD (from redstore.am/en)</p>
       </div>
-    </section>
-
-    <section id="contact">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://redstore.am/en" target="_blank" rel="noopener">Current website</a></p>
-          <p class="muted">Verified contact details should be confirmed before production use.</p>
-        </article>
-        <article class="card">
-          <h2>Demo inquiry form</h2>
-          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button class="button primary" type="submit">Send inquiry</button>
-          </form>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of REDstore, and no booking, payment, or contact request is submitted by this demo.
+      <a href="#" style="color:#d00000; font-weight:600; text-decoration:none;">View all &rarr;</a>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-img">iPhone 18 Pro</div>
+        <h3>iPhone 18 Pro 256GB &mdash; Burgundy eSim</h3>
+        <div class="product-meta">
+          <span class="price">569,000 ֏</span>
+          <span class="installment">12,480 ֏ / 48 mo</span>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
+      <div class="product-card">
+        <div class="product-img">iPhone 18 Pro Max</div>
+        <h3>iPhone 18 Pro Max 256GB &mdash; Black eSim</h3>
+        <div class="product-meta">
+          <span class="price">659,000 ֏</span>
+          <span class="installment">13,938 ֏ / 48 mo</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">iPhone Duo</div>
+        <h3>iPhone Duo 256GB &mdash; Star White</h3>
+        <div class="product-meta">
+          <span class="price">1,399,000 ֏</span>
+          <span class="installment">29,146 ֏ / 48 mo</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">Apple AirPods</div>
+        <h3>Apple AirPods 5 Wireless</h3>
+        <div class="product-meta">
+          <span class="price">79,000 ֏</span>
+          <span class="installment">1,646 ֏ / 48 mo</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">Apple Watch</div>
+        <h3>iWatch Series 12 &mdash; 42mm Light Gold</h3>
+        <div class="product-meta">
+          <span class="price">194,000 ֏</span>
+          <span class="installment">4,042 ֏ / 48 mo</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">Dreame Vacuum</div>
+        <h3>Dreame Bot L60 Pro Ultra Robotic Vac</h3>
+        <div class="product-meta">
+          <span class="price">599,000 ֏</span>
+          <span class="installment">12,480 ֏ / 48 mo</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">Microsoft Surface</div>
+        <h3>Microsoft Surface Pro 13 (Black)</h3>
+        <div class="product-meta">
+          <span class="price">999,000 ֏</span>
+          <span class="installment">20,813 ֏ / 48 mo</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">Dreame Hair Dryer</div>
+        <h3>Dreame Mini Hair Dryer &mdash; Purple</h3>
+        <div class="product-meta">
+          <span class="price">19,900 ֏</span>
+          <span class="installment">--</span>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <div class="info-bar">
+    <div class="info-item">
+      <h4>Location</h4>
+      <p>Yerevan, Armenia</p>
+    </div>
+    <div class="info-item">
+      <h4>Website</h4>
+      <p>https://redstore.am/en</p>
+    </div>
+    <div class="info-item">
+      <h4>Currencies</h4>
+      <p>AMD, USD, EUR, RUB</p>
+    </div>
+    <div class="info-item">
+      <h4>Installments</h4>
+      <p>Up to 48 months</p>
+    </div>
+  </div>
+
+  <div class="store-map-placeholder">
+    [Store map placeholder &mdash; location in Yerevan, Armenia]
+  </div>
+
+  <div class="notice">
+    <strong>Unofficial concept demo.</strong> This is a static HTML prototype for lead index 107. It is not affiliated with REDstore. All product names, prices, and details are placeholders based on publicly visible information from redstore.am/en and may be inaccurate or outdated. No data is sent externally.
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>REDstore</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">Smartphones</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="#">Watches</a></li>
+          <li><a href="#">Notebooks</a></li>
+          <li><a href="#">TV</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>Concept demo &bull; Lead index 107 &bull; Not affiliated with REDstore</div>
+      <div>Yerevan, Armenia &bull; https://redstore.am/en</div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

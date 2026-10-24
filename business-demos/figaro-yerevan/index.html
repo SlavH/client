@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Figaro | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for Figaro, a restaurant group business in Yerevan, Armenia.">
+  <meta name="description" content="Unofficial concept demo website for Figaro Restaurant Group, a restaurant group business in Yerevan, Armenia.">
   <style>
     :root {
-      --bg: #1f2937;
-      --accent: #ea580c;
-      --surface: #fff7ed;
-      --font: Helvetica, Arial, sans-serif;
+      --bg: #1f1f1f;
+      --accent: #c4904c;
+      --surface: #f5f5f0;
+      --font: Inter, system-ui, sans-serif;
     }
     * { box-sizing: border-box; }
     body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
@@ -18,10 +18,11 @@
     .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
     nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
     nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
+    nav a:hover { color: var(--accent); }
+    .hero { background: linear-gradient(135deg, var(--bg), #2d2d2d); color: #ffffff; padding: 5rem 0; }
     .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
     .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
+    .badge { display: inline-block; background: var(--accent); color: #ffffff; border: 1px solid #ffffff; border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
     section { padding: 4rem 0; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
     .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
@@ -29,12 +30,17 @@
     .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
     .button.primary { background: var(--accent); color: #ffffff; }
     .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
+    .button.primary:hover { background: #b0803d; }
+    .button.secondary:hover { border-color: #9ca3af; }
     form { display: grid; gap: .75rem; }
     input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
     textarea { min-height: 130px; }
     .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
     footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
     .muted { color: #6b7280; }
+    .brand { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+    .brand h3 { margin: 0; font-size: 1rem; }
+    .brand p { margin: 0; font-size: .875rem; color: #6b7280; }
     @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
   </style>
 </head>
@@ -44,7 +50,7 @@
       <nav>
         <a href="#top">Figaro</a>
         <div>
-          <a href="#services">Services</a>
+          <a href="#brands">Brands</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -57,20 +63,37 @@
         <span class="badge">restaurant group concept demo</span>
         <h1>Figaro</h1>
         <p>A clearer, faster, and more trustworthy website concept for a restaurant group business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 64/100</span></p>
+        <p><span>Fit score: 76/100</span></p>
         <a class="button primary" href="#contact">Request information</a>
       </div>
     </section>
 
-    <section id="services">
+    <section id="brands">
       <div class="wrap grid">
         <article class="card">
           <h2>What we verified</h2>
-          <ul><li>Restaurant group with 3 brands and 5 locations; website could benefit from unified online ordering.</li></ul>
+          <ul>
+            <li>Restaurant group operating three brands: Segafredo, Cinnabon, and Square One.</li>
+            <li>5 locations, 3 brands, 50,000+ monthly customers.</li>
+            <li>Official website: https://figaro.am/</li>
+            <li>Flagship location: Northern Ave 10, Building Area 3/2, Yerevan.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Our brands</h2>
+          <div class="brand">
+            <h3>Segafredo</h3><p>Authentic Italian coffee experience</p>
+          </div>
+          <div class="brand">
+            <h3>Cinnabon</h3><p>World-famous cinnamon rolls</p>
+          </div>
+          <div class="brand">
+            <h3>Square One</h3><p>Cafe with a tasty modern kitchen</p>
+          </div>
         </article>
         <article class="card">
           <h2>Proposed improvement</h2>
-          <p>Unified online ordering system</p>
+          <p>A unified restaurant group site presenting brands, locations, contact routes, and mobile-friendly navigation.</p>
           <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
         </article>
         <article class="card">
@@ -84,7 +107,11 @@
       <div class="wrap grid">
         <article class="card">
           <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://figaro.am/" target="_blank" rel="noopener">Current website</a></p>
+          <p><a class="button secondary" href="https://figaro.am/" target="_blank" rel="noopener">Official website</a></p>
+          <p><span class="muted">Northern Ave 10, Building Area 3/2, Yerevan, Armenia</span></p>
+          <p><span class="muted">+374 94 539890</span></p>
+          <p><span class="muted">info@figaro.am</span></p>
+          <p><span class="muted">Hours: 8:00 - 23:00</span></p>
           <p class="muted">Verified contact details should be confirmed before production use.</p>
         </article>
         <article class="card">
@@ -102,7 +129,7 @@
     <section>
       <div class="wrap">
         <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of Figaro, and no booking, payment, or contact request is submitted by this demo.
+          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of Figaro Restaurant Group, and no booking, payment, or contact request is submitted by this demo.
         </div>
       </div>
     </section>

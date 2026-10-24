@@ -1,10 +1,12 @@
 {
-  "lead_key": "domain:itplaza.am",
+  "lead_key": "name:itplaza|yerevan|armenia",
   "business_name": "ITPlaza",
   "city": "Yerevan",
   "country": "Armenia",
   "business_category": "computer store",
   "website_url": "https://www.itplaza.am/",
   "status": "completed",
-  "demo_type": "static-html-concept"
+  "demo_type": "manual-research-concept",
+  "lead_index": 109,
+  "generator_version": "manual"
 }

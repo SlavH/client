@@ -1,10 +1,14 @@
 {
   "lead_key": "domain:fabricagroup.am",
+  "lead_index": 100,
   "business_name": "Fabrica Group",
   "city": "Yerevan",
   "country": "Armenia",
   "business_category": "restaurant group",
   "website_url": "https://fabricagroup.am/restaurants",
   "status": "completed",
-  "demo_type": "static-html-concept"
+  "demo_type": "manual-research-concept",
+  "slug": "fabrica-group-yerevan",
+  "notes": "Unofficial static HTML concept demo. Verified facts only; unknowns use placeholders. No external sends.",
+  "generator_version": "manual"
 }

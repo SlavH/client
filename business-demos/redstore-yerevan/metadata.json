@@ -1,0 +1,17 @@
+{
+  "lead_index": 107,
+  "slug": "redstore-yerevan",
+  "business": "REDstore",
+  "category": "electronics store",
+  "city": "Yerevan",
+  "country": "Armenia",
+  "website": "https://redstore.am/en",
+  "demo_file": "index.html",
+  "status": "concept demo",
+  "verified_observations": [
+    "REDstore operates as an online electronics shop in Armenia with categories including Smartphones, Tablets, Watches, Notebooks, Computers, Monitors, TV, Game Consoles, Photo & video recorders, Audio Equipment, Projectors, Drones, Scooters, Small and Large Home Appliances, Beauty and care.",
+    "Product pricing is displayed in Armenian Dram (AMD) with installment options shown as monthly payments over 48 months (e.g., iPhone 18 Pro 256GB at 569,000 AMD = 12,480 AMD/month).",
+    "Site supports multiple languages (EN, AM, RU) and currencies (AMD, USD, EUR, RUB), and promotes a REDstore mobile app for shopping with fast delivery."
+  ],
+  "unofficial_notice": "This is an unofficial static HTML concept demo. Not affiliated with REDstore. All details are placeholders based on publicly visible information from redstore.am/en and may be inaccurate or outdated. No data is sent externally."
+}

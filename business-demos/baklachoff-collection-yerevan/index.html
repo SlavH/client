@@ -1,117 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Baklachoff Collection | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for Baklachoff Collection, a restaurant group business in Yerevan, Armenia.">
-  <style>
-    :root {
-      --bg: #1f2937;
-      --accent: #ea580c;
-      --surface: #fff7ed;
-      --font: Helvetica, Arial, sans-serif;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
-    section { padding: 4rem 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
-    .button.primary { background: var(--accent); color: #ffffff; }
-    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
-    form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
-    footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baklachoff Collection — Lead Index 101 Concept Demo</title>
+<meta name="description" content="Concept demo for Baklachoff Collection, restaurant group in Yerevan, Armenia. Official site: https://www.baklachoff.com/">
+<meta name="slug" content="baklachoff-collection-yerevan">
+<meta name="lead-index" content="101">
+<meta name="business" content="Baklachoff Collection">
+<meta name="category" content="Restaurant Group">
+<meta name="city" content="Yerevan">
+<meta name="country" content="Armenia">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafafa; }
+  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+  header { text-align: center; padding: 4rem 1rem 2rem; }
+  header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #8b4513; }
+  header p.subtitle { font-size: 1.1rem; color: #555; }
+  .notice { background: #fff3cd; border-left: 4px solid #ffc107; padding: 1rem; margin: 1.5rem 0; font-size: 0.9rem; color: #664d00; border-radius: 4px; }
+  .notice b { color: #856404; }
+  .hero { background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%); color: #fff; padding: 3rem 2rem; border-radius: 12px; margin-bottom: 2rem; text-align: center; }
+  .hero h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+  .hero p { font-size: 1.1rem; opacity: 0.95; }
+  .section { margin-bottom: 2.5rem; }
+  .section h3 { font-size: 1.4rem; margin-bottom: 1rem; color: #8b4513; border-bottom: 2px solid #8b4513; display: inline-block; padding-bottom: 0.25rem; }
+  .restaurants { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+  .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+  .card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; color: #1a1a1a; }
+  .card p { font-size: 0.9rem; color: #555; margin-bottom: 0.5rem; }
+  .contact { background: #f4f1ea; border-radius: 8px; padding: 2rem; }
+  .contact h3 { color: #8b4513; margin-bottom: 1rem; }
+  .contact p { margin-bottom: 0.5rem; color: #333; }
+  .social { margin-top: 1rem; }
+  .social a { color: #8b4513; text-decoration: none; margin-right: 1rem; }
+  footer { text-align: center; padding: 2rem 1rem; color: #777; font-size: 0.85rem; border-top: 1px solid #ddd; margin-top: 2rem; }
+  .badge { display: inline-block; background: #8b4513; color: #fff; font-size: 0.75rem; padding: 0.2rem 0.5rem; border-radius: 12px; margin-top: 0.5rem; }
+  @media (max-width: 600px) { header h1 { font-size: 1.8rem; } .hero h2 { font-size: 1.5rem; } }
+</style>
 </head>
 <body>
+<div class="container">
   <header>
-    <div class="wrap">
-      <nav>
-        <a href="#top">Baklachoff Collection</a>
-        <div>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </div>
+    <h1>Baklachoff Collection</h1>
+    <p class="subtitle">Restaurant Group &middot; Yerevan, Armenia</p>
+    <div class="badge">Lead Index 101 &middot; Concept Demo</div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap">
-        <span class="badge">restaurant group concept demo</span>
-        <h1>Baklachoff Collection</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a restaurant group business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 64/100</span></p>
-        <a class="button primary" href="#contact">Request information</a>
-      </div>
-    </section>
+  <div class="notice">
+    <b>Unofficial concept demo.</b> This is a static HTML concept demonstration for lead-index purposes. Not affiliated with Baklachoff Collection. Content is a summary of publicly available information from the official website plus placeholders where indicated. No data is sent externally.
+  </div>
 
-    <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>Restaurant group with multiple locations; website could benefit from online reservation system.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Online reservation system</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://www.baklachoff.com/" target="_blank" rel="noopener">https://www.baklachoff.com/</a></li></ul>
-        </article>
-      </div>
-    </section>
+  <section class="hero">
+    <h2>Experience the Finest Dining in Yerevan</h2>
+    <p>A group of distinguished restaurants offering unique culinary experiences.</p>
+  </section>
 
-    <section id="contact">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://www.baklachoff.com/" target="_blank" rel="noopener">Current website</a></p>
-          <p class="muted">Verified contact details should be confirmed before production use.</p>
-        </article>
-        <article class="card">
-          <h2>Demo inquiry form</h2>
-          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button class="button primary" type="submit">Send inquiry</button>
-          </form>
-        </article>
-      </div>
-    </section>
+  <section class="section">
+    <h3>About</h3>
+    <p>Baklachoff Collection is a group of distinguished restaurants offering unique culinary experiences in Yerevan, Armenia.</p>
+  </section>
 
-    <section>
-      <div class="wrap">
-        <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of Baklachoff Collection, and no booking, payment, or contact request is submitted by this demo.
-        </div>
+  <section class="section">
+    <h3>Our Restaurants</h3>
+    <div class="restaurants">
+      <div class="card">
+        <h4>Zepyur</h4>
+        <p>An elegant dining experience with a refined ambiance.</p>
+        <p><strong>Address:</strong> 19 Sayat-Nova Ave, Yerevan, Armenia</p>
+        <p><strong>Tel:</strong> +374 41 202022</p>
       </div>
-    </section>
-  </main>
+      <div class="card">
+        <h4>Mamamia</h4>
+        <p>A cozy and welcoming place for Italian cuisine lovers.</p>
+        <p><strong>Address:</strong> 41 Pushkin str, Yerevan, Armenia</p>
+        <p><strong>Tel:</strong> +374 41 222111</p>
+      </div>
+      <div class="card">
+        <h4>Chichiko</h4>
+        <p>Georgian sun in the heart of Yerevan.</p>
+        <p><strong>Address:</strong> Yeznik Koghbatsi Street, 67, Yerevan, Armenia</p>
+        <p><strong>Tel:</strong> +374 95 201201</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact">
+    <h3>Contact</h3>
+    <p><strong>Email:</strong> pr@baklachoff.com</p>
+    <p><strong>Phone:</strong> +374 10 507777</p>
+    <div class="social">
+      <a href="https://www.instagram.com/baklachoffcollection/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/BaklachoffCollection" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.baklachoff.com/" target="_blank" rel="noopener">Official Website</a>
+    </div>
+  </section>
 
   <footer>
-    <div class="wrap">
-      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
-    </div>
+    &copy; 2025 Baklachoff Collection. All Rights Reserved. &middot; Concept demo for lead index 101.
   </footer>
+</div>
 </body>
 </html>
