@@ -1303,3 +1303,5 @@
 {"event_id": "evt_20261024091722327982", "payload": {"lead_key": "name:chalikyan translation office|yerevan|armenia", "proposal_id": "id_8119bae4321b485a"}, "timestamp": "2026-10-24T09:17:22.328040+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024091737620763", "payload": {"business_name": "Brandon Marketing and Branding Agency", "lead_key": "name:brandon marketing and branding agency|yerevan|armenia"}, "timestamp": "2026-10-24T09:17:37.620823+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024091737748602", "payload": {"lead_key": "name:brandon marketing and branding agency|yerevan|armenia", "proposal_id": "id_2cad5ca369df9b04"}, "timestamp": "2026-10-24T09:17:37.748650+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024091755818454", "payload": {"business_name": "No Problem Hotel", "lead_key": "name:no problem hotel|yerevan|armenia"}, "timestamp": "2026-10-24T09:17:55.818541+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024091755971444", "payload": {"lead_key": "name:no problem hotel|yerevan|armenia", "proposal_id": "id_9d4581d688fe5088"}, "timestamp": "2026-10-24T09:17:55.971521+00:00", "type": "proposal_added"}
