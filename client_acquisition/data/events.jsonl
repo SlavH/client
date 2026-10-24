@@ -971,3 +971,9 @@
 {"event_id": "evt_20261024090554185657", "payload": {"lead_key": "domain:domus.am", "proposal_id": "id_98e78377f3b1d89f"}, "timestamp": "2026-10-24T09:05:54.185710+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024090605280720", "payload": {"business_name": "VIP Driving School", "lead_key": "domain:vipdriving.am"}, "timestamp": "2026-10-24T09:06:05.280779+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024090605324168", "payload": {"lead_key": "domain:vipdriving.am", "proposal_id": "id_8d6995c546e26595"}, "timestamp": "2026-10-24T09:06:05.324217+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090621988845", "payload": {"business_name": "Yerevan Real Estate", "lead_key": "domain:yerevanreal.com"}, "timestamp": "2026-10-24T09:06:21.988905+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090622039332", "payload": {"lead_key": "domain:yerevanreal.com", "proposal_id": "id_7d8cac10ca7f5be1"}, "timestamp": "2026-10-24T09:06:22.039385+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090622104010", "payload": {"business_name": "Elate Real Estate", "lead_key": "domain:elate.am"}, "timestamp": "2026-10-24T09:06:22.104064+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090622147713", "payload": {"lead_key": "domain:elate.am", "proposal_id": "id_c38d78f55602bac5"}, "timestamp": "2026-10-24T09:06:22.147768+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090622215885", "payload": {"business_name": "Calibri Real Estate", "lead_key": "domain:calibri.am"}, "timestamp": "2026-10-24T09:06:22.215943+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090622256529", "payload": {"lead_key": "domain:calibri.am", "proposal_id": "id_ff8cea24767410b1"}, "timestamp": "2026-10-24T09:06:22.256594+00:00", "type": "proposal_added"}
