@@ -3,114 +3,613 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AMH Audit | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for AMH Audit, a audit and advisory business in Yerevan, Armenia.">
+  <title>AMH Audit | Audit, Accounting, Tax and Advisory | Yerevan, Armenia</title>
+  <meta name="description" content="Unofficial concept demo for AMH Audit CJSC, an independent member of HLB International providing audit, accounting, tax, and advisory services in Yerevan, Armenia.">
+  <meta name="robots" content="noindex">
   <style>
     :root {
-      --bg: #1f2937;
-      --accent: #ea580c;
-      --surface: #fff7ed;
-      --font: Helvetica, Arial, sans-serif;
+      --bg: #0f1f3d;
+      --accent: #b8860b;
+      --surface: #f7f5ef;
+      --ink: #172033;
+      --muted: #5b6472;
+      --line: #e5e1d8;
+      --white: #ffffff;
+      --focus: #2563eb;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
-    section { padding: 4rem 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
-    .button.primary { background: var(--accent); color: #ffffff; }
-    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
-    form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
-    footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-underline-offset: .15em; }
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible,
+    select:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+    .skip-link {
+      position: absolute;
+      left: .75rem;
+      top: -100%;
+      background: var(--white);
+      color: var(--ink);
+      padding: .5rem .75rem;
+      border-radius: .5rem;
+      z-index: 100;
+    }
+    .skip-link:focus { top: .75rem; }
+    .wrap { width: min(1200px, calc(100% - 2rem)); margin: 0 auto; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: var(--bg);
+      color: var(--white);
+      box-shadow: 0 10px 30px rgba(15, 31, 61, .22);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: .9rem 0;
+      flex-wrap: wrap;
+    }
+    .brand {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: .02em;
+    }
+    .nav-links {
+      display: flex;
+      gap: .35rem;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      padding: .45rem .7rem;
+      border-radius: .6rem;
+    }
+    .nav-links a:hover { background: rgba(255, 255, 255, .12); }
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(184, 134, 11, .28), transparent 34%),
+        linear-gradient(135deg, var(--bg), #1b3a6b);
+      color: var(--white);
+      padding: clamp(4rem, 9vw, 7.5rem) 0;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+      gap: 2rem;
+      align-items: center;
+    }
+    .eyebrow {
+      display: inline-block;
+      background: rgba(255, 255, 255, .14);
+      border: 1px solid rgba(255, 255, 255, .24);
+      border-radius: 999px;
+      padding: .4rem .85rem;
+      font-size: .9rem;
+      font-weight: 700;
+      letter-spacing: .03em;
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 5rem);
+      line-height: 1.03;
+      margin: .8rem 0 1rem;
+    }
+    .hero p { max-width: 760px; font-size: 1.12rem; margin: 0 0 1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .45rem;
+      padding: .85rem 1.2rem;
+      border-radius: .85rem;
+      text-decoration: none;
+      font-weight: 800;
+      border: 1px solid transparent;
+      cursor: pointer;
+      font: inherit;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .button:hover { transform: translateY(-1px); }
+    .button.primary { background: var(--accent); color: var(--white); }
+    .button.secondary {
+      background: rgba(255, 255, 255, .1);
+      color: var(--white);
+      border-color: rgba(255, 255, 255, .3);
+    }
+    .button.dark {
+      background: var(--bg);
+      color: var(--white);
+    }
+    .button.light {
+      background: var(--white);
+      color: var(--bg);
+      border-color: var(--line);
+    }
+    .hero-card {
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: 1.25rem;
+      padding: 1.5rem;
+      backdrop-filter: blur(8px);
+    }
+    .hero-card h2 { margin: 0 0 .75rem; font-size: 1.2rem; }
+    .hero-card ul { margin: 0; padding-left: 1.1rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; }
+    .chip {
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 999px;
+      padding: .35rem .75rem;
+      font-size: .9rem;
+      font-weight: 700;
+    }
+    section { padding: clamp(3.25rem, 6vw, 5.5rem) 0; }
+    .section-title {
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      margin: 0 0 1.5rem;
+      color: var(--bg);
+    }
+    .section-intro {
+      max-width: 760px;
+      color: var(--muted);
+      margin: -0.5rem 0 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 1.25rem;
+      padding: 1.5rem;
+      box-shadow: 0 16px 40px rgba(15, 31, 61, .07);
+    }
+    .card h2,
+    .card h3 { margin-top: 0; color: var(--bg); }
+    .card p:last-child { margin-bottom: 0; }
+    .list {
+      display: grid;
+      gap: .65rem;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+    .list li {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: .85rem;
+      padding: .75rem .9rem;
+    }
+    .service-list {
+      margin: .75rem 0 0;
+      padding-left: 1.1rem;
+    }
+    .service-list li { margin-bottom: .35rem; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .stat {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      padding: 1rem;
+      text-align: center;
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.5rem;
+      color: var(--bg);
+    }
+    .stat span { font-size: .9rem; color: var(--muted); }
+    .industry {
+      display: flex;
+      align-items: center;
+      min-height: 72px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      padding: 1rem;
+      font-weight: 700;
+      color: var(--bg);
+    }
+    .publication {
+      display: grid;
+      gap: .35rem;
+    }
+    .publication a { font-weight: 700; }
+    .meta { color: var(--muted); font-size: .92rem; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 1.25rem;
+    }
+    .contact-item { margin-bottom: .9rem; }
+    .contact-item strong { display: block; color: var(--bg); }
+    .social { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: .5rem; }
+    .social a { font-weight: 700; }
+    .form-grid { display: grid; gap: .85rem; }
+    label { font-weight: 700; font-size: .95rem; }
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: .85rem;
+      border: 1px solid var(--line);
+      border-radius: .85rem;
+      font: inherit;
+      background: var(--white);
+      color: var(--ink);
+    }
+    textarea { min-height: 135px; resize: vertical; }
+    .status {
+      min-height: 1.5rem;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .notice {
+      background: #fffbeb;
+      border: 1px solid #fcd34d;
+      border-radius: 1rem;
+      padding: 1.1rem;
+    }
+    .notice strong { color: #78350f; }
+    footer {
+      background: #f3f4f6;
+      color: #4b5563;
+      padding: 2rem 0;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+    @media (max-width: 860px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 520px) {
+      .stats { grid-template-columns: 1fr; }
+      .hero { padding: 3.5rem 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .button { transition: none; }
+    }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <header>
     <div class="wrap">
-      <nav>
-        <a href="#top">AMH Audit</a>
-        <div>
+      <nav aria-label="Main navigation">
+        <a class="brand" href="#top">AMH Audit</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
           <a href="#services">Services</a>
+          <a href="#industries">Industries</a>
+          <a href="#publications">Publications</a>
           <a href="#contact">Contact</a>
+          <a href="https://amhaudit.am/" target="_blank" rel="noopener noreferrer">Official site</a>
         </div>
       </nav>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Unofficial concept demo</span>
+          <h1 id="hero-title">AMH Audit</h1>
+          <p>A clearer, faster, and more trustworthy website concept for audit, accounting, tax, and advisory services in Yerevan, Armenia.</p>
+          <p>Independent member of HLB International since November 2013. Verified public contact details and service information are presented below.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Schedule a consultation</a>
+            <a class="button secondary" href="#services">Explore services</a>
+          </div>
+          <div class="chips" aria-label="Verified highlights">
+            <span class="chip">HLB member since 2013</span>
+            <span class="chip">IFRS &amp; US GAAP</span>
+            <span class="chip">Audit · Accounting · Tax · Legal</span>
+            <span class="chip">Top-10 global accounting network (#9)</span>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Verified business summary">
+          <h2>Verified summary</h2>
+          <ul>
+            <li>Legal entity: AMH Audit CJSC</li>
+            <li>Founded: 2009</li>
+            <li>Founder and 100% owner: Aram Hovhannisyan, PhD, FCCA</li>
+            <li>Address: Office V-03, 2 Arshakunyats Avenue, Yerevan 0023</li>
+            <li>Email: amhaudit@amhaudit.am</li>
+          </ul>
+          <p class="meta">Source: official website pages verified on 2026-10-24.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
       <div class="wrap">
-        <span class="badge">audit and advisory concept demo</span>
-        <h1>AMH Audit</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a audit and advisory business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 54/100</span></p>
-        <a class="button primary" href="#contact">Request information</a>
+        <h2 class="section-title" id="about-title">Who we are</h2>
+        <p class="section-intro">AMH Audit combines local, regional, and international experience. The following statements are taken from the firm's official website and are not expanded with invented claims.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Experience</h3>
+            <p>AMH Audit's team comprises specialists with extensive experience across industry sectors in Armenia, the United Kingdom, Russia, Georgia, Kazakhstan, and Kyrgyzstan. The core team includes Armenian auditors qualified as FCCAs, AAAAs, and certified auditors of the Ministry of Finance of the Republic of Armenia, with Big Four audit and advisory experience in Armenia, Georgia, Russia, Kazakhstan, Kyrgyzstan, and the United Kingdom.</p>
+          </article>
+          <article class="card">
+            <h3>HLB International network</h3>
+            <p>Since November 2013 AMH Audit CJSC has been the Armenian member of HLB International, a network of independent professional accounting firms and business advisers headquartered in London. HLB International was formed in 1969 and is a member of the Forum of Firms. AMH Audit states that, together with HLB, it has reached #9 in the global ranking of accounting networks.</p>
+            <div class="stats" aria-label="HLB International network figures shown on the AMH Audit About page">
+              <div class="stat"><strong>155</strong><span>Countries</span></div>
+              <div class="stat"><strong>1,139</strong><span>Offices</span></div>
+              <div class="stat"><strong>51,948</strong><span>People</span></div>
+              <div class="stat"><strong>8</strong><span>Global ranking</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Founder and governance</h3>
+            <p>The founder of the firm, owner of 100% of its share capital, and ultimate controlling party is Mr. Aram Hovhannisyan, PhD, FCCA. Mr. Hovhannisyan is a citizen of the Republic of Armenia. AMH Audit CJSC is an independent auditing and consulting firm providing professional assurance, tax, and advisory services.</p>
+            <p class="meta">AMH Audit and HLB International are separate and independent legal entities.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>Audit firm with HLB global network; website could benefit from client portal and service request.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Client portal and service request system</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://amhaudit.am/" target="_blank" rel="noopener">https://amhaudit.am/</a></li></ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://amhaudit.am/" target="_blank" rel="noopener">Current website</a></p>
-          <p class="muted">Verified contact details should be confirmed before production use.</p>
-        </article>
-        <article class="card">
-          <h2>Demo inquiry form</h2>
-          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button class="button primary" type="submit">Send inquiry</button>
-          </form>
-        </article>
-      </div>
-    </section>
-
-    <section>
+    <section id="services" aria-labelledby="services-title">
       <div class="wrap">
-        <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of AMH Audit, and no booking, payment, or contact request is submitted by this demo.
+        <h2 class="section-title" id="services-title">Services</h2>
+        <p class="section-intro">Service names and categories are taken from the official website. Scope, pricing, and engagement terms are not published there and are marked as placeholders where needed.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Audit &amp; Assurance</h3>
+            <ul class="service-list">
+              <li>Financial statement audits (IFRS &amp; US GAAP)</li>
+              <li>Reviews of financial and interim reports</li>
+              <li>Agreed-upon procedures and expenditure checks</li>
+              <li>Compilation of financial statements</li>
+              <li>Other assurance engagements</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Accounting</h3>
+            <ul class="service-list">
+              <li>Outsourced accounting (IFRS &amp; US GAAP)</li>
+              <li>Financial report preparation (IFRS &amp; US GAAP)</li>
+              <li>Accounting policy and system setup</li>
+              <li>Corporate reporting improvement</li>
+              <li>Controls and process assurance</li>
+              <li>Independent expert opinions and valuations</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Financial Advisory</h3>
+            <ul class="service-list">
+              <li>Financial due diligence</li>
+              <li>Business modelling and planning</li>
+              <li>Strategy and consulting</li>
+              <li>Corporate finance and development</li>
+              <li>Internal audit and risk management</li>
+              <li>HR, IT, and marketing support</li>
+              <li>Governance, compliance, and capital markets</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Tax</h3>
+            <ul class="service-list">
+              <li>Ongoing tax outsourcing</li>
+              <li>Tax accounting and risk advisory</li>
+              <li>Tax policy and planning</li>
+              <li>Corporate and withholding tax compliance</li>
+              <li>Income and indirect taxes</li>
+              <li>Customs and international trade</li>
+              <li>Other tax advisory</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Legal</h3>
+            <ul class="service-list">
+              <li>Entity registration</li>
+              <li>Civil code advisory</li>
+              <li>Business legislation</li>
+            </ul>
+            <p class="meta">Placeholder: service availability, scope, and fees must be confirmed directly with the firm.</p>
+          </article>
+          <article class="card">
+            <h3>Proposed concept improvement</h3>
+            <p>A client portal and service request flow, as identified in the lead record, is presented here as a concept feature rather than an existing service.</p>
+            <ul class="service-list">
+              <li>Secure document exchange</li>
+              <li>Engagement status tracking</li>
+              <li>Service request submission</li>
+              <li>Appointment and consultation requests</li>
+            </ul>
+            <p class="meta">Placeholder: portal functionality is not currently offered on the verified official website.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="industries" aria-labelledby="industries-title">
+      <div class="wrap">
+        <h2 class="section-title" id="industries-title">Industries served</h2>
+        <p class="section-intro">Industry sectors listed on the official website.</p>
+        <div class="grid">
+          <div class="industry">Financial Services</div>
+          <div class="industry">Information Communication and Entertainment</div>
+          <div class="industry">Industrial Markets</div>
+          <div class="industry">Consumer Markets</div>
+          <div class="industry">Energy and Mining</div>
+          <div class="industry">Projects Funded by International Donors</div>
+          <div class="industry">Infrastructure and Government</div>
+          <div class="industry">Healthcare</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" aria-labelledby="publications-title">
+      <div class="wrap">
+        <h2 class="section-title" id="publications-title">Publications and resources</h2>
+        <p class="section-intro">Documents and articles linked from the official website.</p>
+        <div class="grid">
+          <article class="card publication">
+            <h3>Financial statements</h3>
+            <a href="https://amhaudit.am/AMH_Audit_IFRS_FS_2025_arm.pdf" target="_blank" rel="noopener noreferrer">IFRS financial statements 2025</a>
+            <a href="https://amhaudit.am/AMH_Audit_IFRS_FS_2024_arm.pdf" target="_blank" rel="noopener noreferrer">IFRS financial statements 2024</a>
+            <a href="https://amhaudit.am/AMH_Audit_IFRS_FS_2023_arm.pdf" target="_blank" rel="noopener noreferrer">IFRS financial statements 2023</a>
+          </article>
+          <article class="card publication">
+            <h3>Audit clients</h3>
+            <a href="https://amhaudit.am/AMH_Audit_list_of_audit_clients_2025.pdf" target="_blank" rel="noopener noreferrer">List of audit clients 2025</a>
+            <a href="https://amhaudit.am/AMH_Audit_list_of_audit_clients_2024.pdf" target="_blank" rel="noopener noreferrer">List of audit clients 2024</a>
+            <a href="https://amhaudit.am/AMH_Audit_list_of_audit_clients_2023.pdf" target="_blank" rel="noopener noreferrer">List of audit clients 2023</a>
+          </article>
+          <article class="card publication">
+            <h3>Articles and reports</h3>
+            <a href="https://www.hlb.global/why-verifiable-esg-data-now-decides-event-venue-selection-and-how-hotels-can-respond/" target="_blank" rel="noopener noreferrer">Prepare your business for a sale in today's M&amp;A market</a>
+            <p class="meta">HLB global article, dated 18 October 2025</p>
+            <a href="https://www.hlb.global/the-changing-landscape-of-cybersecurity/" target="_blank" rel="noopener noreferrer">The Link Between Innovation and Neurodiversity</a>
+            <p class="meta">HLB Report 2025, dated 22 September 2025</p>
+          </article>
+          <article class="card publication">
+            <h3>Professional network links</h3>
+            <a href="https://www.hlb.global/" target="_blank" rel="noopener noreferrer">HLB Global</a>
+            <a href="https://www.hlb.global/armenia" target="_blank" rel="noopener noreferrer">HLB Armenia territory page</a>
+            <a href="https://www.linkedin.com/company/amh-audit-cjsc/mycompany/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.facebook.com/AMH-Audit-239278092838103" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.youtube.com/@HLBInternational" target="_blank" rel="noopener noreferrer">YouTube</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 class="section-title" id="contact-title">Contact</h2>
+        <p class="section-intro">Verified contact details from the official website. Items not published publicly are marked as placeholders.</p>
+        <div class="contact-grid">
+          <article class="card">
+            <h3>AMH Audit CJSC</h3>
+            <div class="contact-item">
+              <strong>Address</strong>
+              <span>Office V-03, 2 Arshakunyats Avenue, Yerevan 0023, Armenia</span>
+            </div>
+            <div class="contact-item">
+              <strong>Phone</strong>
+              <a href="tel:+37460623251">+(374 60) 62 32 51</a>
+            </div>
+            <div class="contact-item">
+              <strong>Mobile</strong>
+              <a href="tel:+37491883010">+(374 91) 88 30 10</a>
+            </div>
+            <div class="contact-item">
+              <strong>Email</strong>
+              <a href="mailto:amhaudit@amhaudit.am">amhaudit@amhaudit.am</a>
+            </div>
+            <div class="contact-item">
+              <strong>Business hours</strong>
+              <span>Placeholder: not published on the verified official pages; contact the firm to arrange a meeting.</span>
+            </div>
+            <div class="contact-item">
+              <strong>Social channels</strong>
+              <div class="social">
+                <a href="https://www.linkedin.com/company/amh-audit-cjsc/mycompany/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.facebook.com/AMH-Audit-239278092838103" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.youtube.com/@HLBInternational" target="_blank" rel="noopener noreferrer">YouTube</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Service request form (demo only)</h3>
+            <p>Use this form to model a future inquiry flow. In this concept demo, no request is submitted to a server or email service.</p>
+            <form onsubmit="event.preventDefault(); var status=document.getElementById('form-status'); status.textContent='Demo only: no request was submitted.'; status.focus();">
+              <div class="form-grid">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel">
+                </div>
+                <div>
+                  <label for="company">Company</label>
+                  <input id="company" name="company" type="text" autocomplete="organization">
+                </div>
+                <div>
+                  <label for="service">Service of interest</label>
+                  <select id="service" name="service">
+                    <option>Audit &amp; Assurance</option>
+                    <option>Accounting</option>
+                    <option>Financial Advisory</option>
+                    <option>Tax</option>
+                    <option>Legal</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button class="button dark" type="submit">Send inquiry (demo only)</button>
+                <p id="form-status" class="status" role="status" aria-live="polite" tabindex="-1"></p>
+              </div>
+            </form>
+          </article>
+        </div>
+        <div class="notice" style="margin-top:1.25rem;">
+          <strong>Unofficial concept demo.</strong> This page demonstrates a possible website redesign for AMH Audit. It is not the official website of AMH Audit CJSC. No booking, payment, contact request, or other external communication is submitted by this demo.
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
+    <div class="wrap footer-grid">
+      <div>
+        <strong>AMH Audit CJSC</strong>
+        <p>Office V-03, 2 Arshakunyats Avenue, Yerevan 0023, Armenia</p>
+        <p class="meta">© 2025 AMH Audit CJSC, all rights reserved.</p>
+      </div>
+      <div>
+        <strong>Concept demo notes</strong>
+        <p class="meta">Verified facts are limited to the official website pages reviewed on 2026-10-24. Business hours, fees, availability, and any client portal functionality are placeholders or proposed improvements and must be confirmed before production use.</p>
+      </div>
+      <div>
+        <strong>Verified sources</strong>
+        <p class="meta">
+          <a href="https://amhaudit.am/" target="_blank" rel="noopener noreferrer">amhaudit.am</a><br>
+          <a href="https://www.hlb.global/armenia" target="_blank" rel="noopener noreferrer">HLB Armenia</a>
+        </p>
+      </div>
     </div>
   </footer>
 </body>

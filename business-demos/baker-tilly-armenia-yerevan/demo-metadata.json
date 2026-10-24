@@ -6,5 +6,8 @@
   "business_category": "audit and advisory",
   "website_url": "https://www.bakertilly.am/",
   "status": "completed",
-  "demo_type": "static-html-concept"
+  "demo_type": "manual-research-concept",
+  "concept_focus": "Client portal and service request system",
+  "unofficial": true,
+  "generator_version": "manual"
 }

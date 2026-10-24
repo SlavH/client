@@ -1,10 +1,41 @@
 {
+  "lead_index": 72,
   "lead_key": "domain:amhaudit.am",
+  "slug": "amh-audit-yerevan",
   "business_name": "AMH Audit",
   "city": "Yerevan",
   "country": "Armenia",
   "business_category": "audit and advisory",
   "website_url": "https://amhaudit.am/",
   "status": "completed",
-  "demo_type": "static-html-concept"
+  "demo_type": "manual-research-concept",
+  "unofficial_concept_demo": true,
+  "external_sends": false,
+  "source_urls": [
+    "https://amhaudit.am/"
+  ],
+  "verified_observations": [
+    "AMH Audit CJSC is an independent member of HLB International since November 2013 and states it reached #9 in the global ranking of accounting networks.",
+    "The official website lists services across audit and assurance, accounting, financial advisory, tax, and legal, plus IFRS financial statements and audit client lists for 2023-2025.",
+    "Verified contact details are Office V-03, 2 Arshakunyats Avenue, Yerevan 0023, Armenia; phone +(374 60) 62 32 51; mobile +(374 91) 88 30 10; email amhaudit@amhaudit.am."
+  ],
+  "verified_contact": {
+    "address": "Office V-03, 2 Arshakunyats Avenue, Yerevan 0023, Armenia",
+    "phone": "+(374 60) 62 32 51",
+    "mobile": "+(374 91) 88 30 10",
+    "email": "amhaudit@amhaudit.am",
+    "social": [
+      "https://www.linkedin.com/company/amh-audit-cjsc/mycompany/",
+      "https://www.facebook.com/AMH-Audit-239278092838103",
+      "https://www.youtube.com/@HLBInternational"
+    ]
+  },
+  "placeholder_fields": [
+    "business_hours",
+    "pricing_and_fees",
+    "service_availability",
+    "client_portal_functionality"
+  ],
+  "generated_at": "2026-10-24",
+  "generator_version": "manual"
 }

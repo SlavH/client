@@ -5,6 +5,21 @@
   "country": "Armenia",
   "business_category": "audit and advisory",
   "website_url": "https://www.moore-armenia.am/",
+  "public_contact_page": null,
   "status": "completed",
-  "demo_type": "static-html-concept"
+  "demo_type": "manual-research-concept",
+  "generator_version": "manual",
+  "demo_slug": "moore-armenia-yerevan",
+  "unofficial": true,
+  "no_external_sends": true,
+  "verified_observations": [
+    "Moore Armenia is described on its official website as a proud member of the Moore Global Network, one of the world's leading accounting and advisory networks with over a century of history, operating in more than 110 countries.",
+    "The official website lists 19 service lines across audit and assurance, tax and legal, accounting and outsourcing, and advisory and transactions, plus 12 industry specialisms.",
+    "Verified public contact details: N. Gogoli Str., 12-14 bld., 78 office, Yerevan, Armenia; telephone +(374) 95 90 19 49; email info@moore-armenia.am."
+  ],
+  "source_urls": [
+    "https://www.moore-armenia.am/",
+    "https://www.moore-armenia.am/aboutus/",
+    "https://www.moore-armenia.am/get-in-touch/"
+  ]
 }

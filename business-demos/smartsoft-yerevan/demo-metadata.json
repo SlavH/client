@@ -6,5 +6,12 @@
   "business_category": "software development",
   "website_url": "https://www.smartsoft.am/",
   "status": "completed",
-  "demo_type": "static-html-concept"
+  "demo_type": "manual-research-concept",
+  "generator_version": "manual",
+  "tailored": true,
+  "verified_observations": [
+    "SmartSoft is an IT solutions and software development company based in Yerevan, Armenia, founded in 2017.",
+    "Official site lists five service areas: web-based management systems, mobile applications, embedded software development, hardware design and manufacturing, and IT system integration.",
+    "Official site lists three products (eUniversity, Flight Management System, Fuel Dispenser Automation) and 15 portfolio projects."
+  ]
 }

@@ -3,106 +3,440 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Baker Tilly Armenia | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for Baker Tilly Armenia, a audit and advisory business in Yerevan, Armenia.">
+  <title>Baker Tilly Armenia | Unofficial Concept Demo</title>
+  <meta name="description" content="Unofficial concept demo for Baker Tilly Armenia: audit, tax and advisory services in Yerevan, Armenia, with a proposed client portal and service request system.">
   <style>
     :root {
-      --bg: #1f2937;
-      --accent: #ea580c;
-      --surface: #fff7ed;
-      --font: Helvetica, Arial, sans-serif;
+      --navy: #0b1f3a;
+      --navy-2: #12325c;
+      --gold: #c9a227;
+      --gold-soft: #f5e9c9;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --surface: #f7f9fc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(11,31,58,.08);
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
-    section { padding: 4rem 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
-    .button.primary { background: var(--accent); color: #ffffff; }
-    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
-    form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
-    footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(--ink); background: #ffffff; line-height: 1.6; }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+    .demo-banner { position: sticky; top: 0; z-index: 100; background: #fffbeb; border-bottom: 1px solid #fcd34d; color: #78350f; padding: .6rem 1.25rem; font-size: .85rem; text-align: center; }
+    .demo-banner strong { color: #92400e; }
+    header { background: var(--navy); color: #ffffff; }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: .9rem; padding-bottom: .9rem; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; color: #ffffff; font-weight: 700; font-size: 1.05rem; }
+    .brand-mark { width: 34px; height: 34px; border-radius: 8px; background: var(--gold); display: grid; place-items: center; color: var(--navy); font-weight: 800; }
+    nav { display: flex; gap: 1.1rem; flex-wrap: wrap; }
+    nav a { color: #e5e7eb; text-decoration: none; font-size: .92rem; font-weight: 600; }
+    nav a:hover { color: var(--gold); }
+    .hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 60%, #1e4a86 100%); color: #ffffff; padding: 5.5rem 0 4.5rem; position: relative; overflow: hidden; }
+    .hero::after { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 80% 20%, rgba(201,162,39,.18), transparent 45%); pointer-events: none; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 2.5rem; align-items: center; position: relative; }
+    .eyebrow { display: inline-flex; align-items: center; gap: .5rem; background: rgba(201,162,39,.18); border: 1px solid rgba(201,162,39,.4); color: var(--gold-soft); border-radius: 999px; padding: .35rem .85rem; font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.1; margin: 1rem 0 .75rem; }
+    .hero p { font-size: 1.15rem; color: #d1d5db; max-width: 640px; }
+    .hero-actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.75rem; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: .85rem 1.35rem; border-radius: 10px; font-weight: 700; text-decoration: none; border: 1px solid transparent; cursor: pointer; font: inherit; }
+    .btn-primary { background: var(--gold); color: var(--navy); }
+    .btn-primary:hover { background: #d9b33a; }
+    .btn-ghost { background: transparent; color: #ffffff; border-color: rgba(255,255,255,.35); }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+    .hero-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius); padding: 1.5rem; backdrop-filter: blur(6px); }
+    .hero-card h3 { margin: 0 0 .75rem; color: var(--gold); font-size: .95rem; text-transform: uppercase; letter-spacing: .08em; }
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .stat { }
+    .stat .num { font-size: 1.6rem; font-weight: 800; color: #ffffff; line-height: 1; }
+    .stat .lbl { font-size: .8rem; color: #cbd5e1; margin-top: .25rem; }
+    .cred-strip { background: var(--surface); border-bottom: 1px solid var(--border); }
+    .cred-strip .wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; padding: 1.25rem 1.25rem; }
+    .cred { display: flex; flex-direction: column; }
+    .cred .k { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 700; }
+    .cred .v { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-top: .2rem; }
+    section { padding: 4.5rem 0; }
+    .section-head { max-width: 720px; margin-bottom: 2.25rem; }
+    .section-head .tag { color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: .78rem; }
+    .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); margin: .4rem 0 .6rem; color: var(--navy); }
+    .section-head p { color: var(--muted); margin: 0; }
+    .grid { display: grid; gap: 1.25rem; }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); transition: transform .15s ease; }
+    .card:hover { transform: translateY(-2px); }
+    .card h3 { margin: 0 0 .5rem; color: var(--navy); font-size: 1.1rem; }
+    .card p { color: var(--muted); margin: 0; font-size: .95rem; }
+    .card .icon { width: 40px; height: 40px; border-radius: 10px; background: var(--gold-soft); color: var(--navy); display: grid; place-items: center; font-weight: 800; margin-bottom: .9rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .chip { background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: .4rem .9rem; font-size: .85rem; color: var(--navy); font-weight: 600; }
+    .portal { background: linear-gradient(180deg, var(--surface) 0%, #ffffff 100%); }
+    .portal-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .portal-panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); }
+    .portal-panel h3 { margin: 0 0 1rem; color: var(--navy); }
+    .status-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+    .status-table th, .status-table td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--border); }
+    .status-table th { color: var(--muted); font-weight: 700; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; }
+    .badge-status { display: inline-block; padding: .2rem .6rem; border-radius: 999px; font-size: .75rem; font-weight: 700; }
+    .badge-status.open { background: #fef3c7; color: #92400e; }
+    .badge-status.progress { background: #dbeafe; color: #1e40af; }
+    .badge-status.done { background: #dcfce7; color: #166534; }
+    .placeholder { background: #f1f5f9; border: 1px dashed #94a3b8; border-radius: 10px; padding: 1rem; color: var(--muted); font-size: .88rem; }
+    form { display: grid; gap: .85rem; }
+    label { font-size: .85rem; font-weight: 600; color: var(--navy); }
+    input, select, textarea { width: 100%; padding: .75rem .9rem; border: 1px solid var(--border); border-radius: 10px; font: inherit; background: #ffffff; }
+    input:focus, select:focus, textarea:focus { outline: 2px solid var(--gold); border-color: var(--gold); }
+    textarea { min-height: 110px; resize: vertical; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: .85rem; }
+    .team-card { text-align: center; }
+    .avatar { width: 96px; height: 96px; border-radius: 50%; background: linear-gradient(135deg, var(--navy), var(--gold)); margin: 0 auto 1rem; display: grid; place-items: center; color: #ffffff; font-weight: 800; font-size: 1.5rem; }
+    .team-card .role { color: var(--gold); font-weight: 700; font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; margin-bottom: .4rem; }
+    .team-card p { font-size: .9rem; }
+    .global { background: var(--navy); color: #ffffff; }
+    .global .section-head h2, .global .section-head p { color: #ffffff; }
+    .global .section-head .tag { color: var(--gold); }
+    .global .card { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); box-shadow: none; }
+    .global .card h3 { color: #ffffff; }
+    .global .card p { color: #cbd5e1; }
+    .global .card .icon { background: rgba(201,162,39,.2); color: var(--gold); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .contact-info { display: grid; gap: .9rem; }
+    .contact-item { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.1rem; }
+    .contact-item .k { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 700; }
+    .contact-item .v { font-weight: 600; color: var(--navy); margin-top: .2rem; word-break: break-word; }
+    .socials { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .5rem; }
+    .social { background: var(--navy); color: #ffffff; border-radius: 8px; padding: .45rem .85rem; text-decoration: none; font-size: .82rem; font-weight: 600; }
+    .social:hover { background: var(--gold); color: var(--navy); }
+    .map-placeholder { background: linear-gradient(135deg, #e2e8f0, #cbd5e1); border-radius: 12px; min-height: 220px; display: grid; place-items: center; color: var(--muted); font-weight: 600; }
+    footer { background: #0b1f3a; color: #cbd5e1; padding: 2.5rem 0 1.5rem; }
+    footer .wrap { display: grid; gap: 1rem; }
+    footer .footnote { font-size: .82rem; color: #94a3b8; border-top: 1px solid rgba(255,255,255,.1); padding-top: 1rem; }
+    .notice-box { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 12px; padding: 1rem 1.25rem; color: #78350f; font-size: .9rem; }
+    @media (max-width: 860px) {
+      .hero-grid, .portal-layout, .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding: 4rem 0 3rem; }
+      section { padding: 3.25rem 0; }
+      nav { gap: .7rem; }
+    }
   </style>
 </head>
 <body>
+  <div class="demo-banner">
+    <strong>Unofficial concept demo.</strong> This page is a concept redesign for demonstration only. It is not the official website of Baker Tilly Armenia. No request, booking, or payment is submitted by this demo.
+  </div>
+
   <header>
     <div class="wrap">
+      <a class="brand" href="#top"><span class="brand-mark">BT</span> Baker Tilly Armenia</a>
       <nav>
-        <a href="#top">Baker Tilly Armenia</a>
-        <div>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </div>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portal">Client portal</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Audit &amp; advisory concept</span>
+          <h1>Trusted expertise. Local knowledge. Global reach.</h1>
+          <p>Baker Tilly Armenia is an independent member firm of Baker Tilly International, delivering audit, tax, advisory and outsourcing services from Yerevan since 1996.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#portal">Explore client portal concept</a>
+            <a class="btn btn-ghost" href="#contact">Contact the team</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Verified at a glance</h3>
+          <div class="stat-grid">
+            <div class="stat"><div class="num">1996</div><div class="lbl">Operating since</div></div>
+            <div class="stat"><div class="num">#001</div><div class="lbl">First audit license in Armenia</div></div>
+            <div class="stat"><div class="num">49+</div><div class="lbl">Skilled professionals</div></div>
+            <div class="stat"><div class="num">2007</div><div class="lbl">Member of Baker Tilly International</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cred-strip">
       <div class="wrap">
-        <span class="badge">audit and advisory concept demo</span>
-        <h1>Baker Tilly Armenia</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a audit and advisory business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 54/100</span></p>
-        <a class="button primary" href="#contact">Request information</a>
+        <div class="cred"><span class="k">Address</span><span class="v">22 Hanrapetutyan Street, Yerevan 0010</span></div>
+        <div class="cred"><span class="k">Phone</span><span class="v">+(374 10) 582 478 / 544 301 / 544 307</span></div>
+        <div class="cred"><span class="k">Email</span><span class="v">info@bakertilly.am</span></div>
+        <div class="cred"><span class="k">Branch</span><span class="v">Gyumri (only firm with a regional branch)</span></div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="tag">About us</span>
+          <h2>What drives us</h2>
+          <p>Baker Tilly Armenia is a trusted leader in accounting and advisory services. We combine local knowledge with the global capabilities of the Baker Tilly International network.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="icon">A</div>
+            <h3>Pioneering audit in Armenia</h3>
+            <p>Since 1996, Baker Tilly Armenia has been at the forefront of innovation, proudly holding the country's first auditing license (No. 001).</p>
+          </article>
+          <article class="card">
+            <div class="icon">G</div>
+            <h3>Regional presence</h3>
+            <p>The only accounting firm in Armenia with a regional branch outside Yerevan, located in Gyumri.</p>
+          </article>
+          <article class="card">
+            <div class="icon">N</div>
+            <h3>Global network</h3>
+            <p>Independent member of Baker Tilly International since 2007, spanning 147 territories, 754 offices and 50,400 people.</p>
+          </article>
+        </div>
+        <div class="notice-box" style="margin-top:1.5rem;">
+          Verified facts above are sourced from the official Baker Tilly Armenia website. Items not publicly verified (for example client counts, pricing, or service-level commitments) are marked as placeholders throughout this concept.
+        </div>
       </div>
     </section>
 
     <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>International audit firm; website could benefit from client portal and service request system.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Client portal and service request system</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://www.bakertilly.am/" target="_blank" rel="noopener">https://www.bakertilly.am/</a></li></ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://www.bakertilly.am/" target="_blank" rel="noopener">Current website</a></p>
-          <p class="muted">Verified contact details should be confirmed before production use.</p>
-        </article>
-        <article class="card">
-          <h2>Demo inquiry form</h2>
-          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button class="button primary" type="submit">Send inquiry</button>
-          </form>
-        </article>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="tag">Services</span>
+          <h2>What we do</h2>
+          <p>Partner-led services delivered by a team that knows you and your business, across audit, tax, advisory and outsourcing.</p>
+        </div>
+        <div class="grid grid-4">
+          <article class="card"><div class="icon">1</div><h3>Audit and assurance</h3><p>The professional distance to see clearly, with partner-led support at every stage.</p></article>
+          <article class="card"><div class="icon">2</div><h3>Business Advisory</h3><p>Incisive, insightful advice delivered by a partner-led team.</p></article>
+          <article class="card"><div class="icon">3</div><h3>Corporate Finance</h3><p>A variety of finance services tailored to meet clients' needs.</p></article>
+          <article class="card"><div class="icon">4</div><h3>Forensic Accounting and Litigation</h3><p>Fraud investigation and dispute resolution support.</p></article>
+          <article class="card"><div class="icon">5</div><h3>Management consultancy</h3><p>Cost reduction, revenue maximization and strategic implementation.</p></article>
+          <article class="card"><div class="icon">6</div><h3>Outsourcing</h3><p>Accounting and financial services complying with international standards and Armenian law.</p></article>
+          <article class="card"><div class="icon">7</div><h3>Statistical Services</h3><p>Surveys and evaluation of government policies.</p></article>
+          <article class="card"><div class="icon">8</div><h3>Tax</h3><p>Cross-border tax solutions from experts who talk to each other.</p></article>
+        </div>
       </div>
     </section>
 
     <section>
       <div class="wrap">
-        <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of Baker Tilly Armenia, and no booking, payment, or contact request is submitted by this demo.
+        <div class="section-head">
+          <span class="tag">Industries</span>
+          <h2>Sectors we serve</h2>
+          <p>Local knowledge and global expertise across a wide range of industries.</p>
+        </div>
+        <div class="chips">
+          <span class="chip">Agriculture</span>
+          <span class="chip">Transportation, travel and logistics</span>
+          <span class="chip">Entertainment and leisure</span>
+          <span class="chip">Public sector</span>
+          <span class="chip">Mining and metals</span>
+          <span class="chip">Infrastructure</span>
+          <span class="chip">Telecommunications</span>
+          <span class="chip">High-tech</span>
+          <span class="chip">Consumer goods</span>
+          <span class="chip">Healthcare</span>
+          <span class="chip">Education</span>
+          <span class="chip">Financial services</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="portal" class="portal">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="tag">Proposed improvement</span>
+          <h2>Client portal and service request system (concept)</h2>
+          <p>The current public site offers no client portal or online service-request workflow. This concept demonstrates how clients could submit requests, exchange documents and track status securely. Portal features below are illustrative placeholders, not live functionality.</p>
+        </div>
+        <div class="grid grid-3" style="margin-bottom:1.5rem;">
+          <article class="card">
+            <div class="icon">R</div>
+            <h3>Service requests</h3>
+            <p>Clients submit a structured request for audit, tax, advisory or outsourcing support instead of email-only inquiries.</p>
+          </article>
+          <article class="card">
+            <div class="icon">D</div>
+            <h3>Document exchange</h3>
+            <p>Secure upload and download of engagement documents with version tracking. [Placeholder: storage and retention policy not verified.]</p>
+          </article>
+          <article class="card">
+            <div class="icon">T</div>
+            <h3>Request tracking</h3>
+            <p>Transparent status from submitted to in progress to completed, with owner and due date. [Placeholder: SLA targets not verified.]</p>
+          </article>
+        </div>
+
+        <div class="portal-layout">
+          <div class="portal-panel">
+            <h3>New service request (concept)</h3>
+            <form onsubmit="event.preventDefault(); alert('Concept demo only. No request was submitted.');">
+              <div class="form-row">
+                <div>
+                  <label for="company">Company name</label>
+                  <input id="company" name="company" type="text" placeholder="Your company" required>
+                </div>
+                <div>
+                  <label for="contact">Contact person</label>
+                  <input id="contact" name="contact" type="text" placeholder="Full name" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="name@company.com" required>
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" placeholder="+374 ...">
+                </div>
+              </div>
+              <div class="form-row">
+                <div>
+                  <label for="service">Service type</label>
+                  <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option>Audit and assurance</option>
+                    <option>Business Advisory</option>
+                    <option>Corporate Finance</option>
+                    <option>Forensic Accounting and Litigation Services</option>
+                    <option>Management consultancy</option>
+                    <option>Outsourcing</option>
+                    <option>Statistical Services</option>
+                    <option>Tax</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="priority">Priority</label>
+                  <select id="priority" name="priority">
+                    <option>Standard</option>
+                    <option>Urgent</option>
+                    <option>Planning only</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label for="desc">Request details</label>
+                <textarea id="desc" name="desc" placeholder="Describe the engagement or support needed." required></textarea>
+              </div>
+              <div class="placeholder">Attachment upload: [Placeholder] drag-and-drop document upload would appear here in a live portal. No files are accepted by this demo.</div>
+              <button class="btn btn-primary" type="submit">Submit request (demo)</button>
+            </form>
+          </div>
+
+          <div class="portal-panel">
+            <h3>Request status (sample data)</h3>
+            <table class="status-table">
+              <thead>
+                <tr><th>Request ID</th><th>Service</th><th>Owner</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>REQ-1042</td><td>Audit and assurance</td><td>[Placeholder partner]</td><td><span class="badge-status progress">In progress</span></td></tr>
+                <tr><td>REQ-1041</td><td>Tax advisory</td><td>[Placeholder partner]</td><td><span class="badge-status open">Submitted</span></td></tr>
+                <tr><td>REQ-1038</td><td>Outsourcing</td><td>[Placeholder partner]</td><td><span class="badge-status done">Completed</span></td></tr>
+              </tbody>
+            </table>
+            <p class="muted" style="font-size:.82rem;margin-top:1rem;">Sample rows are illustrative only. Real owners, SLAs and request IDs would come from the client's engagement data. Authentication and role-based access: [Placeholder - not verified].</p>
+            <div class="placeholder" style="margin-top:1rem;">Secure messaging thread: [Placeholder] per-request conversation between client and engagement team.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="tag">Our team</span>
+          <h2>Leadership</h2>
+          <p>People who work hard to make a lasting impact for clients and for each other.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card team-card">
+            <div class="avatar">VG</div>
+            <div class="role">Managing Partner</div>
+            <h3>Vahe Gevorgyan</h3>
+            <p>Leads the firm's strategy and client relationships.</p>
+          </article>
+          <article class="card team-card">
+            <div class="avatar">GG</div>
+            <div class="role">Chairman</div>
+            <h3>Gagik Gyulbudaghyan</h3>
+            <p>Guides governance and long-term direction.</p>
+          </article>
+          <article class="card team-card">
+            <div class="avatar">ST</div>
+            <div class="role">Partner</div>
+            <h3>Shushan Tashchiyan</h3>
+            <p>Supports delivery across audit and advisory engagements.</p>
+          </article>
+        </div>
+        <p class="muted" style="margin-top:1rem;font-size:.85rem;">Additional team members and biographies are available on the official site. [Placeholder: full team roster not reproduced here.]</p>
+      </div>
+    </section>
+
+    <section class="global">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="tag">Baker Tilly International</span>
+          <h2>Global reach with local expertise</h2>
+          <p>Grow beyond today's limitations with a network of independent firms.</p>
+        </div>
+        <div class="grid grid-4">
+          <article class="card"><div class="icon">$</div><h3>$6.8 bn</h3><p>Worldwide revenue</p></article>
+          <article class="card"><div class="icon">T</div><h3>147</h3><p>Territories</p></article>
+          <article class="card"><div class="icon">O</div><h3>754</h3><p>Offices</p></article>
+          <article class="card"><div class="icon">P</div><h3>50,400</h3><p>People</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="tag">Contact</span>
+          <h2>It all starts with a conversation</h2>
+          <p>About your goals, questions and challenges, and the perspective, advice and relationship you will gain.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item"><div class="k">Office</div><div class="v">22 Hanrapetutyan Street, Yerevan 0010, Armenia</div></div>
+            <div class="contact-item"><div class="k">Phone</div><div class="v">+(374 10) 582 478, 544 301, 544 307</div></div>
+            <div class="contact-item"><div class="k">Email</div><div class="v"><a href="mailto:info@bakertilly.am">info@bakertilly.am</a></div></div>
+            <div class="contact-item"><div class="k">Website</div><div class="v"><a href="https://www.bakertilly.am/" target="_blank" rel="noopener">www.bakertilly.am</a></div></div>
+            <div class="contact-item">
+              <div class="k">Social media</div>
+              <div class="socials">
+                <a class="social" href="https://www.facebook.com/bakertillyarmenia" target="_blank" rel="noopener">Facebook</a>
+                <a class="social" href="https://www.linkedin.com/company/baker-tilly-international/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="social" href="https://www.instagram.com/bakertillyinternational/" target="_blank" rel="noopener">Instagram</a>
+                <a class="social" href="https://twitter.com/BakerTillyInt" target="_blank" rel="noopener">X</a>
+                <a class="social" href="https://www.youtube.com/user/BakerTillyInter" target="_blank" rel="noopener">YouTube</a>
+              </div>
+            </div>
+            <div class="map-placeholder">Map: [Placeholder - embed not included in concept demo]</div>
+          </div>
+          <div class="portal-panel">
+            <h3>Send an inquiry (concept)</h3>
+            <form onsubmit="event.preventDefault(); alert('Concept demo only. No inquiry was submitted.');">
+              <div class="form-row">
+                <div><label for="iname">First name</label><input id="iname" name="first" type="text" required></div>
+                <div><label for="ilast">Last name</label><input id="ilast" name="last" type="text" required></div>
+              </div>
+              <div><label for="iemail">Email</label><input id="iemail" name="email" type="email" required></div>
+              <div><label for="iphone">Telephone</label><input id="iphone" name="phone" type="tel" required></div>
+              <div><label for="imsg">Message</label><textarea id="imsg" name="message" required></textarea></div>
+              <button class="btn btn-primary" type="submit">Send inquiry (demo)</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -110,7 +444,8 @@
 
   <footer>
     <div class="wrap">
-      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
+      <p><strong>Baker Tilly Armenia</strong> - unofficial concept demo. Trading as Baker Tilly, an independent member of Baker Tilly International Ltd. Separate and independent legal entities.</p>
+      <p class="footnote">This page was created to demonstrate a possible website redesign and a client portal concept. It is not the official website of Baker Tilly Armenia and no booking, payment or contact request is submitted by this demo. Verified facts sourced from https://www.bakertilly.am/; unverified items are marked as placeholders. &copy; 2026 concept demo.</p>
     </div>
   </footer>
 </body>

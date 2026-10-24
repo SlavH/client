@@ -6,5 +6,14 @@
   "business_category": "audit and advisory",
   "website_url": "https://asatryans.com/",
   "status": "completed",
-  "demo_type": "static-html-concept"
+  "demo_type": "manual-research-concept",
+  "slug": "crowe-armenia-yerevan",
+  "generator_version": "manual",
+  "verified_source": "https://asatryans.com/",
+  "verified_observations": [
+    "Official website presents the firm as CROWE & ASATRYANS LLC at Dom Moskvy Business Center, 7, Argishti str., 2nd floor, 0015 Yerevan, Armenia.",
+    "Public contact routes on the official website include telephone numbers +374 60 53 23 23 and +374 99 54 33 88 and email general@crowe.am.",
+    "Official website navigation lists services including Audit and Assurance, Audit Related Services, Internal Audit, Outsource Accounting, ISO Certification, Tax, Advisory, Investment Consulting, IFRS, and Valuation."
+  ],
+  "concept_notice": "Unofficial concept demo only. No external communication is sent by this page."
 }

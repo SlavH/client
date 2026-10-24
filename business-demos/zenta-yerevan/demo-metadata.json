@@ -6,5 +6,6 @@
   "business_category": "IT consulting",
   "website_url": "https://zenta.co/",
   "status": "completed",
-  "demo_type": "static-html-concept"
+  "demo_type": "manual-research-concept",
+  "generator_version": "manual"
 }

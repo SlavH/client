@@ -3,98 +3,390 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moore Armenia | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for Moore Armenia, a audit and advisory business in Yerevan, Armenia.">
+  <title>Moore Armenia | Audit, Tax and Advisory Concept Demo</title>
+  <meta name="description" content="Unofficial concept demo for Moore Armenia, an audit, tax and advisory firm in Yerevan, Armenia. Focus: client portal and service request system.">
+  <meta name="robots" content="noindex">
   <style>
     :root {
-      --bg: #111827;
-      --accent: #16a34a;
-      --surface: #f9fafb;
-      --font: Georgia, serif;
+      --bg: #0b1f3a;
+      --accent: #2563eb;
+      --accent-2: #0ea5e9;
+      --surface: #f8fafc;
+      --muted: #64748b;
+      --text: #172033;
+      --border: #e2e8f0;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
-    section { padding: 4rem 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: #ffffff; line-height: 1.65; }
+    a { color: var(--accent); text-decoration: none; }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 2px; }
+    .wrap { width: min(1200px, calc(100% - 2rem)); margin: 0 auto; }
+    .skip { position: absolute; left: -9999px; top: 0; background: #ffffff; padding: .75rem 1rem; z-index: 100; }
+    .skip:focus { left: 1rem; top: 1rem; }
+    header { position: sticky; top: 0; z-index: 20; background: var(--bg); color: #ffffff; box-shadow: 0 10px 30px rgba(11,31,58,.22); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 0; flex-wrap: wrap; }
+    nav a { color: #ffffff; font-weight: 700; }
+    .nav-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: clamp(4rem, 9vw, 7.5rem) 0; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr); gap: 2rem; align-items: center; }
+    .hero h1 { font-size: clamp(2.4rem, 6vw, 5.2rem); line-height: 1.02; margin: .5rem 0 1rem; }
+    .hero p { max-width: 760px; font-size: 1.12rem; }
+    .eyebrow { display: inline-block; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.26); border-radius: 999px; padding: .4rem .85rem; font-size: .9rem; letter-spacing: .03em; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: .45rem; padding: .85rem 1.2rem; border-radius: .85rem; font-weight: 800; margin: .25rem .25rem .25rem 0; border: 0; cursor: pointer; font: inherit; transition: transform .15s ease, box-shadow .15s ease; }
     .button.primary { background: var(--accent); color: #ffffff; }
     .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
-    form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
+    .button:hover { transform: translateY(-1px); box-shadow: 0 12px 24px rgba(15,23,42,.18); }
+    .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin-top: 1.5rem; }
+    .stat { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); border-radius: .9rem; padding: .9rem 1rem; }
+    .stat strong { display: block; font-size: 1.5rem; }
+    .portal { background: #ffffff; color: var(--text); border-radius: 1.25rem; padding: 1.25rem; box-shadow: 0 24px 60px rgba(11,31,58,.28); }
+    .portal-title { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .portal-title h2 { margin: 0; font-size: 1.2rem; color: var(--bg); }
+    .portal-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; }
+    .portal-card { background: var(--surface); border: 1px solid var(--border); border-radius: .9rem; padding: 1rem; }
+    .portal-card h3 { margin: 0 0 .5rem; font-size: 1rem; color: var(--bg); }
+    .portal-card ul { margin: 0; padding-left: 1.1rem; font-size: .92rem; }
+    .portal-card li { margin: .35rem 0; }
+    .tag { display: inline-block; background: #dbeafe; color: #1d4ed8; border-radius: 999px; padding: .2rem .6rem; font-size: .78rem; font-weight: 700; }
+    section { padding: clamp(3rem, 6vw, 5.5rem) 0; }
+    .section-title { font-size: clamp(1.7rem, 4vw, 2.7rem); margin: 0 0 1.5rem; color: var(--bg); }
+    .section-intro { max-width: 760px; color: var(--muted); margin: 0 0 2rem; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 1.25rem; padding: 1.5rem; box-shadow: 0 18px 40px rgba(15,23,42,.06); }
+    .card h2, .card h3 { margin-top: 0; color: var(--bg); }
+    .feature-list { display: grid; gap: .75rem; padding: 0; list-style: none; margin: 0; }
+    .feature-list li { background: #ffffff; border: 1px solid var(--border); border-radius: .85rem; padding: .85rem 1rem; }
+    .trust { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .trust span { background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: .4rem .8rem; font-weight: 700; }
+    .industry-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: .75rem; }
+    .industry { background: #ffffff; border: 1px solid var(--border); border-radius: .85rem; padding: .8rem 1rem; font-weight: 700; color: var(--bg); }
+    .two-col { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.25rem; }
+    form { display: grid; gap: .85rem; }
+    label { font-weight: 700; font-size: .95rem; }
+    input, textarea, select { width: 100%; padding: .85rem; border: 1px solid var(--border); border-radius: .85rem; font: inherit; background: #ffffff; }
+    textarea { min-height: 130px; resize: vertical; }
+    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 1rem; padding: 1.1rem; }
+    .contact-list { display: grid; gap: .75rem; }
+    .contact-list div { background: #ffffff; border: 1px solid var(--border); border-radius: .85rem; padding: .85rem 1rem; }
+    .contact-list strong { display: block; color: var(--bg); }
     footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
+    .muted { color: var(--muted); }
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .portal-grid { grid-template-columns: 1fr; }
+      .two-col { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding: 3.5rem 0; }
+      .nav-links { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .button { transition: none; }
+    }
   </style>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to main content</a>
   <header>
     <div class="wrap">
-      <nav>
+      <nav aria-label="Main navigation">
         <a href="#top">Moore Armenia</a>
-        <div>
+        <div class="nav-links">
+          <a href="#portal">Client portal</a>
           <a href="#services">Services</a>
+          <a href="#industries">Industries</a>
+          <a href="#team">Team</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Unofficial concept demo</span>
+          <h1>Moore Armenia</h1>
+          <p>A clearer, more useful website concept for an audit, tax and advisory firm in Yerevan, Armenia, built around a client portal and service request workflow.</p>
+          <div class="stats" aria-label="Verified network facts">
+            <div class="stat"><strong>110+</strong><span>Countries in the Moore Global Network</span></div>
+            <div class="stat"><strong>100+</strong><span>Years of network history</span></div>
+            <div class="stat"><strong>19</strong><span>Service lines listed publicly</span></div>
+          </div>
+          <p>
+            <a class="button primary" href="#portal">Explore the client portal</a>
+            <a class="button secondary" href="#contact">Request a proposal</a>
+          </p>
+        </div>
+        <aside class="portal" aria-label="Client portal concept preview">
+          <div class="portal-title">
+            <h2>Client portal preview</h2>
+            <span class="tag">Concept</span>
+          </div>
+          <div class="portal-grid">
+            <div class="portal-card">
+              <h3>Engagement status</h3>
+              <ul>
+                <li>Annual audit 2025 - In progress <span class="muted">(illustrative)</span></li>
+                <li>Tax compliance review - Scheduled <span class="muted">(illustrative)</span></li>
+                <li>IFRS 17 advisory - Proposal sent <span class="muted">(illustrative)</span></li>
+              </ul>
+            </div>
+            <div class="portal-card">
+              <h3>Document vault</h3>
+              <ul>
+                <li>Financial statements 2024.pdf <span class="muted">(placeholder)</span></li>
+                <li>Tax filings Q1 2025 <span class="muted">(placeholder)</span></li>
+                <li>Engagement letter <span class="muted">(placeholder)</span></li>
+              </ul>
+            </div>
+            <div class="portal-card">
+              <h3>Deadlines</h3>
+              <ul>
+                <li>Audit fieldwork - date placeholder</li>
+                <li>Tax report submission - date placeholder</li>
+                <li>Board reporting pack - date placeholder</li>
+              </ul>
+            </div>
+          </div>
+          <p class="muted">All engagement data shown is illustrative placeholder content. No client data is stored or transmitted by this demo.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="portal">
       <div class="wrap">
-        <span class="badge">audit and advisory concept demo</span>
-        <h1>Moore Armenia</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a audit and advisory business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 54/100</span></p>
-        <a class="button primary" href="#contact">Request information</a>
+        <h2 class="section-title">Client portal and service request system</h2>
+        <p class="section-intro">The proposed improvement for Moore Armenia is a secure client portal where clients can request services, share documents, track engagement progress, and manage deadlines in one place.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Service request intake</h3>
+            <p>Structured requests for audit, tax, accounting, advisory, IFRS implementation, valuation, and registration support, routed to the right partner.</p>
+          </article>
+          <article class="card">
+            <h3>Document exchange</h3>
+            <p>A single vault for financial statements, tax filings, engagement letters, and working papers, with version and access placeholders.</p>
+          </article>
+          <article class="card">
+            <h3>Engagement tracking</h3>
+            <p>Status, milestones, and owner visibility for each engagement, from proposal to final report, without email chains.</p>
+          </article>
+          <article class="card">
+            <h3>Deadline reminders</h3>
+            <p>Configurable reminders for audit fieldwork, tax submissions, and reporting cycles. Dates shown above are placeholders.</p>
+          </article>
+          <article class="card">
+            <h3>Secure messaging</h3>
+            <p>Threaded questions and clarifications linked to the relevant engagement and document, rather than ad hoc email.</p>
+          </article>
+          <article class="card">
+            <h3>Access control</h3>
+            <p>Role-based access for client finance teams, Moore Armenia staff, and partners. Authentication is a placeholder in this demo.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>International audit firm; website could benefit from client portal and service request system.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Client portal and service request system</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://www.moore-armenia.am/" target="_blank" rel="noopener">https://www.moore-armenia.am/</a></li></ul>
-        </article>
+      <div class="wrap">
+        <h2 class="section-title">Services</h2>
+        <p class="section-intro">Service lines listed on the official Moore Armenia website.</p>
+        <div class="two-col">
+          <article class="card">
+            <h3>Audit and assurance</h3>
+            <ul class="feature-list">
+              <li>Audit</li>
+              <li>Internal Audit</li>
+              <li>Review</li>
+              <li>Agreed-Upon Procedures (AUP)</li>
+              <li>Compilation</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Tax and legal</h3>
+            <ul class="feature-list">
+              <li>Tax Audit</li>
+              <li>Tax Planning and Tax Report Submission</li>
+              <li>Tax and Legal Consulting for Separate Transactions</li>
+              <li>Transfer Pricing Advisory</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Accounting and outsourcing</h3>
+            <ul class="feature-list">
+              <li>Accounting Services</li>
+              <li>Execution of Chief Accountant / Financial Manager Role</li>
+              <li>Payroll Management</li>
+              <li>Financial Management</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Advisory and transactions</h3>
+            <ul class="feature-list">
+              <li>Advisory on Implementation of IFRSs (IFRS 9 and IFRS 17)</li>
+              <li>Business Plan Preparation</li>
+              <li>Business Valuation</li>
+              <li>Financial Modeling and Planning</li>
+              <li>HR Related Services</li>
+              <li>Merger and Acquisition</li>
+              <li>Assistance in Company Registration</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="industries">
+      <div class="wrap">
+        <h2 class="section-title">Industries served</h2>
+        <p class="section-intro">Industry specialisms listed on the official Moore Armenia website.</p>
+        <div class="industry-grid">
+          <div class="industry">Agriculture</div>
+          <div class="industry">Banking and Finance</div>
+          <div class="industry">Charities and Not for Profit</div>
+          <div class="industry">Education</div>
+          <div class="industry">Energy, Mining and Renewables</div>
+          <div class="industry">Healthcare</div>
+          <div class="industry">Hotel and Tourism</div>
+          <div class="industry">Information Technology</div>
+          <div class="industry">Manufacturing</div>
+          <div class="industry">Media and Entertainment</div>
+          <div class="industry">Real Estate and Construction</div>
+          <div class="industry">Retail</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="wrap">
+        <h2 class="section-title">Verified team</h2>
+        <p class="section-intro">Partners named on the official Moore Armenia website.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Knar Petrosyan</h3>
+            <p>FCCA, MA</p>
+            <p class="muted">Partner</p>
+          </article>
+          <article class="card">
+            <h3>Robert Melikyan</h3>
+            <p>PhD, ACCA</p>
+            <p class="muted">Partner, Managing partner</p>
+          </article>
+        </div>
+        <div class="card" style="margin-top:1.25rem;">
+          <h3>Network context</h3>
+          <p>Moore Armenia is described on its official website as a proud member of the Moore Global Network, one of the world's leading accounting and advisory networks with over a century of history, operating in more than 110 countries.</p>
+        </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="wrap grid">
+      <div class="wrap card-grid">
         <article class="card">
-          <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://www.moore-armenia.am/" target="_blank" rel="noopener">Current website</a></p>
-          <p class="muted">Verified contact details should be confirmed before production use.</p>
+          <h2>Request a proposal</h2>
+          <p>Use this form to start a conversation. In this concept demo, no request is submitted to a server and no data leaves this page.</p>
+          <form onsubmit="event.preventDefault(); var s=document.getElementById('form-status'); s.textContent='Demo only: no request was submitted and no data was sent.'; s.focus();">
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="email">Work email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div>
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" autocomplete="organization" required>
+            </div>
+            <div>
+              <label for="service">Service of interest</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <optgroup label="Audit and assurance">
+                  <option>Audit</option>
+                  <option>Internal Audit</option>
+                  <option>Review</option>
+                  <option>Agreed-Upon Procedures (AUP)</option>
+                  <option>Compilation</option>
+                </optgroup>
+                <optgroup label="Tax and legal">
+                  <option>Tax Audit</option>
+                  <option>Tax Planning and Tax Report Submission</option>
+                  <option>Tax and Legal Consulting for Separate Transactions</option>
+                  <option>Transfer Pricing Advisory</option>
+                </optgroup>
+                <optgroup label="Accounting and outsourcing">
+                  <option>Accounting Services</option>
+                  <option>Execution of Chief Accountant / Financial Manager Role</option>
+                  <option>Payroll Management</option>
+                  <option>Financial Management</option>
+                </optgroup>
+                <optgroup label="Advisory and transactions">
+                  <option>Advisory on Implementation of IFRSs (IFRS 9 and IFRS 17)</option>
+                  <option>Business Plan Preparation</option>
+                  <option>Business Valuation</option>
+                  <option>Financial Modeling and Planning</option>
+                  <option>HR Related Services</option>
+                  <option>Merger and Acquisition</option>
+                  <option>Assistance in Company Registration</option>
+                </optgroup>
+              </select>
+            </div>
+            <div>
+              <label for="industry">Industry</label>
+              <select id="industry" name="industry">
+                <option value="">Select an industry (optional)</option>
+                <option>Agriculture</option>
+                <option>Banking and Finance</option>
+                <option>Charities and Not for Profit</option>
+                <option>Education</option>
+                <option>Energy, Mining and Renewables</option>
+                <option>Healthcare</option>
+                <option>Hotel and Tourism</option>
+                <option>Information Technology</option>
+                <option>Manufacturing</option>
+                <option>Media and Entertainment</option>
+                <option>Real Estate and Construction</option>
+                <option>Retail</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+              <label for="attachment">Attachment (placeholder)</label>
+              <input id="attachment" name="attachment" type="file">
+              <p class="muted">Attachment handling is a placeholder in this demo. No file is uploaded.</p>
+            </div>
+            <div>
+              <label><input type="checkbox" required> I consent to being contacted about this inquiry (placeholder consent text).</label>
+            </div>
+            <button class="button primary" type="submit">Send inquiry</button>
+            <p id="form-status" class="muted" role="status" aria-live="polite" tabindex="-1"></p>
+          </form>
         </article>
         <article class="card">
-          <h2>Demo inquiry form</h2>
-          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button class="button primary" type="submit">Send inquiry</button>
-          </form>
+          <h2>Verified contact details</h2>
+          <div class="contact-list">
+            <div><strong>Address</strong>N. Gogoli Str., 12-14 bld., 78 office, Yerevan, Armenia</div>
+            <div><strong>Telephone</strong>+(374) 95 90 19 49</div>
+            <div><strong>Email</strong>info@moore-armenia.am</div>
+            <div><strong>Official website</strong><a href="https://www.moore-armenia.am/" target="_blank" rel="noopener noreferrer">https://www.moore-armenia.am/</a></div>
+            <div><strong>LinkedIn</strong><a href="https://www.linkedin.com/company/moore-armenia/" target="_blank" rel="noopener noreferrer">linkedin.com/company/moore-armenia</a></div>
+          </div>
+          <p class="muted" style="margin-top:1rem;">Contact details are taken from the official website and should be reconfirmed before production use. Map embed is omitted as a placeholder pending client approval.</p>
+          <h3 style="margin-top:1.5rem;">Production notes</h3>
+          <ul class="feature-list">
+            <li>Replace placeholder imagery and illustrative engagement data with client-approved content.</li>
+            <li>Connect forms to an approved backend or email workflow after explicit authorization.</li>
+            <li>Implement real authentication and document storage before handling client files.</li>
+            <li>Confirm services, industries, hours, and contact details before publication.</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -102,7 +394,7 @@
     <section>
       <div class="wrap">
         <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of Moore Armenia, and no booking, payment, or contact request is submitted by this demo.
+          <strong>Unofficial concept demo.</strong> This page demonstrates a possible website redesign for Moore Armenia. It is not the official website of Moore Armenia, and no booking, payment, or contact request is submitted by this demo.
         </div>
       </div>
     </section>
@@ -110,7 +402,7 @@
 
   <footer>
     <div class="wrap">
-      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
+      <p>Concept demo generated from verified public information about Moore Armenia. Business facts, contact details, and availability must be confirmed before production use.</p>
     </div>
   </footer>
 </body>

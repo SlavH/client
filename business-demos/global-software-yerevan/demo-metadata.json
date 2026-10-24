@@ -6,5 +6,25 @@
   "business_category": "software development",
   "website_url": "https://www.globalsoftcorp.com/",
   "status": "completed",
-  "demo_type": "static-html-concept"
+  "demo_type": "manual-research-concept",
+  "generator_version": "manual",
+  "slug": "global-software-yerevan",
+  "unofficial_concept_demo": true,
+  "verified_sources": [
+    "https://www.globalsoftcorp.com/",
+    "https://www.globalsoftcorp.com/contacts",
+    "https://www.globalsoftcorp.com/solutions"
+  ],
+  "verified_observations": [
+    "Global Software is a Yerevan-based technology and software development company delivering digital solutions and custom software development services.",
+    "The company presents itself as an Authorized Zoho Consulting Partner with services spanning IT consultancy, custom software, enterprise solutions, web development, mobile apps, and support.",
+    "Public contact routes include +374 93 070 066, contact@globalsoftcorp.com, and 6 Yekmalyan St, Yerevan, 0002, Armenia."
+  ],
+  "placeholders_used": [
+    "pricing",
+    "delivery timelines",
+    "team composition",
+    "working hours",
+    "full case studies beyond listed highlights"
+  ]
 }

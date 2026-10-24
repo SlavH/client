@@ -3,106 +3,563 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SmartSoft | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for SmartSoft, a software development business in Yerevan, Armenia.">
+  <title>SmartSoft | Software Development Concept Demo</title>
+  <meta name="description" content="Unofficial concept demo for SmartSoft, an IT solutions and software development company in Yerevan, Armenia.">
+  <meta name="robots" content="noindex, nofollow">
   <style>
     :root {
       --bg: #172554;
       --accent: #0891b2;
       --surface: #ecfeff;
-      --font: Verdana, sans-serif;
+      --text: #172033;
+      --muted: #64748b;
+      --border: #dbeafe;
+      --card: #ffffff;
+      --font: "Segoe UI", Inter, system-ui, -apple-system, sans-serif;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
-    section { padding: 4rem 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
-    .button.primary { background: var(--accent); color: #ffffff; }
-    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
-    form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
-    footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: var(--font); color: var(--text); background: #f8fafc; line-height: 1.65; }
+    a { color: var(--accent); text-decoration-thickness: .08em; text-underline-offset: .15em; }
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .skip-link { position: absolute; left: -9999px; top: 0; background: #ffffff; padding: .75rem 1rem; z-index: 100; }
+    .skip-link:focus { left: 1rem; top: 1rem; }
+    .wrap { width: min(1240px, calc(100% - 2rem)); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 20; background: var(--bg); color: #ffffff; box-shadow: 0 10px 30px rgba(15, 23, 42, .22); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 0; flex-wrap: wrap; }
+    nav a { color: #ffffff; text-decoration: none; font-weight: 700; }
+    .brand { display: flex; align-items: center; gap: .75rem; font-size: 1.15rem; }
+    .brand-mark { width: 2.25rem; height: 2.25rem; border-radius: .7rem; background: linear-gradient(135deg, var(--accent), #67e8f9); display: grid; place-items: center; font-weight: 900; color: var(--bg); }
+    .nav-links { display: flex; gap: .9rem; flex-wrap: wrap; }
+    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: clamp(4.5rem, 9vw, 7.5rem) 0; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr); gap: 2rem; align-items: center; }
+    .eyebrow { display: inline-flex; align-items: center; gap: .5rem; background: rgba(255, 255, 255, .14); border: 1px solid rgba(255, 255, 255, .24); border-radius: 999px; padding: .4rem .85rem; font-size: .9rem; letter-spacing: .03em; }
+    .hero h1 { font-size: clamp(2.6rem, 7vw, 5.6rem); line-height: 1.02; margin: .75rem 0 1rem; }
+    .hero p { max-width: 780px; font-size: 1.12rem; margin: 0 0 1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: .45rem; padding: .85rem 1.15rem; border-radius: .85rem; text-decoration: none; font-weight: 800; border: 0; cursor: pointer; font: inherit; transition: transform .16s ease, box-shadow .16s ease; }
+    .button:hover { transform: translateY(-2px); }
+    .button.primary { background: #ffffff; color: var(--bg); box-shadow: 0 12px 28px rgba(15, 23, 42, .18); }
+    .button.accent { background: var(--accent); color: #ffffff; box-shadow: 0 12px 28px rgba(8, 145, 178, .28); }
+    .button.ghost { background: rgba(255, 255, 255, .12); color: #ffffff; border: 1px solid rgba(255, 255, 255, .28); }
+    .hero-panel { background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .22); border-radius: 1.5rem; padding: 1.5rem; backdrop-filter: blur(8px); }
+    .stat-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; }
+    .stat { background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .18); border-radius: 1rem; padding: 1rem; }
+    .stat strong { display: block; font-size: 1.5rem; line-height: 1; }
+    .stat span { font-size: .9rem; opacity: .9; }
+    section { padding: clamp(3.5rem, 7vw, 6rem) 0; }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); margin: 0 0 .5rem; color: var(--bg); letter-spacing: -.02em; }
+    .section-intro { max-width: 760px; color: var(--muted); margin: 0 0 2rem; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 1.25rem; padding: 1.5rem; box-shadow: 0 18px 45px rgba(15, 23, 42, .08); }
+    .card h2, .card h3 { margin-top: 0; color: var(--bg); }
+    .card p { margin: .5rem 0; }
+    .card ul { margin: .75rem 0 0; padding-left: 1.1rem; }
+    .card li { margin: .35rem 0; }
+    .pill { display: inline-block; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: .35rem .75rem; font-size: .85rem; font-weight: 700; color: var(--bg); margin: .2rem .2rem 0 0; }
+    .feature-list { display: grid; gap: .75rem; padding: 0; list-style: none; }
+    .feature-list li { background: #ffffff; border: 1px solid var(--border); border-radius: .85rem; padding: .85rem 1rem; }
+    .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .step { position: relative; background: linear-gradient(180deg, #ffffff, var(--surface)); border: 1px solid var(--border); border-radius: 1rem; padding: 1.25rem; }
+    .step-number { width: 2.25rem; height: 2.25rem; border-radius: 50%; background: var(--accent); color: #ffffff; display: grid; place-items: center; font-weight: 900; margin-bottom: .75rem; }
+    .product-card { display: grid; gap: 1rem; }
+    .module-list { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .75rem; }
+    .module { background: #e0f2fe; color: #0c4a6e; border-radius: .65rem; padding: .35rem .65rem; font-size: .85rem; font-weight: 700; }
+    .benefit-list { display: grid; gap: .5rem; margin-top: .75rem; }
+    .benefit { display: flex; gap: .6rem; align-items: flex-start; }
+    .benefit::before { content: ""; width: .55rem; height: .55rem; border-radius: 50%; background: var(--accent); margin-top: .55rem; flex: 0 0 auto; }
+    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .portfolio-item { background: #ffffff; border: 1px solid var(--border); border-radius: 1rem; padding: 1.1rem; display: grid; gap: .65rem; }
+    .portfolio-top { display: flex; justify-content: space-between; gap: .75rem; align-items: start; }
+    .portfolio-icon { width: 2.75rem; height: 2.75rem; border-radius: .8rem; background: linear-gradient(135deg, var(--accent), var(--bg)); color: #ffffff; display: grid; place-items: center; font-weight: 900; flex: 0 0 auto; }
+    .category { display: inline-block; background: var(--surface); color: var(--bg); border-radius: 999px; padding: .25rem .65rem; font-size: .78rem; font-weight: 800; }
+    .client-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .85rem; }
+    .client { display: flex; gap: .75rem; align-items: center; background: #ffffff; border: 1px solid var(--border); border-radius: 1rem; padding: .85rem; }
+    .client-badge { width: 2.5rem; height: 2.5rem; border-radius: .75rem; background: var(--surface); color: var(--bg); display: grid; place-items: center; font-weight: 900; flex: 0 0 auto; }
+    .client a { font-weight: 700; }
+    .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+    .news-card { background: #ffffff; border: 1px solid var(--border); border-radius: 1rem; padding: 1.25rem; }
+    .news-date { color: var(--accent); font-weight: 800; font-size: .9rem; }
+    .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+    .contact-list { display: grid; gap: .75rem; }
+    .contact-item { display: flex; gap: .75rem; align-items: flex-start; }
+    .contact-icon { width: 2.25rem; height: 2.25rem; border-radius: .7rem; background: var(--surface); color: var(--bg); display: grid; place-items: center; font-weight: 900; flex: 0 0 auto; }
+    form { display: grid; gap: .85rem; }
+    label { font-weight: 700; font-size: .95rem; }
+    input, textarea { width: 100%; padding: .85rem; border: 1px solid var(--border); border-radius: .85rem; font: inherit; background: #ffffff; }
+    textarea { min-height: 130px; resize: vertical; }
+    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 1rem; padding: 1.15rem; }
+    .placeholder { background: #f1f5f9; border: 1px dashed #94a3b8; border-radius: .85rem; padding: .85rem; color: #475569; }
+    footer { background: #0f172a; color: #cbd5e1; padding: 2.5rem 0; }
+    footer a { color: #67e8f9; }
+    .muted { color: var(--muted); }
+    .small { font-size: .9rem; }
+    @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } .hero-panel { order: -1; } }
+    @media (max-width: 640px) { .nav-links { width: 100%; } .stat-grid { grid-template-columns: 1fr; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button:hover { transform: none; } }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <header>
     <div class="wrap">
-      <nav>
-        <a href="#top">SmartSoft</a>
-        <div>
+      <nav aria-label="Primary navigation">
+        <a class="brand" href="#top"><span class="brand-mark">S</span><span>SmartSoft</span></a>
+        <div class="nav-links">
+          <a href="#about">About</a>
           <a href="#services">Services</a>
+          <a href="#products">Products</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#clients">Clients</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Unofficial concept demo - not the official SmartSoft website</span>
+          <h1>SmartSoft</h1>
+          <p>IT solutions and software development company based in Yerevan, Armenia. Web applications, mobile apps, embedded systems, custom hardware, and IT system integration.</p>
+          <p>Founded in 2017. Serving clients across 10+ industries with 200+ completed projects.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#services">Explore services</a>
+            <a class="button accent" href="#contact">Request a quote</a>
+            <a class="button ghost" href="https://www.smartsoft.am/" target="_blank" rel="noopener noreferrer">Official website</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Verified company highlights">
+          <div class="stat-grid">
+            <div class="stat"><strong>9+</strong><span>Years experience</span></div>
+            <div class="stat"><strong>100+</strong><span>Satisfied clients</span></div>
+            <div class="stat"><strong>200+</strong><span>Projects completed</span></div>
+            <div class="stat"><strong>15+</strong><span>Portfolio items</span></div>
+            <div class="stat"><strong>10+</strong><span>Industries served</span></div>
+            <div class="stat"><strong>2017</strong><span>Founded</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
       <div class="wrap">
-        <span class="badge">software development concept demo</span>
-        <h1>SmartSoft</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a software development business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 74/100</span></p>
-        <a class="button primary" href="#contact">Request information</a>
+        <h2 class="section-title">Verified company profile</h2>
+        <p class="section-intro">This concept is based on public information published on the official SmartSoft website. Unverified items are shown as placeholders.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Company profile</h3>
+            <p>SmartSoft is an IT solutions and software development company based in Yerevan, Armenia. Founded in 2017, it delivers innovative technology solutions to clients worldwide.</p>
+            <p>Its stated vision is a unique approach to every project, professionalism in everything it builds, and scalable, timeless software solutions.</p>
+            <p>Services include IT consulting, design, and development of infinitely scalable software.</p>
+          </article>
+          <article class="card">
+            <h3>What we verified</h3>
+            <ul class="feature-list">
+              <li>IT solutions company delivering web applications, mobile apps, embedded systems, and custom hardware solutions.</li>
+              <li>Five service areas: web-based management systems, mobile applications, embedded software development, hardware design and manufacturing, and IT system integration.</li>
+              <li>Own products: eUniversity, Flight Management System, and Fuel Dispenser Automation.</li>
+              <li>Portfolio lists 15 projects across web development, embedded systems, and IoT and hardware.</li>
+              <li>Public clients include chambers of commerce, insurers, tour operators, academies, and logistics companies.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Concept focus</h3>
+            <p>The CRM opportunity for this lead is a portfolio showcase and inquiry management system. This demo demonstrates clearer service presentation, visible contact routes, project filtering, product detail sections, and a mobile-friendly inquiry flow.</p>
+            <div class="pill">Portfolio showcase</div>
+            <div class="pill">Inquiry management</div>
+            <div class="pill">Mobile-first navigation</div>
+            <div class="pill">Verified contact routes</div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>IT solutions company with web apps and mobile apps; website could benefit from portfolio showcase and inquiry management.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Portfolio showcase and inquiry management system</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://www.smartsoft.am/" target="_blank" rel="noopener">https://www.smartsoft.am/</a></li></ul>
-        </article>
+      <div class="wrap">
+        <h2 class="section-title">Services</h2>
+        <p class="section-intro">Service names, descriptions, and capability lists below are taken from the official services page.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Web based management systems</h3>
+            <p>Comprehensive web-based management and automation systems that streamline business processes, enhance productivity, and provide real-time insights.</p>
+            <ul>
+              <li>Custom CRM and ERP systems</li>
+              <li>E-commerce platforms</li>
+              <li>Content management systems</li>
+              <li>Booking and reservation systems</li>
+              <li>Inventory management</li>
+              <li>Document management systems</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Mobile applications</h3>
+            <p>Native and cross-platform mobile applications for iOS and Android with user-friendly, performant, and well-designed experiences.</p>
+            <ul>
+              <li>Native iOS development (Swift)</li>
+              <li>Native Android development (Kotlin/Java)</li>
+              <li>Cross-platform development (React Native)</li>
+              <li>Mobile UI/UX design</li>
+              <li>App Store and Play Store deployment</li>
+              <li>Mobile backend development</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Embedded software development</h3>
+            <p>Reliable, efficient firmware and software for microcontrollers and embedded processors across industries.</p>
+            <ul>
+              <li>Firmware development (C/C++)</li>
+              <li>Real-time operating systems (RTOS)</li>
+              <li>IoT device development</li>
+              <li>Industrial automation</li>
+              <li>Device drivers</li>
+              <li>Communication protocols (RS-485, UART, SPI)</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Hardware design and manufacturing</h3>
+            <p>End-to-end hardware development from concept and schematic design to PCB layout, prototyping, and manufacturing.</p>
+            <ul>
+              <li>PCB design and layout</li>
+              <li>Control board development</li>
+              <li>Sensor integration</li>
+              <li>Prototype manufacturing</li>
+              <li>Testing and certification</li>
+              <li>Production support</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>IT system integration</h3>
+            <p>Connecting and optimizing technology systems for seamless operations, with consulting for digital transformation.</p>
+            <ul>
+              <li>System integration services</li>
+              <li>API development and integration</li>
+              <li>Legacy system modernization</li>
+              <li>Cloud migration</li>
+              <li>IT strategy consulting</li>
+              <li>Technical architecture design</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3 class="section-title" style="font-size:1.6rem;margin-top:2.5rem;">Delivery process</h3>
+        <div class="process-grid">
+          <article class="step"><div class="step-number">1</div><h3>Consultation</h3><p>Requirements, goals, and challenges are reviewed through detailed discussions.</p></article>
+          <article class="step"><div class="step-number">2</div><h3>Planning and design</h3><p>Detailed specifications, wireframes, and architecture are created for the solution.</p></article>
+          <article class="step"><div class="step-number">3</div><h3>Development</h3><p>Agile methodology with regular updates and feedback cycles.</p></article>
+          <article class="step"><div class="step-number">4</div><h3>Launch and support</h3><p>Deployment followed by ongoing maintenance and support services.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="wrap">
+        <h2 class="section-title">Products</h2>
+        <p class="section-intro">Product names, modules, and feature lists below are taken from the official products page. Pricing and licensing terms are not published and are shown as placeholders.</p>
+        <div class="card-grid">
+          <article class="card product-card">
+            <div>
+              <span class="category">Software product</span>
+              <h3>eUniversity</h3>
+              <p>Electronic University Management System: a comprehensive platform for managing educational institutions, including electronic document management and automated reporting.</p>
+            </div>
+            <div>
+              <strong>System modules</strong>
+              <div class="module-list">
+                <span class="module">Admission Subsystem</span>
+                <span class="module">Student Management</span>
+                <span class="module">Academic Organization</span>
+                <span class="module">Examination Management</span>
+                <span class="module">HR Management</span>
+                <span class="module">Orders and Commands</span>
+                <span class="module">Reports and Analytics</span>
+                <span class="module">Notifications System</span>
+              </div>
+            </div>
+            <div class="benefit-list">
+              <div class="benefit">Reduces administrative workload by 60%</div>
+              <div class="benefit">Paperless document management</div>
+              <div class="benefit">Real-time analytics and reporting</div>
+              <div class="benefit">Secure role-based access</div>
+            </div>
+            <div class="hero-actions">
+              <a class="button accent" href="https://web.euniversity.am/" target="_blank" rel="noopener noreferrer">View live demo</a>
+              <a class="button ghost" style="color:var(--bg);border-color:var(--border);background:#ffffff;" href="https://www.smartsoft.am/contact.php?product=euniversity" target="_blank" rel="noopener noreferrer">Request demo</a>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div>
+              <span class="category">Software product</span>
+              <h3>Flight Management System</h3>
+              <p>Comprehensive aviation operations platform for airlines, airports, and aviation service providers, covering schedules, crew, maintenance, and passenger services.</p>
+            </div>
+            <div>
+              <strong>System modules</strong>
+              <div class="module-list">
+                <span class="module">Schedule Management</span>
+                <span class="module">Crew Rostering</span>
+                <span class="module">Maintenance Tracking</span>
+                <span class="module">Route Planning</span>
+                <span class="module">Fuel Management</span>
+                <span class="module">Performance Analytics</span>
+              </div>
+            </div>
+            <div class="benefit-list">
+              <div class="benefit">Real-time updates and notifications</div>
+              <div class="benefit">Built-in safety compliance checks</div>
+              <div class="benefit">API integration with existing systems</div>
+              <div class="benefit">Advanced analytics for optimization</div>
+            </div>
+            <div class="hero-actions">
+              <a class="button ghost" style="color:var(--bg);border-color:var(--border);background:#ffffff;" href="https://www.smartsoft.am/contact.php?product=flights" target="_blank" rel="noopener noreferrer">Request demo</a>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div>
+              <span class="category">Hardware and software</span>
+              <h3>Fuel Dispenser Automation</h3>
+              <p>Complete control and monitoring of fuel dispensing operations, from small gas stations to large fuel depots.</p>
+            </div>
+            <div>
+              <strong>System modules</strong>
+              <div class="module-list">
+                <span class="module">Real-time Monitoring</span>
+                <span class="module">Loss Prevention</span>
+                <span class="module">Transaction Management</span>
+                <span class="module">Mobile Access</span>
+              </div>
+            </div>
+            <div class="benefit-list">
+              <div class="benefit">Reduce fuel losses by up to 15%</div>
+              <div class="benefit">24/7 remote monitoring</div>
+              <div class="benefit">Automated compliance reporting</div>
+            </div>
+            <div class="hero-actions">
+              <a class="button ghost" style="color:var(--bg);border-color:var(--border);background:#ffffff;" href="https://www.smartsoft.am/contact.php?product=fuel" target="_blank" rel="noopener noreferrer">Request demo</a>
+            </div>
+          </article>
+        </div>
+        <p class="placeholder small" style="margin-top:1.5rem;">Placeholder: pricing, licensing, deployment model, support SLA, and customer references for products are not published publicly.</p>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="wrap">
+        <h2 class="section-title">Portfolio showcase</h2>
+        <p class="section-intro">All 15 projects listed on the official portfolio page. Project detail pages are linked where the official site provides them.</p>
+        <div class="portfolio-grid">
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">W</div><span class="category">Web Development</span></div>
+            <h3>SMART IPTV + OTT Platform</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=smart-iptv-ott-platform" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">A</div><span class="category">Web Development</span></div>
+            <h3>Air Tickets Distribution System</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=air-tickets-distribution" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">U</div><span class="category">Web Development</span></div>
+            <h3>University Management System</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=university-management-system" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">C</div><span class="category">Web Development</span></div>
+            <h3>Enterprise Grade CRM System</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=enterprise-crm-system" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">D</div><span class="category">Web Development</span></div>
+            <h3>Distance Learning Platform</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=distance-learning-platform" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">B</div><span class="category">Web Development</span></div>
+            <h3>Billing and CRM System (BCRM)</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=billing-crm-system" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">F</div><span class="category">Web Development</span></div>
+            <h3>B2C Air Tickets Booking System</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=b2c-air-tickets-booking" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">E</div><span class="category">Embedded Systems</span></div>
+            <h3>Electronic Cash Register Software</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=ecr-software" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">W</div><span class="category">IoT and Hardware</span></div>
+            <h3>Wine Fermentation Automation</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=wine-fermentation-automation" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">F</div><span class="category">IoT and Hardware</span></div>
+            <h3>Fuel Dispenser Control Boards</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=fuel-dispenser-control-boards" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">G</div><span class="category">IoT and Hardware</span></div>
+            <h3>Greenhouse Automation Boards</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=greenhouse-automation-boards" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">H</div><span class="category">IoT and Hardware</span></div>
+            <h3>HVAC System Smart Boards</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=hvac-smart-boards" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">B</div><span class="category">IoT and Hardware</span></div>
+            <h3>Boiler Automation Boards</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=boiler-automation-boards" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">W</div><span class="category">IoT and Hardware</span></div>
+            <h3>Water Grid Automation Boards</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=water-grid-automation" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+          <article class="portfolio-item">
+            <div class="portfolio-top"><div class="portfolio-icon">L</div><span class="category">IoT and Hardware</span></div>
+            <h3>Lighting Control Boards</h3>
+            <p class="muted small">Verified project listed on the official portfolio page.</p>
+            <a href="https://www.smartsoft.am/portfolio-detail.php?slug=lighting-control-boards" target="_blank" rel="noopener noreferrer">View official project page</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="wrap">
+        <h2 class="section-title">Clients</h2>
+        <p class="section-intro">Client names and website links below are taken from the official clients section. No endorsement beyond publication is implied.</p>
+        <div class="client-grid">
+          <div class="client"><div class="client-badge">D</div><div><strong>Dutch-Armenian Chamber of Commerce</strong><br><a href="https://dacoc.nl/" target="_blank" rel="noopener noreferrer">dacoc.nl</a></div></div>
+          <div class="client"><div class="client-badge">Y</div><div><strong>Chamber of Commerce and Industry of Yerevan</strong><br><a href="https://armcci.am/" target="_blank" rel="noopener noreferrer">armcci.am</a></div></div>
+          <div class="client"><div class="client-badge">A</div><div><strong>Chamber of Commerce and Industry of Armenia</strong><br><a href="https://yercci.am/?lang=en" target="_blank" rel="noopener noreferrer">yercci.am</a></div></div>
+          <div class="client"><div class="client-badge">N</div><div><strong>Nairi Insurance</strong><br><a href="https://imnairi.am/" target="_blank" rel="noopener noreferrer">imnairi.am</a></div></div>
+          <div class="client"><div class="client-badge">F</div><div><strong>Festa Tour</strong><br><a href="https://www.festa.am/" target="_blank" rel="noopener noreferrer">festa.am</a></div></div>
+          <div class="client"><div class="client-badge">S</div><div><strong>SSB Academy</strong><br><a href="https://ssbacademy.am/" target="_blank" rel="noopener noreferrer">ssbacademy.am</a></div></div>
+          <div class="client"><div class="client-badge">Q</div><div><strong>QTerminal</strong><br><a href="https://qterminal.am/" target="_blank" rel="noopener noreferrer">qterminal.am</a></div></div>
+          <div class="client"><div class="client-badge">H</div><div><strong>Hot Tours</strong><br><a href="https://hot-tours.com/" target="_blank" rel="noopener noreferrer">hot-tours.com</a></div></div>
+          <div class="client"><div class="client-badge">R</div><div><strong>Ramada Hotel</strong><br><span class="muted small">Website not listed publicly</span></div></div>
+          <div class="client"><div class="client-badge">S</div><div><strong>Sputnik Travel</strong><br><a href="https://sputniktravel.am/" target="_blank" rel="noopener noreferrer">sputniktravel.am</a></div></div>
+          <div class="client"><div class="client-badge">C</div><div><strong>cross.am</strong><br><a href="https://www.cross.am/" target="_blank" rel="noopener noreferrer">cross.am</a></div></div>
+          <div class="client"><div class="client-badge">B</div><div><strong>Barekam Logistic Service</strong><br><a href="https://barekam.am/#home" target="_blank" rel="noopener noreferrer">barekam.am</a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">Latest news</h2>
+        <p class="section-intro">News titles and dates below are taken from the official website.</p>
+        <div class="news-grid">
+          <article class="news-card">
+            <p class="news-date">Dec 15, 2024 - SmartSoft Team</p>
+            <h3>SmartSoft Launches New IPTV Platform</h3>
+            <p>Announcement of the new SMART IPTV + OTT platform.</p>
+            <a href="https://www.smartsoft.am/news-detail.php?slug=smartsoft-launches-new-iptv-platform" target="_blank" rel="noopener noreferrer">Read official announcement</a>
+          </article>
+          <article class="news-card">
+            <p class="news-date">Nov 20, 2024 - SmartSoft Team</p>
+            <h3>Partnership with Armenian Universities</h3>
+            <p>Partnership announcement for the eUniversity platform.</p>
+            <a href="https://www.smartsoft.am/news-detail.php?slug=partnership-with-armenian-universities" target="_blank" rel="noopener noreferrer">Read official announcement</a>
+          </article>
+          <article class="news-card">
+            <p class="news-date">Oct 05, 2024 - SmartSoft Team</p>
+            <h3>New IoT Solutions for Agriculture</h3>
+            <p>Introduction of greenhouse automation boards for agricultural productivity.</p>
+            <a href="https://www.smartsoft.am/news-detail.php?slug=new-iot-solutions-agriculture" target="_blank" rel="noopener noreferrer">Read official announcement</a>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://www.smartsoft.am/" target="_blank" rel="noopener">Current website</a></p>
-          <p class="muted">Verified contact details should be confirmed before production use.</p>
-        </article>
-        <article class="card">
-          <h2>Demo inquiry form</h2>
-          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button class="button primary" type="submit">Send inquiry</button>
-          </form>
-        </article>
+      <div class="wrap">
+        <h2 class="section-title">Contact and inquiry</h2>
+        <p class="section-intro">Contact details below are taken from the official contact page. This demo does not submit requests to any server.</p>
+        <div class="trust-grid">
+          <article class="card">
+            <h3>Verified contact routes</h3>
+            <div class="contact-list">
+              <div class="contact-item"><div class="contact-icon">A</div><div><strong>Address</strong><br>3 Hakob Hakobyan st, Yerevan, 0033, RA<br><a href="https://maps.google.com/?q=3+Hakob+Hakobyan+st%2C+Yerevan%2C+0033%2C+RA" target="_blank" rel="noopener noreferrer">Open in maps</a></div></div>
+              <div class="contact-item"><div class="contact-icon">P</div><div><strong>Phone</strong><br><a href="tel:+37415552255">+374 15 552255</a></div></div>
+              <div class="contact-item"><div class="contact-icon">E</div><div><strong>Email</strong><br><a href="mailto:info@smartsoft.am">info@smartsoft.am</a></div></div>
+              <div class="contact-item"><div class="contact-icon">W</div><div><strong>Website</strong><br><a href="https://www.smartsoft.am/" target="_blank" rel="noopener noreferrer">www.smartsoft.am</a></div></div>
+              <div class="contact-item"><div class="contact-icon">L</div><div><strong>LinkedIn</strong><br><a href="https://am.linkedin.com/company/smartsoft-llc" target="_blank" rel="noopener noreferrer">smartsoft-llc</a></div></div>
+              <div class="contact-item"><div class="contact-icon">F</div><div><strong>Facebook</strong><br><a href="https://www.facebook.com/smartsoftarmenia/" target="_blank" rel="noopener noreferrer">smartsoftarmenia</a></div></div>
+            </div>
+            <p class="placeholder small" style="margin-top:1rem;">Placeholder: business hours, response times, and preferred contact method are not published publicly.</p>
+          </article>
+
+          <article class="card">
+            <h2>Request information</h2>
+            <p>Use this form to start a conversation. In this concept demo, no request is submitted to a server and no email is sent.</p>
+            <form onsubmit="event.preventDefault(); const status=document.getElementById('form-status'); status.textContent='Demo only: no request was submitted.'; status.focus();">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+              <div>
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text">
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button class="button accent" type="submit">Send inquiry</button>
+              <p id="form-status" class="muted small" role="status" aria-live="polite" tabindex="-1"></p>
+            </form>
+          </article>
+
+          <article class="card">
+            <h3>Production notes</h3>
+            <ul class="feature-list">
+              <li>Replace placeholder imagery with licensed or client-provided assets.</li>
+              <li>Connect the form to an approved backend or email workflow.</li>
+              <li>Confirm services, prices, hours, and contact details before publication.</li>
+              <li>Add analytics only with the client's consent.</li>
+              <li>Verify all project descriptions and client permissions before reuse.</li>
+            </ul>
+            <p class="placeholder small">Placeholder: pricing, timelines, team bios, and detailed case studies are not available from public sources.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section>
       <div class="wrap">
         <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of SmartSoft, and no booking, payment, or contact request is submitted by this demo.
+          <strong>Unofficial concept demo.</strong> This page demonstrates a possible website redesign for SmartSoft. It is not the official website of SmartSoft, is not endorsed by SmartSoft, and no booking, payment, or contact request is submitted by this demo.
         </div>
       </div>
     </section>
@@ -110,7 +567,8 @@
 
   <footer>
     <div class="wrap">
-      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
+      <p><strong>SmartSoft concept demo.</strong> Generated from verified public business information. Business facts, contact details, and availability must be confirmed before production use.</p>
+      <p class="small">Official source: <a href="https://www.smartsoft.am/" target="_blank" rel="noopener noreferrer">https://www.smartsoft.am/</a></p>
     </div>
   </footer>
 </body>
