@@ -4,47 +4,74 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ArmSoft | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for ArmSoft, a software development business in Yerevan, Armenia.">
+  <meta name="description" content="Unofficial concept demo website for ArmSoft, a custom software development business in Yerevan, Armenia.">
   <style>
     :root {
-      --bg: #111827;
-      --accent: #16a34a;
-      --surface: #f9fafb;
-      --font: Georgia, serif;
+      --bg: #0a192f;
+      --bg-2: #112240;
+      --accent: #3b82f6;
+      --accent-2: #22d3ee;
+      --surface: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --font: "Segoe UI", system-ui, -apple-system, sans-serif;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
-    section { padding: 4rem 0; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: var(--font); color: var(--text); background: #ffffff; line-height: 1.6; }
+    a { color: var(--accent); }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(10,25,47,.92); backdrop-filter: blur(8px); color: #fff; border-bottom: 1px solid rgba(255,255,255,.08); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding: .9rem 0; }
+    nav a { color: #fff; text-decoration: none; font-weight: 600; font-size: .95rem; }
+    nav .links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+    .hero { background: linear-gradient(135deg, var(--bg), var(--bg-2) 60%, #1e3a8a); color: #fff; padding: 6rem 0 5rem; }
+    .hero h1 { font-size: clamp(2.1rem, 5.5vw, 4.2rem); margin: 0 0 1rem; line-height: 1.1; }
+    .hero p { max-width: 760px; font-size: 1.15rem; color: #cbd5e1; }
+    .badge { display: inline-block; background: rgba(34,211,238,.12); border: 1px solid rgba(34,211,238,.35); color: var(--accent-2); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; font-size: .85rem; font-weight: 600; letter-spacing: .02em; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+    .button { display: inline-block; padding: .85rem 1.25rem; border-radius: .75rem; text-decoration: none; font-weight: 700; font-size: .95rem; transition: transform .15s ease, box-shadow .15s ease; }
+    .button:hover { transform: translateY(-1px); }
+    .button.primary { background: var(--accent); color: #fff; box-shadow: 0 8px 20px rgba(59,130,246,.35); }
+    .button.secondary { background: rgba(255,255,255,.08); color: #fff; border: 1px solid rgba(255,255,255,.22); }
+    section { padding: 4.5rem 0; }
+    section.alt { background: var(--surface); }
+    h2.section-title { font-size: clamp(1.6rem, 3vw, 2.4rem); margin: 0 0 .5rem; }
+    .section-lead { color: var(--muted); max-width: 720px; margin: 0 0 2rem; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
-    .button.primary { background: var(--accent); color: #ffffff; }
-    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 1rem; padding: 1.5rem; box-shadow: 0 1px 2px rgba(15,23,42,.04); }
+    .card h3 { margin: 0 0 .5rem; color: var(--bg); font-size: 1.15rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .card ul { margin: .75rem 0 0; padding-left: 1.1rem; color: var(--muted); }
+    .card ul li { margin: .35rem 0; }
+    .pill-list { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .pill { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; border-radius: 999px; padding: .35rem .8rem; font-size: .85rem; font-weight: 600; }
+    .stat { text-align: center; padding: 1.5rem; }
+    .stat .num { font-size: 2.2rem; font-weight: 800; color: var(--accent); }
+    .stat .label { color: var(--muted); font-size: .9rem; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    @media (max-width: 760px) { .contact-grid { grid-template-columns: 1fr; } }
     form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
-    footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
+    input, textarea { width: 100%; padding: .85rem; border: 1px solid var(--border); border-radius: .75rem; font: inherit; background: #fff; }
+    textarea { min-height: 130px; resize: vertical; }
+    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem 1.25rem; color: #78350f; }
+    footer { background: #0f172a; color: #94a3b8; padding: 2rem 0; font-size: .9rem; }
+    footer a { color: #cbd5e1; }
+    .muted { color: var(--muted); }
+    .small { font-size: .85rem; }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <nav>
-        <a href="#top">ArmSoft</a>
-        <div>
+      <nav aria-label="Primary">
+        <a href="#top" style="font-size:1.15rem;">ArmSoft</a>
+        <div class="links">
           <a href="#services">Services</a>
+          <a href="#models">Engagement</a>
+          <a href="#tech">Technologies</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -54,55 +81,136 @@
   <main id="top">
     <section class="hero">
       <div class="wrap">
-        <span class="badge">software development concept demo</span>
+        <span class="badge">Custom software development concept demo</span>
         <h1>ArmSoft</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a software development business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 64/100</span></p>
-        <a class="button primary" href="#contact">Request information</a>
+        <p>Custom software development services with a focus on complex web and mobile systems, artificial intelligence applications, and big data analytics.</p>
+        <p class="small" style="color:#94a3b8;">Concept demo prepared from publicly verified information. Fit score: 64/100.</p>
+        <div class="cta-row">
+          <a class="button primary" href="#contact">Discuss a project</a>
+          <a class="button secondary" href="https://arm-soft.am/" target="_blank" rel="noopener">Visit official site</a>
+        </div>
       </div>
     </section>
 
     <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>Custom software development company; website could benefit from client portal and project management.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Client portal and project management system</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://arm-soft.am/" target="_blank" rel="noopener">https://arm-soft.am/</a></li></ul>
-        </article>
+      <div class="wrap">
+        <h2 class="section-title">Our services</h2>
+        <p class="section-lead">Activities across the full software development cycle, from consulting and analysis to delivery, quality assurance, and ongoing support.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Consulting</h3>
+            <p>Selecting the technology platform that best matches your business needs.</p>
+          </article>
+          <article class="card">
+            <h3>Business Analysis</h3>
+            <p>Defining and documenting business processes and user needs.</p>
+          </article>
+          <article class="card">
+            <h3>Interface Design</h3>
+            <p>Elegant, modern solutions considering target audience preferences, corporate style, and accessibility.</p>
+          </article>
+          <article class="card">
+            <h3>Architecture &amp; Development</h3>
+            <p>Robust, scalable, and maintainable applications tailored to your business tasks.</p>
+          </article>
+          <article class="card">
+            <h3>Quality Assurance</h3>
+            <p>All types of testing to ensure the highest quality.</p>
+          </article>
+          <article class="card">
+            <h3>Maintenance &amp; Support</h3>
+            <p>2nd and 3rd line support for delivered solutions.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://arm-soft.am/" target="_blank" rel="noopener">Current website</a></p>
-          <p class="muted">Verified contact details should be confirmed before production use.</p>
-        </article>
-        <article class="card">
-          <h2>Demo inquiry form</h2>
-          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button class="button primary" type="submit">Send inquiry</button>
-          </form>
-        </article>
+    <section id="models" class="alt">
+      <div class="wrap">
+        <h2 class="section-title">Engagement models</h2>
+        <p class="section-lead">Work models offered according to your tasks.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Staff Augmentation</h3>
+            <p>Extra resources for a limited time, plus skills and knowledge of technologies or business domains not available in-house.</p>
+          </article>
+          <article class="card">
+            <h3>Project Delivery</h3>
+            <p>Full development projects delegated to ArmSoft, with responsibility for creating the solution your clients need.</p>
+          </article>
+        </div>
+        <div class="grid" style="margin-top:1.25rem;">
+          <article class="card stat">
+            <div class="num">20+</div>
+            <div class="label">Years delivering software development services</div>
+          </article>
+          <article class="card stat">
+            <div class="num">US &amp; EU</div>
+            <div class="label">Founders' experience with large and medium-sized companies</div>
+          </article>
+          <article class="card stat">
+            <div class="num">Long-term</div>
+            <div class="label">Partnerships that build domain knowledge and commitment</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech">
+      <div class="wrap">
+        <h2 class="section-title">Technologies</h2>
+        <p class="section-lead">A wide range of technologies to provide the best solutions for your project.</p>
+        <div class="pill-list">
+          <span class="pill">.NET</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">Java</span>
+          <span class="pill">NATS</span>
+          <span class="pill">Kafka</span>
+          <span class="pill">RabbitMQ</span>
+          <span class="pill">Azure</span>
+          <span class="pill">AWS</span>
+          <span class="pill">Google Cloud</span>
+          <span class="pill">Service Fabric</span>
+          <span class="pill">Kubernetes</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="alt">
+      <div class="wrap">
+        <h2 class="section-title">Contact us</h2>
+        <p class="section-lead">Looking for a technology partner? Reach ArmSoft using the verified public contact routes below.</p>
+        <div class="contact-grid">
+          <article class="card">
+            <h3>Verified contact routes</h3>
+            <ul>
+              <li>Email: <a href="mailto:info@arm-soft.am">info@arm-soft.am</a></li>
+              <li>Phone: <a href="tel:+37499468200">+374 99 46 82 00</a></li>
+              <li>Address: 40/85 Tigran Mec, Yerevan, 0005, Armenia</li>
+              <li>Privacy: <a href="mailto:privacy@arm-soft.am">privacy@arm-soft.am</a></li>
+            </ul>
+            <p class="muted small" style="margin-top:1rem;">Verified contact details should be confirmed before production use.</p>
+            <p><a class="button secondary" href="https://arm-soft.am/" target="_blank" rel="noopener">Current website</a></p>
+          </article>
+          <article class="card">
+            <h3>Demo inquiry form</h3>
+            <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
+              <input type="text" name="name" placeholder="Your name" required>
+              <input type="email" name="email" placeholder="Your email" required>
+              <input type="text" name="company" placeholder="Company (optional)">
+              <textarea name="message" placeholder="Tell us about your project" required></textarea>
+              <button class="button primary" type="submit">Send inquiry</button>
+            </form>
+            <p class="muted small" style="margin-top:.75rem;">This form is a non-functional placeholder in the concept demo.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section>
       <div class="wrap">
         <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of ArmSoft, and no booking, payment, or contact request is submitted by this demo.
+          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of ArmSoft, and no booking, payment, or contact request is submitted by this demo. Business facts, contact details, and availability must be confirmed before production use.
         </div>
       </div>
     </section>
@@ -110,7 +218,7 @@
 
   <footer>
     <div class="wrap">
-      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
+      <p>Concept demo generated from verified public information. &copy; 2024-2026 ArmSoft (official site). This demo is unofficial.</p>
     </div>
   </footer>
 </body>

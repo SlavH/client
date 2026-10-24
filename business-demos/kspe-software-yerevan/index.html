@@ -4,47 +4,85 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KSPE Software | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for KSPE Software, a software development business in Yerevan, Armenia.">
+  <meta name="description" content="Unofficial concept demo website for KSPE Software (KSPE LLC), a web and mobile development outsourcing company in Yerevan, Armenia.">
   <style>
     :root {
-      --bg: #1f2937;
-      --accent: #ea580c;
-      --surface: #fff7ed;
-      --font: Helvetica, Arial, sans-serif;
+      --bg: #0f172a;
+      --accent: #2563eb;
+      --accent-2: #0ea5e9;
+      --surface: #f8fafc;
+      --card: #ffffff;
+      --muted: #64748b;
+      --font: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: var(--font); color: #0f172a; background: #ffffff; line-height: 1.6; }
+    a { color: inherit; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+    header { background: var(--bg); color: #ffffff; padding: 1rem 0; position: sticky; top: 0; z-index: 10; }
     nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
-    section { padding: 4rem 0; }
+    .brand { font-weight: 800; font-size: 1.1rem; letter-spacing: .02em; color: #ffffff; text-decoration: none; }
+    .nav-links { display: flex; gap: 1.1rem; flex-wrap: wrap; }
+    .nav-links a { color: #cbd5e1; text-decoration: none; font-weight: 600; font-size: .95rem; }
+    .nav-links a:hover { color: #ffffff; }
+    .hero { background: linear-gradient(135deg, var(--bg) 0%, #1e3a8a 55%, var(--accent-2) 100%); color: #ffffff; padding: 6rem 0 5rem; }
+    .hero h1 { font-size: clamp(2.2rem, 5.5vw, 4.2rem); margin: .5rem 0 1rem; line-height: 1.08; }
+    .hero p { max-width: 760px; font-size: 1.15rem; color: #e2e8f0; }
+    .badge { display: inline-block; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .9rem; font-size: .85rem; font-weight: 600; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
+    .button { display: inline-block; padding: .85rem 1.25rem; border-radius: .75rem; text-decoration: none; font-weight: 700; transition: transform .15s ease; }
+    .button:hover { transform: translateY(-1px); }
+    .button.primary { background: #ffffff; color: var(--bg); }
+    .button.secondary { background: rgba(255,255,255,.12); color: #ffffff; border: 1px solid rgba(255,255,255,.3); }
+    .button.ghost { background: var(--accent); color: #ffffff; }
+    section { padding: 5rem 0; }
+    .section-title { font-size: clamp(1.6rem, 3vw, 2.4rem); margin: 0 0 .5rem; color: var(--bg); }
+    .section-sub { color: var(--muted); max-width: 720px; margin: 0 0 2.5rem; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
-    .button.primary { background: var(--accent); color: #ffffff; }
-    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
+    .card { background: var(--card); border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 1px 2px rgba(15,23,42,.04); }
+    .card h3 { margin: 0 0 .5rem; color: var(--bg); font-size: 1.1rem; }
+    .card p { margin: 0; color: #334155; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 2.5rem; }
+    .stat { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22); border-radius: 1rem; padding: 1.25rem; }
+    .stat .num { font-size: 2rem; font-weight: 800; display: block; }
+    .stat .label { color: #cbd5e1; font-size: .9rem; }
+    .service-num { color: var(--accent); font-weight: 800; font-size: .85rem; margin-bottom: .5rem; display: block; }
+    .pill-row { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.5rem; }
+    .pill { background: var(--surface); border: 1px solid #cbd5e1; border-radius: 999px; padding: .4rem .85rem; font-size: .9rem; color: #1e293b; }
+    .review { background: var(--surface); border-left: 4px solid var(--accent); padding: 1.5rem; border-radius: .75rem; }
+    .review .stars { color: #f59e0b; letter-spacing: .1em; margin-bottom: .75rem; }
+    .review footer { margin-top: 1rem; color: var(--muted); font-size: .9rem; }
+    .review-focus { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .75rem; }
+    .review-focus span { background: #dbeafe; color: #1e40af; border-radius: 999px; padding: .25rem .7rem; font-size: .78rem; font-weight: 600; }
+    .contact-card { background: var(--card); border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.5rem; }
+    .contact-line { display: flex; gap: .75rem; margin: .6rem 0; color: #334155; }
+    .contact-line strong { color: var(--bg); min-width: 88px; }
     form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
-    footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
+    input, textarea { width: 100%; padding: .85rem; border: 1px solid #cbd5e1; border-radius: .75rem; font: inherit; background: #ffffff; }
+    textarea { min-height: 140px; resize: vertical; }
+    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1.1rem 1.25rem; color: #78350f; }
+    .notice strong { color: #92400e; }
+    footer { background: #0f172a; color: #cbd5e1; padding: 2rem 0; }
+    footer a { color: #93c5fd; text-decoration: none; }
+    .muted { color: var(--muted); }
+    .placeholder { color: #94a3b8; font-style: italic; }
+    @media (max-width: 720px) {
+      .hero { padding: 4.5rem 0 3.5rem; }
+      section { padding: 3.5rem 0; }
+      .nav-links { gap: .8rem; }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
       <nav>
-        <a href="#top">KSPE Software</a>
-        <div>
+        <a class="brand" href="#top">KSPE Software</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
           <a href="#services">Services</a>
+          <a href="#track">Track record</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -54,47 +92,141 @@
   <main id="top">
     <section class="hero">
       <div class="wrap">
-        <span class="badge">software development concept demo</span>
-        <h1>KSPE Software</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a software development business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 64/100</span></p>
-        <a class="button primary" href="#contact">Request information</a>
+        <span class="badge">Software development outsourcing &middot; Yerevan, Armenia</span>
+        <h1>Build reliable web and mobile products with KSPE</h1>
+        <p>KSPE Software is a software development outsourcing company helping startups and businesses design, build, and scale reliable web platforms, mobile applications, and custom digital products.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="mailto:hello@kspe.am">Start a project</a>
+          <a class="button secondary" href="#services">Explore services</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><span class="num">20+</span><span class="label">Years in business (since 2003)</span></div>
+          <div class="stat"><span class="num">200+</span><span class="label">Projects delivered</span></div>
+          <div class="stat"><span class="num">95%</span><span class="label">Client satisfaction</span></div>
+          <div class="stat"><span class="num">End-to-end</span><span class="label">From design to launch</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <h2 class="section-title">A reliable development partner for long-term product growth</h2>
+        <p class="section-sub">KSPE Software combines technical expertise, product thinking, and disciplined delivery. We help startups and businesses with web development, mobile app development, UI/UX design, QA testing, and custom software delivery.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>What we do</h3>
+            <p>Web and mobile product delivery, dedicated engineering and QA support, technical consulting, and post-launch growth.</p>
+          </article>
+          <article class="card">
+            <h3>How we work</h3>
+            <p>Our team focuses on clarity, speed, and building high-quality digital solutions that remain reliable, scalable, and easy to maintain after launch.</p>
+          </article>
+          <article class="card">
+            <h3>Who we serve</h3>
+            <p>Startups and growing businesses, with flexible engagement models for startups and SMEs.</p>
+          </article>
+        </div>
+        <div class="pill-row">
+          <span class="pill">Web Development</span>
+          <span class="pill">Mobile Apps</span>
+          <span class="pill">UI/UX</span>
+          <span class="pill">QA</span>
+          <span class="pill">Backend</span>
+          <span class="pill">DevOps</span>
+        </div>
       </div>
     </section>
 
     <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>Software development outsourcing company; website could benefit from client portal and project tracking.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Client portal and project tracking system</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://kspe.am/" target="_blank" rel="noopener">https://kspe.am/</a></li></ul>
-        </article>
+      <div class="wrap">
+        <h2 class="section-title">Specialized software development services</h2>
+        <p class="section-sub">We provide web development, mobile app development, UI/UX design, backend development, QA testing, DevOps, IT consulting, and product delivery support for startups and growing businesses.</p>
+        <div class="grid">
+          <article class="card"><span class="service-num">01</span><h3>Web Development</h3><p>Responsive websites, business platforms, dashboards, portals, and scalable web applications tailored to your business needs.</p></article>
+          <article class="card"><span class="service-num">02</span><h3>Mobile App Development</h3><p>Native and cross-platform mobile applications built for performance, usability, and long-term user engagement.</p></article>
+          <article class="card"><span class="service-num">03</span><h3>Custom Software Development</h3><p>Tailored software solutions designed around your workflows, users, and business goals.</p></article>
+          <article class="card"><span class="service-num">04</span><h3>UI/UX Design</h3><p>User flows, wireframes, design systems, and polished digital experiences that improve usability and product value.</p></article>
+          <article class="card"><span class="service-num">05</span><h3>Backend Development</h3><p>Robust APIs, databases, and server-side architecture that support reliable, secure, and scalable digital products.</p></article>
+          <article class="card"><span class="service-num">06</span><h3>QA &amp; Testing</h3><p>Manual QA, release validation, issue tracking, and quality processes that reduce risk and improve product stability.</p></article>
+          <article class="card"><span class="service-num">07</span><h3>DevOps Services</h3><p>Deployment pipelines, cloud configuration, and delivery workflows that support stable releases and ongoing operations.</p></article>
+          <article class="card"><span class="service-num">08</span><h3>Product Delivery</h3><p>Structured planning, milestone control, delivery coordination, and execution support across the product lifecycle.</p></article>
+          <article class="card"><span class="service-num">09</span><h3>Maintenance &amp; Support</h3><p>Post-launch improvements, updates, optimization, bug fixing, and long-term technical support.</p></article>
+          <article class="card"><span class="service-num">10</span><h3>IT Consulting</h3><p>Practical consulting for technology decisions, product planning, architecture direction, and delivery strategy.</p></article>
+          <article class="card"><span class="service-num">11</span><h3>App Store Optimization (ASO)</h3><p>App store listing improvements that support better visibility, stronger conversion, and mobile product growth.</p></article>
+          <article class="card"><span class="service-num">12</span><h3>Project Management</h3><p>Planning, coordination, communication, and execution support to keep projects aligned, transparent, and on schedule.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="track">
+      <div class="wrap">
+        <h2 class="section-title">Our track record</h2>
+        <p class="section-sub">Verified figures published by KSPE Software on its official website.</p>
+        <div class="grid">
+          <article class="card"><h3>20+ years</h3><p>Industry experience as a trusted IT partner since 2003.</p></article>
+          <article class="card"><h3>200+ projects</h3><p>Projects delivered across web and mobile products.</p></article>
+          <article class="card"><h3>95% satisfaction</h3><p>Reported client satisfaction.</p></article>
+          <article class="card"><h3>End-to-end</h3><p>From design to launch, with flexible models for startups and SMEs.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="wrap">
+        <h2 class="section-title">What our clients say</h2>
+        <p class="section-sub">Client segments served, as listed by KSPE Software.</p>
+        <div class="pill-row">
+          <span class="pill">SaaS Product Teams</span>
+          <span class="pill">SME Businesses</span>
+          <span class="pill">Digital Product Founders</span>
+          <span class="pill">Web Platform Clients</span>
+          <span class="pill">Long-Term Support Partners</span>
+        </div>
+        <div class="review" style="margin-top:2rem;">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>&ldquo;KSPE helped us turn our product idea into a working digital solution with a clear and structured delivery process. Their team was responsive, practical, and easy to work with from planning to launch.&rdquo;</p>
+          <footer><strong>Product Manager</strong> &middot; SaaS Product Team</footer>
+          <div class="review-focus">
+            <span>Web Development</span><span>Product Delivery</span><span>Clear Communication</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="improve">
+      <div class="wrap">
+        <h2 class="section-title">Proposed improvement for this concept</h2>
+        <p class="section-sub">A client portal and project tracking system to give customers visibility into milestones, deliverables, and support requests.</p>
+        <div class="grid">
+          <article class="card"><h3>Client portal</h3><p>Secure login area for project status, documents, and invoices (placeholder concept).</p></article>
+          <article class="card"><h3>Project tracking</h3><p>Milestone timeline, task progress, and release notes shared with clients (placeholder concept).</p></article>
+          <article class="card"><h3>Support channel</h3><p>Structured request intake and status updates without external email threads (placeholder concept).</p></article>
+        </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="wrap grid">
-        <article class="card">
-          <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://kspe.am/" target="_blank" rel="noopener">Current website</a></p>
-          <p class="muted">Verified contact details should be confirmed before production use.</p>
+        <article class="contact-card">
+          <h2 class="section-title" style="font-size:1.5rem;">Contact routes</h2>
+          <div class="contact-line"><strong>Email</strong><a href="mailto:hello@kspe.am">hello@kspe.am</a></div>
+          <div class="contact-line"><strong>Address</strong><span>Chatkovski 34, Yerevan, Armenia</span></div>
+          <div class="contact-line"><strong>Website</strong><a href="https://kspe.am/" target="_blank" rel="noopener">https://kspe.am/</a></div>
+          <div class="contact-line"><strong>Phone</strong><span class="placeholder">Not published on the official site (placeholder)</span></div>
+          <div class="contact-line"><strong>Social</strong><span class="placeholder">Links not verified (placeholder)</span></div>
+          <p class="muted" style="margin-top:1rem;">Verified contact details should be confirmed before production use. Privacy Policy last updated April 2, 2026.</p>
+          <p style="margin-top:1rem;"><a class="button ghost" href="https://kspe.am/" target="_blank" rel="noopener">Current website</a></p>
         </article>
-        <article class="card">
-          <h2>Demo inquiry form</h2>
+        <article class="contact-card">
+          <h2 class="section-title" style="font-size:1.5rem;">Demo inquiry form</h2>
           <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
             <input type="text" name="name" placeholder="Your name" required>
             <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button class="button primary" type="submit">Send inquiry</button>
+            <input type="text" name="company" placeholder="Company (optional)">
+            <textarea name="message" placeholder="Project details" required></textarea>
+            <button class="button ghost" type="submit">Send inquiry</button>
           </form>
+          <p class="muted" style="margin-top:.75rem;">This form does not submit. No data is sent.</p>
         </article>
       </div>
     </section>
@@ -102,7 +234,7 @@
     <section>
       <div class="wrap">
         <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of KSPE Software, and no booking, payment, or contact request is submitted by this demo.
+          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign for KSPE Software. It is not the official website of KSPE Software (KSPE LLC), and no booking, payment, or contact request is submitted by this demo. Facts are taken only from the official website and its published Privacy Policy; unverified items are marked as placeholders.
         </div>
       </div>
     </section>
@@ -110,7 +242,12 @@
 
   <footer>
     <div class="wrap">
-      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
+      <p>Concept demo generated from verified public sources only. Business facts, contact details, and availability must be confirmed before production use.</p>
+      <p style="margin-top:.5rem;">
+        <a href="https://kspe.am/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a> &middot;
+        <a href="https://kspe.am/cookies-policy.html" target="_blank" rel="noopener">Cookies Policy</a> &middot;
+        <a href="https://kspe.am/terms-of-use.html" target="_blank" rel="noopener">Terms of Use</a>
+      </p>
     </div>
   </footer>
 </body>

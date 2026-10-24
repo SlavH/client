@@ -6,5 +6,6 @@
   "business_category": "real estate agency",
   "website_url": "https://vant.am/en/",
   "status": "completed",
-  "demo_type": "static-html-concept"
+  "demo_type": "manual-research-concept",
+  "generator_version": "manual"
 }

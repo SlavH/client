@@ -4,47 +4,87 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ETAGI Armenia | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for ETAGI Armenia, a real estate agency business in Yerevan, Armenia.">
+  <meta name="description" content="Unofficial concept demo website for ETAGI Armenia, a real estate agency in Yerevan, Armenia.">
   <style>
     :root {
-      --bg: #0b1324;
-      --accent: #7c3aed;
-      --surface: #f5f3ff;
-      --font: Trebuchet MS, sans-serif;
+      --bg: #0f172a;
+      --accent: #0ea5e9;
+      --accent-2: #14b8a6;
+      --surface: #f8fafc;
+      --muted: #64748b;
+      --text: #0f172a;
+      --border: #e2e8f0;
+      --font: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
-    section { padding: 4rem 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: var(--font); color: var(--text); background: #ffffff; line-height: 1.6; }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+    header { background: var(--bg); color: #ffffff; position: sticky; top: 0; z-index: 20; box-shadow: 0 8px 24px rgba(15,23,42,.18); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding: 1rem 0; }
+    .brand { font-weight: 800; letter-spacing: .02em; text-decoration: none; font-size: 1.1rem; }
+    .nav-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .nav-links a { color: #e2e8f0; text-decoration: none; font-weight: 600; font-size: .95rem; }
+    .nav-links a:hover { color: #ffffff; }
+    .hero { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 45%, #0ea5e9 100%); color: #ffffff; padding: 5.5rem 0 4.5rem; }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 4.2rem); margin: .5rem 0 1rem; line-height: 1.05; }
+    .hero p { max-width: 760px; font-size: 1.12rem; color: #e2e8f0; }
+    .badge { display: inline-block; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.24); border-radius: 999px; padding: .35rem .85rem; font-size: .85rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+    .hero-actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .button { display: inline-block; padding: .85rem 1.2rem; border-radius: .85rem; text-decoration: none; font-weight: 700; border: 1px solid transparent; cursor: pointer; font: inherit; }
     .button.primary { background: var(--accent); color: #ffffff; }
-    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
+    .button.primary:hover { background: #0284c7; }
+    .button.secondary { background: rgba(255,255,255,.12); color: #ffffff; border-color: rgba(255,255,255,.28); }
+    .button.dark { background: var(--bg); color: #ffffff; }
+    .search-card { background: #ffffff; color: var(--text); border-radius: 1.25rem; padding: 1.5rem; margin-top: 2rem; box-shadow: 0 20px 45px rgba(15,23,42,.18); }
+    .search-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .85rem; align-items: end; }
+    .field label { display: block; font-size: .82rem; font-weight: 700; color: var(--muted); margin-bottom: .35rem; text-transform: uppercase; letter-spacing: .04em; }
+    .field select, .field input { width: 100%; padding: .8rem .9rem; border: 1px solid var(--border); border-radius: .75rem; font: inherit; background: #ffffff; }
+    section { padding: 4.5rem 0; }
+    section.alt { background: var(--surface); }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin: 0 0 1rem; line-height: 1.15; }
+    .section-intro { max-width: 760px; color: var(--muted); margin-bottom: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+    .card { background: #ffffff; border: 1px solid var(--border); border-radius: 1.1rem; padding: 1.5rem; box-shadow: 0 8px 24px rgba(15,23,42,.05); }
+    .card h3 { margin: 0 0 .5rem; font-size: 1.15rem; }
+    .muted { color: var(--muted); }
+    .listing { overflow: hidden; padding: 0; }
+    .listing-media { height: 190px; background: linear-gradient(135deg, #cbd5e1, #94a3b8); position: relative; }
+    .listing-media::after { content: attr(data-type); position: absolute; left: 1rem; top: 1rem; background: rgba(15,23,42,.72); color: #ffffff; padding: .3rem .7rem; border-radius: 999px; font-size: .8rem; font-weight: 700; }
+    .listing-body { padding: 1.25rem; }
+    .listing-price { font-size: 1.35rem; font-weight: 800; color: var(--bg); margin: .25rem 0 .75rem; }
+    .listing-meta { display: flex; gap: .75rem; flex-wrap: wrap; color: var(--muted); font-size: .9rem; margin-bottom: .75rem; }
+    .listing-meta span { background: var(--surface); border: 1px solid var(--border); padding: .25rem .6rem; border-radius: 999px; }
+    .listing a { color: var(--accent); font-weight: 700; text-decoration: none; }
+    .stat { text-align: center; }
+    .stat strong { display: block; font-size: 2.4rem; color: var(--bg); }
+    .verified-list { display: grid; gap: .75rem; }
+    .verified-list li { background: var(--surface); border: 1px solid var(--border); border-radius: .85rem; padding: .9rem 1rem; list-style: none; display: flex; gap: .75rem; align-items: flex-start; }
+    .verified-list li::before { content: "✓"; color: var(--accent-2); font-weight: 800; }
+    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 1rem; padding: 1.25rem; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
     form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
-    footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
+    input, select, textarea { width: 100%; padding: .85rem; border: 1px solid var(--border); border-radius: .85rem; font: inherit; }
+    textarea { min-height: 130px; resize: vertical; }
+    footer { background: var(--bg); color: #cbd5e1; padding: 2.5rem 0; }
+    footer a { color: #ffffff; }
+    @media (max-width: 640px) {
+      .hero { padding: 4rem 0 3.5rem; }
+      section { padding: 3.5rem 0; }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
       <nav>
-        <a href="#top">ETAGI Armenia</a>
-        <div>
+        <a class="brand" href="#top">ETAGI Armenia</a>
+        <div class="nav-links">
+          <a href="#listings">Listings</a>
           <a href="#services">Services</a>
+          <a href="#verified">Verified</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -55,43 +95,227 @@
     <section class="hero">
       <div class="wrap">
         <span class="badge">real estate agency concept demo</span>
-        <h1>ETAGI Armenia</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a real estate agency business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 54/100</span></p>
-        <a class="button primary" href="#contact">Request information</a>
+        <h1>Find your next home in Yerevan with ETAGI Armenia</h1>
+        <p>A clearer, faster, and more trustworthy website concept for a real estate agency business in Yerevan, Armenia, with property search, specialist support, and verified public contact routes.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#listings">Browse listings</a>
+          <a class="button secondary" href="https://am.etagi.com/en-us/" target="_blank" rel="noopener">Current official website</a>
+        </div>
+
+        <div class="search-card">
+          <div class="search-grid">
+            <div class="field">
+              <label for="type">Property type</label>
+              <select id="type">
+                <option value="all">All types</option>
+                <option value="Apartment">Apartments</option>
+                <option value="New building">New buildings</option>
+                <option value="House">Houses & land</option>
+                <option value="Commercial">Commercial</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="beds">Bedrooms</label>
+              <select id="beds">
+                <option value="all">Any</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4+</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="price">Max price (AMD)</label>
+              <select id="price">
+                <option value="all">Any</option>
+                <option value="60000000">60,000,000</option>
+                <option value="120000000">120,000,000</option>
+                <option value="200000000">200,000,000</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="area">Min area (m²)</label>
+              <select id="area">
+                <option value="all">Any</option>
+                <option value="60">60</option>
+                <option value="90">90</option>
+                <option value="120">120</option>
+              </select>
+            </div>
+            <div class="field">
+              <button class="button dark" type="button" id="filterBtn">Show listings</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="listings" class="alt">
+      <div class="wrap">
+        <h2>Featured listing concept</h2>
+        <p class="section-intro">Sample cards illustrate how verified property data, prices, and specialist contact could be presented. Figures are placeholders for concept demonstration only.</p>
+        <div class="grid" id="listingGrid">
+          <article class="card listing" data-type="Apartment" data-beds="2" data-price="48000000" data-area="68">
+            <div class="listing-media" data-type="Apartment"></div>
+            <div class="listing-body">
+              <h3>2-room apartment, Kentron</h3>
+              <div class="listing-price">48,000,000 AMD</div>
+              <div class="listing-meta">
+                <span>2 bedrooms</span>
+                <span>68 m²</span>
+                <span>Kentron</span>
+              </div>
+              <a href="#contact">Request details</a>
+            </div>
+          </article>
+          <article class="card listing" data-type="New building" data-beds="3" data-price="92000000" data-area="96">
+            <div class="listing-media" data-type="New building" style="background: linear-gradient(135deg, #93c5fd, #3b82f6);"></div>
+            <div class="listing-body">
+              <h3>3-room new build, Arabkir</h3>
+              <div class="listing-price">92,000,000 AMD</div>
+              <div class="listing-meta">
+                <span>3 bedrooms</span>
+                <span>96 m²</span>
+                <span>Arabkir</span>
+              </div>
+              <a href="#contact">Request details</a>
+            </div>
+          </article>
+          <article class="card listing" data-type="House" data-beds="4" data-price="185000000" data-area="180">
+            <div class="listing-media" data-type="House" style="background: linear-gradient(135deg, #bbf7d0, #22c55e);"></div>
+            <div class="listing-body">
+              <h3>House with land plot, Avan</h3>
+              <div class="listing-price">185,000,000 AMD</div>
+              <div class="listing-meta">
+                <span>4 bedrooms</span>
+                <span>180 m²</span>
+                <span>Avan</span>
+              </div>
+              <a href="#contact">Request details</a>
+            </div>
+          </article>
+          <article class="card listing" data-type="Apartment" data-beds="1" data-price="35000000" data-area="42">
+            <div class="listing-media" data-type="Apartment" style="background: linear-gradient(135deg, #fde68a, #f59e0b);"></div>
+            <div class="listing-body">
+              <h3>1-room apartment, Nor Nork</h3>
+              <div class="listing-price">35,000,000 AMD</div>
+              <div class="listing-meta">
+                <span>1 bedroom</span>
+                <span>42 m²</span>
+                <span>Nor Nork</span>
+              </div>
+              <a href="#contact">Request details</a>
+            </div>
+          </article>
+          <article class="card listing" data-type="Commercial" data-beds="0" data-price="150000000" data-area="120">
+            <div class="listing-media" data-type="Commercial" style="background: linear-gradient(135deg, #ddd6fe, #8b5cf6);"></div>
+            <div class="listing-body">
+              <h3>Commercial space, Northern Avenue</h3>
+              <div class="listing-price">150,000,000 AMD</div>
+              <div class="listing-meta">
+                <span>Commercial</span>
+                <span>120 m²</span>
+                <span>Center</span>
+              </div>
+              <a href="#contact">Request details</a>
+            </div>
+          </article>
+          <article class="card listing" data-type="New building" data-beds="2" data-price="78000000" data-area="74">
+            <div class="listing-media" data-type="New building" style="background: linear-gradient(135deg, #fbcfe8, #ec4899);"></div>
+            <div class="listing-body">
+              <h3>2-room new build, Davtashen</h3>
+              <div class="listing-price">78,000,000 AMD</div>
+              <div class="listing-meta">
+                <span>2 bedrooms</span>
+                <span>74 m²</span>
+                <span>Davtashen</span>
+              </div>
+              <a href="#contact">Request details</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>Real estate agency; website could benefit from property search filters and client portal.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Property search with filters and client portal</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://am.etagi.com/en-us/" target="_blank" rel="noopener">https://am.etagi.com/en-us/</a></li></ul>
-        </article>
+      <div class="wrap">
+        <h2>Services and support</h2>
+        <p class="section-intro">Concept content based on services publicly referenced by the official ETAGI website, including free property selection, specialist support, and mortgage-related services.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Free property selection</h3>
+            <p>Tell us what you are looking for and receive suitable options selected by specialists.</p>
+          </article>
+          <article class="card">
+            <h3>New buildings at developer prices</h3>
+            <p>Browse new construction options and compare them with resale apartments.</p>
+          </article>
+          <article class="card">
+            <h3>Transactions anywhere</h3>
+            <p>Support for real estate transactions in other cities and countries without travel.</p>
+          </article>
+          <article class="card">
+            <h3>Mortgage assistance</h3>
+            <p>Links to mortgage calculator and online application routes can be integrated here.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="verified" class="alt">
+      <div class="wrap">
+        <h2>What we verified</h2>
+        <p class="section-intro">Facts gathered from the official ETAGI website and its public pages during research. Details should be confirmed before production use.</p>
+        <ul class="verified-list">
+          <li>Official website at https://am.etagi.com/en-us/ with property search and service links.</li>
+          <li>Public phone number +374 55 556 556 and call hours 10:00 to 19:00.</li>
+          <li>Yerevan office address listed as Pushkini street 48, Yerevan.</li>
+          <li>English-language interface shows apartment, new building, house, rent, and commercial property categories.</li>
+        </ul>
+        <div class="grid" style="margin-top: 2rem;">
+          <article class="card stat">
+            <strong>3,293</strong>
+            <span class="muted">apartment offers shown on the English homepage</span>
+          </article>
+          <article class="card stat">
+            <strong>10:00-19:00</strong>
+            <span class="muted">public call hours</span>
+          </article>
+          <article class="card stat">
+            <strong>5</strong>
+            <span class="muted">main property categories</span>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="wrap grid">
+      <div class="wrap contact-grid">
         <article class="card">
           <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://am.etagi.com/en-us/" target="_blank" rel="noopener">Current website</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+37455556556">+374 55 556 556</a></p>
+          <p><strong>Address:</strong> Pushkini street 48, Yerevan, Armenia</p>
+          <p><strong>Hours:</strong> 10:00 to 19:00</p>
+          <p><strong>Website:</strong> <a href="https://am.etagi.com/en-us/" target="_blank" rel="noopener">am.etagi.com/en-us</a></p>
           <p class="muted">Verified contact details should be confirmed before production use.</p>
+          <div style="margin-top: 1rem;">
+            <a class="button secondary" href="https://am.etagi.com/en-us/" target="_blank" rel="noopener">Current website</a>
+            <a class="button secondary" href="https://am.etagi.com/en-us/contacts/" target="_blank" rel="noopener">Public contact page</a>
+          </div>
         </article>
         <article class="card">
           <h2>Demo inquiry form</h2>
           <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
             <input type="text" name="name" placeholder="Your name" required>
             <input type="email" name="email" placeholder="Your email" required>
+            <select name="interest">
+              <option value="">I am interested in</option>
+              <option>Buying an apartment</option>
+              <option>New buildings</option>
+              <option>Houses and land</option>
+              <option>Rent</option>
+              <option>Commercial property</option>
+            </select>
             <textarea name="message" placeholder="Your message" required></textarea>
             <button class="button primary" type="submit">Send inquiry</button>
           </form>
@@ -111,7 +335,34 @@
   <footer>
     <div class="wrap">
       <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
+      <p><a href="https://am.etagi.com/en-us/" target="_blank" rel="noopener">Official website</a></p>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('filterBtn');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var type = document.getElementById('type').value;
+        var beds = document.getElementById('beds').value;
+        var price = document.getElementById('price').value;
+        var area = document.getElementById('area').value;
+        var cards = document.querySelectorAll('#listingGrid .listing');
+        cards.forEach(function (card) {
+          var ok = true;
+          if (type !== 'all' && card.dataset.type !== type) ok = false;
+          if (beds !== 'all') {
+            var b = parseInt(card.dataset.beds, 10);
+            if (beds === '4') { if (b < 4) ok = false; }
+            else if (b !== parseInt(beds, 10)) ok = false;
+          }
+          if (price !== 'all' && parseInt(card.dataset.price, 10) > parseInt(price, 10)) ok = false;
+          if (area !== 'all' && parseInt(card.dataset.area, 10) < parseInt(area, 10)) ok = false;
+          card.style.display = ok ? '' : 'none';
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

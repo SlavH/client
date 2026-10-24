@@ -6,5 +6,6 @@
   "business_category": "software development",
   "website_url": "https://vinur.info/",
   "status": "completed",
-  "demo_type": "static-html-concept"
+  "demo_type": "manual-research-concept",
+  "generator_version": "manual"
 }

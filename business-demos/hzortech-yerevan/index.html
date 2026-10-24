@@ -3,48 +3,104 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HZORTECH | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for HZORTECH, a software and security business in Yerevan, Armenia.">
+  <title>HZORTECH | Engineering Studio Concept Demo</title>
+  <meta name="description" content="Unofficial concept demo for HZORTECH, an engineering studio in Yerevan, Armenia. Focus: software, cloud, automation, infrastructure, and security.">
+  <meta name="robots" content="noindex">
   <style>
     :root {
-      --bg: #0b1324;
-      --accent: #7c3aed;
-      --surface: #f5f3ff;
-      --font: Trebuchet MS, sans-serif;
+      --bg: #0f172a;
+      --bg-2: #1e3a8a;
+      --accent: #2563eb;
+      --accent-2: #0ea5e9;
+      --surface: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --warning: #fef3c7;
+      --warning-border: #f59e0b;
+      --font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
-    section { padding: 4rem 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
-    .button.primary { background: var(--accent); color: #ffffff; }
-    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
-    form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
-    footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: var(--font); color: var(--text); background: #ffffff; line-height: 1.65; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1240px, calc(100% - 2rem)); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 20; background: rgba(15, 23, 42, .96); backdrop-filter: blur(10px); color: #fff; border-bottom: 1px solid rgba(255,255,255,.08); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 0; flex-wrap: wrap; }
+    nav a.brand { color: #fff; font-weight: 800; font-size: 1.1rem; letter-spacing: .02em; }
+    .nav-links { display: flex; gap: .9rem; flex-wrap: wrap; }
+    .nav-links a { color: #cbd5e1; font-weight: 600; }
+    .nav-links a:hover { color: #fff; text-decoration: none; }
+    .hero { background: linear-gradient(135deg, var(--bg), var(--bg-2)); color: #fff; padding: clamp(4.5rem, 9vw, 7.5rem) 0; overflow: hidden; position: relative; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 80% 20%, rgba(14,165,233,.22), transparent 35%), radial-gradient(circle at 20% 80%, rgba(37,99,235,.18), transparent 38%); pointer-events: none; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr); gap: 2.5rem; align-items: center; position: relative; z-index: 1; }
+    .hero h1 { font-size: clamp(2.4rem, 6.5vw, 5.4rem); line-height: 1.02; margin: .75rem 0 1rem; letter-spacing: -.03em; }
+    .hero p { max-width: 760px; font-size: 1.15rem; color: #dbeafe; }
+    .eyebrow { display: inline-flex; align-items: center; gap: .5rem; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22); border-radius: 999px; padding: .45rem .9rem; font-size: .9rem; letter-spacing: .04em; text-transform: uppercase; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; padding: .9rem 1.25rem; border-radius: .85rem; text-decoration: none; font-weight: 800; border: 0; cursor: pointer; font: inherit; transition: transform .15s ease, box-shadow .15s ease; }
+    .button:hover { transform: translateY(-1px); text-decoration: none; }
+    .button.primary { background: var(--accent); color: #fff; box-shadow: 0 12px 30px rgba(37,99,235,.35); }
+    .button.secondary { background: rgba(255,255,255,.12); color: #fff; border: 1px solid rgba(255,255,255,.28); }
+    .hero-panel { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); border-radius: 1.5rem; padding: 1.5rem; }
+    .stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .stat { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 1rem; padding: 1rem; }
+    .stat strong { display: block; font-size: 1.9rem; line-height: 1; }
+    .stat span { color: #bfdbfe; font-size: .9rem; }
+    section { padding: clamp(3.5rem, 7vw, 6rem) 0; }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); margin: 0 0 1.5rem; color: var(--bg); letter-spacing: -.02em; }
+    .section-kicker { color: var(--accent); font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; margin-bottom: .75rem; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 1.25rem; padding: 1.5rem; box-shadow: 0 18px 45px rgba(15,23,42,.07); }
+    .card h2, .card h3 { margin-top: 0; color: var(--bg); }
+    .layer-number { display: inline-flex; align-items: center; justify-content: center; width: 2.2rem; height: 2.2rem; border-radius: .7rem; background: var(--accent); color: #fff; font-weight: 800; margin-bottom: .75rem; }
+    .feature-list { display: grid; gap: .75rem; padding: 0; list-style: none; margin: 0; }
+    .feature-list li { background: var(--surface); border: 1px solid var(--border); border-radius: .85rem; padding: .85rem 1rem; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: .6rem; }
+    .tag { background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: .35rem .75rem; font-size: .9rem; font-weight: 700; color: var(--bg); }
+    .case-meta { color: var(--muted); font-size: .92rem; margin-bottom: .75rem; }
+    .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; }
+    .process-step { background: var(--surface); border: 1px solid var(--border); border-radius: 1rem; padding: 1.25rem; }
+    .process-step .step { color: var(--accent); font-weight: 800; font-size: .85rem; text-transform: uppercase; letter-spacing: .08em; }
+    .engagement-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+    .engagement { border: 1px solid var(--border); border-radius: 1.25rem; padding: 1.5rem; background: var(--card); }
+    .engagement h3 { margin-top: 0; }
+    .engagement ul { padding-left: 1.1rem; color: var(--muted); }
+    .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.25rem; }
+    .contact-card { background: var(--card); border: 1px solid var(--border); border-radius: 1.25rem; padding: 1.5rem; }
+    .contact-card h2 { margin-top: 0; color: var(--bg); }
+    form { display: grid; gap: .85rem; }
+    label { font-weight: 700; font-size: .95rem; }
+    input, textarea, select { width: 100%; padding: .85rem; border: 1px solid var(--border); border-radius: .85rem; font: inherit; background: #fff; }
+    textarea { min-height: 130px; resize: vertical; }
+    .notice { background: var(--warning); border: 1px solid var(--warning-border); border-radius: 1rem; padding: 1.1rem; }
+    .notice strong { color: #92400e; }
+    footer { background: var(--surface); padding: 2rem 0; color: var(--muted); border-top: 1px solid var(--border); }
+    .muted { color: var(--muted); }
+    .small { font-size: .9rem; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem; }
+    @media (max-width: 860px) {
+      .hero-grid, .contact-grid { grid-template-columns: 1fr; }
+      .stat-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 560px) {
+      .stat-grid { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .button { width: 100%; }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <nav>
-        <a href="#top">HZORTECH</a>
-        <div>
-          <a href="#services">Services</a>
+      <nav aria-label="Main navigation">
+        <a class="brand" href="#top">HZORTECH</a>
+        <div class="nav-links">
+          <a href="#layers">Layers</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -53,56 +109,316 @@
 
   <main id="top">
     <section class="hero">
-      <div class="wrap">
-        <span class="badge">software and security concept demo</span>
-        <h1>HZORTECH</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a software and security business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 64/100</span></p>
-        <a class="button primary" href="#contact">Request information</a>
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Unofficial concept demo</span>
+          <h1>We engineer the systems businesses run on.</h1>
+          <p>Product, platform, automation, infrastructure, and security — designed as one system, built by the engineers you talk to.</p>
+          <p class="small">Verified from the official HZORTECH website. This is a concept presentation, not the official site.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Start a project</a>
+            <a class="button secondary" href="https://hzortech.com/contact/" target="_blank" rel="noopener noreferrer">Official contact page</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Verified highlights">
+          <div class="stat-grid">
+            <div class="stat"><strong>2022</strong><span>Founded in Yerevan</span></div>
+            <div class="stat"><strong>20+</strong><span>Businesses on platforms built</span></div>
+            <div class="stat"><strong>2</strong><span>Principal engineers, no account managers</span></div>
+            <div class="stat"><strong>48h</strong><span>Reply to every brief on working days</span></div>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>Engineering studio for software, cloud and security; website could benefit from client portal and service request.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Client portal and service request system</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://hzortech.com/" target="_blank" rel="noopener">https://hzortech.com/</a></li></ul>
-        </article>
+    <section id="verified">
+      <div class="wrap">
+        <p class="section-kicker">Verified context</p>
+        <h2 class="section-title">What the official site confirms</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Engineering studio</h3>
+            <p>HZORTECH is an engineering studio based in Yerevan, Armenia, founded in 2022 by engineers from banking, research HPC, and enterprise security backgrounds.</p>
+          </article>
+          <article class="card">
+            <h3>One-system delivery</h3>
+            <p>Product, platform, automation, infrastructure, and security are treated as one platform rather than separate services bolted together.</p>
+          </article>
+          <article class="card">
+            <h3>Direct engineering access</h3>
+            <p>Clients talk to the engineers who design, build, and run the system — from the first call to production.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="layers">
+      <div class="wrap">
+        <p class="section-kicker">Five layers</p>
+        <h2 class="section-title">One platform, five integrated layers</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div class="layer-number">01</div>
+            <h3>Product</h3>
+            <p>Websites, web applications, portals, and dashboards designed around the job the customer is trying to do.</p>
+          </article>
+          <article class="card">
+            <div class="layer-number">02</div>
+            <h3>Platform</h3>
+            <p>Backends, databases, and APIs that connect the product to everything else the business runs. Python and Django by default, typed and tested.</p>
+          </article>
+          <article class="card">
+            <div class="layer-number">03</div>
+            <h3>Automation</h3>
+            <p>CRM pipelines, workflow automation, and connected devices so teams stop doing by hand what a system should do.</p>
+          </article>
+          <article class="card">
+            <div class="layer-number">04</div>
+            <h3>Infrastructure</h3>
+            <p>Cloud architecture, CI/CD, migrations, and high-performance compute — defined in code, monitored, and documented for handover.</p>
+          </article>
+          <article class="card">
+            <div class="layer-number">05</div>
+            <h3>Security</h3>
+            <p>Hardening, monitoring, and detection designed into every layer from day one, not added at the end.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="disciplines">
+      <div class="wrap">
+        <p class="section-kicker">Ten disciplines</p>
+        <h2 class="section-title">Capabilities grouped by layer</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Product</h3>
+            <ul class="feature-list">
+              <li>Software Development</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Platform</h3>
+            <ul class="feature-list">
+              <li>Python Development</li>
+              <li>API Integration</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Automation</h3>
+            <ul class="feature-list">
+              <li>CRM and Automation</li>
+              <li>Smart Home and IoT</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Infrastructure</h3>
+            <ul class="feature-list">
+              <li>DevOps and CI/CD</li>
+              <li>Cloud Infrastructure</li>
+              <li>Cloud Migration</li>
+              <li>HPC and Linux</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Security</h3>
+            <ul class="feature-list">
+              <li>Cybersecurity</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="wrap">
+        <p class="section-kicker">Selected work</p>
+        <h2 class="section-title">Systems in production</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>LabITTech</h3>
+            <p class="case-meta">Education / IT training · Product, Platform, Infrastructure</p>
+            <p>From spreadsheets to a real enrolment platform.</p>
+          </article>
+          <article class="card">
+            <h3>DarkSight</h3>
+            <p class="case-meta">Cybersecurity · Product, Infrastructure</p>
+            <p>Hosting and shipping a security product, securely.</p>
+          </article>
+          <article class="card">
+            <h3>Arev Motors</h3>
+            <p class="case-meta">Automotive / EV retail · Product, Platform</p>
+            <p>A dealership platform for imported EVs.</p>
+          </article>
+          <article class="card">
+            <h3>GSG Computers</h3>
+            <p class="case-meta">Retail / Electronics · Product</p>
+            <p>An electronics retailer’s storefront, from scratch.</p>
+          </article>
+          <article class="card">
+            <h3>Dr. Mary Lips</h3>
+            <p class="case-meta">Healthcare / Aesthetics · Product, Automation</p>
+            <p>Taking booking off the phone entirely.</p>
+          </article>
+          <article class="card">
+            <h3>RBTEX</h3>
+            <p class="case-meta">FinTech / Blockchain · Infrastructure</p>
+            <p>Zero unplanned downtime on a live crypto exchange.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="wrap">
+        <p class="section-kicker">How we work</p>
+        <h2 class="section-title">Forged, not assembled</h2>
+        <div class="process-grid">
+          <article class="process-step">
+            <p class="step">01 Heat</p>
+            <h3>Assess</h3>
+            <p>Start with the raw problem — what exists, what hurts, what it costs. Measured, not assumed.</p>
+          </article>
+          <article class="process-step">
+            <p class="step">02 Shape</p>
+            <h3>Architect</h3>
+            <p>The system is designed before it is built: data, services, infrastructure, and failure modes.</p>
+          </article>
+          <article class="process-step">
+            <p class="step">03 Strike</p>
+            <h3>Build</h3>
+            <p>Working software in iterations, with CI from day one. Progress is visible, not just the end result.</p>
+          </article>
+          <article class="process-step">
+            <p class="step">04 Quench</p>
+            <h3>Harden</h3>
+            <p>Security, monitoring, and recovery are set into the system.</p>
+          </article>
+          <article class="process-step">
+            <p class="step">05 Temper</p>
+            <h3>Hand over</h3>
+            <p>Documented, tested, running in production. Yours to operate, or HZORTECH’s to keep supporting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="engagements">
+      <div class="wrap">
+        <p class="section-kicker">Engagements</p>
+        <h2 class="section-title">Three ways to work together</h2>
+        <div class="engagement-grid">
+          <article class="engagement">
+            <h3>Project</h3>
+            <p class="muted">Fixed scope</p>
+            <p>A defined deliverable, timeline, and price for a specific problem.</p>
+            <ul>
+              <li>Written spec with acceptance criteria</li>
+              <li>Documentation and 30-day support</li>
+              <li>One-off price agreed upfront</li>
+            </ul>
+          </article>
+          <article class="engagement">
+            <h3>Retainer</h3>
+            <p class="muted">Monthly</p>
+            <p>Ongoing engineering capacity each month for teams that need continuous improvement.</p>
+            <ul>
+              <li>Monthly review and recommendations</li>
+              <li>Defined response times</li>
+              <li>Scope adjustable each quarter</li>
+            </ul>
+          </article>
+          <article class="engagement">
+            <h3>Dedicated</h3>
+            <p class="muted">Enterprise</p>
+            <p>Dedicated engineering time with defined response for regulated or high-uptime environments.</p>
+            <ul>
+              <li>Priority access to the full team</li>
+              <li>Compliance documentation support</li>
+              <li>Quarterly roadmap planning</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="standards">
+      <div class="wrap">
+        <p class="section-kicker">Standards</p>
+        <h2 class="section-title">Frameworks every engagement ships to</h2>
+        <div class="card">
+          <p class="muted small">Controls aligned to these frameworks. HZORTECH itself is not a certification body.</p>
+          <div class="tag-row">
+            <span class="tag">ISO 27001</span>
+            <span class="tag">PCI DSS</span>
+            <span class="tag">GDPR</span>
+            <span class="tag">CBA regulations</span>
+            <span class="tag">CIS Benchmarks</span>
+          </div>
+          <ul class="feature-list" style="margin-top:1.25rem;">
+            <li>A written spec before code</li>
+            <li>Infrastructure as code</li>
+            <li>Tests and CI from day one</li>
+            <li>Security by default</li>
+            <li>Monitoring and runbooks</li>
+            <li>You own the source, infrastructure, credentials, and documentation</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://hzortech.com/" target="_blank" rel="noopener">Current website</a></p>
-          <p class="muted">Verified contact details should be confirmed before production use.</p>
-        </article>
-        <article class="card">
-          <h2>Demo inquiry form</h2>
-          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button class="button primary" type="submit">Send inquiry</button>
-          </form>
-        </article>
+      <div class="wrap">
+        <p class="section-kicker">Contact</p>
+        <h2 class="section-title">Tell HZORTECH what you are building</h2>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h2>Verified contact routes</h2>
+            <p>A principal engineer reads every brief and replies within 48 hours on working days, with questions or a direct assessment.</p>
+            <div class="contact-links">
+              <a class="button primary" href="https://hzortech.com/contact/" target="_blank" rel="noopener noreferrer">Official contact page</a>
+              <a class="button secondary" href="https://wa.me/37477075919" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+            <ul class="feature-list" style="margin-top:1.25rem;">
+              <li>Location: Yerevan, Armenia — 40.1792° N · 44.4991° E</li>
+              <li>Hours: Mon–Fri · 09:00–18:00 (GMT+4)</li>
+              <li>Languages: English, Armenian, Russian; documentation in English by default</li>
+              <li>AWS is the primary platform, mostly in EU regions; bare-metal, VPS, and hybrid setups are also supported</li>
+            </ul>
+            <p class="muted small">Email addresses and phone numbers are not invented here. Use the official contact page or WhatsApp for direct outreach.</p>
+          </article>
+          <article class="contact-card">
+            <h2>Demo inquiry form</h2>
+            <p>This form is part of the concept demo only. No request is submitted, stored, or sent.</p>
+            <form onsubmit="event.preventDefault(); const status=document.getElementById('demo-form-status'); status.textContent='Demo only: no request was submitted.'; status.focus();">
+              <div>
+                <label for="demo-name">Name</label>
+                <input id="demo-name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+              </div>
+              <div>
+                <label for="demo-email">Email</label>
+                <input id="demo-email" name="email" type="email" autocomplete="email" required placeholder="your@email.com">
+              </div>
+              <div>
+                <label for="demo-phone">Phone (optional)</label>
+                <input id="demo-phone" name="phone" type="tel" autocomplete="tel" placeholder="+374 ...">
+              </div>
+              <div>
+                <label for="demo-message">What are you building?</label>
+                <textarea id="demo-message" name="message" required placeholder="Describe the system, timeline, or problem"></textarea>
+              </div>
+              <button class="button primary" type="submit">Send inquiry (demo)</button>
+              <p id="demo-form-status" class="muted small" role="status" aria-live="polite" tabindex="-1"></p>
+            </form>
+          </article>
+        </div>
       </div>
     </section>
 
     <section>
       <div class="wrap">
         <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of HZORTECH, and no booking, payment, or contact request is submitted by this demo.
+          <strong>Unofficial concept demo.</strong> This page demonstrates a possible website redesign for HZORTECH. It is not an official website, and no booking, payment, contact request, or external message is submitted by this demo.
         </div>
       </div>
     </section>
@@ -110,7 +426,7 @@
 
   <footer>
     <div class="wrap">
-      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
+      <p>Concept demo generated from verified public information about HZORTECH. Business facts, contact details, pricing, and availability must be confirmed before production use.</p>
     </div>
   </footer>
 </body>

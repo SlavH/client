@@ -3,48 +3,135 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aparto | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for Aparto, a real estate agency business in Yerevan, Armenia.">
+  <title>Aparto | Real Estate Concept Demo</title>
+  <meta name="description" content="Unofficial concept demo for Aparto, a real estate agency in Yerevan, Armenia.">
+  <meta name="robots" content="noindex">
   <style>
     :root {
-      --bg: #1f2937;
-      --accent: #ea580c;
-      --surface: #fff7ed;
-      --font: Helvetica, Arial, sans-serif;
+      --bg: #0f1f3d;
+      --bg-2: #1e3a6b;
+      --accent: #e8720c;
+      --accent-2: #f59e0b;
+      --surface: #f8fafc;
+      --surface-2: #eef2f7;
+      --text: #172033;
+      --muted: #5b6475;
+      --line: #dde3ec;
+      --white: #ffffff;
+      --radius: 1rem;
+      --shadow: 0 18px 40px rgba(15, 31, 61, 0.10);
+      --font: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
-    section { padding: 4rem 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
-    .button.primary { background: var(--accent); color: #ffffff; }
-    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
-    form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: var(--font); color: var(--text); background: #ffffff; line-height: 1.65; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; }
+    .wrap { width: min(1200px, calc(100% - 2rem)); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 20; background: var(--bg); color: var(--white); box-shadow: 0 8px 24px rgba(0,0,0,.18); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .85rem 0; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; gap: .6rem; color: var(--white); font-weight: 800; font-size: 1.25rem; text-decoration: none; }
+    .brand-mark { width: 2.1rem; height: 2.1rem; border-radius: .6rem; background: linear-gradient(135deg, var(--accent), var(--accent-2)); display: grid; place-items: center; font-weight: 900; color: var(--white); }
+    .nav-links { display: flex; gap: .35rem; flex-wrap: wrap; }
+    .nav-links a { color: rgba(255,255,255,.9); padding: .45rem .7rem; border-radius: .6rem; font-weight: 600; text-decoration: none; }
+    .nav-links a:hover { background: rgba(255,255,255,.12); }
+    .hero { background: linear-gradient(135deg, var(--bg), var(--bg-2)); color: var(--white); padding: clamp(3.5rem, 7vw, 6rem) 0; overflow: hidden; position: relative; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 85% 20%, rgba(232,114,12,.25), transparent 45%); pointer-events: none; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr); gap: 2.5rem; align-items: center; position: relative; }
+    .eyebrow { display: inline-block; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.24); border-radius: 999px; padding: .4rem .9rem; font-size: .88rem; letter-spacing: .03em; }
+    .hero h1 { font-size: clamp(2.4rem, 6vw, 4.6rem); line-height: 1.05; margin: .75rem 0 1rem; }
+    .hero p { max-width: 680px; font-size: 1.12rem; color: rgba(255,255,255,.92); }
+    .hero-stats { display: flex; flex-wrap: wrap; gap: 1.25rem; margin: 1.5rem 0; }
+    .stat { background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.20); border-radius: .9rem; padding: .85rem 1.1rem; min-width: 150px; }
+    .stat strong { display: block; font-size: 1.6rem; line-height: 1; }
+    .stat span { font-size: .88rem; color: rgba(255,255,255,.85); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; padding: .85rem 1.2rem; border-radius: .85rem; font-weight: 800; border: 0; cursor: pointer; font: inherit; text-decoration: none; transition: transform .12s ease, box-shadow .12s ease; }
+    .button:hover { transform: translateY(-1px); text-decoration: none; }
+    .button.primary { background: var(--accent); color: var(--white); box-shadow: 0 10px 20px rgba(232,114,12,.28); }
+    .button.secondary { background: var(--white); color: var(--bg); }
+    .button.ghost { background: rgba(255,255,255,.14); color: var(--white); border: 1px solid rgba(255,255,255,.24); }
+    .search-card { background: var(--white); color: var(--text); border-radius: 1.25rem; padding: 1.5rem; box-shadow: var(--shadow); }
+    .search-card h2 { margin: 0 0 1rem; color: var(--bg); font-size: 1.35rem; }
+    .tabs { display: flex; gap: .5rem; margin-bottom: 1rem; }
+    .tab { padding: .55rem 1rem; border-radius: .7rem; border: 1px solid var(--line); background: var(--surface); font-weight: 700; cursor: pointer; }
+    .tab.active { background: var(--bg); color: var(--white); border-color: var(--bg); }
+    .search-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; }
+    .search-grid .full { grid-column: 1 / -1; }
+    label { display: block; font-weight: 700; font-size: .9rem; margin-bottom: .35rem; color: var(--bg); }
+    input, select, textarea { width: 100%; padding: .8rem .9rem; border: 1px solid var(--line); border-radius: .75rem; font: inherit; background: var(--white); color: var(--text); }
+    textarea { min-height: 120px; resize: vertical; }
+    .unit-toggle { display: flex; gap: .5rem; }
+    .unit-toggle button { flex: 1; padding: .75rem; border: 1px solid var(--line); border-radius: .75rem; background: var(--surface); font-weight: 700; cursor: pointer; }
+    .unit-toggle button.active { background: var(--accent); color: var(--white); border-color: var(--accent); }
+    .search-note { font-size: .82rem; color: var(--muted); margin-top: .75rem; }
+    section { padding: clamp(3rem, 6vw, 5rem) 0; }
+    .section-title { font-size: clamp(1.7rem, 4vw, 2.6rem); margin: 0 0 .5rem; color: var(--bg); }
+    .section-lead { color: var(--muted); max-width: 720px; margin: 0 0 2rem; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; box-shadow: 0 8px 20px rgba(15,31,61,.05); }
+    .card h3 { margin: 0 0 .5rem; color: var(--bg); }
+    .card p { margin: .4rem 0; }
+    .listing-card { overflow: hidden; padding: 0; }
+    .listing-media { height: 170px; background: linear-gradient(135deg, #cfd8e3, #9fb0c8); display: grid; place-items: center; color: #334155; font-weight: 800; position: relative; }
+    .listing-media::after { content: "Placeholder image"; position: absolute; bottom: .6rem; right: .6rem; background: rgba(15,31,61,.75); color: #fff; font-size: .72rem; padding: .25rem .5rem; border-radius: .4rem; }
+    .listing-body { padding: 1.25rem; }
+    .listing-price { font-size: 1.25rem; font-weight: 800; color: var(--accent); margin: .25rem 0 .5rem; }
+    .listing-meta { display: flex; flex-wrap: wrap; gap: .5rem; font-size: .85rem; color: var(--muted); }
+    .listing-meta span { background: var(--surface-2); border-radius: .5rem; padding: .25rem .5rem; }
+    .badge-soft { display: inline-block; background: var(--surface-2); color: var(--bg); border-radius: 999px; padding: .3rem .7rem; font-size: .78rem; font-weight: 700; margin-bottom: .6rem; }
+    .feature-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .6rem; }
+    .feature-list li { background: var(--white); border: 1px solid var(--line); border-radius: .75rem; padding: .75rem .9rem; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: .6rem; }
+    .trust-row span { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: .35rem .75rem; font-weight: 700; font-size: .88rem; }
+    .about-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
+    .placeholder-box { min-height: 220px; border-radius: var(--radius); background: linear-gradient(135deg, #dbe3ee, #b7c4d6); display: grid; place-items: center; color: #334155; font-weight: 800; position: relative; }
+    .placeholder-box::after { content: "Placeholder image"; position: absolute; bottom: .7rem; right: .7rem; background: rgba(15,31,61,.75); color: #fff; font-size: .72rem; padding: .25rem .5rem; border-radius: .4rem; }
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; }
+    .team-card { text-align: center; }
+    .avatar { width: 96px; height: 96px; border-radius: 50%; margin: 0 auto 1rem; background: linear-gradient(135deg, #cfd8e3, #8fa4bf); display: grid; place-items: center; font-weight: 900; color: #1f2937; }
+    .testimonial { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; }
+    .testimonial .name { font-weight: 800; color: var(--bg); margin-top: .75rem; }
+    .faq details { background: var(--surface); border: 1px solid var(--line); border-radius: .85rem; padding: 1rem 1.15rem; margin-bottom: .75rem; }
+    .faq summary { font-weight: 800; color: var(--bg); cursor: pointer; }
+    .faq p { margin: .75rem 0 0; color: var(--text); }
+    .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; }
+    .contact-list { display: grid; gap: .75rem; }
+    .contact-item { background: var(--surface); border: 1px solid var(--line); border-radius: .85rem; padding: 1rem 1.1rem; }
+    .contact-item strong { display: block; color: var(--bg); margin-bottom: .2rem; }
+    .social-links { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .5rem; }
+    .social-links a { background: var(--bg); color: var(--white); padding: .5rem .85rem; border-radius: .6rem; font-weight: 700; text-decoration: none; }
+    .social-links a:hover { background: var(--accent); }
+    .map-placeholder { min-height: 220px; border-radius: var(--radius); background: linear-gradient(135deg, #dbe3ee, #b7c4d6); display: grid; place-items: center; color: #334155; font-weight: 800; position: relative; }
+    .map-placeholder::after { content: "Map placeholder"; position: absolute; bottom: .7rem; right: .7rem; background: rgba(15,31,61,.75); color: #fff; font-size: .72rem; padding: .25rem .5rem; border-radius: .4rem; }
+    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 1rem; padding: 1.2rem; }
+    .notice strong { color: #92400e; }
     footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+    .muted { color: var(--muted); }
+    .small { font-size: .85rem; color: var(--muted); }
+    @media (max-width: 860px) {
+      .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .search-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 520px) {
+      .hero { padding: 3rem 0; }
+      .nav-links { width: 100%; justify-content: flex-start; }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <nav>
-        <a href="#top">Aparto</a>
-        <div>
+      <nav aria-label="Main navigation">
+        <a class="brand" href="#top"><span class="brand-mark">A</span> Aparto</a>
+        <div class="nav-links">
+          <a href="#properties">Properties</a>
           <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#team">Team</a>
+          <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -53,65 +140,371 @@
 
   <main id="top">
     <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Unofficial concept demo</span>
+          <h1>Find your place in Yerevan</h1>
+          <p>Aparto is a Yerevan real estate agency helping clients buy, sell, rent, lease, and manage property. This concept demo reimagines the online experience with clear search, visible services, and a simple inquiry flow.</p>
+          <div class="hero-stats">
+            <div class="stat"><strong>1500+</strong><span>Registered properties</span></div>
+            <div class="stat"><strong>100+</strong><span>Happy customers</span></div>
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="#properties">Browse properties</a>
+            <a class="button ghost" href="#contact">Contact an agent</a>
+          </div>
+        </div>
+        <aside class="search-card" aria-label="Property search demo">
+          <h2>Search property</h2>
+          <div class="tabs" role="tablist">
+            <button class="tab active" type="button" data-tab="sale">For Sale</button>
+            <button class="tab" type="button" data-tab="rent">For Rent</button>
+          </div>
+          <form onsubmit="event.preventDefault(); var s=document.getElementById('search-status'); s.textContent='Demo only: no search was submitted.'; s.focus();">
+            <div class="search-grid">
+              <div class="full">
+                <label for="location">Location</label>
+                <input id="location" name="location" type="text" placeholder="e.g. Center / Baghramyan">
+              </div>
+              <div>
+                <label for="type">Property type</label>
+                <select id="type" name="type">
+                  <option>Any</option>
+                  <option>Apartment</option>
+                  <option>House</option>
+                  <option>Office</option>
+                </select>
+              </div>
+              <div>
+                <label for="beds">Bedrooms</label>
+                <select id="beds" name="beds">
+                  <option>Any</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3+</option>
+                </select>
+              </div>
+              <div class="full">
+                <label>Area unit</label>
+                <div class="unit-toggle">
+                  <button type="button" class="active" data-unit="m2">m²</button>
+                  <button type="button" data-unit="ft2">ft²</button>
+                </div>
+              </div>
+            </div>
+            <button class="button primary" type="submit" style="width:100%;margin-top:.75rem;">Search</button>
+            <p id="search-status" class="search-note" role="status" aria-live="polite" tabindex="-1">Search is demonstrative only. No data is sent.</p>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section id="properties">
       <div class="wrap">
-        <span class="badge">real estate agency concept demo</span>
-        <h1>Aparto</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a real estate agency business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 54/100</span></p>
-        <a class="button primary" href="#contact">Request information</a>
+        <h2 class="section-title">Featured properties</h2>
+        <p class="section-lead">Listing cards below use placeholder data. Real listings, prices, and availability must be confirmed with Aparto before publication.</p>
+        <div class="card-grid">
+          <article class="listing-card card">
+            <div class="listing-media">Property image</div>
+            <div class="listing-body">
+              <span class="badge-soft">For Sale · Placeholder</span>
+              <h3>Modern apartment in central Yerevan</h3>
+              <div class="listing-price">Price placeholder</div>
+              <div class="listing-meta">
+                <span>Bedrooms: placeholder</span>
+                <span>Bathrooms: placeholder</span>
+                <span>Area: placeholder m²</span>
+              </div>
+              <p class="small">Location: Yerevan, Armenia (placeholder)</p>
+            </div>
+          </article>
+          <article class="listing-card card">
+            <div class="listing-media">Property image</div>
+            <div class="listing-body">
+              <span class="badge-soft">For Rent · Placeholder</span>
+              <h3>Family home with outdoor space</h3>
+              <div class="listing-price">Rent placeholder</div>
+              <div class="listing-meta">
+                <span>Bedrooms: placeholder</span>
+                <span>Bathrooms: placeholder</span>
+                <span>Area: placeholder m²</span>
+              </div>
+              <p class="small">Location: Yerevan, Armenia (placeholder)</p>
+            </div>
+          </article>
+          <article class="listing-card card">
+            <div class="listing-media">Property image</div>
+            <div class="listing-body">
+              <span class="badge-soft">For Sale · Placeholder</span>
+              <h3>Business workspace</h3>
+              <div class="listing-price">Price placeholder</div>
+              <div class="listing-meta">
+                <span>Rooms: placeholder</span>
+                <span>Parking: placeholder</span>
+                <span>Area: placeholder m²</span>
+              </div>
+              <p class="small">Location: Yerevan, Armenia (placeholder)</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>Real estate agency with property management; website could benefit from client portal and property tracking.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Client portal and property tracking system</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://aparto.am/en" target="_blank" rel="noopener">https://aparto.am/en</a></li></ul>
-        </article>
+      <div class="wrap">
+        <h2 class="section-title">Our services</h2>
+        <p class="section-lead">Service descriptions are based on the official Aparto website.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Sell real estate</h3>
+            <p>Buy or sell real estate with the Aparto real estate agency, including professional photography, listing on the website, and advertising on popular platforms.</p>
+            <p class="muted">Verified service from official website.</p>
+          </article>
+          <article class="card">
+            <h3>Rent real estate</h3>
+            <p>Lease or rent an apartment in Yerevan with support from the Aparto team throughout the process.</p>
+            <p class="muted">Verified service from official website.</p>
+          </article>
+          <article class="card">
+            <h3>Real estate management</h3>
+            <p>Hand over property management to Aparto and reduce landlord responsibilities.</p>
+            <p class="muted">Verified service from official website.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about-grid">
+        <div>
+          <h2 class="section-title">About Aparto</h2>
+          <p>Aparto Real Estate Agency was incorporated on March 27, 2023 in Yerevan, Republic of Armenia, by Alex Babajanian, founding director. After six years of experience in the developing Yerevan real estate market, he created an organization aimed at raising service quality and reducing friction for clients buying, selling, renting, or leasing property.</p>
+          <p>The team describes itself as becoming a competitor in the Armenian real estate market and influencing marketing and working strategies of other agencies. Its mission is to help individuals and families find apartments, mansions, or business workspaces for purchase or rent, with an individual approach to each client.</p>
+          <div class="trust-row" style="margin-top:1rem;">
+            <span>Founded 2023</span>
+            <span>Founder: Alex Babajanian</span>
+            <span>Yerevan, Armenia</span>
+          </div>
+        </div>
+        <div class="placeholder-box">Office / team image placeholder</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">Why choose us</h2>
+        <p class="section-lead">Points below reflect the official website's stated approach.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Time-saving search</h3>
+            <p>The aparto.am platform lets clients find properties of their choice and contact the agency to view them.</p>
+          </article>
+          <article class="card">
+            <h3>Legal support</h3>
+            <p>For buyers, the team offers legal support throughout the purchase process to help avoid scams and forged documents.</p>
+          </article>
+          <article class="card">
+            <h3>Marketing for sellers</h3>
+            <p>For sellers, properties are professionally photographed, listed on the website, advertised on popular platforms, and promoted with video advertising.</p>
+          </article>
+          <article class="card">
+            <h3>Individual approach</h3>
+            <p>The company prioritizes customer satisfaction and evaluates both the client's time and its own.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="wrap">
+        <h2 class="section-title">Team</h2>
+        <p class="section-lead">Names and roles below are listed on the official Aparto website. Photos are placeholders.</p>
+        <div class="team-grid">
+          <article class="team-card card">
+            <div class="avatar">FO</div>
+            <h3>Fergus O'Reilly</h3>
+            <p class="muted">Real Estate Agent</p>
+          </article>
+          <article class="team-card card">
+            <div class="avatar">RP</div>
+            <h3>Rebecca Powell</h3>
+            <p class="muted">Real Estate Agent</p>
+          </article>
+          <article class="team-card card">
+            <div class="avatar">WS</div>
+            <h3>Warren Stewart</h3>
+            <p class="muted">Real Estate Agent</p>
+          </article>
+        </div>
+        <p class="small" style="margin-top:1rem;">Additional agents are mentioned in client testimonials on the official website. Only the above team members are reproduced here as verified listings.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">Client testimonials</h2>
+        <p class="section-lead">Selected quotes from the official website. Names are shown as published.</p>
+        <div class="card-grid">
+          <article class="testimonial">
+            <p>"Choosing Aparto LLC was a wise decision. Their professionalism ensured a smooth purchase process, and their post-purchase services, particularly in finding tenants for my apartment, have been outstanding."</p>
+            <div class="name">mihran</div>
+          </article>
+          <article class="testimonial">
+            <p>"Such a wonderful ambitious young happy team. Life in Armenia became better after dealing with Alex and Aparto. Always clarity and honesty."</p>
+            <div class="name">tariq</div>
+          </article>
+          <article class="testimonial">
+            <p>"Working with real estate agent Peto was a fantastic experience! He helped us find a wonderful apartment that perfectly met our expectations."</p>
+            <div class="name">nick</div>
+          </article>
+          <article class="testimonial">
+            <p>"Milena is a star. She helped us find a beautiful house in Davtashen, and helped us negotiate with landlord. Speaks great english too so was helpful as an expat searching for property in Yerevan :)"</p>
+            <div class="name">qrist</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <h2 class="section-title">Frequently asked questions</h2>
+        <p class="section-lead">Questions are taken from the official Aparto website. The full answer below is reproduced as published.</p>
+        <div class="faq">
+          <details open>
+            <summary>Why should I sign a Demonstration Agreement before visiting the apartment?</summary>
+            <p>It is necessary to sign a 'Service Provision Agreement' before looking for apartments with the help of Aparto real estate agency, where the rights and responsibilities of both parties are clearly presented. This agreement is signed to insure both parties against further disputes and to specify all the properties that the subsequent buyer has visited with our agent. By signing the agreement, you pay a commission for the service only for the property that you have visited with us and subsequently purchased. Your rights are not limited to other properties, and if you buy another apartment that we have not shown you, you have no financial obligation before us.</p>
+          </details>
+          <details>
+            <summary>How much is the commission that I should pay to the agency when making a real estate transaction?</summary>
+            <p>The full answer is available on the official Aparto website.</p>
+          </details>
+          <details>
+            <summary>Is it safe to provide a copy/photo of the ownership certificate of my real estate to another person or organization?</summary>
+            <p>The full answer is available on the official Aparto website.</p>
+          </details>
+          <details>
+            <summary>How many days does the real estate acquisition process take in Armenia?</summary>
+            <p>The full answer is available on the official Aparto website.</p>
+          </details>
+          <details>
+            <summary>Is it possible to buy a property that is under a lien in the bank?</summary>
+            <p>The full answer is available on the official Aparto website.</p>
+          </details>
+          <details>
+            <summary>Under what conditions is property management (re-leasing) performed?</summary>
+            <p>The full answer is available on the official Aparto website.</p>
+          </details>
+        </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://aparto.am/en" target="_blank" rel="noopener">Current website</a></p>
-          <p class="muted">Verified contact details should be confirmed before production use.</p>
-        </article>
-        <article class="card">
-          <h2>Demo inquiry form</h2>
-          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button class="button primary" type="submit">Send inquiry</button>
-          </form>
-        </article>
+      <div class="wrap contact-grid">
+        <div>
+          <h2 class="section-title">Contact Aparto</h2>
+          <p class="section-lead">Contact details below are published on the official website.</p>
+          <div class="contact-list">
+            <div class="contact-item">
+              <strong>Email</strong>
+              <a href="mailto:info@aparto.am">info@aparto.am</a>
+            </div>
+            <div class="contact-item">
+              <strong>Address</strong>
+              16 Yeznik Koghbatsi str., 15th floor, Yerevan, Armenia
+            </div>
+            <div class="contact-item">
+              <strong>Social media</strong>
+              <div class="social-links">
+                <a href="https://www.facebook.com/apartorealestate/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.tiktok.com/@aparto.am" target="_blank" rel="noopener noreferrer">TikTok</a>
+                <a href="https://www.instagram.com/aparto.am/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <strong>Official website</strong>
+              <a href="https://aparto.am/en" target="_blank" rel="noopener noreferrer">aparto.am/en</a>
+            </div>
+          </div>
+          <div class="map-placeholder" style="margin-top:1.25rem;">Map</div>
+        </div>
+        <div>
+          <article class="card">
+            <h2>Request a call</h2>
+            <p>Use this form to start a conversation. In this concept demo, no request is submitted to a server.</p>
+            <form onsubmit="event.preventDefault(); var s=document.getElementById('contact-status'); s.textContent='Demo only: no request was submitted.'; s.focus();">
+              <div>
+                <label for="cname">Name</label>
+                <input id="cname" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div>
+                <label for="cemail">Email</label>
+                <input id="cemail" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div>
+                <label for="cphone">Phone</label>
+                <input id="cphone" name="phone" type="tel" autocomplete="tel">
+              </div>
+              <div>
+                <label for="cmessage">Message</label>
+                <textarea id="cmessage" name="message" required></textarea>
+              </div>
+              <button class="button primary" type="submit">Send inquiry</button>
+              <p id="contact-status" class="muted" role="status" aria-live="polite" tabindex="-1"></p>
+            </form>
+            <p class="small">Languages on the official site include Armenian, English, and Russian. Document examples include a Sales Services Agreement PDF.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section>
       <div class="wrap">
         <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of Aparto, and no booking, payment, or contact request is submitted by this demo.
+          <strong>Unofficial concept demo.</strong> This page demonstrates a possible website redesign for Aparto. It is not the official website of Aparto, and no booking, payment, search, or contact request is submitted by this demo. Property listings, prices, photos, and availability shown are placeholders.
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
+    <div class="wrap footer-grid">
+      <div>
+        <strong>Aparto</strong>
+        <p class="small">Real estate agency concept demo. Yerevan, Armenia.</p>
+      </div>
+      <div>
+        <strong>Verified sources</strong>
+        <ul class="feature-list">
+          <li><a href="https://aparto.am/en" target="_blank" rel="noopener noreferrer">https://aparto.am/en</a></li>
+          <li><a href="https://aparto.am/en/about-us" target="_blank" rel="noopener noreferrer">https://aparto.am/en/about-us</a></li>
+          <li><a href="https://aparto.am/en/services/buying_selling" target="_blank" rel="noopener noreferrer">https://aparto.am/en/services/buying_selling</a></li>
+          <li><a href="https://aparto.am/en/contact-us" target="_blank" rel="noopener noreferrer">https://aparto.am/en/contact-us</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Notes</strong>
+        <p class="small">Facts verified from the official website on 2026-10-24. Contact details, services, prices, and availability must be confirmed before production use. This demo sends no data externally.</p>
+      </div>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var tabs = document.querySelectorAll('.tab');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          tabs.forEach(function (t) { t.classList.remove('active'); });
+          tab.classList.add('active');
+        });
+      });
+      var units = document.querySelectorAll('.unit-toggle button');
+      units.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          units.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
