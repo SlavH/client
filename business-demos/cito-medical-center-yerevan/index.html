@@ -1,117 +1,324 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cito Medical Center | Concept Demo Website</title>
-  <meta name="description" content="Unofficial concept demo website for Cito Medical Center, a medical center business in Yerevan, Armenia.">
-  <style>
-    :root {
-      --bg: #0b1324;
-      --accent: #7c3aed;
-      --surface: #f5f3ff;
-      --font: Trebuchet MS, sans-serif;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
-    section { padding: 4rem 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
-    .button.primary { background: var(--accent); color: #ffffff; }
-    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
-    form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
-    footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cito Medical Center — Concept Demo</title>
+<meta name="description" content="Concept demo for Cito Medical Center, Yerevan, Armenia. Medical center category. Static HTML only.">
+<style>
+  :root{
+    --ink:#1a1a1a;
+    --muted:#6b7280;
+    --accent:#0ea5e9;
+    --accent-dark:#0284c7;
+    --bg:#ffffff;
+    --panel:#f8fafc;
+    --line:#e5e7eb;
+    --radius:10px;
+    --shadow:0 10px 30px -10px rgba(0,0,0,0.1);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Noto Sans,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block;opacity:0}
+  a{color:inherit;text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+  .skip{position:absolute;-webkit-clip-path:inset(50%);clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+
+  /* Notice */
+  .notice-bar{background:#fffbeb;color:#92400e;border:1px solid #fcd34d;padding:0.55rem 1.25rem;font-size:0.82rem;text-align:center}
+  .notice-bar a{color:#78350f;text-decoration:underline}
+
+  header{position:sticky;top:0;background:rgba(255,255,255,0.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:40}
+  .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:0.9rem 0}
+  .brand{display:flex;align-items:center;gap:0.6rem;font-weight:800;font-size:1.15rem;letter-spacing:-0.02em}
+  .brand .mark{width:28px;height:28px;border-radius:8px;background:var(--accent);display:grid;place-items:center;color:#fff;font-weight:900;font-size:1.1rem}
+  .nav-links{display:none;gap:1.5rem;list-style:none;margin:0;padding:0;font-size:0.9rem}
+  .nav-links a{color:var(--muted)}
+  .nav-links a:hover{color:var(--ink)}
+  .btn-primary{display:inline-block;background:var(--accent);color:#fff;border:none;border-radius:8px;padding:0.7rem 1.25rem;font-weight:700;font-size:0.92rem}
+  .btn-primary:hover{background:var(--accent-dark)}
+  .btn-outline{display:inline-block;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:0.68rem 1.2rem;font-weight:700;font-size:0.92rem;background:#fff}
+  .btn-outline:hover{border-color:var(--accent);color:var(--accent-dark)}
+  .mobile-toggle{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);font-size:1.1rem}
+
+  section{padding:4.5rem 0}
+  .eyebrow{font-size:0.78rem;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent-dark);margin:0 0 0.5rem}
+  h1{font-size:2.4rem;line-height:1.12;margin:0 0 1rem;font-weight:800;letter-spacing:-0.02em}
+  h2{font-size:1.6rem;line-height:1.25;margin:0 0 0.9rem;font-weight:800;letter-spacing:-0.01em}
+  .lead{font-size:1.1rem;color:var(--muted);max-width:620px}
+  .grid{display:grid;gap:1.25rem}
+  @media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1024px){.grid{grid-template-columns:repeat(3,1fr)}}
+
+  .card{border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;background:#fff}
+  .card h3{font-size:1.05rem;margin:0 0 0.4rem;font-weight:700}
+  .card p{font-size:0.88rem;color:var(--muted);margin:0 0 0.6rem}
+  .card .label{font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:0.25rem;display:block}
+  .card .value{font-size:0.9rem;font-weight:700;color:var(--ink)}
+  .card .tel{color:var(--accent-dark)}
+  .divider{border-top:1px solid var(--line);margin:0.75rem 0}
+
+  .hero{display:grid;grid-template-columns:1fr;gap:2rem;align-items:center}
+  @media(min-width:960px){.hero{grid-template-columns:1.15fr 1fr}}
+  .hero-photo{height:420px;border-radius:var(--radius);background:linear-gradient(135deg,#e2e8f0,#cbd5e1);position:relative;overflow:hidden}
+  .photo-placeholder{width:100%;height:100%;display:grid;place-items:center;color:var(--muted);font-size:0.9rem;font-weight:600}
+  .cta-box{border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;background:var(--panel)}
+  .cta-box h3{font-size:1.15rem;margin:0 0 0.4rem;font-weight:800}
+  .cta-box p{font-size:0.9rem;color:var(--muted);margin:0 0 1rem}
+  .contact-grid{display:grid;gap:1rem}
+  .contact-item{display:flex;gap:0.8rem;align-items:flex-start}
+  .contact-item .kv{font-size:1.05rem;font-weight:700}
+  .contact-item span{font-size:0.86rem;color:var(--muted)}
+  .contact-item a{color:var(--accent-dark)}
+  .hours .day{font-size:0.86rem;color:var(--muted);margin:0 0 0.2rem}
+  .hours .time{font-size:0.88rem;font-weight:700;color:var(--ink)}
+
+  .services{background:#f9fafb}
+  .services h2{text-align:center}
+  .services .intro{text-align:center;max-width:620px;margin:0 auto 2rem}
+  .svc-card{border:none;padding:1.5rem;text-align:center}
+  .svc-icon{width:48px;height:48px;border-radius:10px;background:#eef2ff;color:#3730a3;display:grid;place-items:center;margin:0 auto 0.8rem;font-size:1.2rem}
+  .svc-card h3{font-size:1rem;margin:0 0 0.3rem;font-weight:800}
+  .svc-card p{font-size:0.85rem;color:var(--muted);margin:0}
+
+  .locations{background:#fff}
+  .locations .loc-card{border-left:3px solid var(--accent);padding-left:1rem}
+
+  footer{border-top:1px solid var(--line);padding:3rem 0;color:var(--muted);font-size:0.85rem}
+  .foot-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+  @media(min-width:768px){.foot-grid{grid-template-columns:2fr 1fr 1fr}}
+  .foot-title{font-size:0.8rem;font-weight:900;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink);margin-bottom:0.9rem}
+  .foot-links{list-style:none;margin:0;padding:0}
+  .foot-links li{margin:0 0 0.45rem}
+  .foot-links a{color:var(--muted)}
+  .foot-links a:hover{color:var(--ink)}
+  .disclaimer{font-size:0.75rem;color:#9ca3af;margin-top:2rem;border-top:1px solid var(--line);padding-top:1rem}
+  .disclaimer em{color:#d1d5db}
+
+  .lang{font-size:0.8rem;color:var(--muted)}
+  .lang a{color:var(--accent-dark)}
+
+  @media(min-width:768px){
+    .nav-links{display:flex}
+    .mobile-toggle{display:none}
+    .nav-wrap{padding:1rem 0}
+  }
+</style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <nav>
-        <a href="#top">Cito Medical Center</a>
+
+<a class="skip" href="#main">Skip to main content</a>
+
+<div class="notice-bar">
+  <strong>Concept demo — unofficial placeholder.</strong> This page is a static HTML concept demo for lead index 92 and is <strong>not</strong> affiliated with, endorsed by, or sent to Cito Medical Center. All business details below are placeholders derived from publicly listed information on citomed.am; verify directly before use. No data is sent externally.
+</div>
+
+<header>
+  <div class="container nav-wrap">
+    <a class="brand" href="#main"><span class="mark">C</span><span>Cito Medical Center</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="mobile-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    </nav>
+    <a class="btn-primary" href="#contact">Book appointment</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Medical Center &bull; Yerevan, Armenia</p>
+      <h1>Cito Medical Center</h1>
+      <p class="lead">Modern medical care in Yerevan. Clinics on Nersisyan Street and Zakyan Street, plus a branch in Gyumri. Appointments by phone or online form.</p>
+      <div style="display:flex;flex-direction:column;gap:0.75rem">
+        <a class="btn-primary" href="#contact">Book an appointment</a>
+        <a class="btn-outline" href="#locations">View locations &amp; hours</a>
+      </div>
+      <p class="lang" style="margin-top:1rem">Language: <a href="#">English</a> &bull; <a href="#">Հայերեն</a> &bull; <a href="#">Русский</a></p>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-placeholder">Clinic photo placeholder</div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="intro">Indicative service areas offered at Cito Medical Center. Exact service list is a placeholder; confirm with the clinic.</p>
+      <div class="grid">
+        <article class="svc-card">
+          <div class="svc-icon">&#128101;</div>
+          <h3>General medicine</h3>
+          <p>Primary care consultations</p>
+        </article>
+        <article class="svc-card">
+          <div class="svc-icon">&#128102;</div>
+          <h3>Diagnostics</h3>
+          <p>Lab tests and imaging</p>
+        </article>
+        <article class="svc-card">
+          <div class="svc-icon">&#128103;</div>
+          <h3>Specialist care</h3>
+          <p>Focused medical specialties</p>
+        </article>
+        <article class="svc-card">
+          <div class="svc-icon">&#128104;</div>
+          <h3>Preventive care</h3>
+          <p>Check-ups and screening</p>
+        </article>
+        <article class="svc-card">
+          <div class="svc-icon">&#128105;</div>
+          <h3>Dentistry</h3>
+          <p>Oral health services</p>
+        </article>
+        <article class="svc-card">
+          <div class="svc-icon">&#128106;</div>
+          <h3>Pediatrics</h3>
+          <p>Children&rsquo;s health</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="locations">
+    <div class="container">
+      <div class="grid">
         <div>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+          <h2>Locations &amp; hours</h2>
+          <p class="lead">Cito Medical Center operates clinics in Yerevan and Gyumri. Hours shown are as listed on the official site.</p>
         </div>
-      </nav>
+        <div class="cta-box">
+          <h3>Call to book</h3>
+          <p>Yerevan &amp; Gyumri</p>
+          <a class="tel" href="tel:+37444320023">+374 44 32 00 23</a>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top:2rem">
+        <article class="card loc-card">
+          <span class="label">Yerevan — Nersisyan</span>
+          <h3>Hrachya Nersisyan 14/1</h3>
+          <p>Yerevan, Armenia</p>
+          <div class="divider"></div>
+          <div class="hours">
+            <div><span class="day">Mon–Fri</span><span class="time">08:30–17:30</span></div>
+            <div><span class="day">Saturday</span><span class="time">09:00–15:00</span></div>
+            <div><span class="day">Sunday</span><span class="time">Closed</span></div>
+          </div>
+        </article>
+        <article class="card loc-card">
+          <span class="label">Yerevan — Zakyan</span>
+          <h3>Zakyan 5</h3>
+          <p>Yerevan, Armenia</p>
+          <div class="divider"></div>
+          <div class="hours">
+            <div><span class="day">Mon–Fri</span><span class="time">08:30–17:30</span></div>
+            <div><span class="day">Saturday</span><span class="time">09:00–15:00</span></div>
+            <div><span class="day">Sunday</span><span class="time">Closed</span></div>
+          </div>
+        </article>
+        <article class="card loc-card">
+          <span class="label">Gyumri</span>
+          <h3>Garegin Nzhdeh 6/56</h3>
+          <p>Gyumri, Armenia</p>
+          <div class="divider"></div>
+          <div class="hours">
+            <div><span class="day">Mon–Fri</span><span class="time">09:00–15:00</span></div>
+            <div><span class="day">Saturday</span><span class="time">09:00–15:00</span></div>
+            <div><span class="day">Sunday</span><span class="time">Closed</span></div>
+          </div>
+        </article>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap">
-        <span class="badge">medical center concept demo</span>
-        <h1>Cito Medical Center</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a medical center business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 74/100</span></p>
-        <a class="button primary" href="#contact">Request information</a>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>Medical center with online doctor service; website could benefit from improved online consultation and booking.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Improved online consultation and booking system</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://citomed.am/en/" target="_blank" rel="noopener">https://citomed.am/en/</a></li></ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://citomed.am/en/" target="_blank" rel="noopener">Current website</a></p>
-          <p class="muted">Verified contact details should be confirmed before production use.</p>
-        </article>
-        <article class="card">
-          <h2>Demo inquiry form</h2>
-          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button class="button primary" type="submit">Send inquiry</button>
+  <section id="contact">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <h2>Contact</h2>
+          <p class="lead">Send an inquiry through the form below. Do not include medical or other sensitive personal data.</p>
+          <div class="contact-grid" style="margin-top:1.2rem">
+            <div class="contact-item"><span class="kv">Phone</span><span><a href="tel:+37444320023">+374 44 32 00 23</a></span></div>
+            <div class="contact-item"><span class="kv">Email</span><span><a href="mailto:info@citomed.am">info@citomed.am</a></span></div>
+            <div class="contact-item"><span class="kv">Website</span><span><a href="https://citomed.am/" target="_blank" rel="noopener">citomed.am</a></span></div>
+          </div>
+        </div>
+        <div>
+          <form class="card" novalidate>
+            <div style="display:grid;gap:0.9rem">
+              <label style="font-size:0.8rem;font-weight:700;color:var(--muted)">Full name</label>
+              <input type="text" required style="width:100%;padding:0.7rem;border:1px solid var(--line);border-radius:6px;font:inherit">
+              <label style="font-size:0.8rem;font-weight:700;color:var(--muted)">Email address</label>
+              <input type="email" required style="width:100%;padding:0.7rem;border:1px solid var(--line);border-radius:6px;font:inherit">
+              <label style="font-size:0.8rem;font-weight:700;color:var(--muted)">Preferred visit date</label>
+              <input type="text" placeholder="e.g. 15 Jun 2026" style="width:100%;padding:0.7rem;border:1px solid var(--line);border-radius:6px;font:inherit">
+              <label style="font-size:0.8rem;font-weight:700;color:var(--muted)">Message</label>
+              <textarea rows="4" required style="width:100%;padding:0.7rem;border:1px solid var(--line);border-radius:6px;font:inherit"></textarea>
+              <p style="font-size:0.75rem;color:var(--muted);margin:0.4rem 0 0">This demo form does not submit anywhere.</p>
+              <button class="btn-primary" type="button" style="width:100">Send inquiry (demo)</button>
+            </div>
           </form>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of Cito Medical Center, and no booking, payment, or contact request is submitted by this demo.
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
     </div>
-  </footer>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-title">Cito Medical Center</div>
+        <div style="font-size:0.88rem;color:var(--ink);font-weight:700">«Ցիտո» բժշկական կենտրոն</div>
+        <p style="font-size:0.82rem;color:var(--muted);margin-top:0.4rem">Yerevan &middot; Gyumri, Armenia</p>
+      </div>
+      <div>
+        <div class="foot-title">Locations</div>
+        <ul class="foot-links">
+          <li><a href="#">Nersisyan 14/1, Yerevan</a></li>
+          <li><a href="#">Zakyan 5, Yerevan</a></li>
+          <li><a href="#">Garegin Nzhdeh 6/56, Gyumri</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-title">Contact</div>
+        <ul class="foot-links">
+          <li><a href="tel:+37444320023">+374 44 32 00 23</a></li>
+          <li><a href="mailto:info@citomed.am">info@citomed.am</a></li>
+          <li><a href="https://citomed.am/" target="_blank" rel="noopener">citomed.am</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclaimer"><em>This page is a static HTML concept demo for lead index 92. It is unofficial, not affiliated with Cito Medical Center, and contains placeholders. No data is sent externally. Verify all details at citomed.am before use.</em></p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    const btn=document.querySelector('.mobile-toggle');
+    const nav=document.querySelector('.nav-links');
+    if(!btn||!nav)return;
+    btn.addEventListener('click',function(){
+      const open=btn.getAttribute('aria-expanded')==='true';
+      btn.setAttribute('aria-expanded',String(!open));
+      nav.style.display=open?'none':'flex';
+      nav.style.flexDirection='column';
+      nav.style.position='absolute';
+      nav.style.top='100%';
+      nav.style.left='0';
+      nav.style.right='0';
+      nav.style.background='#fff';
+      nav.style.borderTop='1px solid var(--line)';
+      nav.style.padding='1rem';
+      nav.style.gap='1rem';
+    });
+  })();
+</script>
 </body>
 </html>

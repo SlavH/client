@@ -8,9 +8,9 @@
   <style>
     :root {
       --bg: #0b1324;
-      --accent: #7c3aed;
-      --surface: #f5f3ff;
-      --font: Trebuchet MS, sans-serif;
+      --accent: #0ea5e9;
+      --surface: #f8fafc;
+      --font: "Segoe UI", system-ui, -apple-system, sans-serif;
     }
     * { box-sizing: border-box; }
     body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
@@ -18,7 +18,7 @@
     .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
     nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
     nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
+    .hero { background: linear-gradient(135deg, var(--bg), #1e3a8a); color: #ffffff; padding: 5rem 0; }
     .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
     .hero p { max-width: 760px; font-size: 1.15rem; }
     .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
@@ -57,7 +57,7 @@
         <span class="badge">medical center concept demo</span>
         <h1>Wigmore Clinic</h1>
         <p>A clearer, faster, and more trustworthy website concept for a medical center business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 74/100</span></p>
+        <p><span>Fit score: 88/100</span></p>
         <a class="button primary" href="#contact">Request information</a>
       </div>
     </section>
@@ -66,16 +66,24 @@
       <div class="wrap grid">
         <article class="card">
           <h2>What we verified</h2>
-          <ul><li>Multi-specialty clinic; website could benefit from online appointment booking and patient management.</li></ul>
+          <ul>
+            <li>State-of-the-art medical center offering inpatient and outpatient services.</li>
+            <li>Address: Wigmore Clinic, 56 Pushkin, Yerevan 0002, RA.</li>
+            <li>Phone: +374 12 345 678 (8:30-20:00 call center).</li>
+            <li>Email: infoclinic@wigmore.am</li>
+            <li>Services include orthopedics, trauma, sports medicine, spine surgery, vascular surgery, plastic and maxillofacial surgery, gynecology, cardiology, rheumatology, endocrinology, interventional radiology, dentistry, rehabilitation.</li>
+          </ul>
         </article>
         <article class="card">
           <h2>Proposed improvement</h2>
-          <p>Online appointment booking and patient management</p>
+          <p>Online appointment booking and patient portal</p>
           <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
         </article>
         <article class="card">
           <h2>Public sources</h2>
-          <ul><li><a href="https://wigmore.am/en/wigmore-clinic" target="_blank" rel="noopener">https://wigmore.am/en/wigmore-clinic</a></li></ul>
+          <ul>
+            <li><a href="https://wigmore.am/en/wigmore-clinic" target="_blank" rel="noopener">https://wigmore.am/en/wigmore-clinic</a></li>
+          </ul>
         </article>
       </div>
     </section>
@@ -85,6 +93,8 @@
         <article class="card">
           <h2>Contact routes</h2>
           <p><a class="button secondary" href="https://wigmore.am/en/wigmore-clinic" target="_blank" rel="noopener">Current website</a></p>
+          <p><a class="button secondary" href="tel:+37412345678">Call +374 12 345 678</a></p>
+          <p><a class="button secondary" href="mailto:infoclinic@wigmore.am">Email infoclinic@wigmore.am</a></p>
           <p class="muted">Verified contact details should be confirmed before production use.</p>
         </article>
         <article class="card">

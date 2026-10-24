@@ -7,9 +7,9 @@
   <meta name="description" content="Unofficial concept demo website for St. Grigor Lusavorich Medical Center, a medical center business in Yerevan, Armenia.">
   <style>
     :root {
-      --bg: #1f2937;
-      --accent: #ea580c;
-      --surface: #fff7ed;
+      --bg: #0b2545;
+      --accent: #c0392b;
+      --surface: #f7f5f0;
       --font: Helvetica, Arial, sans-serif;
     }
     * { box-sizing: border-box; }
@@ -35,6 +35,8 @@
     .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
     footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
     .muted { color: #6b7280; }
+    .label { display: block; font-weight: 600; margin-top: .5rem; color: var(--accent); }
+    .fact { font-size: 1rem; margin: .5rem 0; }
     @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
   </style>
 </head>
@@ -45,6 +47,7 @@
         <a href="#top">St. Grigor Lusavorich Medical Center</a>
         <div>
           <a href="#services">Services</a>
+          <a href="#facilities">Facilities</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -56,8 +59,8 @@
       <div class="wrap">
         <span class="badge">medical center concept demo</span>
         <h1>St. Grigor Lusavorich Medical Center</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a medical center business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 74/100</span></p>
+        <p>Large state multiprofile medical center in Yerevan, Armenia &mdash; Yerevan's Nork-Marash district, Gyurjyan St., building 10.</p>
+        <p><span class="label">Lead fit score: 74/100</span></p>
         <a class="button primary" href="#contact">Request information</a>
       </div>
     </section>
@@ -66,16 +69,88 @@
       <div class="wrap grid">
         <article class="card">
           <h2>What we verified</h2>
-          <ul><li>Large state medical center; website is Armenian-only and could benefit from multilingual site with online services.</li></ul>
+          <ul>
+            <li class="fact">State multiprofile medical center (clinic, polyclinic, maternity hospital, medical college).</li>
+            <li class="fact">Official Armenian-language website at <a href="https://sgl.am/" style="color:inherit; text-decoration:underline;">sgl.am</a>.</li>
+            <li class="fact">Director: Narek Zeynalyan.</li>
+            <li class="fact">35+ specialized departments across clinical units.</li>
+          </ul>
         </article>
         <article class="card">
           <h2>Proposed improvement</h2>
-          <p>Multilingual website with online services</p>
+          <p>Multilingual (Armenian/English/Russian) website with service listings, doctor directory, online appointment inquiry, and clear contact routes.</p>
           <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
         </article>
         <article class="card">
           <h2>Public sources</h2>
-          <ul><li><a href="https://sgl.am/" target="_blank" rel="noopener">https://sgl.am/</a></li></ul>
+          <ul>
+            <li><a href="https://sgl.am/" target="_blank" rel="noopener">https://sgl.am/</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="facilities">
+      <div class="wrap grid">
+        <article class="card">
+          <h2>Clinic &amp; diagnostic units</h2>
+          <ul class="muted" style="padding-left:1.25rem;">
+            <li>Emergency and urgent medical care</li>
+            <li>Densitometry service</li>
+            <li>Mammography service</li>
+            <li>Nuclear medicine service</li>
+            <li>Interventional arrhythmology service</li>
+            <li>Cardiac surgery department</li>
+            <li>Vascular surgery service</li>
+            <li>Armenian blood bank and transfusiology service</li>
+            <li>Morgue anatomy department</li>
+            <li>Chemotherapy service</li>
+            <li>Anesthesiology department</li>
+            <li>Hemodialysis department</li>
+            <li>Intensive care department</li>
+            <li>Laboratory department</li>
+            <li>Radiography service</li>
+            <li>Ultrasound examination service</li>
+            <li>Endoscopic interventions service</li>
+            <li>Computed tomography service</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Polyclinic &amp; specialist departments</h2>
+          <ul class="muted" style="padding-left:1.25rem;">
+            <li>Pediatric and adult ultrasound cabinets</li>
+            <li>Radiography cabinet</li>
+            <li>Pediatric and adult laboratories</li>
+            <li>Phthisiatric cabinet</li>
+            <li>Pediatric psychiatric cabinet</li>
+            <li>Sports medicine service</li>
+            <li>Rehabilitation medicine service</li>
+            <li>Infectious disease prevention cabinet</li>
+            <li>Speech therapy cabinet</li>
+            <li>ENT cabinet (pediatric)</li>
+            <li>Gynecological cabinet (pediatric)</li>
+            <li>Cardiological cabinet (pediatric)</li>
+            <li>Massage cabinet (pediatric)</li>
+            <li>Neurological cabinet (pediatric)</li>
+            <li>Ophthalmological cabinet (pediatric)</li>
+            <li>Surgical cabinet (pediatric)</li>
+            <li>Pediatric cabinet</li>
+            <li>Cardiological cabinet</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Maternity &amp; college</h2>
+          <ul class="muted" style="padding-left:1.25rem;">
+            <li>3rd-level maternity hospital for high-risk deliveries</li>
+            <li>Maternity laboratory and diagnostics</li>
+            <li>Anesthesiology department</li>
+            <li>Gynecology department</li>
+            <li>Newborn department</li>
+            <li>Obstetrics department</li>
+            <li>Pregnancy pathology department</li>
+            <li>Women's consultation department</li>
+            <li>State medical college training healthcare professionals</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -84,7 +159,21 @@
       <div class="wrap grid">
         <article class="card">
           <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://sgl.am/" target="_blank" rel="noopener">Current website</a></p>
+          <p class="label">Address</p>
+          <p class="fact">Nork-Marash 3rd district, Gyurjyan St., building 10, Yerevan, Armenia.</p>
+          <p class="label">Email</p>
+          <p class="fact">info@sglmc.am</p>
+          <p class="label">Phone</p>
+          <p class="fact">86-03 / +374-11-600003</p>
+          <p class="label">Emergency care</p>
+          <p class="fact">+374-11-600003</p>
+          <p class="label">Maternity hospital</p>
+          <p class="fact">+374-11-600001</p>
+          <p class="label">Polyclinic</p>
+          <p class="fact">+374-11-600002</p>
+          <p class="label">Medical college</p>
+          <p class="fact">+374-55-440891</p>
+          <p><a class="button secondary" href="https://sgl.am/" target="_blank" rel="noopener">Official website</a></p>
           <p class="muted">Verified contact details should be confirmed before production use.</p>
         </article>
         <article class="card">
@@ -102,7 +191,7 @@
     <section>
       <div class="wrap">
         <div class="notice">
-          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of St. Grigor Lusavorich Medical Center, and no booking, payment, or contact request is submitted by this demo.
+          <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of St. Grigor Lusavorich Medical Center, and no booking, payment, or contact request is submitted by this demo. All facts are drawn from the official site https://sgl.am/; details must be verified before production use.
         </div>
       </div>
     </section>

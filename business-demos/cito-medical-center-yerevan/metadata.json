@@ -1,0 +1,30 @@
+{
+  "lead_index": 92,
+  "slug": "cito-medical-center-yerevan",
+  "business": "Cito Medical Center",
+  "category": "medical center",
+  "city": "Yerevan",
+  "country": "Armenia",
+  "website": "https://citomed.am/en/",
+  "demo_path": "/client/business-demos/cito-medical-center-yerevan/index.html",
+  "demo_type": "static_html_concept_demo",
+  "status": "unofficial_placeholder",
+  "verified_observations": [
+    "Official site (citomed.am) displays a 'site under construction' notice and lists phone +374 44 32 00 23 and email info@citomed.am.",
+    "Two Yerevan branches are listed: Hrachya Nersisyan 14/1 (Mon–Fri 08:30–17:30, Sat 09:00–15:00) and Zakyan 5 (same hours).",
+    "A Gyumri branch is listed at Garegin Nzhdeh 6/56 (Mon–Fri 09:00–15:00, Sat 09:00–15:00)."
+  ],
+  "placeholders": [
+    "Service list (general medicine, diagnostics, specialist care, preventive care, dentistry, pediatrics) is indicative only.",
+    "Clinic hero image is a CSS placeholder.",
+    "Contact form does not submit anywhere.",
+    "English site path /en/ returned 404; Armenian homepage was used as source."
+  ],
+  "notices": [
+    "This is an unofficial concept demo, not affiliated with or endorsed by Cito Medical Center.",
+    "No data is sent externally; all interactions are local/client-side only.",
+    "Verify all business details at citomed.am before use."
+  ],
+  "source": "https://citomed.am (Armenian homepage, fetched 2026-10-24)",
+  "generated_at": "2026-10-24"
+}

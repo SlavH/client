@@ -9,42 +9,68 @@
     :root {
       --bg: #172554;
       --accent: #0891b2;
-      --surface: #ecfeff;
-      --font: Verdana, sans-serif;
+      --surface: #f8fafc;
+      --muted: #6b7280;
+      --font: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     }
     * { box-sizing: border-box; }
     body { margin: 0; font-family: var(--font); color: #111827; background: #ffffff; line-height: 1.6; }
-    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; }
+    header { background: var(--bg); color: #ffffff; padding: 1rem 1.25rem; position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 4px rgba(0,0,0,.1); }
     .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
     nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, var(--bg), var(--accent)); color: #ffffff; padding: 5rem 0; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
-    .hero p { max-width: 760px; font-size: 1.15rem; }
-    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; }
+    .brand { font-weight: 700; font-size: 1.25rem; color: #ffffff; text-decoration: none; }
+    nav a { color: #e5e7eb; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    nav a:hover { color: #ffffff; }
+    .hero { background: linear-gradient(135deg, var(--bg), #1e3a8a); color: #ffffff; padding: 5rem 0 4.5rem; text-align: center; }
+    .badge { display: inline-block; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: .35rem .85rem; margin-bottom: 1rem; font-size: 0.85rem; }
+    .hero h1 { font-size: clamp(2rem, 6vw, 3.75rem); margin: 0 0 1rem; line-height: 1.1; }
+    .hero p { max-width: 700px; margin: 0 auto 1.5rem; font-size: 1.15rem; opacity: .95; }
+    .button { display: inline-block; padding: .85rem 1.3rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; font-size: 0.95rem; }
+    .button.primary { background: var(--accent); color: #ffffff; }
+    .button.primary:hover { background: #0e7490; }
+    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
+    .button.secondary:hover { background: #f3f4f6; }
     section { padding: 4rem 0; }
+    .section-title { text-align: center; margin-bottom: 2.5rem; }
+    .section-title h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 .5rem; color: var(--bg); }
+    .section-title p { color: var(--muted); max-width: 700px; margin: 0 auto; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
     .card { background: var(--surface); border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; }
-    .card h2 { margin-top: 0; color: var(--bg); }
-    .button { display: inline-block; padding: .8rem 1.1rem; border-radius: .75rem; text-decoration: none; font-weight: 700; margin: .25rem .25rem .25rem 0; }
-    .button.primary { background: var(--accent); color: #ffffff; }
-    .button.secondary { background: #ffffff; color: var(--bg); border: 1px solid #d1d5db; }
+    .card h2 { margin-top: 0; color: var(--bg); font-size: 1.1rem; margin-bottom: .75rem; }
+    .card p { margin: .5rem 0; color: #374151; }
+    .card ul { margin: .5rem 0; padding-left: 1.25rem; color: #374151; }
+    .card ul li { margin-bottom: .4rem; }
+    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; margin-bottom: 1rem; }
+    .notice strong { color: #92400e; }
+    .notice p { color: #78350f; margin: .4rem 0 0; font-size: 0.95rem; }
+    footer { background: #f3f4f6; padding: 2.5rem 0; color: #4b5563; border-top: 1px solid #e5e7eb; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+    .footer-grid h4 { color: #111827; margin-top: 0; font-size: 1rem; margin-bottom: .5rem; }
+    .footer-grid p, .footer-grid a { color: #4b5563; text-decoration: none; font-size: 0.95rem; line-height: 1.7; }
+    .footer-grid a:hover { text-decoration: underline; color: var(--bg); }
+    .muted { color: var(--muted); }
     form { display: grid; gap: .75rem; }
-    input, textarea { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; }
-    textarea { min-height: 130px; }
-    .notice { background: #fffbeb; border: 1px solid #fcd34d; border-radius: .75rem; padding: 1rem; }
-    footer { background: #f3f4f6; padding: 2rem 0; color: #4b5563; }
-    .muted { color: #6b7280; }
-    @media (max-width: 640px) { .hero { padding: 3.5rem 0; } }
+    input, textarea, select { width: 100%; padding: .8rem; border: 1px solid #d1d5db; border-radius: .75rem; font: inherit; font-size: 1rem; }
+    textarea { min-height: 130px; resize: vertical; }
+    .contact-info p { margin: .4rem 0; }
+    .social a { display: inline-flex; align-items: center; gap: .5rem; margin-right: .75rem; }
+    @media (max-width: 640px) {
+      .hero { padding: 3.5rem 0 3rem; }
+      section { padding: 3rem 0; }
+      nav { flex-direction: column; align-items: stretch; gap: .75rem; }
+      nav div { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
       <nav>
-        <a href="#top">Cascade Realty</a>
+        <a href="#top" class="brand">Cascade Realty</a>
         <div>
           <a href="#services">Services</a>
+          <a href="#showcase">Showcase</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -56,40 +82,88 @@
       <div class="wrap">
         <span class="badge">luxury real estate concept demo</span>
         <h1>Cascade Realty</h1>
-        <p>A clearer, faster, and more trustworthy website concept for a luxury real estate business in Yerevan, Armenia.</p>
-        <p><span>Fit score: 54/100</span></p>
+        <p>Premium real estate in the center of Yerevan &mdash; a clearer, faster, more trustworthy website concept for a luxury real estate business.</p>
         <a class="button primary" href="#contact">Request information</a>
+        <a class="button secondary" href="#showcase">View showcase</a>
       </div>
     </section>
 
     <section id="services">
-      <div class="wrap grid">
-        <article class="card">
-          <h2>What we verified</h2>
-          <ul><li>Luxury real estate agency in central Yerevan; website could benefit from property showcase and client portal.</li></ul>
-        </article>
-        <article class="card">
-          <h2>Proposed improvement</h2>
-          <p>Property showcase and client portal</p>
-          <p>This concept focuses on clear service presentation, visible contact routes, and mobile-friendly navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Public sources</h2>
-          <ul><li><a href="https://cascaderealty.am/en" target="_blank" rel="noopener">https://cascaderealty.am/en</a></li></ul>
-        </article>
+      <div class="wrap">
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Luxury real estate services for sale, purchase, and rental of high-end properties in Yerevan.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h2>Property showcase</h2>
+            <p>Clear listings for apartments, private houses, land plots, and commercial real estate with photos, prices, and key details.</p>
+          </article>
+          <article class="card">
+            <h2>Client portal</h2>
+            <p>Saved searches, favorite properties, and direct communication with agents &mdash; a feature the current site does not clearly offer.</p>
+          </article>
+          <article class="card">
+            <h2>Contact &amp; inquiry</h2>
+            <p>Visible phone, address, and a simple inquiry form so prospective clients can reach agents quickly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="showcase">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>Verified facts (official website)</h2>
+          <p>All facts below were verified on https://cascaderealty.am/en. Items marked with <strong>[placeholder]</strong> are not confirmed and are shown for concept purposes only.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h2>Business type</h2>
+            <p>Luxury real estate agency in central Yerevan, Armenia.</p>
+          </article>
+          <article class="card">
+            <h2>Specialties</h2>
+            <ul>
+              <li>Sale, purchase, and rental of high-end properties</li>
+              <li>Apartments, private houses, land plots</li>
+              <li>Commercial real estate (business centers, hotels, restaurants)</li>
+              <li>Yerevan center: Northern Avenue, Cascade, Opera areas</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h2>Experience</h2>
+            <p>Claimed 20 years of expertise in Armenia's real estate industry.</p>
+          </article>
+          <article class="card">
+            <h2>Verified phone</h2>
+            <p>+374 91 57 47 57</p>
+          </article>
+          <article class="card">
+            <h2>Address</h2>
+            <p class="muted">[placeholder] Exact office address not confirmed on homepage.</p>
+          </article>
+          <article class="card">
+            <h2>Website</h2>
+            <p><a href="https://cascaderealty.am/en" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:underline;">https://cascaderealty.am/en</a></p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="wrap grid">
-        <article class="card">
+        <article class="card contact-info">
           <h2>Contact routes</h2>
-          <p><a class="button secondary" href="https://cascaderealty.am/en" target="_blank" rel="noopener">Current website</a></p>
-          <p class="muted">Verified contact details should be confirmed before production use.</p>
+          <p><strong>Phone:</strong> +374 91 57 47 57 (verified on official site)</p>
+          <p><strong>Website:</strong> <a href="https://cascaderealty.am/en" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:underline;">https://cascaderealty.am/en</a></p>
+          <p><strong>Social:</strong> Instagram, Facebook, YouTube (linked on official site)</p>
+          <p class="muted">Contact details must be confirmed before production use.</p>
         </article>
         <article class="card">
           <h2>Demo inquiry form</h2>
-          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No request was submitted.');">
+          <p class="muted">This is a concept demo. No request is submitted anywhere.</p>
+          <form onsubmit="event.preventDefault(); alert('This is a concept demo. No inquiry was submitted.');">
             <input type="text" name="name" placeholder="Your name" required>
             <input type="email" name="email" placeholder="Your email" required>
             <textarea name="message" placeholder="Your message" required></textarea>
@@ -104,13 +178,37 @@
         <div class="notice">
           <strong>Unofficial concept demo.</strong> This page was created to demonstrate a possible website redesign. It is not the official website of Cascade Realty, and no booking, payment, or contact request is submitted by this demo.
         </div>
+        <div class="notice" style="border-color:#9ca3af; background:#f3f4f6;">
+          <strong>Identified improvement opportunities:</strong>
+          <ul style="margin:.4rem 0 0; padding-left:1.25rem; color:#374151;">
+            <li>Homepage lacks a clear dedicated contact page with address/map and detailed agent contact information.</li>
+            <li>Property search UI is dense with many stacked filter fields; mobile experience is not evident.</li>
+            <li>No client portal or saved-search/user-account features are visible on the current site.</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="wrap">
-      <p>Concept demo generated from verified CRM data. Business facts, contact details, and availability must be confirmed before production use.</p>
+      <div class="footer-grid">
+        <div>
+          <h4>Cascade Realty</h4>
+          <p class="muted">Unofficial concept demo &mdash; not the official website.</p>
+        </div>
+        <div>
+          <h4>Concept pages</h4>
+          <p><a href="#services">Services</a></p>
+          <p><a href="#showcase">Showcase</a></p>
+          <p><a href="#contact">Contact</a></p>
+        </div>
+        <div>
+          <h4>Disclaimers</h4>
+          <p class="muted">Business facts, contact details, and availability must be confirmed before production use. No external data is sent by this demo.</p>
+        </div>
+      </div>
+      <p style="margin-top:1.5rem; font-size:.85rem; color:#9ca3af;">Concept demo generated from verified CRM data.</p>
     </div>
   </footer>
 </body>

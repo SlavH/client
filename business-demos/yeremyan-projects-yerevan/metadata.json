@@ -1,0 +1,24 @@
+{
+  "slug": "yeremyan-projects-yerevan",
+  "leadIndex": 99,
+  "business": "Yeremyan Projects",
+  "category": "restaurant group",
+  "city": "Yerevan",
+  "country": "Armenia",
+  "website": "https://www.yeremyanprojects.com/en/",
+  "demoFile": "index.html",
+  "language": "en",
+  "verifiedFacts": [
+    "Yeremyan Projects is headquartered at 8 Teryan st., Yerevan 0010, Armenia, with phone +374 10 60 50 60 and email info@yeremyanprojects.com (observed in official site footer).",
+    "The official site lists restaurant brands including Tavern Yerevan, Casa Nostra, Kagayaki Japanese Restaurant, Burgery, Livingston, and Seasons under its Restaurants section.",
+    "Yeremyan Projects operates related business arms such as Yeremyan Delivery, Yeremyan Products, Yeremyan Academy, Yeremyan Catering, and the \"Artsakh\" Kitchen Factory (observed in official site navigation)."
+  ],
+  "placeholders": [
+    "Hero image is a CSS placeholder (no external image fetched or embedded).",
+    "Restaurant thumbnails are CSS-colored placeholders with no image assets."
+  ],
+  "unofficialNotice": "This is an unofficial static HTML concept demo for demonstration purposes only. It is not affiliated with, endorsed by, or connected to Yeremyan Projects. No external data is collected or sent.",
+  "externalSends": false,
+  "responsive": true,
+  "created": "2026-10-24"
+}

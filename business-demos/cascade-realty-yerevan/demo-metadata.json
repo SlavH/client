@@ -6,5 +6,17 @@
   "business_category": "luxury real estate",
   "website_url": "https://cascaderealty.am/en",
   "status": "completed",
-  "demo_type": "static-html-concept"
+  "demo_type": "manual-research-concept",
+  "source": "official website https://cascaderealty.am/en",
+  "verified_observations": [
+    "Luxury real estate agency in central Yerevan; specializes in sale, purchase, and rental of high-end properties (apartments, private houses, land, business centers, hotels, restaurants) in Yerevan center including Northern Avenue, Cascade, Opera areas.",
+    "20 Years of Expertise claimed; contact phone +374 91 57 47 57 listed on official site.",
+    "Website offers property search with filters (type, region, city, district, rooms, price, area, renovation, currency) and social links to Instagram, Facebook, YouTube."
+  ],
+  "weaknesses": [
+    "No clear dedicated contact page with address/map or detailed agent contact info visible on homepage.",
+    "Search UI appears dense/cramped with many filter fields stacked; mobile experience not evident.",
+    "No client portal or saved-search/user-account features visible."
+  ],
+  "generator_version": "manual"
 }
