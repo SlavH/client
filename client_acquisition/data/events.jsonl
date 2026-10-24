@@ -977,3 +977,21 @@
 {"event_id": "evt_20261024090622147713", "payload": {"lead_key": "domain:elate.am", "proposal_id": "id_c38d78f55602bac5"}, "timestamp": "2026-10-24T09:06:22.147768+00:00", "type": "proposal_added"}
 {"event_id": "evt_20261024090622215885", "payload": {"business_name": "Calibri Real Estate", "lead_key": "domain:calibri.am"}, "timestamp": "2026-10-24T09:06:22.215943+00:00", "type": "lead_added"}
 {"event_id": "evt_20261024090622256529", "payload": {"lead_key": "domain:calibri.am", "proposal_id": "id_ff8cea24767410b1"}, "timestamp": "2026-10-24T09:06:22.256594+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090640286433", "payload": {"business_name": "RedSide Security", "lead_key": "domain:redsidesecurity.com"}, "timestamp": "2026-10-24T09:06:40.286512+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090640324609", "payload": {"lead_key": "domain:redsidesecurity.com", "proposal_id": "id_c104f2de5bac2d39"}, "timestamp": "2026-10-24T09:06:40.324658+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090640414494", "payload": {"business_name": "AMS Security", "lead_key": "domain:amssecurity.am"}, "timestamp": "2026-10-24T09:06:40.414549+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090640453409", "payload": {"lead_key": "domain:amssecurity.am", "proposal_id": "id_13243ba4284d33c4"}, "timestamp": "2026-10-24T09:06:40.453489+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090640511786", "payload": {"business_name": "DS Systems", "lead_key": "domain:dssystems.am"}, "timestamp": "2026-10-24T09:06:40.511842+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090640550463", "payload": {"lead_key": "domain:dssystems.am", "proposal_id": "id_f3241f6138650c6f"}, "timestamp": "2026-10-24T09:06:40.550536+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090640618863", "payload": {"business_name": "Azgad Security", "lead_key": "domain:azgadsecurity.com"}, "timestamp": "2026-10-24T09:06:40.618915+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090640663568", "payload": {"lead_key": "domain:azgadsecurity.com", "proposal_id": "id_89569f0af2ad9eb3"}, "timestamp": "2026-10-24T09:06:40.663616+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090640723349", "payload": {"business_name": "Illuria", "lead_key": "domain:illuria.com"}, "timestamp": "2026-10-24T09:06:40.723409+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090640763159", "payload": {"lead_key": "domain:illuria.com", "proposal_id": "id_e9f150a1711258de"}, "timestamp": "2026-10-24T09:06:40.763213+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090640824086", "payload": {"business_name": "The Point Marketing", "lead_key": "domain:thepoint.am"}, "timestamp": "2026-10-24T09:06:40.824139+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090640862820", "payload": {"lead_key": "domain:thepoint.am", "proposal_id": "id_fb59584b53c66961"}, "timestamp": "2026-10-24T09:06:40.862872+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090640924124", "payload": {"business_name": "DM Consulting", "lead_key": "domain:internet-marketing.am"}, "timestamp": "2026-10-24T09:06:40.924178+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090640963768", "payload": {"lead_key": "domain:internet-marketing.am", "proposal_id": "id_19cdff1298f8c3ca"}, "timestamp": "2026-10-24T09:06:40.963838+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090641023572", "payload": {"business_name": "Incredo", "lead_key": "domain:incredo.co"}, "timestamp": "2026-10-24T09:06:41.023633+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090641062984", "payload": {"lead_key": "domain:incredo.co", "proposal_id": "id_b5149021550bde6f"}, "timestamp": "2026-10-24T09:06:41.063032+00:00", "type": "proposal_added"}
+{"event_id": "evt_20261024090641123755", "payload": {"business_name": "Incrity", "lead_key": "domain:incrity.com"}, "timestamp": "2026-10-24T09:06:41.123821+00:00", "type": "lead_added"}
+{"event_id": "evt_20261024090641163761", "payload": {"lead_key": "domain:incrity.com", "proposal_id": "id_a273d41ba83bd611"}, "timestamp": "2026-10-24T09:06:41.163809+00:00", "type": "proposal_added"}
